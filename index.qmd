@@ -9,9 +9,9 @@ website:
 
 This is an introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.
 
--   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1616799)
--   Gradescope: [Gradescope](https://www.gradescope.com/courses/934148) 
--   Piazza: [Piazza](https://piazza.com/arizona/fall2025/csc110) (Access code: wildcats)
+-   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1658797)
+-   Gradescope: [Gradescope](https://www.gradescope.com/courses/1092416) 
+-   Piazza: [Piazza](https://piazza.com/arizona/fall2025/csc110002) (Access code: glxonh1ytum)
 
 Where to start:
 
@@ -21,16 +21,12 @@ Where to start:
 
 # Instructor Information
 
--   Xinchen Yu 
+-   Professor Hudson Lynam
 
-    -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 829
+    -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823
 
-    -   Email: xinchenyu\@arizona.edu
+    -   Email: hlynam\@arizona.edu
 
-    -   Instructor Website: [xinchenyu.github.io](https://xinchenyu.github.io/)
+    -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823):
 
-    -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 829):
-
-         -    `Thursday 12:00pm-2:00pm`. 
-            
-         -    You are welcome to drop in at any time during this period. However, students in this course will be given priority from `12:00pm-1:00pm`. If you arrive outside of this priority window, please understand that wait times may vary depending on whether students from another course are being helped.
+         -    `Monday and Wednesday 12:50pm-1:50pm`.
