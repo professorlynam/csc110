@@ -1,0 +1,37 @@
+---
+title: "TAs and Office Hours"
+---
+
+The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.
+
+The best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).
+
+# Course Coordinators
+
+Course coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.
+
+-   Pearl McNabb
+-   Lilian Wei
+
+# TAs
+
+Undergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.
+
+-   Ethan Holley
+-   Ram Adithya Muthukumarasamy
+-   Apurbo Barua
+-   Devyansh Shandilya
+-   Munazza Habib 
+-   Zifeng Zhou 
+-   Emily Bauman 
+-   Johanna Delgado 
+
+Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
+
+# Office Hours
+
+Shown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 914. Xinchen's office hours are in GS 829. An (O) next to a name indicates that the office hour is online. For these office hours, check D2L for details.
+
+**Note**: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on [piazza](zoom.html) instead.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThLh1d85DbXbS7dut44fZgxhMvuaecom5PyVi73M-MqblzAr33EkNwjU73BFOoGdh55xIDhpqNqv5M/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600px"></iframe>

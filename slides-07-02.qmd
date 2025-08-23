@@ -1,0 +1,112 @@
+---
+title: "random (slides)"
+format: revealjs
+slide-number: true
+df-print: kable
+---
+
+# CSC 110 -- Generating Random Numbers and Other Important Functions and Methods
+
+## random module
+
+We need to `import` the module `random`
+
+What do the functions `.random()` and `.randint()` return?
+
+```{python}
+#| echo: true
+import random
+
+n = random.random() #returns a random float between 0 and 1
+print(n)
+
+n = random.randint(0, 9) #returns a random integer betweem 0 and 9.
+
+
+print(n)
+```
+
+## Write a function
+
+1. Function name is `pick_winner`
+1. It takes a list as argument
+1. It generates a random index, and returns the item at that position
+
+```{python}
+#| eval: false
+#| echo: true
+winner = pick_winner(["Peter", "Joan", "Mary", "June"])
+print(winner)
+```
+
+## Write a function -- solution
+
+```{python}
+#| eval: true
+#| echo: true
+import random
+
+def pick_winner(names):
+  index = random.randint(0, len(names) - 1)
+  return names[index]
+
+if __name__ == "__main__":
+  winner = pick_winner(["Peter", "Joan", "Mary", "June"])
+  print(winner)
+```
+
+## Setting a seed 
+
+What happens when you run `pick_winner` multiple times?
+
+To get always the same result (for autograding purposes, for example) we can set a seed.
+
+```{python}
+#| eval: true
+#| echo: true
+import random
+
+def pick_winner(names):
+  random.seed(123)
+  index = random.randint(0, len(names) - 1)
+  return names[index]
+
+if __name__ == "__main__":
+  winner = pick_winner(["Peter", "Joan", "Mary", "June"])
+  print(winner)
+```
+
+
+## Write a function
+
+Write a function `random_list` that takes as argument a list of `numbers`. Iterate over each list element (with a `while` loop), replacing each integer with a random number between zero and the original number. Set the seed as `123` in your function.
+
+Name your file `random_list.py` and submit to Gradescope.
+
+```{python}
+#| eval: false
+#| echo: true
+# test case
+assert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]
+```
+
+## Write a function -- solution
+
+```{python}
+#| eval: true
+#| echo: true
+import random
+
+def random_list(numbers):
+  random.seed(123)
+  index = 0
+  while index < len(numbers):
+    item = numbers[index]
+    numbers[index] = random.randint(0, item)
+    index += 1
+  return numbers
+
+if __name__ == "__main__":
+  assert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]
+  print("pass the test")
+```
