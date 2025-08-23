@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-author: "Xinchen Yu (she/her/hers)"
+author: "Hudson Lynam (he/him/his)"
 date: "Fall 2025"
 output:
   html_document: default
@@ -24,19 +24,19 @@ opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 # Location and Times
 
-This course is scheduled to be an in-person course, meeting in-person two times a week. Your meeting time should be:
+This course is scheduled to be an in-person course, meeting in-person three times a week. Your meeting time should be:
 
--   [Gittings](https://goo.gl/maps/LpwVaL8JVxxRVDfA8) Room 129b, 3:30-4:45pm, Tuesday and Thursday
-
-This is a four-unit course, meeting in the lecture room two times a week (TR). The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to [the weekly lab session spreadsheet](). 
+Biol Sci West, Rm 301, Monday, Wednesday, and Friday 2:00pm-2:50pm
+This is a four-unit course, meeting in the lecture room three times a week. The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to the weekly lab session spreadsheet.
 
 Attendance is expected and required.
 
 If you need an exception due to a medical or visa issue, please reach out to the DRC or instructor.
 
+
 # Description of Course
 
-An introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.
+An introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques.
 
 # Course Prerequisites
 
@@ -45,13 +45,12 @@ The prerequisite is a C or better in College Algebra or CSc 101 or appropriate m
 # Instructor, Teaching Staff, and Contact Information
 
 -   Instructor:
-    -   Xinchen Yu
-        -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 829
-        -   Email: xinchenyu\@arizona.edu
-        -   Instructor Website: [xinchenyu.github.io](https://xinchenyu.github.io/)
-        -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 829):
-            -   `Thursday 12:00pm-2:00pm`. 
-            -   You are welcome to drop in at any time during this period. However, students in this course will be given priority from `12:00pm-1:00pm`. If you arrive outside of this priority window, please understand that wait times may vary depending on whether students from another course are being helped.
+    -   Professor Hudson Lynam
+        -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823
+        -   Email: hlynam\@arizona.edu
+        -   Instructor Website:[https://professorlynam.github.io/csc110/](https://professorlynam.github.io/csc110/)
+        -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823):
+            -   `Monday and Wednesday 12:50pm-`1:50pm
             
 There will also be many undergraduate TAs. See [TAs and Office Hours](tas.html)!
 
@@ -108,10 +107,10 @@ Absences pre-approved by the UA Dean of Students (or dean's designee) will be ho
 
 Every semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of `E` at the end of the term. To prevent this, at the end of the **second week** (Sep 5), all students who have not submitted/completed **three or more** of the following will be administratively dropped:
 
-1.  Aug 26 quiz
-2.  Class presence on Aug 28
-3.  Sep 2 quiz
-4.  Class presence on Sep 4
+1.  Aug 27 quiz
+2.  Class presence on Aug 29
+3.  Sep 3 quiz
+4.  Class presence on Sep 5
 5.  [Module 1 Programming Problem 1](assignments-01.html)
 6.  [Module 1 Programming Problem 2](assignments-01.html)
 
@@ -133,17 +132,17 @@ If you register after the first class meeting you may make up missed assignments
 
 # Course Communications
 
-All online communication will be conducted through my official UA e-mail address (xinchenyu\@arizona.edu), D2L, and Piazza. Ask questions on [Piazza](https://piazza.com/arizona/fall2025/csc110/home) when you have questions about assignments, quizzes, and exams (has private options). Email the instructor only when you have logistics-related questions.
+All online communication will be conducted through my official UA e-mail address (hlynam\@arizona.edu), D2L, and Piazza. Ask questions on [Piazza](https://piazza.com/arizona/fall2025/csc110002) when you have questions about assignments, quizzes, and exams (has private options). Email the instructor only when you have logistics-related questions.
 
 
 # Required Texts or Readings
 
 All readings, videos, and assignment instructions will be available in the course website.
 
--   Course D2L: <https://d2l.arizona.edu/d2l/home/1616799>
--   Course Gradescope: <https://www.gradescope.com/courses/1044596>
--   Course website: <https://xinchenyu.github.io/csc110/>
--   Piazza: <https://piazza.com/arizona/fall2025/csc110/home> (Access code: wildcats)
+-   Course D2L: <https://d2l.arizona.edu/d2l/home/1658797>
+-   Course Gradescope: <https://www.gradescope.com/courses/1092416>
+-   Course website: <https://professorlynam.github.io/csc110/>
+-   Piazza: <hhttps://piazza.com/arizona/fall2025/csc110002> (Access code: glxonh1ytum)
 
 # Assignments and Examinations: Schedule/Due Dates
 
@@ -164,7 +163,7 @@ The midterm exams will be on:
 
 You must keep theses dates available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
-Weekly quizzes will be held every Tuesday (unless otherwise noted). There will be a total of 12 quizzes. Make-up quizzes will not be offered, however, your 2 lowest quiz scores will be dropped when calculating your final grade. 
+Weekly quizzes will be held every Wednesday (unless otherwise noted). There will be a total of 12 quizzes. Make-up quizzes will not be offered, however, your 2 lowest quiz scores will be dropped when calculating your final grade. 
 
 ::: {.callout-important}
 ## What counts as advanced code
@@ -190,7 +189,7 @@ Your first TA office visit should take place before the Midterm 1 date, and the 
 
 The final exam is worth 15%.
 
-The final exam date, time and room is: `r schedule %>% filter(exam == "Final Exam 1pm Section" & term == "fall 2025") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam 1pm Section" & term == "fall 2025") %>% pull(time)`
+The final exam date, time and room is: Friday, December 12th, 6:00pm-8:00pm Room TBA
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with this exam.
 
