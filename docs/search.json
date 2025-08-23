@@ -5882,7 +5882,7 @@
     "href": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "title": "course introduction (slides)",
     "section": "Who are the teaching assistants? (TAs)",
-    "text": "Who are the teaching assistants? (TAs)\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students on office hours\n\n. . . So get to know them!",
+    "text": "Who are the teaching assistants? (TAs)\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students during office hours\nRunning labs\n\n. . . So get to know them!",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -6058,7 +6058,7 @@
     "href": "slides-01-01.html#how-to-get-help-4",
     "title": "course introduction (slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nCome to office hours but come prepared!\n👍 start early, check typo, google, rubber duck…\n👎 start late, ask vague questions, ask TA to debug for you\n\nTAs help answer clarification questions\nTAs do not debug for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)",
+    "text": "How to get help?\nCome to office hours but come prepared!\n👍 start early, check typo, google, rubber duck…\n👎 start late, ask vague questions, ask TA to debug or write code for you\n\nTAs help answer clarification questions\nTAs do not debug for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -9412,6 +9412,28 @@
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Assignments"
+    ]
+  },
+  {
+    "objectID": "slides-01-01.html#why-do-the-work-yourself",
+    "href": "slides-01-01.html#why-do-the-work-yourself",
+    "title": "course introduction (slides)",
+    "section": "Why do the work yourself?",
+    "text": "Why do the work yourself?\nCommon cheating motivations: fear of failure, “time-saving” - Very easy to spot cheating (especially AI code) - You’re cheating yourself out of learning this new skill (programming) - Won’t work on the many in-person quizzes, or the exams (big part of grade!) - Setting yourself up for failure on later courses, let alone getting a job that requires programming skills",
+    "crumbs": [
+      "Module 1 - Basics",
+      "course introduction (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-01-01.html#treat-tas-with-respect",
+    "href": "slides-01-01.html#treat-tas-with-respect",
+    "title": "course introduction (slides)",
+    "section": "Treat TAs with respect",
+    "text": "Treat TAs with respect\nBe professional and respectful to TAs\n\nTAs are a fantastic resource! However, the responsibility of doing well in this class is ultimately yours, not theirs\nKeep in mind they’re students too, with responsibilities outside of TAing. Be polite and respectful of their time, just as you’d like your peers to treat you!",
+    "crumbs": [
+      "Module 1 - Basics",
+      "course introduction (slides)"
     ]
   }
 ]
