@@ -28,8 +28,7 @@ The TAs are responsible for:
 -   Grading assignments, quizzes, and exams
 -   Helping students during office hours
 -   Running labs
-
-. . . So get to know them!
+. . . More on TAs in a bit!
 
 ## What is this class, anyways?
 
@@ -49,13 +48,9 @@ This is the intro course sequence for the CS department:
 
 <br/>
 
-<p>CSc 101 - Intro to Computer Science</p>
-
-<img src="images/arrow_down.gif" width="50" align="center"/>
-
 <p>CSc 110 - Intro to Computer Programming I</p>
 
-<img src="images/arrow_down.gif" width="50" align="center"/>
+<img src="down_arrow.png" width="50" align="center"/>
 
 <p>CSc 120 - Intro to Computer Programming II</p>
 
@@ -103,14 +98,6 @@ Exams are on paper. Why?
 -   You are able to show what you learned
 -   Whiteboard coding interviews are common
 
-## Quiz 01
-
-Access gradescope, discuss with your group members and work on quiz 01. Answers can be found at:
-
--   Syllabus
--   TAs and Office Hours
--   Online discussion and office hours
-
 
 ## Other Important Dates
 
@@ -124,22 +111,23 @@ You yourself do the work.
 Examples of breaches of academic integrity:
 
 -   Having a friend do the assignments for you
--   Using generative AI (for example, ChatGPT) solve the assignments for you
+-   Using generative AI (for example, ChatGPT) to write or debug code for you
 -   Copying a solution from the internet
 -   Sharing code is cheating
 
 ## Why do the work yourself?
 
 Common cheating motivations: fear of failure, "time-saving"
+
 -   Very easy to spot cheating (especially AI code)
 -   You're cheating yourself out of learning this new skill (programming)
--   Won't work on the many in-person quizzes, or the exams (big part of grade!)
+-   Won't work on the many in-person quizzes, or the exams (huge part of grade!)
 -   Setting yourself up for failure on later courses, let alone getting a job that requires programming skills
 
 
 ## Materials
 
--   Readings, videos, exercises, slides, assignment instructions will be available on the website
+-   Readings, videos, exercises, slides, assignment instructions will be available on the course website
 -   HOWEVER, you are still responsible for things said/announced in class
 
 ## How to get help?
@@ -163,7 +151,7 @@ Describe the problem aloud, explaining it line-by-line, to a rubber duck or anot
 
 ## How to get help?
 
-Once you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.
+Once you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask for help.
 
 **Be precise and informative**.
 
@@ -181,7 +169,7 @@ Come to office hours but come prepared!
 
 -   TAs help answer clarification questions 
 
--   TAs do not debug for you (you wouldn't learn to solve them yourself if you are always asking other people to do it for you)
+-   TAs do not debug for you (you wouldn't learn to debug yourself if you are always asking other people to do it for you)
 
 ## Treat TAs with respect
 
@@ -200,5 +188,7 @@ Be professional and respectful to TAs
     -   email me: only logistics-related questions
 
 
-# This is a difficult course, but we are here to help you succeed
+# This is a difficult course
+-   But if you put in the work, you can expect to succeed!
+-   And when you need it, you have the support of the TAs and myself!
 

@@ -4,7 +4,16 @@ format: revealjs
 slide-number: true
 ---
 
+## Quiz 01
+
+Access gradescope, discuss with your group members and work on quiz 01. Answers can be found at:
+
+-   Syllabus
+-   TAs and Office Hours
+-   Online discussion and office hours
+
 # CSc 110 Python Basics
+
 
 ## CS Buddy Mentor Program Sign-Up
 

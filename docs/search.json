@@ -5882,7 +5882,7 @@
     "href": "slides-01-01.html#who-are-the-teaching-assistants-tas",
     "title": "course introduction (slides)",
     "section": "Who are the teaching assistants? (TAs)",
-    "text": "Who are the teaching assistants? (TAs)\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students during office hours\nRunning labs\n\n. . . So get to know them!",
+    "text": "Who are the teaching assistants? (TAs)\nThe TAs are responsible for:\n\nHelping you, the students, succeed\nGrading assignments, quizzes, and exams\nHelping students during office hours\nRunning labs . . . More on TAs in a bit!",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -5904,7 +5904,7 @@
     "href": "slides-01-01.html#the-intro-sequence",
     "title": "course introduction (slides)",
     "section": "The intro sequence",
-    "text": "The intro sequence\nThis is the intro course sequence for the CS department:\n\n\n\nCSc 101 - Intro to Computer Science\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II",
+    "text": "The intro sequence\nThis is the intro course sequence for the CS department:\n\n\n\nCSc 110 - Intro to Computer Programming I\n\n\n\nCSc 120 - Intro to Computer Programming II",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -5992,7 +5992,7 @@
     "href": "slides-01-01.html#academic-integrity",
     "title": "course introduction (slides)",
     "section": "Academic integrity",
-    "text": "Academic integrity\nYou yourself do the work.\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) solve the assignments for you\nCopying a solution from the internet\nSharing code is cheating",
+    "text": "Academic integrity\nYou yourself do the work.\nExamples of breaches of academic integrity:\n\nHaving a friend do the assignments for you\nUsing generative AI (for example, ChatGPT) to write or debug code for you\nCopying a solution from the internet\nSharing code is cheating",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -6003,7 +6003,7 @@
     "href": "slides-01-01.html#materials",
     "title": "course introduction (slides)",
     "section": "Materials",
-    "text": "Materials\n\nReadings, videos, exercises, slides, assignment instructions will be available on the website\nHOWEVER, you are still responsible for things said/announced in class",
+    "text": "Materials\n\nReadings, videos, exercises, slides, assignment instructions will be available on the course website\nHOWEVER, you are still responsible for things said/announced in class",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -6047,7 +6047,7 @@
     "href": "slides-01-01.html#how-to-get-help-3",
     "title": "course introduction (slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask other people for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself.",
+    "text": "How to get help?\nOnce you read your error messages, tried different things, read the Python documentation, and have the line-by-line explanation of what you are trying to do, then ask for help.\nBe precise and informative.\nThe more context you can provide about what you’re trying to do and what errors you’re getting, the better.\nAlso describe the steps you took to try to solve the problem yourself.",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -6058,7 +6058,7 @@
     "href": "slides-01-01.html#how-to-get-help-4",
     "title": "course introduction (slides)",
     "section": "How to get help?",
-    "text": "How to get help?\nCome to office hours but come prepared!\n👍 start early, check typo, google, rubber duck…\n👎 start late, ask vague questions, ask TA to debug or write code for you\n\nTAs help answer clarification questions\nTAs do not debug for you (you wouldn’t learn to solve them yourself if you are always asking other people to do it for you)",
+    "text": "How to get help?\nCome to office hours but come prepared!\n👍 start early, check typo, google, rubber duck…\n👎 start late, ask vague questions, ask TA to debug or write code for you\n\nTAs help answer clarification questions\nTAs do not debug for you (you wouldn’t learn to debug yourself if you are always asking other people to do it for you)",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -8562,7 +8562,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Tuesday, October 07, 2025\nMidterm Exam 2 - Tuesday, November 04, 2025\n\nThe final exam date and time is:\nThe final exam date, time and room is: –\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Wednesdays for programming problems, short projects and Fridays for programming projects).",
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 08, 2025\nMidterm Exam 2 - Wednesday, November 05, 2025\n\nThe final exam date and time is:\nThe final exam date, time and room is: December 12th, 6pm-8pm, room TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Wednesdays for programming problems, short projects and Fridays for programming projects).",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8606,7 +8606,7 @@
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 1 Programming Problems – Due date: Wednesday, September 03, 2025 at 9pm",
+    "text": "Assignments\n\nModule 1 Programming Problems – Due date: Friday, September 05, 2025 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -9419,7 +9419,7 @@
     "href": "slides-01-01.html#why-do-the-work-yourself",
     "title": "course introduction (slides)",
     "section": "Why do the work yourself?",
-    "text": "Why do the work yourself?\nCommon cheating motivations: fear of failure, “time-saving” - Very easy to spot cheating (especially AI code) - You’re cheating yourself out of learning this new skill (programming) - Won’t work on the many in-person quizzes, or the exams (big part of grade!) - Setting yourself up for failure on later courses, let alone getting a job that requires programming skills",
+    "text": "Why do the work yourself?\nCommon cheating motivations: fear of failure, “time-saving”\n\nVery easy to spot cheating (especially AI code)\nYou’re cheating yourself out of learning this new skill (programming)\nWon’t work on the many in-person quizzes, or the exams (huge part of grade!)\nSetting yourself up for failure on later courses, let alone getting a job that requires programming skills",
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
@@ -9434,6 +9434,160 @@
     "crumbs": [
       "Module 1 - Basics",
       "course introduction (slides)"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-01-wednesday-august-27-2025",
+    "href": "schedule.html#quiz-01-wednesday-august-27-2025",
+    "title": "Schedule",
+    "section": "Quiz 01 (Wednesday, August 27, 2025)",
+    "text": "Quiz 01 (Wednesday, August 27, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-02-wednesday-september-03-2025",
+    "href": "schedule.html#quiz-02-wednesday-september-03-2025",
+    "title": "Schedule",
+    "section": "Quiz 02 (Wednesday, September 03, 2025)",
+    "text": "Quiz 02 (Wednesday, September 03, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-03-wednesday-september-10-2025",
+    "href": "schedule.html#quiz-03-wednesday-september-10-2025",
+    "title": "Schedule",
+    "section": "Quiz 03 (Wednesday, September 10, 2025)",
+    "text": "Quiz 03 (Wednesday, September 10, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-04-wednesday-september-17-2025",
+    "href": "schedule.html#quiz-04-wednesday-september-17-2025",
+    "title": "Schedule",
+    "section": "Quiz 04 (Wednesday, September 17, 2025)",
+    "text": "Quiz 04 (Wednesday, September 17, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-05-wednesday-september-24-2025",
+    "href": "schedule.html#quiz-05-wednesday-september-24-2025",
+    "title": "Schedule",
+    "section": "Quiz 05 (Wednesday, September 24, 2025)",
+    "text": "Quiz 05 (Wednesday, September 24, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-06-wednesday-october-01-2025",
+    "href": "schedule.html#quiz-06-wednesday-october-01-2025",
+    "title": "Schedule",
+    "section": "Quiz 06 (Wednesday, October 01, 2025)",
+    "text": "Quiz 06 (Wednesday, October 01, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#midterm-1-wednesday-october-08-2025",
+    "href": "schedule.html#midterm-1-wednesday-october-08-2025",
+    "title": "Schedule",
+    "section": "Midterm 1 (Wednesday, October 08, 2025)",
+    "text": "Midterm 1 (Wednesday, October 08, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-07-wednesday-october-15-2025",
+    "href": "schedule.html#quiz-07-wednesday-october-15-2025",
+    "title": "Schedule",
+    "section": "Quiz 07 (Wednesday, October 15, 2025)",
+    "text": "Quiz 07 (Wednesday, October 15, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-08-wednesday-october-22-2025",
+    "href": "schedule.html#quiz-08-wednesday-october-22-2025",
+    "title": "Schedule",
+    "section": "Quiz 08 (Wednesday, October 22, 2025)",
+    "text": "Quiz 08 (Wednesday, October 22, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-09-wednesday-october-29-2025",
+    "href": "schedule.html#quiz-09-wednesday-october-29-2025",
+    "title": "Schedule",
+    "section": "Quiz 09 (Wednesday, October 29, 2025)",
+    "text": "Quiz 09 (Wednesday, October 29, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#midterm-2-wednesday-november-05-2025",
+    "href": "schedule.html#midterm-2-wednesday-november-05-2025",
+    "title": "Schedule",
+    "section": "Midterm 2 (Wednesday, November 05, 2025)",
+    "text": "Midterm 2 (Wednesday, November 05, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-10-wednesday-november-19-2025",
+    "href": "schedule.html#quiz-10-wednesday-november-19-2025",
+    "title": "Schedule",
+    "section": "Quiz 10 (Wednesday, November 19, 2025)",
+    "text": "Quiz 10 (Wednesday, November 19, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-11-wednesday-november-26-2025",
+    "href": "schedule.html#quiz-11-wednesday-november-26-2025",
+    "title": "Schedule",
+    "section": "Quiz 11 (Wednesday, November 26, 2025)",
+    "text": "Quiz 11 (Wednesday, November 26, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "schedule.html#quiz-12-wednesday-december-03-2025",
+    "href": "schedule.html#quiz-12-wednesday-december-03-2025",
+    "title": "Schedule",
+    "section": "Quiz 12 (Wednesday, December 03, 2025)",
+    "text": "Quiz 12 (Wednesday, December 03, 2025)",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
     ]
   }
 ]

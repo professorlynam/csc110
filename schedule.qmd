@@ -27,7 +27,7 @@ Midterm (individual) exams (pencil and paper format):
 
 The final exam date and time is:
 
-The final exam date, time and room is: `r schedule %>% filter(exam == "Final Exam 1pm Section" & term == "fall 2025") %>% pull(formatted_date)` -- `r schedule %>% filter(exam == "Final Exam 1pm Section" & term == "fall 2025") %>% pull(time)`
+The final exam date, time and room is: December 12th, 6pm-8pm, room TBA
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
