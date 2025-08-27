@@ -2227,7 +2227,7 @@
     "href": "slides-01-02.html#cs-buddy-mentor-program-sign-up",
     "title": "python basics (slides)",
     "section": "CS Buddy Mentor Program Sign-Up",
-    "text": "CS Buddy Mentor Program Sign-Up\n\nsign-up QR Code",
+    "text": "CS Buddy Mentor Program Sign-Up\nhttps://forms.gle/QHsa6kkgdSr1KPt79",
     "crumbs": [
       "Module 1 - Basics",
       "python basics (slides)"
@@ -2238,7 +2238,7 @@
     "href": "slides-01-02.html#announcements",
     "title": "python basics (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nSign-up for your lab session at xinchenyu.github.io/csc110-spring2025/short-projects.html\nMy office hours changed to Wednesday 10:30am-12:00pm.\nFull schedule for office hours can be found at xinchenyu.github.io/csc110-spring2025/tas.html\nNext lecture is Jan 22, next Wednesday.",
+    "text": "Announcements\n\nCurrent plan is to host lab sessions on Tuesday, one lab 10-11am, one lab 12pm-1pm, and one lab either 3pm-4pm or 4pm-5pm\nFull schedule for office hours can be found at https://professorlynam.github.io/csc110/tas.html",
     "crumbs": [
       "Module 1 - Basics",
       "python basics (slides)"
@@ -2535,7 +2535,7 @@
     "href": "zoom.html",
     "title": "Online discussion and office hours",
     "section": "",
-    "text": "READ THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nQ & A: Piazza\n\nOff-class discussions among students and questions to the instructors/TAs will be conducted via Piazza.\n\nPiazza link\nAccess code: wildcats\n\nDo not direct message (DM) TAs.\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (xinchenyu@arizona.edu)\n\n\n\nOnline office hours\n\nOnline office hours with the instructor or the TAs will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.",
+    "text": "READ THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nQ & A: Piazza\n\nOff-class discussions among students and questions to the instructors/TAs will be conducted via Piazza.\n\nPiazza link\nAccess code: glxonh1ytum\n\nDo not direct message (DM) TAs.\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (hlynam@arizona.edu)\n\n\n\nOnline office hours\n\nOnline office hours with the instructor or the TAs will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.",
     "crumbs": [
       "Start Here",
       "Online discussion and office hours"
@@ -4874,7 +4874,7 @@
     "href": "tas.html",
     "title": "TAs and Office Hours",
     "section": "",
-    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).\n\nCourse Coordinators\nCourse coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.\n\nPearl McNabb\nLilian Wei\n\n\n\nTAs\nUndergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.\n\nEthan Holley\nRam Adithya Muthukumarasamy\nApurbo Barua\nDevyansh Shandilya\nMunazza Habib\nZifeng Zhou\nEmily Bauman\nJohanna Delgado\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.\n\n\nOffice Hours\nShown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 914. Xinchen’s office hours are in GS 829. An (O) next to a name indicates that the office hour is online. For these office hours, check D2L for details.\nNote: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on piazza instead.",
+    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).\n\nCourse Coordinators\nCourse coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.\n\nRuby Gilliland (CC)\nChahat Walia (CC IT)\n\n\n\nTAs\nUndergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.\n\nPriyansh Vaghela\nDefne Aydin\nSophia Harms\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.\n\n\nOffice Hours\nShown below is the office hours schedule. This includes TA office hours for both sections of this course. Try to prioritize going to this section’s TA office hours, but TAs from either section should be able to help you. The in-person office hours are hosted in Gould-Simpson 914. Prof Lynam’s office hours are in GS 823.\nNote: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on piazza instead.",
     "crumbs": [
       "Start Here",
       "TAs and Office Hours"
@@ -9588,6 +9588,17 @@
     "crumbs": [
       "Start Here",
       "Schedule"
+    ]
+  },
+  {
+    "objectID": "slides-01-02.html#quiz-01",
+    "href": "slides-01-02.html#quiz-01",
+    "title": "python basics (slides)",
+    "section": "Quiz 01",
+    "text": "Quiz 01\nAccess gradescope, discuss with your group members and work on quiz 01. Answers can be found at:\n\nSyllabus\nTAs and Office Hours\nOnline discussion and office hours",
+    "crumbs": [
+      "Module 1 - Basics",
+      "python basics (slides)"
     ]
   }
 ]
