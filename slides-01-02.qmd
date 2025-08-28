@@ -1,5 +1,5 @@
 ---
-title: "python basics (slides)"
+title: "python basics and operations (slides)"
 format: revealjs
 slide-number: true
 ---

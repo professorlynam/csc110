@@ -99,7 +99,6 @@ website:
         - hello.qmd
         - basics.md
         - slides-01-01.qmd
-        - slides-01-02.qmd
         - assignments-01.qmd
       - section: "Module 2 - Functions, Operators, and Expressions"
         contents:

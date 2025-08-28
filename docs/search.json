@@ -2524,298 +2524,298 @@
   {
     "objectID": "slides-02-01.html#cs-buddy-mentor-program-sign-up",
     "href": "slides-02-01.html#cs-buddy-mentor-program-sign-up",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "CS Buddy Mentor Program Sign-Up",
-    "text": "CS Buddy Mentor Program Sign-Up\n\nsign-up QR Code",
+    "text": "CS Buddy Mentor Program Sign-Up\nhttps://forms.gle/QHsa6kkgdSr1KPt79",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#announcements",
     "href": "slides-02-01.html#announcements",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nSign-up for your lab session at xinchenyu.github.io/csc110-spring2025/short-projects.html\nMy office hours changed to Wednesday 10:30am-12:00pm.\nFull schedule for office hours can be found at xinchenyu.github.io/csc110-spring2025/tas.html\nNext lecture is Jan 22, next Wednesday.",
+    "text": "Announcements\n\nCurrent plan is to host lab sessions on Tuesday, one lab 10-11am, one lab 12pm-1pm, and one lab either 3pm-4pm or 4pm-5pm\nFull schedule for office hours can be found at https://professorlynam.github.io/csc110/tas.html",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#did-you-set-up-your-workspace",
     "href": "slides-02-01.html#did-you-set-up-your-workspace",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Did you set up your workspace?",
     "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use vscode.dev",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#the-print-function",
     "href": "slides-02-01.html#the-print-function",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "The print function",
     "text": "The print function\n\nWhat does the print function do?",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#the-print-function-1",
     "href": "slides-02-01.html#the-print-function-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "The print function",
     "text": "The print function\n\nprint() sends characters (strings) to the standard output\nBy default, the standard output of a python program goes to the console.\n\n\nprint(\"some characters\")\n\nsome characters\n\n\n\n\nprint('some characters')\n\nsome characters",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#string-operations",
     "href": "slides-02-01.html#string-operations",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "String operations",
     "text": "String operations\nString concatenation:\n\nWhat will the standard output display when the code below is run?\n\n\nprint(\"hello\" + \"world\")",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#string-operations-1",
     "href": "slides-02-01.html#string-operations-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "String operations",
     "text": "String operations\nIn your groups, try the following operations:\n\nString repetition: \"abc\" * 4\nString concatenation with + and ,. What is the difference?\nCombine both repetition and concatenation to print the following:\n\n\n\nThey sang AaAaAaAaAaAaAaAaAaAa",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#string-operations-2",
     "href": "slides-02-01.html#string-operations-2",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "String operations",
     "text": "String operations\nsolution 1:\n\nprint(\"They sang\", \"Aa\" * 10)\n\nThey sang AaAaAaAaAaAaAaAaAaAa\n\n\nsolution 2:\n\nprint(\"They\", \"sang\", \"Aa\" * 10)\n\nThey sang AaAaAaAaAaAaAaAaAaAa\n\n\nsolution 3:\n\nprint(\"They\" + \" \"  + \"sang\" + \" \" + \"Aa\" * 10)\n\nThey sang AaAaAaAaAaAaAaAaAaAa",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#multiple-print-statements",
     "href": "slides-02-01.html#multiple-print-statements",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Multiple print statements",
     "text": "Multiple print statements\n\nWhat will the standard output display when the code below is run?\n\n\nprint('Are')\nprint('You')\nprint('In')\nprint('College?')",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#multiple-print-statements-1",
     "href": "slides-02-01.html#multiple-print-statements-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Multiple print statements",
     "text": "Multiple print statements\n\nBy default, the print function moves the cursor to the next line after printing, unless you specify otherwise.\n\n\nprint('Are', end = ' ')\nprint('You', end = ' ')\nprint('In', end = ' ')\nprint('College?', end = ' ')\n\nAre You In College? \n\n\nWhat other characters can you use for values for the end parameter?",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#dealing-with-special-characters",
     "href": "slides-02-01.html#dealing-with-special-characters",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Dealing with special characters",
     "text": "Dealing with special characters\nWrite a simple program that prints the following output to the python console:\n\n   He said, \"What's up?\" \n   Joe's friend didn't reply.",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#dealing-with-special-characters-1",
     "href": "slides-02-01.html#dealing-with-special-characters-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Dealing with special characters",
     "text": "Dealing with special characters\ndouble quotes:\n\nprint(\"He said, \\\"What's up?\\\"\")\nprint(\"Joe's friend didn't reply.\")\n\nHe said, \"What's up?\"\nJoe's friend didn't reply.\n\n\nsingle quotes:\n\nprint('He said, \"What\\'s up?\"')\nprint('Joe\\'s friend didn\\'t reply.')\n\nHe said, \"What's up?\"\nJoe's friend didn't reply.",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#variables-and-assignment",
     "href": "slides-02-01.html#variables-and-assignment",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Variables and assignment",
     "text": "Variables and assignment\n\nVariables are names in a program that represent a stored value\nWe can assign names to particular values in our program\nWhen we give a value a name, or update the value stored in a variable, this is called assigning a variable",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#demonstration-of-variable-assignment",
     "href": "slides-02-01.html#demonstration-of-variable-assignment",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Demonstration of variable assignment",
     "text": "Demonstration of variable assignment\nVariable assignment does not produce any output to the console. Run the following code:\n\nfirst_name = \"Mary\"\nfamily_name = \"Silva\"\n\nHow would we print these variables?",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#variables-improve-readability",
     "href": "slides-02-01.html#variables-improve-readability",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Variables improve readability",
     "text": "Variables improve readability\nWithout variables:\n\nprint(\"The total price is\", 100 * 1.08)\n\nThe total price is 108.0\n\n\nWith variables:\n\nbase_price = 100\ntax_rate = 1.08\ntotal_price = base_price * tax_rate\nprint(\"The total price is\", total_price)\n\nThe total price is 108.0",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#basic-types",
     "href": "slides-02-01.html#basic-types",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Basic Types",
     "text": "Basic Types\n\nstring: \"hello\" or 'hello'\ninteger: 3\nfloat: 3.14\nbool: True or False\n\nUse the function type() with each literal type.",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#operations",
     "href": "slides-02-01.html#operations",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Operations",
     "text": "Operations\n\n+ : plus\n- : minus\n* : multiple\n/ : divide\n** : power\n// : divide and floor\n% : modulos",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#operations---examples",
     "href": "slides-02-01.html#operations---examples",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Operations - examples",
     "text": "Operations - examples\n\nprint(10 + 5 - 5) # addition and subtraction\nprint(10 * 5 / 4) # multiplication and division\nprint(25 ** 2) # square \nprint(25 ** 0.5) # square root \nprint(13 // 4) # division and round down to the nearest integer\nprint(13 % 4) # remainder \n\n10\n12.5\n625\n5.0\n3\n1",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#pemdas",
     "href": "slides-02-01.html#pemdas",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "PEMDAS",
     "text": "PEMDAS\n\nWhat does PEMDAS stand for?\nThe operator precedence:\n\nParentheses\nExponentiation\nMultiplication and Division (including // and %)\nAddition and Subtraction",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#pemdas-1",
     "href": "slides-02-01.html#pemdas-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "PEMDAS",
     "text": "PEMDAS\nWhat value will each of these variables take on? No computers!\na1 = 5 /  5 * 10  * 5\na2 = 5 / (5 * 10) * 5\n\nb1 = 5 *  10 - 2\nb2 = 5 * (10 - 2)\n\nc = (3 // (4 // 5)) + 1",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#pemdas-answer",
     "href": "slides-02-01.html#pemdas-answer",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "PEMDAS – answer",
     "text": "PEMDAS – answer\n\na1 = 5 /  5 * 10  * 5\na2 = 5 / (5 * 10) * 5\n\nb1 = 5 *  10 - 2\nb2 = 5 * (10 - 2)\n\n# c = (3 // (4 // 5)) + 1 ERROR -- Zero Division\n\nprint(a1)\nprint(a2)\nprint(b1)\nprint(b2)\n\n50.0\n0.5\n48\n40\n\n\nNote that the division operator returns a float even when both numerator and denominator are integers",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#round",
     "href": "slides-02-01.html#round",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "round()",
     "text": "round()\nUse the round() function to get a floating-point number rounded to the specified number of decimals.\nSyntax:\n\nround(number, ndigits*)\n\nThe number of digits (ndigits) is optional, but we will often round number to two decimals:\n\nround(392.68750000000006, 2)\n\n392.69",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#round-1",
     "href": "slides-02-01.html#round-1",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "round()",
     "text": "round()\nUse the round() function to get a floating-point number rounded to the specified number of decimals.\nSyntax:\n\nround(number, ndigits*)\n\nRounding is done toward the nearest even choice:\n\nprint(round(51.6))\nprint(round(51.4))\nprint(round(51.5))\nprint(round(50.5))\n\n52\n51\n52\n50",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#operations-and-variable-assignments",
     "href": "slides-02-01.html#operations-and-variable-assignments",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Operations and Variable Assignments",
     "text": "Operations and Variable Assignments\nVariable assignments are not like math — they can appear in equations that make no mathematical sense.\n\n\nx = 5\nprint(x)\nx = x + 2\nprint(x)\n\n\nx = x + 2 means “take the current value of x, add it with 2, and assign the resulting value (7) to x as its new value.”",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#combining-variables-and-operations",
     "href": "slides-02-01.html#combining-variables-and-operations",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Combining variables and operations",
     "text": "Combining variables and operations\nWrite code to calculate the area of a circle when radius is 3:\n\nAssign integer 3 to radius\nCalculate the area (use \\(\\pi\\) as 3.1415) and round it to two decimals\nPrint the area",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#comments",
     "href": "slides-02-01.html#comments",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Comments",
     "text": "Comments\nComments are text that is meant to be read, but not executed. The purpose is to improve readability.\n\n# assign a radius value\nradius = 3\n# compute the area of a circle and round to two decimals\narea = round(3.1415 * radius ** 2, 2)\n# print the area\nprint(area)\n\n28.27",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
     "objectID": "slides-02-01.html#questions",
     "href": "slides-02-01.html#questions",
-    "title": "operations (slides)",
+    "title": "python basics and operations (slides)",
     "section": "Questions",
     "text": "Questions\n\nWhat if we want to get the area of circles when the radius is 1, 2, 3, 4 and 5?\nCan we do it more efficiently?",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
-      "operations (slides)"
+      "python basics and operations (slides)"
     ]
   },
   {
@@ -9434,6 +9434,17 @@
     "crumbs": [
       "Watch",
       "Video Lessons"
+    ]
+  },
+  {
+    "objectID": "slides-02-01.html#quiz-01",
+    "href": "slides-02-01.html#quiz-01",
+    "title": "python basics and operations (slides)",
+    "section": "Quiz 01",
+    "text": "Quiz 01\nAccess gradescope, discuss with your group members and work on quiz 01. Answers can be found at:\n\nSyllabus\nTAs and Office Hours\nOnline discussion and office hours",
+    "crumbs": [
+      "Module 2 - Functions, Operators, and Expressions",
+      "python basics and operations (slides)"
     ]
   }
 ]
