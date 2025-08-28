@@ -64,7 +64,6 @@ print("Enter 6:")
 print( liters_to_gallons() ) # 1.59 
 ```
 
-You can also download the [ready-to-run script](test_scripts/test_conversions.py) to test your solution.
 
 ## Programming Problem 8
 
@@ -96,4 +95,3 @@ print("Enter -2:")
 print( is_even()) # True 
 ```
 
-You can also download the [ready-to-run script](test_scripts/test_even.py) to test your solution.

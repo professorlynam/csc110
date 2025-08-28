@@ -55,7 +55,6 @@ print( fahrenheit_to_celsius(115) ) # 46.11
 print( fahrenheit_to_celsius(75) ) # 23.89
 ```
 
-You can also download the [ready-to-run script](test_scripts/test_temperatures.py) to test your solution.
 
 ## Programming Problem 4
 
@@ -88,4 +87,3 @@ print( feet_to_meters(5) ) # 1.52
 print( feet_to_meters(20) ) # 6.1
 ```
 
-You can also download the [script](test_scripts/test_measures.py) to test your solution.

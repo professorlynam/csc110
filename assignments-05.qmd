@@ -57,7 +57,6 @@ print( check_eligibility(20) ) # True
 print( check_eligibility(15) ) # False
 ```
 
-You can also download the [ready-to-run script](test_scripts/test_eligible.py) to test your solution.
 
 ## Programming Problem 10
 
@@ -84,4 +83,3 @@ print( max3(2, 0, 2) ) # 2
 print( max3(-100, 0, 0) ) # 0
 ```
 
-You can also download the [ready-to-run script](test_scripts/test_max_of_three.py) to test your solution.
