@@ -222,7 +222,7 @@
 </section>
 <section id="function-definitions" class="slide level2">
 <h2>Function definitions</h2>
-<div id="c56b65c5" class="cell" data-execution_count="1">
+<div id="e6bf403d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">def</span> two():</span>
 <span id="cb1-2"><a></a>  <span class="cf">return</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -236,7 +236,7 @@
 </section>
 <section id="example-of-a-simple-function" class="slide level2">
 <h2>Example of a simple function</h2>
-<div id="4492ffe6" class="cell" data-execution_count="2">
+<div id="a4b42170" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> add_one(n):</span>
 <span id="cb2-2"><a></a>  <span class="cf">return</span> n <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -249,7 +249,7 @@
 </section>
 <section id="another-example" class="slide level2">
 <h2>Another example</h2>
-<div id="88e6475f" class="cell" data-execution_count="3">
+<div id="0350776b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> cook_food(order):</span>
 <span id="cb3-2"><a></a>  message <span class="op">=</span> <span class="st">"Your "</span> <span class="op">+</span> order <span class="op">+</span> <span class="st">" is ready!"</span></span>
 <span id="cb3-3"><a></a>  <span class="cf">return</span> message</span>
@@ -272,43 +272,71 @@ Your burger is ready!</code></pre>
 </section>
 <section id="the-main-function" class="slide level2">
 <h2>The main() function</h2>
-<p>The main function is a ‘traditional’ function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program</p>
-<div id="998a2260" class="cell" data-execution_count="4">
+<div id="4f5e871d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> main():</span>
 <span id="cb5-2"><a></a>  <span class="co"># some logic/code you want executed when this .py file is run</span></span>
 <span id="cb5-3"><a></a></span>
 <span id="cb5-4"><a></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb5-5"><a></a>    main()</span>
-<span id="cb5-6"><a></a><span class="co"># __name__ is a special variable in Python; it is assigned the name of the running program</span></span>
-<span id="cb5-7"><a></a><span class="co"># Python assigns the string "__main__" to the __name__ variable of the executed .py file</span></span>
-<span id="cb5-8"><a></a><span class="co"># if a .py file is imported to a a running program, it's __name__ variable is set to the name of the .py file (or module). so if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be "extra_functions"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a></a>    main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li>The main function is a ‘traditional’ function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program</li>
+</ul>
+</section>
+<section id="the-main-function-1" class="slide level2">
+<h2>The main() function</h2>
+<div id="3b7ff742" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> main():</span>
+<span id="cb6-2"><a></a>  <span class="co"># some logic/code you want executed when this .py file is run</span></span>
+<span id="cb6-3"><a></a></span>
+<span id="cb6-4"><a></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb6-5"><a></a>    main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>__name__ is a special variable in Python; it is assigned the name of the running program Python assigns the string “__main__” to the __name__ variable of the executed .py file</li>
+<li>if a .py file is imported to a a running program, it’s __name__ variable is set to the name of the .py file (or module).</li>
+<li>ex: if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be “extra_functions”</li>
+</ul>
+</section>
+<section id="the-main-function-2" class="slide level2">
+<h2>The main() function</h2>
+<div id="c9ea9f93" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="kw">def</span> main():</span>
+<span id="cb7-2"><a></a>  <span class="co"># some logic/code you want executed when this .py file is run</span></span>
+<span id="cb7-3"><a></a></span>
+<span id="cb7-4"><a></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb7-5"><a></a>    main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>for example, if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be “extra_functions”</li>
+<li>if the above main function block is in extra_functions.py, will it run?</li>
+</ul>
 </section>
 <section id="function-to-calculate-area-of-a-circle" class="slide level2">
 <h2>Function to calculate area of a circle</h2>
 <p>Remember this from the last set of slides?</p>
-<div id="a1d8dbce" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="co"># assign a radius value</span></span>
-<span id="cb6-2"><a></a>radius <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb6-3"><a></a><span class="co"># compute the rounded area of a circle</span></span>
-<span id="cb6-4"><a></a>area <span class="op">=</span> <span class="bu">round</span>(<span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span>, <span class="dv">2</span>)</span>
-<span id="cb6-5"><a></a><span class="co"># print the area</span></span>
-<span id="cb6-6"><a></a><span class="bu">print</span>(area)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="3e005e74" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co"># assign a radius value</span></span>
+<span id="cb8-2"><a></a>radius <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb8-3"><a></a><span class="co"># compute the rounded area of a circle</span></span>
+<span id="cb8-4"><a></a>area <span class="op">=</span> <span class="bu">round</span>(<span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb8-5"><a></a><span class="co"># print the area</span></span>
+<span id="cb8-6"><a></a><span class="bu">print</span>(area)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="function-to-calculate-area-of-a-circle-1" class="slide level2">
 <h2>Function to calculate area of a circle</h2>
 <p>Function name is <code>calculate_area</code>. Given a <code>radius</code> parameter, it returns the rounded <code>area</code> of the circle.</p>
-<div id="be6b7ec8" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="kw">def</span> calculate_area(radius):</span>
-<span id="cb7-2"><a></a>  area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb7-3"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
-<span id="cb7-4"><a></a></span>
-<span id="cb7-5"><a></a><span class="kw">def</span> main():</span>
-<span id="cb7-6"><a></a>  <span class="bu">print</span>(calculate_area(<span class="dv">3</span>)) <span class="co"># 28.27</span></span>
-<span id="cb7-7"><a></a>  <span class="bu">print</span>(calculate_area(<span class="dv">6</span>)) <span class="co"># 113.09</span></span>
-<span id="cb7-8"><a></a>  </span>
-<span id="cb7-9"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="6f2d9610" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> calculate_area(radius):</span>
+<span id="cb9-2"><a></a>  area <span class="op">=</span> <span class="fl">3.1415</span> <span class="op">*</span> radius <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb9-3"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
+<span id="cb9-4"><a></a></span>
+<span id="cb9-5"><a></a><span class="kw">def</span> main():</span>
+<span id="cb9-6"><a></a>  <span class="bu">print</span>(calculate_area(<span class="dv">3</span>)) <span class="co"># 28.27</span></span>
+<span id="cb9-7"><a></a>  <span class="bu">print</span>(calculate_area(<span class="dv">6</span>)) <span class="co"># 113.09</span></span>
+<span id="cb9-8"><a></a>  </span>
+<span id="cb9-9"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function" class="slide level2">
@@ -329,18 +357,18 @@ v = {4 / 3} \cdot \pi \cdot radius^3
 </section>
 <section id="write-a-function-sphere-volume" class="slide level2">
 <h2>Write a function – sphere volume</h2>
-<div id="04b6649c" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
-<span id="cb8-2"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
-<span id="cb8-3"><a></a>  volume <span class="op">=</span> (<span class="dv">4</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">3</span></span>
-<span id="cb8-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
-<span id="cb8-5"><a></a></span>
-<span id="cb8-6"><a></a><span class="kw">def</span> main():</span>
-<span id="cb8-7"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="fl">.75</span>)) <span class="co"># 1.77</span></span>
-<span id="cb8-8"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="dv">2</span>)) <span class="co"># 33.51</span></span>
-<span id="cb8-9"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="fl">5.5</span>)) <span class="co"># 696.89</span></span>
-<span id="cb8-10"><a></a></span>
-<span id="cb8-11"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c08cccea" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
+<span id="cb10-2"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
+<span id="cb10-3"><a></a>  volume <span class="op">=</span> (<span class="dv">4</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">3</span></span>
+<span id="cb10-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
+<span id="cb10-5"><a></a></span>
+<span id="cb10-6"><a></a><span class="kw">def</span> main():</span>
+<span id="cb10-7"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="fl">.75</span>)) <span class="co"># 1.77</span></span>
+<span id="cb10-8"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="dv">2</span>)) <span class="co"># 33.51</span></span>
+<span id="cb10-9"><a></a>  <span class="bu">print</span>(sphere_volume(<span class="fl">5.5</span>)) <span class="co"># 696.89</span></span>
+<span id="cb10-10"><a></a></span>
+<span id="cb10-11"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.77
 33.51
@@ -366,24 +394,24 @@ a = 4 \cdot \pi \cdot radius^2
 </section>
 <section id="write-a-function-solutions-1" class="slide level2">
 <h2>Write a function – solutions 1</h2>
-<div id="a1c1b73d" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="kw">def</span> sphere_area(radius):</span>
-<span id="cb10-2"><a></a>  <span class="co">"calculates the area of a sphere of given radius"</span></span>
-<span id="cb10-3"><a></a>  area <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb10-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
-<span id="cb10-5"><a></a></span>
-<span id="cb10-6"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
-<span id="cb10-7"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
-<span id="cb10-8"><a></a>  volume <span class="op">=</span> (<span class="dv">4</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">3</span></span>
-<span id="cb10-9"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
-<span id="cb10-10"><a></a></span>
-<span id="cb10-11"><a></a><span class="kw">def</span> main():</span>
-<span id="cb10-12"><a></a>  r <span class="op">=</span> <span class="fl">.75</span></span>
-<span id="cb10-13"><a></a>  v <span class="op">=</span> sphere_volume(r)</span>
-<span id="cb10-14"><a></a>  a <span class="op">=</span> sphere_area(r)</span>
-<span id="cb10-15"><a></a>  <span class="bu">print</span>(v, a)</span>
-<span id="cb10-16"><a></a></span>
-<span id="cb10-17"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="653b7745" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="kw">def</span> sphere_area(radius):</span>
+<span id="cb12-2"><a></a>  <span class="co">"calculates the area of a sphere of given radius"</span></span>
+<span id="cb12-3"><a></a>  area <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb12-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
+<span id="cb12-5"><a></a></span>
+<span id="cb12-6"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
+<span id="cb12-7"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
+<span id="cb12-8"><a></a>  volume <span class="op">=</span> (<span class="dv">4</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">3</span></span>
+<span id="cb12-9"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
+<span id="cb12-10"><a></a></span>
+<span id="cb12-11"><a></a><span class="kw">def</span> main():</span>
+<span id="cb12-12"><a></a>  r <span class="op">=</span> <span class="fl">.75</span></span>
+<span id="cb12-13"><a></a>  v <span class="op">=</span> sphere_volume(r)</span>
+<span id="cb12-14"><a></a>  a <span class="op">=</span> sphere_area(r)</span>
+<span id="cb12-15"><a></a>  <span class="bu">print</span>(v, a)</span>
+<span id="cb12-16"><a></a></span>
+<span id="cb12-17"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.77 7.07</code></pre>
 </div>
@@ -403,26 +431,26 @@ v = {1 / 3} \cdot a \cdot radius
 </section>
 <section id="write-a-function-solutions-2" class="slide level2">
 <h2>Write a function – solutions 2</h2>
-<div id="7881e76b" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="kw">def</span> sphere_area(radius):</span>
-<span id="cb12-2"><a></a>  <span class="co">"calculates the area of a sphere of given radius"</span></span>
-<span id="cb12-3"><a></a>  area <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb12-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
-<span id="cb12-5"><a></a></span>
-<span id="cb12-6"><a></a></span>
-<span id="cb12-7"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
-<span id="cb12-8"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
-<span id="cb12-9"><a></a>  volume <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> sphere_area(radius) <span class="op">*</span> radius</span>
-<span id="cb12-10"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
-<span id="cb12-11"><a></a></span>
-<span id="cb12-12"><a></a></span>
-<span id="cb12-13"><a></a><span class="kw">def</span> main():</span>
-<span id="cb12-14"><a></a>  r <span class="op">=</span> <span class="fl">.75</span></span>
-<span id="cb12-15"><a></a>  v <span class="op">=</span> sphere_volume(r)</span>
-<span id="cb12-16"><a></a>  a <span class="op">=</span> sphere_area(r)</span>
-<span id="cb12-17"><a></a>  <span class="bu">print</span>(v, a)</span>
-<span id="cb12-18"><a></a></span>
-<span id="cb12-19"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="d959f161" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="kw">def</span> sphere_area(radius):</span>
+<span id="cb14-2"><a></a>  <span class="co">"calculates the area of a sphere of given radius"</span></span>
+<span id="cb14-3"><a></a>  area <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="fl">3.1415</span> <span class="op">*</span> radius<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb14-4"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(area, <span class="dv">2</span>)</span>
+<span id="cb14-5"><a></a></span>
+<span id="cb14-6"><a></a></span>
+<span id="cb14-7"><a></a><span class="kw">def</span> sphere_volume(radius):</span>
+<span id="cb14-8"><a></a>  <span class="co">"calculates the volume of a sphere of given radius"</span></span>
+<span id="cb14-9"><a></a>  volume <span class="op">=</span> (<span class="dv">1</span> <span class="op">/</span> <span class="dv">3</span>) <span class="op">*</span> sphere_area(radius) <span class="op">*</span> radius</span>
+<span id="cb14-10"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(volume, <span class="dv">2</span>)</span>
+<span id="cb14-11"><a></a></span>
+<span id="cb14-12"><a></a></span>
+<span id="cb14-13"><a></a><span class="kw">def</span> main():</span>
+<span id="cb14-14"><a></a>  r <span class="op">=</span> <span class="fl">.75</span></span>
+<span id="cb14-15"><a></a>  v <span class="op">=</span> sphere_volume(r)</span>
+<span id="cb14-16"><a></a>  a <span class="op">=</span> sphere_area(r)</span>
+<span id="cb14-17"><a></a>  <span class="bu">print</span>(v, a)</span>
+<span id="cb14-18"><a></a></span>
+<span id="cb14-19"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.77 7.07</code></pre>
 </div>
@@ -435,42 +463,42 @@ v = {1 / 3} \cdot a \cdot radius
 </section>
 <section id="write-a-function-4" class="slide level2">
 <h2>Write a function</h2>
-<div id="2bf19262" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="kw">def</span> sqrt(n):</span>
-<span id="cb14-2"><a></a>  <span class="co">'''</span></span>
-<span id="cb14-3"><a></a><span class="co">  This function calculates the square root of a number</span></span>
-<span id="cb14-4"><a></a><span class="co">  Args:</span></span>
-<span id="cb14-5"><a></a><span class="co">    n: integer or float</span></span>
-<span id="cb14-6"><a></a><span class="co">  Returns:</span></span>
-<span id="cb14-7"><a></a><span class="co">    The square root of n</span></span>
-<span id="cb14-8"><a></a><span class="co">  '''</span></span>
-<span id="cb14-9"><a></a>  <span class="cf">return</span> n<span class="op">**</span><span class="fl">0.5</span></span>
-<span id="cb14-10"><a></a></span>
-<span id="cb14-11"><a></a><span class="kw">def</span> hypotenuse(a, b):</span>
-<span id="cb14-12"><a></a>  <span class="co">'''</span></span>
-<span id="cb14-13"><a></a><span class="co">  This function calculates the hypotenuse of a right angle triangle.</span></span>
-<span id="cb14-14"><a></a><span class="co">  Args:</span></span>
-<span id="cb14-15"><a></a><span class="co">    a: number (integer or float) representing one of the non-hypotenuse sides</span></span>
-<span id="cb14-16"><a></a><span class="co">    b: number (integer or float) representing one of the non-hypotenuse sides</span></span>
-<span id="cb14-17"><a></a><span class="co">  Returns:</span></span>
-<span id="cb14-18"><a></a><span class="co">    Float representing the length of the hypotenuse given a and b</span></span>
-<span id="cb14-19"><a></a><span class="co">  '''</span> </span>
-<span id="cb14-20"><a></a>  h <span class="op">=</span> sqrt(a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb14-21"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(h, <span class="dv">2</span>)</span>
-<span id="cb14-22"><a></a></span>
-<span id="cb14-23"><a></a><span class="kw">def</span> main():</span>
-<span id="cb14-24"><a></a>  <span class="co">'''</span></span>
-<span id="cb14-25"><a></a><span class="co">  This function calls the hypotenuse function to calculate and then</span></span>
-<span id="cb14-26"><a></a><span class="co">  print out the hypotenuse of a right angle triangle of sides 3 and 4</span></span>
-<span id="cb14-27"><a></a><span class="co">  and the hypotenuse of a right angle triange of sides 10 and 10</span></span>
-<span id="cb14-28"><a></a><span class="co">  '''</span></span>
-<span id="cb14-29"><a></a>  result <span class="op">=</span> hypotenuse(<span class="dv">3</span>, <span class="dv">4</span>)</span>
-<span id="cb14-30"><a></a>  <span class="bu">print</span>(result)</span>
-<span id="cb14-31"><a></a>  </span>
-<span id="cb14-32"><a></a>  result <span class="op">=</span> hypotenuse(<span class="dv">10</span>, <span class="dv">10</span>)</span>
-<span id="cb14-33"><a></a>  <span class="bu">print</span>(result)</span>
-<span id="cb14-34"><a></a>  </span>
-<span id="cb14-35"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="a1fe9e8e" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a><span class="kw">def</span> sqrt(n):</span>
+<span id="cb16-2"><a></a>  <span class="co">'''</span></span>
+<span id="cb16-3"><a></a><span class="co">  This function calculates the square root of a number</span></span>
+<span id="cb16-4"><a></a><span class="co">  Args:</span></span>
+<span id="cb16-5"><a></a><span class="co">    n: integer or float</span></span>
+<span id="cb16-6"><a></a><span class="co">  Returns:</span></span>
+<span id="cb16-7"><a></a><span class="co">    The square root of n</span></span>
+<span id="cb16-8"><a></a><span class="co">  '''</span></span>
+<span id="cb16-9"><a></a>  <span class="cf">return</span> n<span class="op">**</span><span class="fl">0.5</span></span>
+<span id="cb16-10"><a></a></span>
+<span id="cb16-11"><a></a><span class="kw">def</span> hypotenuse(a, b):</span>
+<span id="cb16-12"><a></a>  <span class="co">'''</span></span>
+<span id="cb16-13"><a></a><span class="co">  This function calculates the hypotenuse of a right angle triangle.</span></span>
+<span id="cb16-14"><a></a><span class="co">  Args:</span></span>
+<span id="cb16-15"><a></a><span class="co">    a: number (integer or float) representing one of the non-hypotenuse sides</span></span>
+<span id="cb16-16"><a></a><span class="co">    b: number (integer or float) representing one of the non-hypotenuse sides</span></span>
+<span id="cb16-17"><a></a><span class="co">  Returns:</span></span>
+<span id="cb16-18"><a></a><span class="co">    Float representing the length of the hypotenuse given a and b</span></span>
+<span id="cb16-19"><a></a><span class="co">  '''</span> </span>
+<span id="cb16-20"><a></a>  h <span class="op">=</span> sqrt(a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb16-21"><a></a>  <span class="cf">return</span> <span class="bu">round</span>(h, <span class="dv">2</span>)</span>
+<span id="cb16-22"><a></a></span>
+<span id="cb16-23"><a></a><span class="kw">def</span> main():</span>
+<span id="cb16-24"><a></a>  <span class="co">'''</span></span>
+<span id="cb16-25"><a></a><span class="co">  This function calls the hypotenuse function to calculate and then</span></span>
+<span id="cb16-26"><a></a><span class="co">  print out the hypotenuse of a right angle triangle of sides 3 and 4</span></span>
+<span id="cb16-27"><a></a><span class="co">  and the hypotenuse of a right angle triange of sides 10 and 10</span></span>
+<span id="cb16-28"><a></a><span class="co">  '''</span></span>
+<span id="cb16-29"><a></a>  result <span class="op">=</span> hypotenuse(<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb16-30"><a></a>  <span class="bu">print</span>(result)</span>
+<span id="cb16-31"><a></a>  </span>
+<span id="cb16-32"><a></a>  result <span class="op">=</span> hypotenuse(<span class="dv">10</span>, <span class="dv">10</span>)</span>
+<span id="cb16-33"><a></a>  <span class="bu">print</span>(result)</span>
+<span id="cb16-34"><a></a>  </span>
+<span id="cb16-35"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5.0
 14.14</code></pre>

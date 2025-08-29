@@ -12,6 +12,7 @@ df-print: kable
 -   The lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.
 -   Session sign-up sheet will be posted sometime after class today
 -   First labs will be Sept 8th and 9th
+-   TAs will start holding office hours next week
 
 ## Functions
 
@@ -73,7 +74,6 @@ print(meal)
 
 ## The main() function
 
-The main function is a 'traditional' function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program
 
 ```{python}
 #| echo: true
@@ -83,10 +83,39 @@ def main():
 
 if __name__ == "__main__":
     main()
-# __name__ is a special variable in Python; it is assigned the name of the running program
-# Python assigns the string "__main__" to the __name__ variable of the executed .py file
-# if a .py file is imported to a a running program, it's __name__ variable is set to the name of the .py file (or module). so if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be "extra_functions"
 ```
+
+-   The main function is a 'traditional' function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program
+
+## The main() function
+
+```{python}
+#| echo: true
+#| eval: false
+def main():
+  # some logic/code you want executed when this .py file is run
+
+if __name__ == "__main__":
+    main()
+```
+-   \__name__ is a special variable in Python; it is assigned the name of the running program
+Python assigns the string "\__main__" to the \__name__ variable of the executed .py file
+-   if a .py file is imported to a a running program, it's \__name__ variable is set to the name of the .py file (or module). 
+-   ex: if you import extra_functions.py into main_program.py, the \__name__ variable inside extra_fuctions.py will be "extra_functions"
+
+## The main() function
+
+```{python}
+#| echo: true
+#| eval: false
+def main():
+  # some logic/code you want executed when this .py file is run
+
+if __name__ == "__main__":
+    main()
+```
+-   for example, if you import extra_functions.py into main_program.py, the \__name__ variable inside extra_fuctions.py will be "extra_functions"
+-   if the above main function block is in extra_functions.py, will it run?
 
 ## Function to calculate area of a circle
 
