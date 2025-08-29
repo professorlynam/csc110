@@ -6970,7 +6970,7 @@
     "href": "slides-02-02.html#write-a-function-3",
     "title": "functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function named hypotenuse that takes two arguments: a and b representing the length of the two non-hypotenuse sides of a right triangle. The function calculate the hypotenuse according to the Pythagorean theorem: \\(c = \\sqrt(a^2 + b^2)\\). Return it rounded at two decimals.\nTest cases: hypotenuse(3, 4) should return 5.0, hypotenuse(10, 10) should return 14.14\nName your file hypotenuse.py and submit to gradescope.",
+    "text": "Write a function\nWrite a Python function named hypotenuse that takes two arguments: a and b representing the length of the two non-hypotenuse sides of a right triangle. The function calculate the hypotenuse according to the Pythagorean theorem: \\(c = \\sqrt(a^2 + b^2)\\). Return it rounded at two decimals.\nTest cases: hypotenuse(3, 4) should return 5.0, hypotenuse(10, 10) should return 14.14",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "functions (slides)"
@@ -9445,6 +9445,28 @@
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "python basics and operations (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-02-02.html#the-main-function",
+    "href": "slides-02-02.html#the-main-function",
+    "title": "functions (slides)",
+    "section": "The main() function",
+    "text": "The main() function\nThe main function is a ‘traditional’ function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program\n\ndef main():\n  # some logic/code you want executed when this .py file is run\n\nif __name__ == \"__main__\":\n    main()\n# __name__ is a special variable in Python; it is assigned the name of the running program\n# Python assigns the string \"__main__\" to the __name__ variable of the executed .py file\n# if a .py file is imported to a a running program, it's __name__ variable is set to the name of the .py file (or module). so if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be \"extra_functions\"",
+    "crumbs": [
+      "Module 2 - Functions, Operators, and Expressions",
+      "functions (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-02-02.html#announcements",
+    "href": "slides-02-02.html#announcements",
+    "title": "functions (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nThe lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.\nSession sign-up sheet will be posted sometime after class today\nFirst labs will be Sept 8th and 9th",
+    "crumbs": [
+      "Module 2 - Functions, Operators, and Expressions",
+      "functions (slides)"
     ]
   }
 ]

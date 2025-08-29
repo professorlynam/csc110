@@ -7,6 +7,12 @@ df-print: kable
 
 # CSc 110 - Functions
 
+## Announcements
+
+-   The lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.
+-   Session sign-up sheet will be posted sometime after class today
+-   First labs will be Sept 8th and 9th
+
 ## Functions
 
 -   Functions are named operations that are available to do tasks
@@ -63,6 +69,24 @@ print(meal)
 -   Then returns a string that says the meal is ready. 
 -   The returned message is stored in the `meal` variable. 
 -   Finally, `print` function displays that message to the caller.
+
+
+## The main() function
+
+The main function is a 'traditional' function meant to run when a .py file is run as the main program, as opposed to when that .py file is imported into another Python program
+
+```{python}
+#| echo: true
+#| eval: false
+def main():
+  # some logic/code you want executed when this .py file is run
+
+if __name__ == "__main__":
+    main()
+# __name__ is a special variable in Python; it is assigned the name of the running program
+# Python assigns the string "__main__" to the __name__ variable of the executed .py file
+# if a .py file is imported to a a running program, it's __name__ variable is set to the name of the .py file (or module). so if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be "extra_functions"
+```
 
 ## Function to calculate area of a circle
 
@@ -219,7 +243,6 @@ The function calculate the hypotenuse according to the Pythagorean theorem: $c =
 
 Test cases: `hypotenuse(3, 4)` should return `5.0`, `hypotenuse(10, 10)` should return `14.14`
 
-Name your file `hypotenuse.py` and submit to gradescope.
 
 
 ## Write a function
