@@ -9463,7 +9463,7 @@
     "href": "slides-02-02.html#announcements",
     "title": "functions (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nThe lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.\nSession sign-up sheet will be posted sometime after class today\nFirst labs will be Sept 8th and 9th",
+    "text": "Announcements\n\nThe lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.\nSession sign-up sheet will be posted sometime after class today\nFirst labs will be Sept 8th and 9th\nTAs will start holding office hours next week",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "functions (slides)"
@@ -9474,7 +9474,7 @@
     "href": "slides-02-02.html#the-main-function-1",
     "title": "functions (slides)",
     "section": "The main() function",
-    "text": "The main() function\n\ndef main():\n  # some logic/code you want executed when this .py file is run\n\nif __name__ == \"__main__\":\n    main()\n\n\n__name__ is a special variable in Python; it is assigned the name of the running program Python assigns the string “__main__” to the __name__ variable of the executed .py file\nif a .py file is imported to a a running program, it’s __name__ variable is set to the name of the .py file (or module).\nex: if you import extra_functions.py into main_program.py, the __name__ variable inside extra_fuctions.py will be “extra_functions”",
+    "text": "The main() function\n\ndef main():\n  # some logic/code you want executed when this .py file is run\n\nif __name__ == \"__main__\":\n    main()\n\n\n__name__ is a special variable in Python; it is assigned the name of the running program Python assigns the string “__main__” to the __name__ variable of the executed .py file\nif a .py file is imported to a a running program, it’s __name__ variable is set to the name of the .py file (or module)",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "functions (slides)"
