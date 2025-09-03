@@ -2328,7 +2328,7 @@
     "href": "slides-03-01.html#program-decomposition",
     "title": "decomposition (slides)",
     "section": "Program decomposition",
-    "text": "Program decomposition\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
+    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -2372,7 +2372,7 @@
     "href": "slides-03-01.html#class-activity-one",
     "title": "decomposition (slides)",
     "section": "Class activity one",
-    "text": "Class activity one\nCompare the three types of guitar, write your asnwers:\n\nwhich parts of code are the same?\nwhich parts of code are different?",
+    "text": "Class activity one\nCompare the three types of guitar, write your answers:\n\nwhich parts of code are the same?\nwhich parts of code are different?",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -2416,7 +2416,7 @@
     "href": "slides-03-01.html#class-activity-two",
     "title": "decomposition (slides)",
     "section": "Class activity two",
-    "text": "Class activity two\nRead the code for classic guitar, write your asnwers:\n\nwhich lines of code are the same?\n\nin the head:\nin the neck:\nin the body:",
+    "text": "Class activity two\nRead the code for classic guitar, write your answers:\n\nwhich lines of code are the same?\n\nin the head:\nin the neck:\nin the body:",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -2449,7 +2449,7 @@
     "href": "slides-03-01.html#write-functions",
     "title": "decomposition (slides)",
     "section": "Write functions",
-    "text": "Write functions\nWrite functions print_head, print_neck, and print_body:\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()",
+    "text": "Write functions\nWrite functions print_head, print_neck, and print_body:\n ## Write functions – answers\n\ndef print_head():\n    print(\"      ___\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()\n\n      ___\n    o|* *|o\n    o|* *|o\n    o|* *|o\n     \\===/\n      |||\n      |||\n   ___|||___\n  /   |||   \\ \n /    |||    \\ \n|     |||     |\n \\   (|||)   /\n  |   |||   |\n  /   |||   \\ \n /    |||    \\ \n/     |||     \\ \n|    [===]    |\n \\           /\n  '.       .'\n   '-------'\n      ___\n    o|* *|o\n    o|* *|o\n    o|* *|o\n     \\===/\n      |||\n      |||\n      |||\n      |||\n   ___|||___\n  /   |||   \\ \n /    |||    \\ \n|     |||     |\n \\   (|||)   /\n  |   |||   |\n  /   |||   \\ \n /    |||    \\ \n/     |||     \\ \n|    [===]    |\n \\           /\n  '.       .'\n   '-------'",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -2482,7 +2482,7 @@
     "href": "slides-03-01.html#write-a-function",
     "title": "decomposition (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite print_retro_head:\n\ndef print_retro_guitar():\n    print_retro_head()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n    print_retro_guitar() # print retro head guitar\n\nmain()",
+    "text": "Write a function\nWrite print_retro_head:",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -2504,7 +2504,7 @@
     "href": "slides-03-01.html#discussion",
     "title": "decomposition (slides)",
     "section": "Discussion",
-    "text": "Discussion\nDownload and run old guitar file and new guitar file:\n\nWhich version is more readable?\nWhy it is better?",
+    "text": "Discussion\nTake a look at the functions you’ve made, then look at the code we started with\n\nWhich version is more readable?\nWhy it is better?",
     "crumbs": [
       "Module 3 - Decomposition and More on Functions",
       "decomposition (slides)"
@@ -9489,6 +9489,28 @@
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "functions (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-03-01.html#announcements",
+    "href": "slides-03-01.html#announcements",
+    "title": "decomposition (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue to faulty info provided to our lab coordinator, we have to move the Tuesday 12pm-1pm lab to Monday 12pm-1pm\nIf you’ve signed up for that lab, please make sure you can make the schedule change, if not change to a different lab time\nIf you’ve received accommodation from me already for class schedule conflicts, please check to see if this new time works for you. If so, switch to this new lab\nIf you require accommodation for class schedule conflicts due to this change, please email me",
+    "crumbs": [
+      "Module 3 - Decomposition and More on Functions",
+      "decomposition (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-03-01.html#quiz-2",
+    "href": "slides-03-01.html#quiz-2",
+    "title": "decomposition (slides)",
+    "section": "Quiz 2",
+    "text": "Quiz 2\n\nQuiz 2 will be passed out by the TAs\nDo not start the quiz until I say start (No writing anything until I give the okay!)\nYou will have ten minutes to complete the quiz\nRaise your hand when you finish the quiz, and a TA will collect it",
+    "crumbs": [
+      "Module 3 - Decomposition and More on Functions",
+      "decomposition (slides)"
     ]
   }
 ]

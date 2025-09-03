@@ -8,11 +8,28 @@ df-print: kable
 # CSc 110 - decomposition
 
 
+## Announcements
+
+-   Due to faulty info provided to our lab coordinator, we have to move the Tuesday 12pm-1pm lab to Monday 12pm-1pm
+
+-   If you've signed up for that lab, please make sure you can make the schedule change, if not change to a different lab time
+
+-   If you've received accommodation from me already for class schedule conflicts, please check to see if this new time works for you. If so, switch to this new lab
+
+-   If you require accommodation for class schedule conflicts due to this change, please email me
+
+## Quiz 2
+
+-   Quiz 2 will be passed out by the TAs
+-   Do not start the quiz until I say start (No writing anything until I give the okay!)
+-   You will have ten minutes to complete the quiz
+-   Raise your hand when you finish the quiz, and a TA will collect it
+
 ## Program decomposition
 
-Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.
+-   Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.
 
-It avoids unnecessary common code and improves the structural quality of code.
+-   It avoids unnecessary common code and improves the structural quality of code.
 
 ## Print a classic guitar
 
@@ -99,11 +116,12 @@ print("   '-------'")
 
 ## Class activity one
 
-Compare the three types of guitar, write your asnwers:
+Compare the three types of guitar, write your answers:
 
 -   which parts of code are the same?
-
 -   which parts of code are different?
+
+![](all_three_guitars.png)
 
 ## Class activity one -- answers
 
@@ -165,7 +183,7 @@ main()
 
 ## Class activity two
 
-Read the code for classic guitar, write your asnwers:
+Read the code for classic guitar, write your answers:
 
 -   which lines of code are the same?
 
@@ -219,27 +237,7 @@ Read the code for classic guitar, answer the questions:
 
 Write functions `print_head`, `print_neck`, and `print_body`:
 
-```{python}
-#| echo: true
-#| eval: false
-def print_classic_guitar():
-    print_head()
-    print_neck()
-    print_body()
-
-def print_long_guitar():
-    print_head()
-    print_neck()
-    print_neck()
-    print_body()
-
-def main():
-    print_classic_guitar() # print classic guitar
-    print_long_guitar() # print long neck guitar
-
-main()
-```
-
+![](classic_guitar.png)
 ## Write functions -- answers 
 
 ```{python}
@@ -341,22 +339,7 @@ main()
 
 Write `print_retro_head`:
 
-```{python}
-#| echo: true
-#| eval: false
-def print_retro_guitar():
-    print_retro_head()
-    print_neck()
-    print_body()
-
-def main():
-    print_classic_guitar() # print classic guitar
-    print_long_guitar() # print long neck guitar
-    print_retro_guitar() # print retro head guitar
-
-main()
-```
-
+![](retrohead_guitar.png)
 
 ## Write a function -- answer
 
@@ -422,8 +405,8 @@ main()
 
 ## Discussion
 
-Download and run [old guitar file](guitar_old.py) and [new guitar file](guitar_new.py):
+Take a look at the functions you've made, then look at the code we started with
 
 -   Which version is more readable?
-
 -   Why it is better?
+![](all_three_guitars.png)
