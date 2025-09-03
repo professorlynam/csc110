@@ -237,12 +237,13 @@ Read the code for classic guitar, answer the questions:
 
 Write functions `print_head`, `print_neck`, and `print_body`:
 
-![](classic_guitar.png)
+![](classic_guitar.png){height=550px}
+
 ## Write functions -- answers 
 
 ```{python}
 #| echo: true
-#| eval: true
+#| eval: false
 def print_head():
     print("      ___")
     print("    o|* *|o")
@@ -290,7 +291,7 @@ main()
 
 ```{python}
 #| echo: true
-#| eval: true
+#| eval: false
 def print_head():
     print("      ___")
     pattern = "    o|* *|o"
@@ -345,7 +346,7 @@ Write `print_retro_head`:
 
 ```{python}
 #| echo: true
-#| eval: true
+#| eval: false
 def print_head():
     print("      ___")
     pattern = "    o|* *|o"
@@ -407,6 +408,6 @@ main()
 
 Take a look at the functions you've made, then look at the code we started with
 
--   Which version is more readable?
--   Why it is better?
-![](all_three_guitars.png)
+-   Which version is more readable? Why it is better?
+
+![](all_three_guitars.png){height=350px}
