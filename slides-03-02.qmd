@@ -6,6 +6,35 @@ slide-number: true
 
 # CSC 110 - More on Functions in Python
 
+## Announcements
+
+-   Our first lab will be hosted next Monday and Tuesday.
+
+-   Double-check to make sure you've signed up for the lab time you want!
+
+-   Programming Problem 1 is due tonight at 9pm (I'd recommend turning in PP2 as well)
+
+-   Project 1 is now available for submissions on Gradescope (due Sept 12th), start early!
+
+## Discussion
+
+Take a look at the functions you've made, then look at the code we started with
+
+-   Which version is more readable? Why it is better?
+
+![](all_three_guitars.png){height=350px}
+
+## Discussion
+
+Consider:
+
+-   What if we wanted to print out a hundred different guitars?
+
+-   What if we wanted to make 50 different varieties of guitars (or add new heads/bodies/necks)
+
+-   What if you're collaborating with Prof Lynam, and he accidentally types something into one of the guitar string literals?
+
+
 ## Function Comments
 
 -   Every function created is required to have a function comment, including main
@@ -132,18 +161,26 @@ add(5, 4)
 
 ## Write a function
 
-Write a Python function called `tell_story` that takes three arguments: `hero` and `villain`, representing the names of two characters, and 'repetition', representing the number of times to tell the story.
-The function should print out the following bedtime story:
-"'hero' set out to slay the evil 'villain'!
-But he set his sword variable to global.
-So 'villain' accessed his sword and set it to None.
-Use local variables next time, 'hero'!"
+Write a Python function called `tell_story` that takes three arguments: `hero` and `villain`, representing the names of two characters, and `repetition`, representing the number of times to tell the story. The function should print out the following bedtime story:
 
-Write the main function, and call the 'tell_story' with the following test case:
-tell_story("CSc 110 student", "Professor", 2)
-Make sure all variables are local within the program.
-Call the test case once with literals (as shown above), and once by passing in the values with *parameter variables*
-Finally, add a function comment for 'tell_story' (description, Args:, Returns:)
+"`hero` set out to slay the evil `villain`!
+
+But he set his sword variable to global.
+
+So `villain` accessed his sword and set it to None.
+
+Use local variables next time, `hero`!"
+
+Write the main function, and call the 'tell_story' with the following test case: tell_story("CSc 110 student", "Professor", 2)
+
+## Write a function -- Part 2
+
+
+-   Make sure all variables are local within the program.
+
+-   Call the test case once with literals (tell_story("CSc 110 student", "Professor", 2)), and once by passing in those values with local variables defined in main
+
+-   Finally, add function comments for main and 'tell_story'
 
 
 ## Write a function
@@ -155,9 +192,9 @@ def tell_story_a(hero, villain, repetition):
   '''
   This function prints a bedtime story a specified number of times
   Args:
-    hero: string
-    villain: string
-    repetition: integer
+    hero: string representing the name of the hero
+    villain: string representing the name of the villain
+    repetition: integer dictating how many times to repeat printing the story
   Returns:
     None
   '''
@@ -167,15 +204,15 @@ def tell_story_a(hero, villain, repetition):
   story_string = story_string + "So " + villain + " accessed his sword and set it to None.\n"
   story_string = story_string + "Use local variables next time, " + hero + "!\n"
   story_string = story_string * repetition
-  print(story_string)
+  print(story_string, end='')
   
 def tell_story_b(hero, villain, repetition):
   '''
   This function prints a bedtime story a specified number of times
   Args:
-    hero: string
-    villain: string
-    repetition: integer
+    hero: string representing the name of the hero
+    villain: string representing the name of the villain
+    repetition: integer dictating how many times to repeat printing the story
   Returns:
     None
   '''
@@ -188,7 +225,7 @@ def tell_story_b(hero, villain, repetition):
 def main():
   '''
   This function calls both tell_story functions to test them out,
-  once with parameter variables and once with literals
+  once with local variables and once with literals
   '''
   tell_story_a("CSc 110 student", "Professor", 2)
   parameter_variable_a = "CSc 110 student"
