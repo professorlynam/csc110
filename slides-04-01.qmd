@@ -6,6 +6,83 @@ slide-number: true
 
 # CSC 110 Python Functions
 
+## Write a function
+
+Write a Python function called `tell_story` that takes three arguments: `hero` and `villain`, representing the names of two characters, and `repetition`, representing the number of times to tell the story. The function should print out the following bedtime story:
+
+"`hero` set out to slay the evil `villain`!
+
+But he set his sword variable to global.
+
+So `villain` accessed his sword and set it to None.
+
+Use local variables next time, `hero`!"
+
+Write the main function, and call the 'tell_story' with the following test case: tell_story("CSc 110 student", "Professor", 2)
+
+## Write a function -- Part 2
+
+
+-   Make sure all variables are local within the program.
+
+-   Call the test case once with literals (tell_story("CSc 110 student", "Professor", 2)), and once by passing in those values with local variables defined in main
+
+-   Finally, add function comments for main and 'tell_story'
+
+
+## Write a function
+
+```{python}
+#| eval: False
+#| echo: true
+def tell_story_a(hero, villain, repetition):
+  '''
+  This function prints a bedtime story a specified number of times
+  Args:
+    hero: string representing the name of the hero
+    villain: string representing the name of the villain
+    repetition: integer dictating how many times to repeat printing the story
+  Returns:
+    None
+  '''
+  story_string = ""
+  story_string = hero + " set out to slay the evil " + villain + "!\n"
+  story_string = story_string + "But he set his sword variable to global.\n"
+  story_string = story_string + "So " + villain + " accessed his sword and set it to None.\n"
+  story_string = story_string + "Use local variables next time, " + hero + "!\n"
+  story_string = story_string * repetition
+  print(story_string, end='')
+  
+def tell_story_b(hero, villain, repetition):
+  '''
+  This function prints a bedtime story a specified number of times
+  Args:
+    hero: string representing the name of the hero
+    villain: string representing the name of the villain
+    repetition: integer dictating how many times to repeat printing the story
+  Returns:
+    None
+  '''
+  for i in range(repetition):
+    print(hero + " set out to slay the evil " + villain + "!")
+    print("But he set his sword variable to global.")
+    print("So " + villain + " accessed his sword and set it to None.")
+    print("Use local variables next time, " + hero + "!")
+
+def main():
+  '''
+  This function calls both tell_story functions to test them out,
+  once with local variables and once with literals
+  '''
+  tell_story_a("CSc 110 student", "Professor", 2)
+  parameter_variable_a = "CSc 110 student"
+  parameter_variable_b = "Professor"
+  parameter_variable_c = 2
+  tell_story_b(parameter_variable_a, parameter_variable_b, parameter_variable_c)
+  
+main()
+```
+
 ## Built-in Functions
 
 -   `print()` 
@@ -126,18 +203,6 @@ def main():
 main()
 ```
 
-
-
-## Quiz 03
-
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-</center>
-
-You have 10 minutes to complete the quiz.
-
-Your formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses **actual symbols for Python operators**)
 
 
 ## `int()` function
