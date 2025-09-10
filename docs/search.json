@@ -9595,7 +9595,7 @@
     "href": "slides-04-02.html#quick-review",
     "title": "more on decomposition (slides)",
     "section": "Quick Review",
-    "text": "Quick Review\n\nround(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)\ninteger versus float (why bother with integers?)\nString concatenation versus repetition\n\n\nstory_part_one = \"First word\"\nstory_part_two = \"Second word\"\n# string concatenation uses the '+' operator to combine two strings together\nwhole_story = story_part_one + story_part_two\n\n# string repetition takes a string, and uses the '*' operator to repeat it a number of times equal to an integer you specify\nwhole_story_repeated = whole_story * 6",
+    "text": "Quick Review\n\nround(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)\ninteger versus float (why bother with integers?)\nString concatenation versus repetition\n\n\nstory_part_one = \"First word\"\nstory_part_two = \"Second word\"\n# string concatenation uses the '+' operator to combine two strings together\nwhole_story = story_part_one + story_part_two\n\n# string repetition takes a string, and uses the '*' operator \n# to repeat it a number of times equal to an integer you specify\nwhole_story_repeated = whole_story * 6",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "more on decomposition (slides)"

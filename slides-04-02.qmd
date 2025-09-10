@@ -22,7 +22,8 @@ story_part_two = "Second word"
 # string concatenation uses the '+' operator to combine two strings together
 whole_story = story_part_one + story_part_two
 
-# string repetition takes a string, and uses the '*' operator to repeat it a number of times equal to an integer you specify
+# string repetition takes a string, and uses the '*' operator 
+# to repeat it a number of times equal to an integer you specify
 whole_story_repeated = whole_story * 6
 ```
 
