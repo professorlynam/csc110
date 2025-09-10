@@ -95,7 +95,7 @@ def func(n):
 ```
 
 
-If you need multiple likes of code, use line breaks, and start each line with `#` followed by a space. Remember that all lines in your code, including comments, should be 80 characters or less.
+If you need multiple lines of in-line comments, use line breaks, and start each line with `#` followed by a space. Remember that all lines in your code, including comments, should be 80 characters or less.
 
 ``` python
 def func(numbers):

@@ -6,6 +6,34 @@ slide-number: true
 
 # CSC 110 more on decomposition
 
+## Quick Review
+
+-   round(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)
+
+-   integer versus float (why bother with integers?)
+
+-   String concatenation versus repetition
+
+```{python}
+#| echo: true
+#| eval: false
+story_part_one = "First word"
+story_part_two = "Second word"
+# string concatenation uses the '+' operator to combine two strings together
+whole_story = story_part_one + story_part_two
+
+# string repetition takes a string, and uses the '*' operator to repeat it a number of times equal to an integer you specify
+whole_story_repeated = whole_story * 6
+```
+
+## The Purpose of Autograding
+
+-   Autograders are for giving class staff the resources to grade a lot of code (and thereby giving students the chance to practice coding often)
+
+-   Autograders are not for replacing the process of comparing your code's output with the given expected output, and identifying errors yourself before submitting
+
+-   You should be ~90% sure that your code works correctly *before* submitting it to Gradescope
+
 ## Quiz 03
 
 <center>
@@ -129,8 +157,6 @@ Write function `get_fit` that takes the length of a `cube` (integer) and the nam
 -   It calculates the number of `cube` that can fit in the `side`
 
 -   It print the message and return the number.
-
-Name your file as `cubes.py` and submit to Gradescope.
 
 ```{python}
 #| echo: true

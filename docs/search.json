@@ -3065,7 +3065,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 08, 2025\nMidterm Exam 2 - Wednesday, November 05, 2025\n\nThe final exam date and time is:\nThe final exam date, time and room is: December 12th, 6pm-8pm, room TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Wednesdays for programming problems, short projects and Fridays for programming projects).",
+    "text": "Weekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 08, 2025\nMidterm Exam 2 - Wednesday, November 05, 2025\n\nThe final exam date and time is:\nThe final exam date, time and room is: December 12th, 6pm-8pm, room: Modern Languages room 350\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Wednesdays for programming problems, short projects and Fridays for programming projects).",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5684,7 +5684,7 @@
     "href": "index.html",
     "title": "CSc 110 Computer Programming I",
     "section": "",
-    "text": "Welcome to CSc 110!\nThis is an introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.\n\nD2L: d2l\nGradescope: Gradescope\nPiazza: Piazza (Access code: glxonh1ytum)\n\nWhere to start:\n\nSyllabus\nSchedule\n\n\n\nInstructor Information\n\nProfessor Hudson Lynam\n\nOffice: Gould-Simpson 823\nEmail: hlynam@arizona.edu\nOffice hours (open door, drop in, my office GS 823):\n\nMonday and Wednesday 12:50pm-1:50pm."
+    "text": "Welcome to CSc 110!\nThis is an introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.\n\nD2L: d2l\nGradescope: Gradescope\nPiazza: Piazza (Access code: glxonh1ytum)\n\nWhere to start:\n\nSyllabus\nSchedule\n\n\n\nInstructor Information\n\nProfessor Hudson Lynam\n\nOffice: Gould-Simpson 823\nEmail: hlynam@arizona.edu\nOffice hours (open door, drop in, my office GS 823):\n\nMonday 3:00pm-3:50pm,  and Wednesday 12:50pm-1:50pm."
   },
   {
     "objectID": "io.html",
@@ -7190,7 +7190,7 @@
     "href": "slides-04-02.html#write-a-function",
     "title": "more on decomposition (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite function get_fit that takes the length of a cube (integer) and the name of a side (string)\n\nIt prompts you to the enter the length of the side\nIt calculates the number of cube that can fit in the side\nIt print the message and return the number.\n\nName your file as cubes.py and submit to Gradescope.\n\ndef main():\n    cube_len = int(input(\"Cube length? \"))\n    fit_w = get_fit(cube_len, 'width')\n    fit_h = get_fit(cube_len, 'height')\n    fit_l = get_fit(cube_len, 'length')\n    result = fit_w * fit_h * fit_l\n    print(str(result) + \" Rubik's cubes will fit in that container.\")",
+    "text": "Write a function\nWrite function get_fit that takes the length of a cube (integer) and the name of a side (string)\n\nIt prompts you to the enter the length of the side\nIt calculates the number of cube that can fit in the side\nIt print the message and return the number.\n\n\ndef main():\n    cube_len = int(input(\"Cube length? \"))\n    fit_w = get_fit(cube_len, 'width')\n    fit_h = get_fit(cube_len, 'height')\n    fit_l = get_fit(cube_len, 'length')\n    result = fit_w * fit_h * fit_l\n    print(str(result) + \" Rubik's cubes will fit in that container.\")",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "more on decomposition (slides)"
@@ -9588,6 +9588,39 @@
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#quick-review",
+    "href": "slides-04-02.html#quick-review",
+    "title": "more on decomposition (slides)",
+    "section": "Quick Review",
+    "text": "Quick Review\n\nround(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)\ninteger versus float (why bother with integers?)\nString concatenation versus repetition\n\n\nstory_part_one = \"First word\"\nstory_part_two = \"Second word\"\n# string concatenation uses the '+' operator to combine two strings together\nwhole_story = story_part_one + story_part_two\n\n# string repetition takes a string, and uses the '*' operator to repeat it a number of times equal to an integer you specify\nwhole_story_repeated = whole_story * 6",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "more on decomposition (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#the-purpose-of-autograding",
+    "href": "slides-04-02.html#the-purpose-of-autograding",
+    "title": "more on decomposition (slides)",
+    "section": "The Purpose of Autograding",
+    "text": "The Purpose of Autograding\n\nAutograders are for giving class staff the resources to grade a lot of code (and thereby giving students the chance to practice coding often)\nAutograders are not for replacing the process of comparing your code’s output with the given expected output, and identifying errors yourself before submitting\nYou should be ~90% sure that your code works correctly before submitting it to Gradescope",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "more on decomposition (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#quiz-03",
+    "href": "slides-04-02.html#quiz-03",
+    "title": "more on decomposition (slides)",
+    "section": "Quiz 03",
+    "text": "Quiz 03\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses actual symbols for Python operators)",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "more on decomposition (slides)"
     ]
   }
 ]
