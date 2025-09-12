@@ -152,7 +152,7 @@ Order of operations: arithmetic operators come before comparison operators.
 
 ## Evaluate the expressions
 
-Evaluation the expressions on your whiteboard and answer attendance questions on Gradescope.
+Evaluate these expressions.
 ```{python}
 #| eval: false
 #| echo: true
