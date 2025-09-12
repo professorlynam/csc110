@@ -146,7 +146,7 @@ Given the length of a cube and the name of a box side:
 
 -   It calculates the number of cube that can fit in the side
 
--   It print the message and return the number.
+-   It prints the message and return the number.
 
 
 ## Write a function

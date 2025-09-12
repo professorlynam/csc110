@@ -9622,5 +9622,16 @@
       "Module 4 - Built-In Functions and Decomposition",
       "more on decomposition (slides)"
     ]
+  },
+  {
+    "objectID": "slides-05-01.html#announcements",
+    "href": "slides-05-01.html#announcements",
+    "title": "more expressions (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nLab are mandatory; the TAs must note your attendance for you to receive credit for the lab\nFor a TA to mark you as present for the lab, either: show a TA your completed code and successful autograder test during lab, OR\nIf you’re still working on the lab by the end of the 50-minutes, the TA will mark you as present, and you can finish your code later\nThe only valid exceptions are if you’ve made alternate lab arrangements with me",
+    "crumbs": [
+      "Module 5 - Control Flow (if statements)",
+      "more expressions (slides)"
+    ]
   }
 ]

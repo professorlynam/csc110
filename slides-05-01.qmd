@@ -6,6 +6,17 @@ slide-number: true
 
 # CSc 110 More expressions
 
+## Announcements
+
+-   Lab are mandatory; the TAs must note your attendance for you to receive credit for the lab
+
+-   For a TA to mark you as present for the lab, either: show a TA your completed code and successful autograder test during lab, OR
+
+-   If you're still working on the lab by the end of the 50-minutes, the TA will mark you as present, and you can finish your code later
+
+-   The only valid exceptions are if you've made alternate lab arrangements with me
+
+
 ## Review of arithmetic operations
 
 -   `+` : plus 
