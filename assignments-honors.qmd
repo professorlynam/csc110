@@ -31,14 +31,14 @@ First, write a Python function that does the following:
 
 For this project, you may use the csv.reader function from the "csv" library of Python. However, you should read the Python [documentation](https://docs.python.org/3/library/csv.html) directly to figure out how to use the csv.reader function. **No other libraries may be imported.**
 
-Name the program `pokemon_analysis.py`. Test the program yourself, possibly printing out a few of the stored lists to make sure the data has been imported correctly.
+Name the program `pokemon_analysis.py`. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.
 
 Now that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you've imported.
 
 Write a Python function that does the following: 
 
 1.  Its name is `get_max`
-2.  It takes three arguments: 'data' as the list of all our imported data, 'include_legendary' as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says 'TRUE') a `category_number` with an integer meant to represent the list index of the data we're interested in, . For example, a 'category_number' of 5 would indicate we're interested in the 'Total' data column (the 5th column of the spreadsheet).
+2.  It takes three arguments: 'data' as the list of all our imported data, 'include_legendary' as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says 'TRUE'), and a `category_number` with an integer meant to represent the list index of the data we're interested in. For example, a 'category_number' of 5 would indicate we're interested in the 'Total' data column (the 5th column of the spreadsheet).
 3.  It returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number.
 
 Write a similar function that gets the Pokemon with the lowest values for a selected category, call it 'get_min'.

@@ -1024,7 +1024,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Honor’s Contract Assignment</h1>
 <section id="pokemon-study" class="level2">
 <h2 class="anchored" data-anchor-id="pokemon-study">Pokemon Study</h2>
-<p><strong>Due date: the date of the final exam at 9pm</strong></p>
+<p><strong>Due date: Decemeber 5th at 9pm</strong></p>
 <p>This project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.</p>
 <p>Download the <a href="Pokemon.csv">Pokemon.csv file</a>. Open the file in a spreadsheet-viewer of your choice, and take some time to examine it. Briefly, it is a list of Pokemon, with details about each, including their type, combat-related statistics, when they were introduced to the franchise (generation), and whether or not they are considered a ‘Legendary’ Pokemon. You are not permitted to change any values in the csv file for this project.</p>
 <p>First, write a Python function that does the following:</p>
@@ -1033,13 +1033,13 @@ ul.task-list li input[type="checkbox"] {
 <li>It takes one argument: a <code>file_name</code> with a string meant to represent the file to strip data from (in our case “Pokemon.csv”)</li>
 <li>It returns a list containing lists as values. Specifically, each list within the returned list should have all the data associated with a single Pokemon. The returned list should therefore have 800 lists contained within it, each of the 800 lists containing 13 values. The 13 values should be represented as the data type most appropriate to store them, ie “Bulbasaur” is a string, and “49” is an integer. Do not store the ‘header’ data, ie the first line of the csv file.</li>
 </ol>
-<p>For this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python <a href="https://docs.python.org/3/library/csv.html">documentation</a> directly to figure out how to use the csv.reader function. <strong>No other libraries may be imported</strong></p>
-<p>Name the program <code>pokemon_analysis.py</code>. Test the program yourself, possibly printing out a few of the stored lists to make sure the data has been imported correctly.</p>
+<p>For this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python <a href="https://docs.python.org/3/library/csv.html">documentation</a> directly to figure out how to use the csv.reader function. <strong>No other libraries may be imported.</strong></p>
+<p>Name the program <code>pokemon_analysis.py</code>. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.</p>
 <p>Now that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you’ve imported.</p>
 <p>Write a Python function that does the following:</p>
 <ol type="1">
 <li>Its name is <code>get_max</code></li>
-<li>It takes three arguments: ‘data’ as the list of all our imported data, ‘include_legendary’ as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’) a <code>category_number</code> with an integer meant to represent the list index of the data we’re interested in, . For example, a ‘category_number’ of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).</li>
+<li>It takes three arguments: ‘data’ as the list of all our imported data, ‘include_legendary’ as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’), and a <code>category_number</code> with an integer meant to represent the list index of the data we’re interested in. For example, a ‘category_number’ of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).</li>
 <li>It returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number.</li>
 </ol>
 <p>Write a similar function that gets the Pokemon with the lowest values for a selected category, call it ‘get_min’.</p>
@@ -1052,12 +1052,12 @@ ul.task-list li input[type="checkbox"] {
 <li>It returns a list of floats containing the percentiles of where the Pokemon falls in each of the following categories: ‘Total’ , ‘HP’ , ‘Attack’ , ‘Defense’ , ‘Sp.Atk’ , ‘Sp.Def’ , and ‘Speed’. The percentile for a given category is calculated as follows: the number of values strictly below the targeted value divided by the total number of values in the category.</li>
 </ol>
 <p>Now that you’ve made all these statistical tools, it’s time to analyze some Pokemon!</p>
-<p>Identify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the ‘include_legendary’ argument) Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selected based on the ‘Total’ category might not tell you the whole story on the Pokemon’s potential!</p>
+<p>Identify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the ‘include_legendary’ argument). Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selecting based on the ‘Total’ category won’t tell you the whole story on the Pokemon’s potential!</p>
 <p>Now that you’ve selected six Pokemon, write up a report explaining your reasoning for your choices. You should use the statistical functions you’ve made to find numbers to support your arguments. The report should be at least 500 words, double-spaced, and include at least the following:</p>
 <ol type="1">
 <li>Your choices of best and worst Pokemon, and your rationale behind each choice.</li>
 <li>A comparison between the three Pokemon for both categories, and a ‘final’ choice for each category with rationale.</li>
-<li>A summary of what you feel you’ve learned about data analysis and/or programming by completing this project.</li>
+<li>A summary of what you feel you’ve learned about data analysis and programming by completing this project.</li>
 </ol>
 <p>When you’ve completed the report, send it to my email, along with your <code>pokemon_analysis.py</code> file with the subject line: “Honor’s Contract Assignment Submission”.</p>
 
