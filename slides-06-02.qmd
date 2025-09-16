@@ -8,6 +8,13 @@ slide-number: true
   
 # String Manipulation
 
+
+## Announcements
+
+* Midterm 1 October 8th -- BRING PHOTO ID
+* Modules 1 to 6 -- study guide under [practice problems](practice-01.html) page on website
+
+
 ## String indexing
 
 -   Strings are sequences in Python
@@ -16,7 +23,7 @@ slide-number: true
 ```{python}
 #| echo: true
 #| eval: true
-name = "Xinchen"
+name = "Prof Lynam"
 name[0]
 ```
 
@@ -29,22 +36,22 @@ Since the first index of a sequence is `zero`, the last index is going to be the
 ```{python}
 #| echo: true
 #| eval: true
-name = "Xinchen"
+name = "Prof Lynam"
 len(name)
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-name = "Xinchen"
-name[6]
+name = "Prof Lynam"
+name[9]
 ```
 
 ```{python}
 #| echo: true
 #| eval: false
-name = "Xinchen"
-name[7] # this will throw an error
+name = "Prof Lynam"
+name[10] # this will throw an error
 ```
 
 
