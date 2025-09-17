@@ -6,6 +6,16 @@ slide-number: true
 
 # CSc 110 if elif else statements
 
+## Announcements
+
+There is a typo in Project 2: mushroom is sometimes referred to as "muchroom". Use "muchroom" in your code; that is what the autograder checks for.
+
+Great job on lab attendance!
+
+Midterm 1 is 3 weeks away... I would start studying sooner rather than later
+
+Modules 1 to 6 -- study guide under [practice problems](practice-01.html) page on website
+
 ## Quiz 04
 
 <center>

@@ -9,11 +9,6 @@ slide-number: true
 # String Manipulation
 
 
-## Announcements
-
-* Midterm 1 October 8th -- BRING PHOTO ID
-* Modules 1 to 6 -- study guide under [practice problems](practice-01.html) page on website
-
 
 ## String indexing
 
