@@ -10,6 +10,8 @@ slide-number: true
 
 There is a typo in Project 2: mushroom is sometimes referred to as "muchroom". Use "muchroom" in your code; that is what the autograder checks for.
 
+Project 2 due tonight, Project 1 is graded--check feedback!
+
 Take advantage of Office Hours!
 
 Midterm 1 is less than 3 weeks away... I would start studying sooner rather than later
