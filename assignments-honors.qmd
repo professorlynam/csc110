@@ -17,7 +17,7 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
 
 ## Pokemon Study
 
-**Due date: Decemeber 5th at 9pm**
+**Due date: December 5th at 9pm**
 
 This project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.
 
@@ -43,7 +43,7 @@ Write a Python function that does the following:
 
 Write a similar function that finds the Pokemon with the lowest values for a selected category, call it 'get_min'.
 
-Now you'll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given `category_number`. Call them `get_mean` , `get_std` , and `get_median` respectively. Each function should also have the `include_legendaryr` Boolean argument, just like for `get_max` and `get_min`.
+Now you'll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given `category_number`. Call them `get_mean` , `get_std` , and `get_median` respectively. Each function should also have the `include_legendary` Boolean argument, just like for `get_max` and `get_min`.
 
 You should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the 'Attack' statistic differs from the 'HP' statistic, etc.
 
