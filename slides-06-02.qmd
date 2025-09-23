@@ -17,8 +17,6 @@ slide-number: true
 
 You have 10 minutes to complete the quiz.
 
-No need to write `main()` function.
-
 
 ## String indexing
 

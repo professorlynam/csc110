@@ -9586,7 +9586,7 @@
     "href": "slides-06-02.html#quiz-05",
     "title": "loops + strings (slides)",
     "section": "Quiz 05",
-    "text": "Quiz 05\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function.",
+    "text": "Quiz 05\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "loops + strings (slides)"
