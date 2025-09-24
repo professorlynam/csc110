@@ -15,7 +15,7 @@ slide-number: true
 <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
 </center>
 
-You have 10 minutes to complete the quiz.
+You have 10 minutes to complete the quiz. The sentence "write the line num" is cut off, it should say "write the line number:"
 
 
 ## String indexing

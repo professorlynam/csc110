@@ -9586,7 +9586,7 @@
     "href": "slides-06-02.html#quiz-05",
     "title": "loops + strings (slides)",
     "section": "Quiz 05",
-    "text": "Quiz 05\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
+    "text": "Quiz 05\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz. The sentence “write the line num” is cut off, it should say “write the line number:”",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "loops + strings (slides)"
