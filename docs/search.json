@@ -7687,7 +7687,7 @@
     "href": "slides-06-03.html#announcements",
     "title": "while loop aggregation (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nMidterm 1 October 8th – BRING PHOTO ID\nModules 1 to 6 – study guide under practice problems page on website",
+    "text": "Announcements\n\nMidterm 1 October 8th – BRING PHOTO ID\nCovers Modules 1 through 6\nGo over readings, class slides, code you’ve written for Short/Long Projects, Programming Problems\nPractice problems under practice problems page on website",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "while loop aggregation (slides)"
@@ -7775,7 +7775,7 @@
     "href": "slides-06-03.html#write-a-function-2",
     "title": "while loop aggregation (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIts name is factorial and takes a numeric argument number. It returns the factorial of number. The factorial of a number is the product of that number and every number that comes before it, down to one.\nFor example, factorial of 4: 1 * 2 * 3 * 4 = 24.\nName your file factorial.py and submit to Gradescope.\n\nassert factorial(4) == 24\nassert factorial(5) == 120\nassert factorial(0) == 1",
+    "text": "Write a function\nIts name is factorial and takes a numeric argument number. It returns the factorial of number. The factorial of a number is the product of that number and every number that comes before it, down to one.\nFor example, factorial of 4: 1 * 2 * 3 * 4 = 24.\n\nassert factorial(4) == 24\nassert factorial(5) == 120\nassert factorial(0) == 1",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "while loop aggregation (slides)"
