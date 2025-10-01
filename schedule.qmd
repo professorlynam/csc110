@@ -18,6 +18,8 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
 
 # Exam Dates
 
+For class slides, see the sidebar. Each set of slides is placed next near its associated reading(s).
+
 Weekly quizzes will always be on Wednesday (when there's no other evaluations) in class (pencil and paper format).
 
 Midterm (individual) exams (pencil and paper format):
@@ -42,11 +44,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 -   [Hello World!](hello.html)
 -   [Constants, Variables, and comments](basics.html)
-
-## Class slides
-
--   [Course Introduction](slides-01-01.html)
--   [Python Basics](slides-01-02.html)
 
 ## Assignments
 
@@ -80,11 +77,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 -   [More on Functions](functions.html)
 
-## Class slides
-
--   [decomposition](slides-03-01.html)
--   [More on Functions](slides-03-02.html)
-
 ## Assignments
 
 -   [Module 3 Programming Problems](assignments-03.html) -- Due date: `r assignments %>% filter(assessment == "Module 3 Programming Problems") %>% pull(formatted_date)` at 9pm
@@ -99,11 +91,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 ## Readings
 
 -   [Input from user](input.html)
-
-## Class slides
-
--   [Built-in Python Functions](slides-04-01.html)
--   [More on Decomposition](slides-04-02.html)
 
 ## Assignments
 
@@ -122,12 +109,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 -   [If statements](control_flow_if.html)
 -   [FizzBuzz problem](fizzbuzz.html)
 
-## Class slides
-
--   [More expressions](slides-05-01.html)
--   [If statements](slides-05-02.html)
--   [if elif else](slides-05-03.html)
-
 ## Assignments
 
 -   [Module 5 Programming Problems](assignments-05.html) -- Due date: `r assignments %>% filter(assessment == "Module 5 Programming Problems") %>% pull(formatted_date)` at 9pm
@@ -145,11 +126,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 -   [String Manipulations](strings.html)
 -   [While loops](control_flow_while.html)
 
-## Class slides
-
--   [string manipulation](slides-06-01.html)
--   [while loops](slides-06-02.html)
--   [while loop aggregation](slides-06-03)
 
 ## Assignments
 
@@ -165,11 +141,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 ## Readings
 
 -   [Lists](data_structures_list.html)
-
-## Class slides
-
--   [Lists](slides-07-01.html)
--   [Lists + while loops](slides-07-02.html)
 
 ## Assignments
 
@@ -187,12 +158,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 -   [Mutability](mutability.html)
 -   [For loops](control_flow_for.html)
 
-## Class slides
-
--   [mutability](slides-08-01.html)
--   [for loops with range](slides-08-02.html)
--   [module random](slides-08-03.html)
-
 ## Assignments
 
 -   [Module 8 Programming Problems](assignments-08.html) -- Due date: `r assignments %>% filter(assessment == "Module 8 Programming Problems") %>% pull(formatted_date)` at 9pm
@@ -208,11 +173,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 -   [Dictionaries](data_structures_dict.html)
 
-## Class slides
-
--   [intro to dictionaries](slides-09-01.html)
--   [`for x in list` loops](slides-09-02.html)
-
 ## Assignments
 
 -   [Module 9 Programming Problems](assignments-09.html) -- Due date: `r assignments %>% filter(assessment == "Module 9 Programming Problems") %>% pull(formatted_date)` at 9pm
@@ -225,11 +185,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 ## Readings
 
 -   [File Reading and Writing](io.html)
-
-## Class slides
-
--   [files](slides-10-01.html)
--   [files and strings](slides-10-02.html)
 
 ## Assignments
 
@@ -246,11 +201,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 -   [Tuples](data_structures_tuples.html)
 
-## Class slides
-
--   [returning tuples](slides-11-01.html)
--   [tuple as argument](slides-11-02.html)
-
 ## Assignments
 -   [Module 11 Programming Problems](assignments-11.html) -- Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 9pm
 -   [Short Project 9](labs/lab09.html) -- Due date: `r assignments %>% filter(assessment == "Short Programming Project 9") %>% pull(formatted_date)` at 9pm
@@ -258,11 +208,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 
 # Week 12 (`r schedule %>% filter(week_number == 12 & term == "fall 2025") %>% pull(formatted_start)`)
-
-## Class slides
-
--   [2D lists and nested for loops](slides-12-01.html)
--   [nested for loops](slides-12-02.html)
 
 ## Assignments
 
@@ -278,12 +223,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 ## Readings
 -   [Sets](data_structures_sets.html)
 
-## Class slides
-
--   [data structures -- review](slides-13-01.html)
--   [intro to sets](slides-13-02.html)
--   [sets](slides-13-03.html)
-
 ## Assignments
 
 -   [Module 13 Programming Problems](assignments-13.html) -- Due date: `r assignments %>% filter(assessment == "Module 13 Programming Problems") %>% pull(formatted_date)` at 9pm
@@ -297,11 +236,6 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 ## Readings
 
 -   [Review of Data Structures](structures-review.html)
-
-## Class slides
-
--   [mutating lists](slides-14-01.html)
--   [mutating dictionaries](slides-14-02.html)
 
 ## Assignments
 
@@ -317,21 +251,12 @@ All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for 
 
 -   [Review of Data Structures](structures-review.html)
 
-## Class slides
-
--   [mutating lists](slides-14-01.html)
--   [mutating dictionaries](slides-14-02.html)
-
 
 # Week 16 (`r schedule %>% filter(week_number == 15 & term == "fall 2025") %>% pull(formatted_start)`)
 
 ## Readings
 
 -   [Handling Exceptions](exceptions.html)
-
-## Class slides
-
--   [handling exceptions](slides-15-01.html)
 
 
 

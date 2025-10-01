@@ -9,11 +9,7 @@ df-print: kable
 
 ## Announcement
 
-Review session tomorrow (Tuesday, Feb 18) 
-
--   Location: Gittings 129b 
-
--   Time: 5 - 7 : 00 pm
+NA
 
 ## Sequences
 
@@ -77,7 +73,6 @@ It runs a loop that iterates through the number in `values` summing all numbers.
 It returns the sum of all numbers in `values`.
 HINT: a) create a variable that accumulate the sum and b) use `while`.
 
-Name your file `sum_list.py` and submit to Gradescope.
 
 ```{python}
 #| eval: false
@@ -323,10 +318,10 @@ main()
 ```{python}
 #| eval: true
 #| echo: true
-names = ['SZA', 'JVKE', 'Bruno Mars']
+names = ['Aragorn', 'Gandalf the Grey', 'Legolas']
 
 # mutate list using the index
-names[1] = "Billie Eilish"
+names[1] = "Gandalf the White"
 
 names
 ```
@@ -370,8 +365,53 @@ main()
 
 ## Slicing lists
 
-* Range -- `list[2:4]`
-* Whole list -- `list[:]`
+* Range -- `list[2:4]` (*Includes* the 'start' index, *excludes* the 'stop' index!)
+* Whole list -- `list[:]`(Leaving one side of the ":" blank means we want the rest of the list in that direction. Leaving both sides blank means we want the whole list.)
 * Everything but last character -- `list[:-1]`
 
 The same slicing can be done with strings
+
+
+## Slicing lists
+
+Given the old_list below, what values would new_list take results from the following slicing operations?
+
+```{python}
+#| eval: false
+#| echo: true
+def main():
+  old_list = [9, "Aragorn", "11.0", 19.9, 2]
+  new_list = old_list[1:4]
+  new_list = old_list[2:3]
+  new_list = old_list[2:-1]
+  new_list = old_list[:]
+  new_list = old_list[2:]
+  new_list = old_list[:2]
+  
+main()
+```
+
+## Slicing lists
+
+Given the old_list below, what values would new_list take results from the following slicing operations?
+
+```{python}
+#| eval: true
+#| echo: true
+def main():
+  old_list = [9, "Aragorn", "11.0", 19.9, 2]
+  new_list = old_list[1:4]
+  print(new_list)
+  new_list = old_list[2:3]
+  print(new_list)
+  new_list = old_list[2:-1]
+  print(new_list)
+  new_list = old_list[:]
+  print(new_list)
+  new_list = old_list[2:]
+  print(new_list)
+  new_list = old_list[:2]
+  print(new_list)
+  
+main()
+```

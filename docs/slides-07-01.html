@@ -205,11 +205,7 @@
 </section>
 <section id="announcement" class="slide level2">
 <h2>Announcement</h2>
-<p>Review session tomorrow (Tuesday, Feb 18)</p>
-<ul>
-<li><p>Location: Gittings 129b</p></li>
-<li><p>Time: 5 - 7 : 00 pm</p></li>
-</ul>
+<p>NA</p>
 </section>
 <section id="sequences" class="slide level2">
 <h2>Sequences</h2>
@@ -272,7 +268,6 @@
 <section id="write-a-function" class="slide level2">
 <h2>Write a function</h2>
 <p>Its name is <code>sum_all</code> that takes a list of <code>values</code> as an argument. It runs a loop that iterates through the number in <code>values</code> summing all numbers. It returns the sum of all numbers in <code>values</code>. HINT: a) create a variable that accumulate the sum and b) use <code>while</code>.</p>
-<p>Name your file <code>sum_list.py</code> and submit to Gradescope.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="cf">assert</span> sum_all([<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>]) <span class="op">==</span> <span class="dv">6</span></span>
 <span id="cb9-2"><a></a><span class="cf">assert</span> sum_all([<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">3</span>]) <span class="op">==</span> <span class="dv">13</span></span>
@@ -669,14 +664,14 @@ None</code></pre>
 <section id="updating-lists" class="slide level2">
 <h2>Updating lists</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a>names <span class="op">=</span> [<span class="st">'SZA'</span>, <span class="st">'JVKE'</span>, <span class="st">'Bruno Mars'</span>]</span>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a>names <span class="op">=</span> [<span class="st">'Aragorn'</span>, <span class="st">'Gandalf the Grey'</span>, <span class="st">'Legolas'</span>]</span>
 <span id="cb23-2"><a></a></span>
 <span id="cb23-3"><a></a><span class="co"># mutate list using the index</span></span>
-<span id="cb23-4"><a></a>names[<span class="dv">1</span>] <span class="op">=</span> <span class="st">"Billie Eilish"</span></span>
+<span id="cb23-4"><a></a>names[<span class="dv">1</span>] <span class="op">=</span> <span class="st">"Gandalf the White"</span></span>
 <span id="cb23-5"><a></a></span>
 <span id="cb23-6"><a></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>['SZA', 'Billie Eilish', 'Bruno Mars']</code></pre>
+<pre><code>['Aragorn', 'Gandalf the White', 'Legolas']</code></pre>
 </div>
 </div>
 </section>
@@ -711,11 +706,57 @@ None</code></pre>
 <section id="slicing-lists" class="slide level2">
 <h2>Slicing lists</h2>
 <ul>
-<li>Range – <code>list[2:4]</code></li>
-<li>Whole list – <code>list[:]</code></li>
+<li>Range – <code>list[2:4]</code> (<em>Includes</em> the ‘start’ index, <em>excludes</em> the ‘stop’ index!)</li>
+<li>Whole list – <code>list[:]</code>(Leaving one side of the “:” blank means we want the rest of the list in that direction. Leaving both sides blank means we want the whole list.)</li>
 <li>Everything but last character – <code>list[:-1]</code></li>
 </ul>
 <p>The same slicing can be done with strings</p>
+</section>
+<section id="slicing-lists-1" class="slide level2">
+<h2>Slicing lists</h2>
+<p>Given the old_list below, what values would new_list take results from the following slicing operations?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a><span class="kw">def</span> main():</span>
+<span id="cb27-2"><a></a>  old_list <span class="op">=</span> [<span class="dv">9</span>, <span class="st">"Aragorn"</span>, <span class="st">"11.0"</span>, <span class="fl">19.9</span>, <span class="dv">2</span>]</span>
+<span id="cb27-3"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">1</span>:<span class="dv">4</span>]</span>
+<span id="cb27-4"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="dv">3</span>]</span>
+<span id="cb27-5"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb27-6"><a></a>  new_list <span class="op">=</span> old_list[:]</span>
+<span id="cb27-7"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:]</span>
+<span id="cb27-8"><a></a>  new_list <span class="op">=</span> old_list[:<span class="dv">2</span>]</span>
+<span id="cb27-9"><a></a>  </span>
+<span id="cb27-10"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="slicing-lists-2" class="slide level2">
+<h2>Slicing lists</h2>
+<p>Given the old_list below, what values would new_list take results from the following slicing operations?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a><span class="kw">def</span> main():</span>
+<span id="cb28-2"><a></a>  old_list <span class="op">=</span> [<span class="dv">9</span>, <span class="st">"Aragorn"</span>, <span class="st">"11.0"</span>, <span class="fl">19.9</span>, <span class="dv">2</span>]</span>
+<span id="cb28-3"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">1</span>:<span class="dv">4</span>]</span>
+<span id="cb28-4"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-5"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="dv">3</span>]</span>
+<span id="cb28-6"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-7"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb28-8"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-9"><a></a>  new_list <span class="op">=</span> old_list[:]</span>
+<span id="cb28-10"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-11"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:]</span>
+<span id="cb28-12"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-13"><a></a>  new_list <span class="op">=</span> old_list[:<span class="dv">2</span>]</span>
+<span id="cb28-14"><a></a>  <span class="bu">print</span>(new_list)</span>
+<span id="cb28-15"><a></a>  </span>
+<span id="cb28-16"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['Aragorn', '11.0', 19.9]
+['11.0']
+['11.0', 19.9]
+[9, 'Aragorn', '11.0', 19.9, 2]
+['11.0', 19.9, 2]
+[9, 'Aragorn']</code></pre>
+</div>
+</div>
 
 
 </section></section>

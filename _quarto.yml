@@ -139,61 +139,41 @@ website:
       - section: "Module 7 - Data Structures (lists)"
         contents:
         - data_structures_list.md
-        - slides-07-01.qmd
-        - slides-07-02.qmd
         - assignments-07.qmd
       - section: "Module 8 - Control Flow (for statements)"
         contents:
         - mutability.qmd
         - control_flow_for.md
-        - slides-08-01.qmd
-        - slides-08-02.qmd
         - assignments-08.qmd
       - section: "Module 9 - Data Structures (dictionaries)"
         contents:
         - data_structures_dict.md
-        - slides-09-01.qmd
-        - slides-09-02.qmd
         - assignments-08.qmd
       - section: "Module 10 - Reading and Writing Text Files"
         contents:
         - io.md
-        - slides-10-01.qmd
-        - slides-10-02.qmd
         - assignments-09.qmd
       - section: "Module 11 - Data Structures (tuples)"
         contents:
         - data_structures_tuples.md
-        - slides-11-01.qmd
-        - slides-11-02.qmd
         - assignments-11.qmd
       - section: "Module 12 - Data Structures (2D lists)"
         contents:
-        - slides-12-01.qmd
-        - slides-12-02.qmd
         - assignments-12.qmd
       - section: "Module 13 - Data Structures (sets)"
         contents:
         - data_structures_sets.md
-        - slides-13-01.qmd
-        - slides-13-02.qmd
-        - slides-13-03.qmd
         - assignments-13.qmd
       - section: "Module 14 - Control Flow with different Data Structures"
         contents:
         - structures-review.qmd
-        - slides-14-01.qmd
-        - slides-14-02.qmd
-        - slides-14-03.qmd
         - assignments-14.qmd
       - section: "Module 15 - Handling Exceptions"
         contents:
         - exceptions.md
-        - slides-15-01.qmd
       - section: "Module 16 - Review"
         contents:
         - final-review.qmd
-        - slides-16-01.qmd
 
 format:
   html:
