@@ -7,9 +7,6 @@ df-print: kable
 
 # CSc 110 - Lists
 
-## Announcement
-
-NA
 
 ## Sequences
 

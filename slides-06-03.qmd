@@ -20,6 +20,13 @@ slide-number: true
 * A "Practice Midterm" will be posted on Piazza
 * The TAs will be hosting an exam review next Tuesday (the 7th) from 5pm-7pm, in GS 228
 
+## Quick Review
+
+* Variables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent.
+* Gradescope has a "regrade" feature; use it if you feel something's been misgraded
+* If versus elif: how many if statements can you have in a row, and potentially have all of them be executed?
+* How many statements in an elif block can be executed in a row?
+
 
 ## `while` loops
 

@@ -8294,5 +8294,16 @@
       "Watch",
       "Video Lessons"
     ]
+  },
+  {
+    "objectID": "slides-06-03.html#quick-review",
+    "href": "slides-06-03.html#quick-review",
+    "title": "while loop aggregation (slides)",
+    "section": "Quick Review",
+    "text": "Quick Review\n\nVariables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent.\nGradescope has a “regrade” feature; use it if you feel something’s been misgraded\nIf versus elif: how many if statements can you have in a row, and potentially have all of them be executed?\nHow many statements in an elif block can be executed in a row?",
+    "crumbs": [
+      "Module 6 - Control Flow (while statements)",
+      "while loop aggregation (slides)"
+    ]
   }
 ]
