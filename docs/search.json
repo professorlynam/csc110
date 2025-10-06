@@ -7103,7 +7103,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9.\n\n\nprint(n)\n\n0.8407035570561642\n0"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.22513642767145892\n4"
   },
   {
     "objectID": "slides-07-02.html#write-a-function",
@@ -7117,7 +7117,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune"
   },
   {
     "objectID": "slides-07-02.html#setting-a-seed",
@@ -8305,5 +8305,19 @@
       "Module 6 - Control Flow (while statements)",
       "while loop aggregation (slides)"
     ]
+  },
+  {
+    "objectID": "slides-07-01.html#slicing-listsclass-activity",
+    "href": "slides-07-01.html#slicing-listsclass-activity",
+    "title": "lists (slides)",
+    "section": "Slicing lists–Class Activity",
+    "text": "Slicing lists–Class Activity\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4]\n  new_list = old_list[2:3]\n  new_list = old_list[2:-1]\n  new_list = old_list[:]\n  new_list = old_list[2:]\n  new_list = old_list[:2]\n  \nmain()"
+  },
+  {
+    "objectID": "slides-07-01.html#slicing-listssolutions",
+    "href": "slides-07-01.html#slicing-listssolutions",
+    "title": "lists (slides)",
+    "section": "Slicing lists–Solutions",
+    "text": "Slicing lists–Solutions\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4] # ['Aragorn', '11.0', 19.9]\n  new_list = old_list[2:3] # ['11.0']\n  new_list = old_list[2:-1] # ['11.0', 19.9]\n  new_list = old_list[:] # [9, 'Aragorn', '11.0', 19.9, 2]\n  new_list = old_list[2:] # ['11.0', 19.9, 2]\n  new_list = old_list[:2] # [9, 'Aragorn']\n  \nmain()"
   }
 ]

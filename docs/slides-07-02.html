@@ -208,19 +208,19 @@
 <p>We need to <code>import</code> the module <code>random</code></p>
 <p>What do the functions <code>.random()</code> and <code>.randint()</code> return?</p>
 <p>Check the <a href="https://docs.python.org/3/library/random.html">documentation</a>!</p>
-<div id="cbd90e2b" class="cell" data-execution_count="1">
+<div id="90f00927" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> random</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>n <span class="op">=</span> random.random() <span class="co">#returns a random float between 0 and 1</span></span>
 <span id="cb1-4"><a></a><span class="bu">print</span>(n)</span>
 <span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a>n <span class="op">=</span> random.randint(<span class="dv">0</span>, <span class="dv">9</span>) <span class="co">#returns a random integer between 0 and 9.</span></span>
+<span id="cb1-6"><a></a>n <span class="op">=</span> random.randint(<span class="dv">0</span>, <span class="dv">9</span>) <span class="co">#returns a random integer between 0 and 9. That means that it INCLUDES the end index!</span></span>
 <span id="cb1-7"><a></a></span>
 <span id="cb1-8"><a></a></span>
 <span id="cb1-9"><a></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0.8407035570561642
-0</code></pre>
+<pre><code>0.22513642767145892
+4</code></pre>
 </div>
 </div>
 </section>
@@ -231,14 +231,14 @@
 <li>It takes a list as argument</li>
 <li>It generates a random index, and returns the item at that position</li>
 </ol>
-<div id="fd4813b7" class="cell" data-execution_count="2">
+<div id="eafd89ba" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>winner <span class="op">=</span> pick_winner([<span class="st">"Peter"</span>, <span class="st">"Joan"</span>, <span class="st">"Mary"</span>, <span class="st">"June"</span>])</span>
 <span id="cb3-2"><a></a><span class="bu">print</span>(winner)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="55b0df34" class="cell" data-execution_count="3">
+<div id="358c227e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> random</span>
 <span id="cb4-2"><a></a></span>
 <span id="cb4-3"><a></a><span class="kw">def</span> pick_winner(names):</span>
@@ -249,7 +249,7 @@
 <span id="cb4-8"><a></a>  winner <span class="op">=</span> pick_winner([<span class="st">"Peter"</span>, <span class="st">"Joan"</span>, <span class="st">"Mary"</span>, <span class="st">"June"</span>])</span>
 <span id="cb4-9"><a></a>  <span class="bu">print</span>(winner)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Peter</code></pre>
+<pre><code>June</code></pre>
 </div>
 </div>
 </section>
@@ -257,7 +257,7 @@
 <h2>Setting a seed</h2>
 <p>What happens when you run <code>pick_winner</code> multiple times?</p>
 <p>To get always the same result (for autograding purposes, for example) we can set a seed.</p>
-<div id="eedc698b" class="cell" data-execution_count="4">
+<div id="8c16482e" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> random</span>
 <span id="cb6-2"><a></a></span>
 <span id="cb6-3"><a></a><span class="kw">def</span> pick_winner(names):</span>
@@ -276,14 +276,14 @@
 <section id="write-a-function-1" class="slide level2">
 <h2>Write a function</h2>
 <p>Write a function <code>random_list</code> that takes as argument a list of <code>numbers</code>. Iterate over each list element (with a <code>while</code> loop), replacing each integer with a random number between zero and the original number. Set the seed as <code>123</code> in your function.</p>
-<div id="7af95560" class="cell" data-execution_count="5">
+<div id="bdf082aa" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co"># test case</span></span>
 <span id="cb8-2"><a></a><span class="cf">assert</span> random_list([<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>]) <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="1dd2a154" class="cell" data-execution_count="6">
+<div id="630263ac" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">import</span> random</span>
 <span id="cb9-2"><a></a></span>
 <span id="cb9-3"><a></a><span class="kw">def</span> random_list(numbers):</span>

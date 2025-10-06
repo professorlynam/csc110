@@ -708,8 +708,8 @@ None</code></pre>
 </ul>
 <p>The same slicing can be done with strings</p>
 </section>
-<section id="slicing-lists-1" class="slide level2">
-<h2>Slicing lists</h2>
+<section id="slicing-listsclass-activity" class="slide level2">
+<h2>Slicing lists–Class Activity</h2>
 <p>Given the old_list below, what values would new_list take results from the following slicing operations?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a><span class="kw">def</span> main():</span>
@@ -724,34 +724,20 @@ None</code></pre>
 <span id="cb27-10"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="slicing-lists-2" class="slide level2">
-<h2>Slicing lists</h2>
+<section id="slicing-listssolutions" class="slide level2">
+<h2>Slicing lists–Solutions</h2>
 <p>Given the old_list below, what values would new_list take results from the following slicing operations?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a><span class="kw">def</span> main():</span>
 <span id="cb28-2"><a></a>  old_list <span class="op">=</span> [<span class="dv">9</span>, <span class="st">"Aragorn"</span>, <span class="st">"11.0"</span>, <span class="fl">19.9</span>, <span class="dv">2</span>]</span>
-<span id="cb28-3"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">1</span>:<span class="dv">4</span>]</span>
-<span id="cb28-4"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-5"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="dv">3</span>]</span>
-<span id="cb28-6"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-7"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb28-8"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-9"><a></a>  new_list <span class="op">=</span> old_list[:]</span>
-<span id="cb28-10"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-11"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:]</span>
-<span id="cb28-12"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-13"><a></a>  new_list <span class="op">=</span> old_list[:<span class="dv">2</span>]</span>
-<span id="cb28-14"><a></a>  <span class="bu">print</span>(new_list)</span>
-<span id="cb28-15"><a></a>  </span>
-<span id="cb28-16"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>['Aragorn', '11.0', 19.9]
-['11.0']
-['11.0', 19.9]
-[9, 'Aragorn', '11.0', 19.9, 2]
-['11.0', 19.9, 2]
-[9, 'Aragorn']</code></pre>
-</div>
+<span id="cb28-3"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">1</span>:<span class="dv">4</span>] <span class="co"># ['Aragorn', '11.0', 19.9]</span></span>
+<span id="cb28-4"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="dv">3</span>] <span class="co"># ['11.0']</span></span>
+<span id="cb28-5"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>] <span class="co"># ['11.0', 19.9]</span></span>
+<span id="cb28-6"><a></a>  new_list <span class="op">=</span> old_list[:] <span class="co"># [9, 'Aragorn', '11.0', 19.9, 2]</span></span>
+<span id="cb28-7"><a></a>  new_list <span class="op">=</span> old_list[<span class="dv">2</span>:] <span class="co"># ['11.0', 19.9, 2]</span></span>
+<span id="cb28-8"><a></a>  new_list <span class="op">=</span> old_list[:<span class="dv">2</span>] <span class="co"># [9, 'Aragorn']</span></span>
+<span id="cb28-9"><a></a>  </span>
+<span id="cb28-10"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

@@ -22,7 +22,7 @@ import random
 n = random.random() #returns a random float between 0 and 1
 print(n)
 
-n = random.randint(0, 9) #returns a random integer between 0 and 9.
+n = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!
 
 
 print(n)
