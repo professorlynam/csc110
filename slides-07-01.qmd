@@ -369,7 +369,7 @@ main()
 The same slicing can be done with strings
 
 
-## Slicing lists
+## Slicing lists--Class Activity
 
 Given the old_list below, what values would new_list take results from the following slicing operations?
 
@@ -388,27 +388,21 @@ def main():
 main()
 ```
 
-## Slicing lists
+## Slicing lists--Solutions
 
 Given the old_list below, what values would new_list take results from the following slicing operations?
 
 ```{python}
-#| eval: true
+#| eval: false
 #| echo: true
 def main():
   old_list = [9, "Aragorn", "11.0", 19.9, 2]
-  new_list = old_list[1:4]
-  print(new_list)
-  new_list = old_list[2:3]
-  print(new_list)
-  new_list = old_list[2:-1]
-  print(new_list)
-  new_list = old_list[:]
-  print(new_list)
-  new_list = old_list[2:]
-  print(new_list)
-  new_list = old_list[:2]
-  print(new_list)
+  new_list = old_list[1:4] # ['Aragorn', '11.0', 19.9]
+  new_list = old_list[2:3] # ['11.0']
+  new_list = old_list[2:-1] # ['11.0', 19.9]
+  new_list = old_list[:] # [9, 'Aragorn', '11.0', 19.9, 2]
+  new_list = old_list[2:] # ['11.0', 19.9, 2]
+  new_list = old_list[:2] # [9, 'Aragorn']
   
 main()
 ```
