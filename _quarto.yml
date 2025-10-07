@@ -140,6 +140,7 @@ website:
         contents:
         - data_structures_list.md
         - assignments-07.qmd
+        - slides-07-01.qmd
       - section: "Module 8 - Control Flow (for statements)"
         contents:
         - mutability.qmd

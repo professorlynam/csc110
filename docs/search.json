@@ -1010,151 +1010,224 @@
     "text": "Quiz 06\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
   },
   {
-    "objectID": "slides-07-01.html#announcement",
-    "href": "slides-07-01.html#announcement",
-    "title": "lists (slides)",
-    "section": "Announcement",
-    "text": "Announcement\nNA"
-  },
-  {
     "objectID": "slides-07-01.html#sequences",
     "href": "slides-07-01.html#sequences",
     "title": "lists (slides)",
     "section": "Sequences",
-    "text": "Sequences\nWe’ve worked with strings, which are sequences in Python. Sequences can be indexed with [ ]:\n\nword = \"lotion\"\nword[0] # returns first character in string\n\n'l'\n\n\n\nword[1] # returns second character in string\n\n'o'\n\n\nWe also have lists in Python, which are also sequences and can indexed with [ ]:\n\nnumbers = ['l', 'o', 't', 'i', 'o', 'n']\nnumbers[0] # returns first item in list\n\n'l'"
+    "text": "Sequences\nWe’ve worked with strings, which are sequences in Python. Sequences can be indexed with [ ]:\n\nword = \"lotion\"\nword[0] # returns first character in string\n\n'l'\n\n\n\nword[1] # returns second character in string\n\n'o'\n\n\nWe also have lists in Python, which are also sequences and can indexed with [ ]:\n\nnumbers = ['l', 'o', 't', 'i', 'o', 'n']\nnumbers[0] # returns first item in list\n\n'l'",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#data-structures",
     "href": "slides-07-01.html#data-structures",
     "title": "lists (slides)",
     "section": "Data Structures",
-    "text": "Data Structures\n\nData structures is a way to organize data when coding\nData structures allow for easy access and modification of values\nYou can see data structures as a collection of data values\nIn Python lists are a data structure that is:\n\nmutable (you can change the values in it)\nunordered – you can have repeated elements in a list"
+    "text": "Data Structures\n\nData structures is a way to organize data when coding\nData structures allow for easy access and modification of values\nYou can see data structures as a collection of data values\nIn Python lists are a data structure that is:\n\nmutable (you can change the values in it)\nunordered – you can have repeated elements in a list",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#creating-lists",
     "href": "slides-07-01.html#creating-lists",
     "title": "lists (slides)",
     "section": "Creating lists",
-    "text": "Creating lists\n\n# empty list\nno_numbers = []\n\n# list of integers\nnumbers = [1, 5, 2, 10, 7]\n\n# list of strings\nnames = ['Aragorn', 'Gandalf the Grey', 'Legolas', 'Gimli']\n\n# mixed types list\nvalues = [2, 1.15, 7, 1.75, 'those']\nprint(values[0] * values[1])\n\n2.3"
+    "text": "Creating lists\n\n# empty list\nno_numbers = []\n\n# list of integers\nnumbers = [1, 5, 2, 10, 7]\n\n# list of strings\nnames = ['Aragorn', 'Gandalf the Grey', 'Legolas', 'Gimli']\n\n# mixed types list\nvalues = [2, 1.15, 7, 1.75, 'those']\nprint(values[0] * values[1])\n\n2.3",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#write-a-function",
     "href": "slides-07-01.html#write-a-function",
     "title": "lists (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIts name is sum_all that takes a list of values as an argument. It runs a loop that iterates through the number in values summing all numbers. It returns the sum of all numbers in values. HINT: a) create a variable that accumulate the sum and b) use while.\n\nassert sum_all([2, 2, 2]) == 6\nassert sum_all([2, 1, 5, 2, 3]) == 13\nassert sum_all([]) == 0"
+    "text": "Write a function\nIts name is sum_all that takes a list of values as an argument. It runs a loop that iterates through the number in values summing all numbers. It returns the sum of all numbers in values. HINT: a) create a variable that accumulate the sum and b) use while.\n\nassert sum_all([2, 2, 2]) == 6\nassert sum_all([2, 1, 5, 2, 3]) == 13\nassert sum_all([]) == 0",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#write-a-function-solution",
     "href": "slides-07-01.html#write-a-function-solution",
     "title": "lists (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef sum_all(values):\n  total = 0\n  index = 0\n  while index &lt; len(values):\n    total += values[index]\n    index += 1\n  return total\n\ndef main():\n  assert sum_all([2, 2, 2]) == 6\n  assert sum_all([2, 1, 5, 2, 3]) == 13\n  assert sum_all([]) == 0\n    \nmain()"
+    "text": "Write a function – solution\n\ndef sum_all(values):\n  total = 0\n  index = 0\n  while index &lt; len(values):\n    total += values[index]\n    index += 1\n  return total\n\ndef main():\n  assert sum_all([2, 2, 2]) == 6\n  assert sum_all([2, 1, 5, 2, 3]) == 13\n  assert sum_all([]) == 0\n    \nmain()",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#loop-table",
     "href": "slides-07-01.html#loop-table",
     "title": "lists (slides)",
     "section": "Loop Table",
-    "text": "Loop Table\nWe start with index = 0 and total = 0:\n\nsum_all([2, 1, 5, 2, 3])\n\n\n\n\n\n\nindex\nindex &lt; len(values)\nvalues[index]\ntotal\n\n\n\n\n0\nTrue\n2\n0 + 2 = 2\n\n\n1\nTrue\n1\n2 + 1 = 3\n\n\n2\nTrue\n5\n3 + 5 = 8\n\n\n3\nTrue\n2\n8 + 2 = 10\n\n\n4\nTrue\n3\n10 + 3 = 13\n\n\n5\nFalse\n-\n13"
+    "text": "Loop Table\nWe start with index = 0 and total = 0:\n\nsum_all([2, 1, 5, 2, 3])\n\n\n\n\n\n\nindex\nindex &lt; len(values)\nvalues[index]\ntotal\n\n\n\n\n0\nTrue\n2\n0 + 2 = 2\n\n\n1\nTrue\n1\n2 + 1 = 3\n\n\n2\nTrue\n5\n3 + 5 = 8\n\n\n3\nTrue\n2\n8 + 2 = 10\n\n\n4\nTrue\n3\n10 + 3 = 13\n\n\n5\nFalse\n-\n13",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#loop-table-1",
     "href": "slides-07-01.html#loop-table-1",
     "title": "lists (slides)",
     "section": "Loop Table",
-    "text": "Loop Table\nStart with index = 0 and total = 0:\n\nsum_all([2, 1, 3, 4])\n\n\n\n\n\n\nindex\nindex &lt; len(values)\nvalues[index]\ntotal\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|"
+    "text": "Loop Table\nStart with index = 0 and total = 0:\n\nsum_all([2, 1, 3, 4])\n\n\n\n\n\n\nindex\nindex &lt; len(values)\nvalues[index]\ntotal\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#loop-table-solution",
     "href": "slides-07-01.html#loop-table-solution",
     "title": "lists (slides)",
     "section": "Loop Table – solution",
-    "text": "Loop Table – solution\n\nsum_all([2, 1, 3, 4])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\ntotal\n\n\n\n\n0\nTrue\n2\n2\n\n\n1\nTrue\n1\n3\n\n\n2\nTrue\n3\n6\n\n\n3\nTrue\n4\n10\n\n\n4\nFalse\n-\n10"
+    "text": "Loop Table – solution\n\nsum_all([2, 1, 3, 4])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\ntotal\n\n\n\n\n0\nTrue\n2\n2\n\n\n1\nTrue\n1\n3\n\n\n2\nTrue\n3\n6\n\n\n3\nTrue\n4\n10\n\n\n4\nFalse\n-\n10",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#using-a-control-variable",
     "href": "slides-07-01.html#using-a-control-variable",
     "title": "lists (slides)",
     "section": "Using a control variable",
-    "text": "Using a control variable\nRemember how to get the max of three numbers?\n\ndef max3(x, y, z):\n  max = x # assume max is first number\n  if y &gt; max:\n    max = y # assumption is incorrect, assume y is max\n  if z &gt; max:\n    max = z # assumption is incorrect, z is max\n  return max\n\ndef main():\n  print( max3(1, 2, 2) ) # 2\n  \nmain()\n\n2\n\n\nAdapt this function (max_list) to take a list of numbers (for example [1, 2, 2, 1, 3, 1, 1]) instead of three numbers (use while)."
+    "text": "Using a control variable\nRemember how to get the max of three numbers?\n\ndef max3(x, y, z):\n  max = x # assume max is first number\n  if y &gt; max:\n    max = y # assumption is incorrect, assume y is max\n  if z &gt; max:\n    max = z # assumption is incorrect, z is max\n  return max\n\ndef main():\n  print( max3(1, 2, 2) ) # 2\n  \nmain()\n\n2\n\n\nAdapt this function (max_list) to take a list of numbers (for example [1, 2, 2, 1, 3, 1, 1]) instead of three numbers (use while).",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#max-of-list-solution",
     "href": "slides-07-01.html#max-of-list-solution",
     "title": "lists (slides)",
     "section": "Max of list – solution",
-    "text": "Max of list – solution\n\ndef max_list(numbers):\n  '''\n  Given a list of number, this function returns the highest number.\n  Args:\n    List of numeric values\n  Returns:\n    Max (float or integer, whatever value type is the highest)\n  '''\n  max = numbers[0]\n  index = 1\n  while index &lt; len(numbers):\n    if numbers[index] &gt; max:\n      max = numbers[index]\n    index += 1\n  return max\n\ndef main():\n  print( max_list([1, 2, 2, 1, 3, 1, 1]) ) # 3\n  print( max_list([3, 2, 2, 1, 0, 1, 1]) ) # 3\n  \nmain()\n\n3\n3"
+    "text": "Max of list – solution\n\ndef max_list(numbers):\n  '''\n  Given a list of number, this function returns the highest number.\n  Args:\n    List of numeric values\n  Returns:\n    Max (float or integer, whatever value type is the highest)\n  '''\n  max = numbers[0]\n  index = 1\n  while index &lt; len(numbers):\n    if numbers[index] &gt; max:\n      max = numbers[index]\n    index += 1\n  return max\n\ndef main():\n  print( max_list([1, 2, 2, 1, 3, 1, 1]) ) # 3\n  print( max_list([3, 2, 2, 1, 0, 1, 1]) ) # 3\n  \nmain()\n\n3\n3",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#loop-table-2",
     "href": "slides-07-01.html#loop-table-2",
     "title": "lists (slides)",
     "section": "Loop table",
-    "text": "Loop table\nWe start with index = 1 and max = 2:\n\nmax_list([2, 1, 3, 1])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\nmax\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|"
+    "text": "Loop table\nWe start with index = 1 and max = 2:\n\nmax_list([2, 1, 3, 1])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\nmax\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|\n\n\n\n\n\n|",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#loop-table-solution-1",
     "href": "slides-07-01.html#loop-table-solution-1",
     "title": "lists (slides)",
     "section": "Loop table – solution",
-    "text": "Loop table – solution\nWe start with index = 1 and max = 2:\n\nmax_list([2, 1, 3, 1])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\nmax\n\n\n\n\n1\nTrue\n1\n2\n\n\n2\nTrue\n3\n3\n\n\n3\nTrue\n1\n3\n\n\n4\nFalse\n-\n3"
+    "text": "Loop table – solution\nWe start with index = 1 and max = 2:\n\nmax_list([2, 1, 3, 1])\n\n\n\n\n\n\nindex\nindex &lt; len(numbers)\nnumbers[index]\nmax\n\n\n\n\n1\nTrue\n1\n2\n\n\n2\nTrue\n3\n3\n\n\n3\nTrue\n1\n3\n\n\n4\nFalse\n-\n3",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#max-solution",
     "href": "slides-07-01.html#max-solution",
     "title": "lists (slides)",
     "section": "Max solution",
-    "text": "Max solution\n\nWhat about empty lists?\nHow to get the min instead?\n\n\nassert max_list([]) == None\nassert max_list([2, 1, 3, 1]) == 3"
+    "text": "Max solution\n\nWhat about empty lists?\nHow to get the min instead?\n\n\nassert max_list([]) == None\nassert max_list([2, 1, 3, 1]) == 3",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#max-solution---empty-lists",
     "href": "slides-07-01.html#max-solution---empty-lists",
     "title": "lists (slides)",
     "section": "Max solution - empty lists",
-    "text": "Max solution - empty lists\nCan we swap the two expressions at line 5?\n\ndef max_list(numbers):\n  max = None\n  index = 0\n  while index &lt; len(numbers):\n    if max == None or numbers[index] &gt; max:\n      max = numbers[index]\n    index += 1\n  return max\n\ndef main():\n  print( max_list([2, 1, 3, 1]) ) # 3\n  print( max_list([]) ) # None\n\nmain()\n\n3\nNone"
+    "text": "Max solution - empty lists\nCan we swap the two expressions at line 5?\n\ndef max_list(numbers):\n  max = None\n  index = 0\n  while index &lt; len(numbers):\n    if max == None or numbers[index] &gt; max:\n      max = numbers[index]\n    index += 1\n  return max\n\ndef main():\n  print( max_list([2, 1, 3, 1]) ) # 3\n  print( max_list([]) ) # None\n\nmain()\n\n3\nNone",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#updating-lists",
     "href": "slides-07-01.html#updating-lists",
     "title": "lists (slides)",
     "section": "Updating lists",
-    "text": "Updating lists\n\nnames = ['Aragorn', 'Gandalf the Grey', 'Legolas']\n\n# mutate list using the index\nnames[1] = \"Gandalf the White\"\n\nnames\n\n['Aragorn', 'Gandalf the White', 'Legolas']"
+    "text": "Updating lists\n\nnames = ['Aragorn', 'Gandalf the Grey', 'Legolas']\n\n# mutate list using the index\nnames[1] = \"Gandalf the White\"\n\nnames\n\n['Aragorn', 'Gandalf the White', 'Legolas']",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#write-a-function-1",
     "href": "slides-07-01.html#write-a-function-1",
     "title": "lists (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIts name is double that takes a list of numeric variables as argument. It iterates over the list (use while) doubling (multiplying by two) each value in the list. It returns the modified list.\n\nassert double([0, 1, 2, 3]) == [0, 2, 4, 6]"
+    "text": "Write a function\nIts name is double that takes a list of numeric variables as argument. It iterates over the list (use while) doubling (multiplying by two) each value in the list. It returns the modified list.\n\nassert double([0, 1, 2, 3]) == [0, 2, 4, 6]",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#write-a-function-solution-1",
     "href": "slides-07-01.html#write-a-function-solution-1",
     "title": "lists (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef double(numbers):\n  index = 0\n  while index &lt; len(numbers):\n    numbers[index] *= 2\n    index += 1\n  return numbers\n\ndef main():\n  original_list = [0, 1, 2, 3]\n  new_list = double(original_list)\n  assert original_list == new_list\n  assert original_list == [0, 2, 4, 6]\n  \n  print(\"Passed all tests\")\n  \nmain()"
+    "text": "Write a function – solution\n\ndef double(numbers):\n  index = 0\n  while index &lt; len(numbers):\n    numbers[index] *= 2\n    index += 1\n  return numbers\n\ndef main():\n  original_list = [0, 1, 2, 3]\n  new_list = double(original_list)\n  assert original_list == new_list\n  assert original_list == [0, 2, 4, 6]\n  \n  print(\"Passed all tests\")\n  \nmain()",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-07-01.html#slicing-lists",
     "href": "slides-07-01.html#slicing-lists",
     "title": "lists (slides)",
     "section": "Slicing lists",
-    "text": "Slicing lists\n\nRange – list[2:4] (Includes the ‘start’ index, excludes the ‘stop’ index!)\nWhole list – list[:](Leaving one side of the “:” blank means we want the rest of the list in that direction. Leaving both sides blank means we want the whole list.)\nEverything but last character – list[:-1]\n\nThe same slicing can be done with strings"
+    "text": "Slicing lists\n\nRange – list[2:4] (Includes the ‘start’ index, excludes the ‘stop’ index!)\nWhole list – list[:](Leaving one side of the “:” blank means we want the rest of the list in that direction. Leaving both sides blank means we want the whole list.)\nEverything but last character – list[:-1]\n\nThe same slicing can be done with strings",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
-    "objectID": "slides-07-01.html#slicing-lists-1",
-    "href": "slides-07-01.html#slicing-lists-1",
+    "objectID": "slides-07-01.html#slicing-listsclass-activity",
+    "href": "slides-07-01.html#slicing-listsclass-activity",
     "title": "lists (slides)",
-    "section": "Slicing lists",
-    "text": "Slicing lists\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4]\n  new_list = old_list[2:3]\n  new_list = old_list[2:-1]\n  new_list = old_list[:]\n  new_list = old_list[2:]\n  new_list = old_list[:2]\n  \nmain()"
+    "section": "Slicing lists–Class Activity",
+    "text": "Slicing lists–Class Activity\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4]\n  new_list = old_list[2:3]\n  new_list = old_list[2:-1]\n  new_list = old_list[:]\n  new_list = old_list[2:]\n  new_list = old_list[:2]\n  \nmain()",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
-    "objectID": "slides-07-01.html#slicing-lists-2",
-    "href": "slides-07-01.html#slicing-lists-2",
+    "objectID": "slides-07-01.html#slicing-listssolutions",
+    "href": "slides-07-01.html#slicing-listssolutions",
     "title": "lists (slides)",
-    "section": "Slicing lists",
-    "text": "Slicing lists\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4]\n  print(new_list)\n  new_list = old_list[2:3]\n  print(new_list)\n  new_list = old_list[2:-1]\n  print(new_list)\n  new_list = old_list[:]\n  print(new_list)\n  new_list = old_list[2:]\n  print(new_list)\n  new_list = old_list[:2]\n  print(new_list)\n  \nmain()\n\n['Aragorn', '11.0', 19.9]\n['11.0']\n['11.0', 19.9]\n[9, 'Aragorn', '11.0', 19.9, 2]\n['11.0', 19.9, 2]\n[9, 'Aragorn']"
+    "section": "Slicing lists–Solutions",
+    "text": "Slicing lists–Solutions\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4] # ['Aragorn', '11.0', 19.9]\n  new_list = old_list[2:3] # ['11.0']\n  new_list = old_list[2:-1] # ['11.0', 19.9]\n  new_list = old_list[:] # [9, 'Aragorn', '11.0', 19.9, 2]\n  new_list = old_list[2:] # ['11.0', 19.9, 2]\n  new_list = old_list[:2] # [9, 'Aragorn']\n  \nmain()",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "lists (slides)"
+    ]
   },
   {
     "objectID": "slides-06-02.html#quiz-05",
@@ -2734,7 +2807,7 @@
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Friday, October 10, 2025 at 9pm\nShort Project 5 – Due date: Friday, October 10, 2025 at 9pm\nProgramming Project 5 – Due date: Monday, October 13, 2025 at 9pm",
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Friday, October 10, 2025 at 9pm\nShort Project 5 – Due date: Monday, October 13, 2025 at 9pm\nProgramming Project 5 – Due date: Friday, October 10, 2025 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5653,7 +5726,7 @@
     "href": "project-5.html",
     "title": "Programming Project 5",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, October 13, 2025 at 9pm\nThis assignment is an adaptation of the MIT’s 6.0001 Introduction to Computer Science and Programming in Python programming set 1.\nMake sure you follow the provided style guide (you will be graded on it!).\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 10, 2025 at 9pm\nThis assignment is an adaptation of the MIT’s 6.0001 Introduction to Computer Science and Programming in Python programming set 1.\nMake sure you follow the provided style guide (you will be graded on it!).\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 5"
@@ -6945,6 +7018,17 @@
     ]
   },
   {
+    "objectID": "slides-06-03.html#quick-review",
+    "href": "slides-06-03.html#quick-review",
+    "title": "while loop aggregation (slides)",
+    "section": "Quick Review",
+    "text": "Quick Review\n\nVariables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent.\nGradescope has a “regrade” feature; use it if you feel something’s been misgraded\nIf versus elif: how many if statements can you have in a row, and potentially have all of them be executed?\nHow many statements in an elif block can be executed in a row?",
+    "crumbs": [
+      "Module 6 - Control Flow (while statements)",
+      "while loop aggregation (slides)"
+    ]
+  },
+  {
     "objectID": "slides-06-03.html#while-loops",
     "href": "slides-06-03.html#while-loops",
     "title": "while loop aggregation (slides)",
@@ -7103,7 +7187,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.22513642767145892\n4"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.6138169766031906\n4"
   },
   {
     "objectID": "slides-07-02.html#write-a-function",
@@ -7117,7 +7201,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter"
   },
   {
     "objectID": "slides-07-02.html#setting-a-seed",
@@ -8041,7 +8125,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'pear', 'pear', 'apple', 'apple']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
@@ -8216,7 +8300,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, August 27, 2025\nin class\n\n\nQuiz 02\nWednesday, September 03, 2025\nin class\n\n\nModule 1 Programming Problems\nFriday, September 05, 2025\n9pm\n\n\nQuiz 03\nWednesday, September 10, 2025\nin class\n\n\nModule 2 Programming Problems\nWednesday, September 10, 2025\n9pm\n\n\nShort Programming Project 1\nWednesday, September 10, 2025\n9pm\n\n\nProgramming Project 1\nFriday, September 12, 2025\n9pm\n\n\nQuiz 04\nWednesday, September 17, 2025\nin class\n\n\nModule 3 Programming Problems\nWednesday, September 17, 2025\n9pm\n\n\nShort Programming Project 2\nWednesday, September 17, 2025\n9pm\n\n\nProgramming Project 2\nFriday, September 19, 2025\n9pm\n\n\nQuiz 05\nWednesday, September 24, 2025\nin class\n\n\nModule 4 Programming Problems\nWednesday, September 24, 2025\n9pm\n\n\nShort Programming Project 3\nWednesday, September 24, 2025\n9pm\n\n\nProgramming Project 3\nFriday, September 26, 2025\n9pm\n\n\nQuiz 06\nWednesday, October 01, 2025\nin class\n\n\nModule 5 Programming Problems\nWednesday, October 01, 2025\n9pm\n\n\nShort Programming Project 4\nWednesday, October 01, 2025\n9pm\n\n\nProgramming Project 4\nFriday, October 03, 2025\n9pm\n\n\nMidterm 1\nWednesday, October 08, 2025\nin class\n\n\nModule 6 Programming Problems\nFriday, October 10, 2025\n9pm\n\n\nShort Programming Project 5\nFriday, October 10, 2025\n9pm\n\n\nProgramming Project 5\nMonday, October 13, 2025\n9pm\n\n\nQuiz 07\nWednesday, October 15, 2025\nin class\n\n\nModule 7 Programming Problems\nWednesday, October 15, 2025\n9pm\n\n\nShort Programming Project 6\nWednesday, October 15, 2025\n9pm\n\n\nProgramming Project 6\nFriday, October 17, 2025\n9pm\n\n\nQuiz 08\nWednesday, October 22, 2025\nin class\n\n\nModule 8 Programming Problems\nWednesday, October 22, 2025\n9pm\n\n\nShort Programming Project 7\nWednesday, October 22, 2025\n9pm\n\n\nProgramming Project 7\nFriday, October 24, 2025\n9pm\n\n\nQuiz 09\nWednesday, October 29, 2025\nin class\n\n\nModule 9 Programming Problems\nWednesday, October 29, 2025\n9pm\n\n\nMidterm 2\nWednesday, November 05, 2025\nin class\n\n\nModule 10 Programming Problems\nWednesday, November 05, 2025\n9pm\n\n\nShort Programming Project 8\nWednesday, November 05, 2025\n9pm\n\n\nProgramming Project 8\nFriday, November 07, 2025\n9pm\n\n\nModule 11 Programming Problems\nWednesday, November 12, 2025\n9pm\n\n\nShort Programming Project 9\nWednesday, November 12, 2025\n9pm\n\n\nProgramming Project 9\nFriday, November 14, 2025\n9pm\n\n\nQuiz 10\nWednesday, November 19, 2025\nin class\n\n\nModule 12 Programming Problems\nWednesday, November 19, 2025\n9pm\n\n\nShort Programming Project 10\nWednesday, November 19, 2025\n9pm\n\n\nProgramming Project 10\nFriday, November 21, 2025\n9pm\n\n\nQuiz 11\nWednesday, November 26, 2025\nin class\n\n\nModule 13 Programming Problems\nWednesday, November 26, 2025\n9pm\n\n\nShort Programming Project 11\nWednesday, November 26, 2025\n9pm\n\n\nProgramming Project 11\nMonday, December 01, 2025\n9pm\n\n\nQuiz 12\nWednesday, December 03, 2025\nin class\n\n\nModule 14 Programming Problems\nFriday, December 05, 2025\n9pm\n\n\nShort Programming Project 12\nFriday, December 05, 2025\n9pm\n\n\nProgramming Project 12\nMonday, December 08, 2025\n9pm\n\n\nFinal Exam\nFriday, December 12, 2025\n6pm-8pm",
+    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, August 27, 2025\nin class\n\n\nQuiz 02\nWednesday, September 03, 2025\nin class\n\n\nModule 1 Programming Problems\nFriday, September 05, 2025\n9pm\n\n\nQuiz 03\nWednesday, September 10, 2025\nin class\n\n\nModule 2 Programming Problems\nWednesday, September 10, 2025\n9pm\n\n\nShort Programming Project 1\nWednesday, September 10, 2025\n9pm\n\n\nProgramming Project 1\nFriday, September 12, 2025\n9pm\n\n\nQuiz 04\nWednesday, September 17, 2025\nin class\n\n\nModule 3 Programming Problems\nWednesday, September 17, 2025\n9pm\n\n\nShort Programming Project 2\nWednesday, September 17, 2025\n9pm\n\n\nProgramming Project 2\nFriday, September 19, 2025\n9pm\n\n\nQuiz 05\nWednesday, September 24, 2025\nin class\n\n\nModule 4 Programming Problems\nWednesday, September 24, 2025\n9pm\n\n\nShort Programming Project 3\nWednesday, September 24, 2025\n9pm\n\n\nProgramming Project 3\nFriday, September 26, 2025\n9pm\n\n\nQuiz 06\nWednesday, October 01, 2025\nin class\n\n\nModule 5 Programming Problems\nWednesday, October 01, 2025\n9pm\n\n\nShort Programming Project 4\nWednesday, October 01, 2025\n9pm\n\n\nProgramming Project 4\nFriday, October 03, 2025\n9pm\n\n\nMidterm 1\nWednesday, October 08, 2025\nin class\n\n\nModule 6 Programming Problems\nFriday, October 10, 2025\n9pm\n\n\nShort Programming Project 5\nMonday, October 13, 2025\n9pm\n\n\nProgramming Project 5\nFriday, October 10, 2025\n9pm\n\n\nQuiz 07\nWednesday, October 15, 2025\nin class\n\n\nModule 7 Programming Problems\nWednesday, October 15, 2025\n9pm\n\n\nShort Programming Project 6\nWednesday, October 15, 2025\n9pm\n\n\nProgramming Project 6\nFriday, October 17, 2025\n9pm\n\n\nQuiz 08\nWednesday, October 22, 2025\nin class\n\n\nModule 8 Programming Problems\nWednesday, October 22, 2025\n9pm\n\n\nShort Programming Project 7\nWednesday, October 22, 2025\n9pm\n\n\nProgramming Project 7\nFriday, October 24, 2025\n9pm\n\n\nQuiz 09\nWednesday, October 29, 2025\nin class\n\n\nModule 9 Programming Problems\nWednesday, October 29, 2025\n9pm\n\n\nMidterm 2\nWednesday, November 05, 2025\nin class\n\n\nModule 10 Programming Problems\nWednesday, November 05, 2025\n9pm\n\n\nShort Programming Project 8\nWednesday, November 05, 2025\n9pm\n\n\nProgramming Project 8\nFriday, November 07, 2025\n9pm\n\n\nModule 11 Programming Problems\nWednesday, November 12, 2025\n9pm\n\n\nShort Programming Project 9\nWednesday, November 12, 2025\n9pm\n\n\nProgramming Project 9\nFriday, November 14, 2025\n9pm\n\n\nQuiz 10\nWednesday, November 19, 2025\nin class\n\n\nModule 12 Programming Problems\nWednesday, November 19, 2025\n9pm\n\n\nShort Programming Project 10\nWednesday, November 19, 2025\n9pm\n\n\nProgramming Project 10\nFriday, November 21, 2025\n9pm\n\n\nQuiz 11\nWednesday, November 26, 2025\nin class\n\n\nModule 13 Programming Problems\nWednesday, November 26, 2025\n9pm\n\n\nShort Programming Project 11\nWednesday, November 26, 2025\n9pm\n\n\nProgramming Project 11\nMonday, December 01, 2025\n9pm\n\n\nQuiz 12\nWednesday, December 03, 2025\nin class\n\n\nModule 14 Programming Problems\nFriday, December 05, 2025\n9pm\n\n\nShort Programming Project 12\nFriday, December 05, 2025\n9pm\n\n\nProgramming Project 12\nMonday, December 08, 2025\n9pm\n\n\nFinal Exam\nFriday, December 12, 2025\n6pm-8pm",
     "crumbs": [
       "Start Here",
       "Syllabus"
@@ -8294,30 +8378,5 @@
       "Watch",
       "Video Lessons"
     ]
-  },
-  {
-    "objectID": "slides-06-03.html#quick-review",
-    "href": "slides-06-03.html#quick-review",
-    "title": "while loop aggregation (slides)",
-    "section": "Quick Review",
-    "text": "Quick Review\n\nVariables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent.\nGradescope has a “regrade” feature; use it if you feel something’s been misgraded\nIf versus elif: how many if statements can you have in a row, and potentially have all of them be executed?\nHow many statements in an elif block can be executed in a row?",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop aggregation (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-07-01.html#slicing-listsclass-activity",
-    "href": "slides-07-01.html#slicing-listsclass-activity",
-    "title": "lists (slides)",
-    "section": "Slicing lists–Class Activity",
-    "text": "Slicing lists–Class Activity\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4]\n  new_list = old_list[2:3]\n  new_list = old_list[2:-1]\n  new_list = old_list[:]\n  new_list = old_list[2:]\n  new_list = old_list[:2]\n  \nmain()"
-  },
-  {
-    "objectID": "slides-07-01.html#slicing-listssolutions",
-    "href": "slides-07-01.html#slicing-listssolutions",
-    "title": "lists (slides)",
-    "section": "Slicing lists–Solutions",
-    "text": "Slicing lists–Solutions\nGiven the old_list below, what values would new_list take results from the following slicing operations?\n\ndef main():\n  old_list = [9, \"Aragorn\", \"11.0\", 19.9, 2]\n  new_list = old_list[1:4] # ['Aragorn', '11.0', 19.9]\n  new_list = old_list[2:3] # ['11.0']\n  new_list = old_list[2:-1] # ['11.0', 19.9]\n  new_list = old_list[:] # [9, 'Aragorn', '11.0', 19.9, 2]\n  new_list = old_list[2:] # ['11.0', 19.9, 2]\n  new_list = old_list[:2] # [9, 'Aragorn']\n  \nmain()"
   }
 ]
