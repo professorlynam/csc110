@@ -111,3 +111,32 @@ if __name__ == "__main__":
   assert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]
   print("pass the test")
 ```
+
+## Quick Review: While Loops
+
+Take a look at these while loops. Discuss with your table: what will be printed after each while loop runs?
+
+```{python}
+#| eval: false
+#| echo: true
+index, list_of_ints = 0, [5, 3, 3, 4, 6, 9, 17, 8, 99]
+while index < len(list_of_ints): # while loop 1
+  print(list_of_ints[index])
+  index += 4
+fifth_w_found, long_string, index, counter = False, "Wow, what a long string when will it end what a pain, we need to find a fifth w.", 0, 0
+while not fifth_w_found: # while loop 2
+  if long_string[index] == "w":
+    counter += 1
+    index += 2
+  elif long_string[index] == "y":
+    index += 3
+  elif long_string[index] == "z" or long_string[index] == ",":
+    index += 5
+  else:
+    print(long_string[index], end="")
+    index += 1
+  if counter >= 5:
+    fifth_w_found = True
+
+```
+

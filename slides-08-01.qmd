@@ -18,15 +18,16 @@ df-print: kable
 ```{python}
 #| echo: true
 #| eval: true
-songs = ["Lavender Haze", "Calm Down", "As It Was", "About Damn Time"]
-songs
+advice = ["Don't", "try to change", "an element of", "a string"]
+advice
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-songs[0] = "Flowers"
-songs
+advice[0] = "Do"
+advice[3] = "a list"
+advice
 ```
 
 ## Lists are mutable
@@ -42,9 +43,8 @@ Because lists are mutable:
 
 1.  Its name is `make_even`
 2.  It takes one argument, a list of `integers`
-3.  It iterates over the list, changing odd numbers to even number (even up)
+3.  It iterates over the list, changing odd numbers to even numbers (by increasing the odd numbers by 1)
 
-Name your file  `make_even.py` and submit to Gradescope.
 ```{python}
 #| eval: false
 #| echo: true
@@ -75,7 +75,6 @@ def main():
 main()
 ```
 
-Let's visualize this on [Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
 
 ## Write a function -- solution 2
 
@@ -141,7 +140,6 @@ last_name = "Silva" # a new object created, last_name point to the new
 print(title + " " + name) # name still point to the original string
 ```
 
-Visualize these examples in [Python Tutor](https://pythontutor.com/visualize.html#mode=display)
 
 ## Examples
 
@@ -161,7 +159,6 @@ names[1] = "Silva" # the object been mutated, no new object created
 print(names_copy[0] + " " + names_copy[1]) # both point to the mutated object
 ```
 
-Visualize these examples in [Python Tutor](https://pythontutor.com/visualize.html#mode=display)
 
 
 ## Summary
@@ -179,30 +176,30 @@ Here's how `.pop()` works:
 ```{python}
 #| echo: true
 #| eval: true
-songs = ["Lavender Haze", "Calm Down", "As It Was", "Her"]
-songs
+advice = ["Don't", "try to change", "an element of", "a string"]
+advice
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-songs.pop(0) # 'Her' index moves from 3 to 2
-songs
+advice.pop(0) # Element at index 0 is removed from the list
+advice
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-songs.pop(0) # 'Her' index moves from 2 to 1
-songs
+advice.pop() # If no index is given, removes the last element of the list
+advice
 ```
 
 ## `.pop()` items using `while` loop
 
 ```{python}
 #| echo: true
-#| eval: true
-songs = ["Lavender Haze", "Calm Down", "As It Was", "Her"]
+#| eval: false
+advice = ["Don't", "try to change", "an element of", "a string"]
 index = 0
 while index < len(songs):
   songs.pop(index)
@@ -210,7 +207,7 @@ while index < len(songs):
 print(songs)
 ```
 
-Why we don't update index in the while loop?
+We're not updating index in the while loop. Infinite loop?
 
 ## Write two functions
 
@@ -281,15 +278,15 @@ We will be using the following list methods in this class:
 ```{python}
 #| echo: true
 #| eval: true
-songs = ["Lavender Haze", "Calm Down", "As It Was", "Her"]
-songs
+advice = ["Don't", "try to change", "an element of", "a string"]
+advice
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-songs.append("Attention")
-songs
+advice.append("unless you want an error message")
+advice
 ```
 
 ## Write a function
@@ -365,14 +362,3 @@ def main():
   
 main()
 ```
-
-## Quiz 06
-
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time<div id="clock_block_cb650886c4849ee"></div></div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-</center>
-
-You have 10 minutes to complete the quiz.
-
-No need to write `main()` function.

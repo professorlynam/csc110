@@ -874,7 +874,7 @@
     "href": "slides-08-01.html#lists-vs-strings",
     "title": "mutability (slides)",
     "section": "Lists vs strings",
-    "text": "Lists vs strings\n\nLists are mutable\nStrings are not\nIn addition to retrieving an item from a list, we can remove or change it (which is not something you can do with strings)\n\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"About Damn Time\"]\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']\n\n\n\nsongs[0] = \"Flowers\"\nsongs\n\n['Flowers', 'Calm Down', 'As It Was', 'About Damn Time']"
+    "text": "Lists vs strings\n\nLists are mutable\nStrings are not\nIn addition to retrieving an item from a list, we can remove or change it (which is not something you can do with strings)\n\n\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice\n\n[\"Don't\", 'try to change', 'an element of', 'a string']\n\n\n\nadvice[0] = \"Do\"\nadvice[3] = \"a list\"\nadvice\n\n['Do', 'try to change', 'an element of', 'a list']"
   },
   {
     "objectID": "slides-08-01.html#lists-are-mutable",
@@ -888,14 +888,14 @@
     "href": "slides-08-01.html#write-a-function",
     "title": "mutability (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is make_even\nIt takes one argument, a list of integers\nIt iterates over the list, changing odd numbers to even number (even up)\n\nName your file make_even.py and submit to Gradescope.\n\nintegers = [1, 2, 3, 4]\nmake_even(integers)\nassert integers == [2, 2, 4, 4] # change persists"
+    "text": "Write a function\n\nIts name is make_even\nIt takes one argument, a list of integers\nIt iterates over the list, changing odd numbers to even numbers (by increasing the odd numbers by 1)\n\n\nintegers = [1, 2, 3, 4]\nmake_even(integers)\nassert integers == [2, 2, 4, 4] # change persists"
   },
   {
     "objectID": "slides-08-01.html#write-a-function-solution-1",
     "href": "slides-08-01.html#write-a-function-solution-1",
     "title": "mutability (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef make_even(integers):\n  index = 0\n  while index &lt; len(integers):\n    if integers[index] % 2 == 1:\n      integers[index] += 1\n    index += 1\n  return integers\n      \ndef main():\n  integers = [1, 2, 3, 4]\n  make_even(integers)\n  assert integers == [2, 2, 4, 4]\n  \nmain()\n\nLet’s visualize this on Python Tutor"
+    "text": "Write a function – solution 1\n\ndef make_even(integers):\n  index = 0\n  while index &lt; len(integers):\n    if integers[index] % 2 == 1:\n      integers[index] += 1\n    index += 1\n  return integers\n      \ndef main():\n  integers = [1, 2, 3, 4]\n  make_even(integers)\n  assert integers == [2, 2, 4, 4]\n  \nmain()"
   },
   {
     "objectID": "slides-08-01.html#write-a-function-solution-2",
@@ -916,14 +916,14 @@
     "href": "slides-08-01.html#examples",
     "title": "mutability (slides)",
     "section": "Examples",
-    "text": "Examples\nStrings are not mutable\n\ntitle = \"Dr.\"\nlast_name = \"Brown\"\nprint(title + \" \" + last_name)\n\ntitle = \"Ms.\"\nprint(title + \" \" + last_name)\n\nname = last_name # both point to the same object\nlast_name = \"Silva\" # a new object created, last_name point to the new \nprint(title + \" \" + name) # name still point to the original string\n\nDr. Brown\nMs. Brown\nMs. Brown\n\n\nVisualize these examples in Python Tutor"
+    "text": "Examples\nStrings are not mutable\n\ntitle = \"Dr.\"\nlast_name = \"Brown\"\nprint(title + \" \" + last_name)\n\ntitle = \"Ms.\"\nprint(title + \" \" + last_name)\n\nname = last_name # both point to the same object\nlast_name = \"Silva\" # a new object created, last_name point to the new \nprint(title + \" \" + name) # name still point to the original string\n\nDr. Brown\nMs. Brown\nMs. Brown"
   },
   {
     "objectID": "slides-08-01.html#examples-1",
     "href": "slides-08-01.html#examples-1",
     "title": "mutability (slides)",
     "section": "Examples",
-    "text": "Examples\nLists are mutable\n\nnames = [\"Dr.\", \"Brown\"]\nprint(names[0] + \" \" + names[1])\n\nnames[0] = \"Ms.\"\nprint(names[0] + \" \" + names[1])\n\nnames_copy = names # both point to the same object\nnames[1] = \"Silva\" # the object been mutated, no new object created\nprint(names_copy[0] + \" \" + names_copy[1]) # both point to the mutated object\n\nDr. Brown\nMs. Brown\nMs. Silva\n\n\nVisualize these examples in Python Tutor"
+    "text": "Examples\nLists are mutable\n\nnames = [\"Dr.\", \"Brown\"]\nprint(names[0] + \" \" + names[1])\n\nnames[0] = \"Ms.\"\nprint(names[0] + \" \" + names[1])\n\nnames_copy = names # both point to the same object\nnames[1] = \"Silva\" # the object been mutated, no new object created\nprint(names_copy[0] + \" \" + names_copy[1]) # both point to the mutated object\n\nDr. Brown\nMs. Brown\nMs. Silva"
   },
   {
     "objectID": "slides-08-01.html#summary",
@@ -937,14 +937,14 @@
     "href": "slides-08-01.html#pop-list-method",
     "title": "mutability (slides)",
     "section": ".pop() list method",
-    "text": ".pop() list method\nWe will be using a few built-in list methods\nHere’s how .pop() works:\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"Her\"]\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'Her']\n\n\n\nsongs.pop(0) # 'Her' index moves from 3 to 2\nsongs\n\n['Calm Down', 'As It Was', 'Her']\n\n\n\nsongs.pop(0) # 'Her' index moves from 2 to 1\nsongs\n\n['As It Was', 'Her']"
+    "text": ".pop() list method\nWe will be using a few built-in list methods\nHere’s how .pop() works:\n\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice\n\n[\"Don't\", 'try to change', 'an element of', 'a string']\n\n\n\nadvice.pop(0) # Element at index 0 is removed from the list\nadvice\n\n['try to change', 'an element of', 'a string']\n\n\n\nadvice.pop() # If no index is given, removes the last element of the list\nadvice\n\n['try to change', 'an element of']"
   },
   {
     "objectID": "slides-08-01.html#pop-items-using-while-loop",
     "href": "slides-08-01.html#pop-items-using-while-loop",
     "title": "mutability (slides)",
     "section": ".pop() items using while loop",
-    "text": ".pop() items using while loop\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"Her\"]\nindex = 0\nwhile index &lt; len(songs):\n  songs.pop(index)\n  \nprint(songs)\n\n[]\n\n\nWhy we don’t update index in the while loop?"
+    "text": ".pop() items using while loop\n\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nindex = 0\nwhile index &lt; len(songs):\n  songs.pop(index)\n  \nprint(songs)\n\nWe’re not updating index in the while loop. Infinite loop?"
   },
   {
     "objectID": "slides-08-01.html#write-two-functions",
@@ -972,7 +972,7 @@
     "href": "slides-08-01.html#append-list-method",
     "title": "mutability (slides)",
     "section": ".append() list method",
-    "text": ".append() list method\n\nsongs = [\"Lavender Haze\", \"Calm Down\", \"As It Was\", \"Her\"]\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'Her']\n\n\n\nsongs.append(\"Attention\")\nsongs\n\n['Lavender Haze', 'Calm Down', 'As It Was', 'Her', 'Attention']"
+    "text": ".append() list method\n\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice\n\n[\"Don't\", 'try to change', 'an element of', 'a string']\n\n\n\nadvice.append(\"unless you want an error message\")\nadvice\n\n[\"Don't\",\n 'try to change',\n 'an element of',\n 'a string',\n 'unless you want an error message']"
   },
   {
     "objectID": "slides-08-01.html#write-a-function-1",
@@ -7187,7 +7187,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.6138169766031906\n4"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9671168546273743\n8"
   },
   {
     "objectID": "slides-07-02.html#write-a-function",
@@ -7201,7 +7201,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary"
   },
   {
     "objectID": "slides-07-02.html#setting-a-seed",
@@ -8378,5 +8378,12 @@
       "Watch",
       "Video Lessons"
     ]
+  },
+  {
+    "objectID": "slides-07-02.html#quick-review-while-loops",
+    "href": "slides-07-02.html#quick-review-while-loops",
+    "title": "random (slides)",
+    "section": "Quick Review: While Loops",
+    "text": "Quick Review: While Loops\nTake a look at these while loops. Discuss with your table: what will be printed after each while loop runs?\n\nindex, list_of_ints = 0, [5, 3, 3, 4, 6, 9, 17, 8, 99]\nwhile index &lt; len(list_of_ints): # while loop 1\n  print(list_of_ints[index])\n  index += 4\nfifth_w_found, long_string, index, counter = False, \"Wow, what a long string when will it end what a pain, we need to find a fifth w.\", 0, 0\nwhile not fifth_w_found: # while loop 2\n  if long_string[index] == \"w\":\n    counter += 1\n    index += 2\n  elif long_string[index] == \"y\":\n    index += 3\n  elif long_string[index] == \"z\" or long_string[index] == \",\":\n    index += 5\n  else:\n    print(long_string[index], end=\"\")\n    index += 1\n  if counter &gt;= 5:\n    fifth_w_found = True"
   }
 ]
