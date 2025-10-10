@@ -167,6 +167,31 @@ When working with lists, once they are changed in a function, the changes happen
 
 Changes to lists persist once the function has finished running
 
+With that in mind...
+
+## Quick Check - Class Activity
+
+What will be printed in both scenarios?
+
+```{python}
+#| echo: true
+#| eval: false
+changed_string = "Do"
+advice = ["Don't", "try to change", "an element of", "a string"]
+advice[0] = changed_string
+changed_string = "Don't"
+print(advice) # Scenario 1
+
+changed_string = "Do"
+advice = ["Don't", "try to change", "an element of", "a string"]
+advice[0] = changed_string
+changed_string = "Don't"
+new_string = changed_string
+advice[0] = new_string
+new_string = "New String"
+print(advice) # Scenario 2
+```
+
 ## `.pop()` list method
 
 We will be using a few built-in list `methods`

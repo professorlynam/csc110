@@ -22,6 +22,8 @@ while index < 3:
 ```{python}
 #| eval: true
 #| echo: true
+# range(start, stop) is an python function that creates a list of integers 
+# from start (inclusive, defaults to 0) to stop (exclusive)
 for index in range(3):
   print(index)
 ```
@@ -50,7 +52,7 @@ for index in range(len(values)):
 
 ## Write a function
 
-It iterates over the list, changing odd numbers to even number (even up). 
+It iterates over the list, changing odd numbers to even numbers (by adding one to the odd numbers). 
 
 Use a `for` loop.
 
@@ -59,7 +61,7 @@ Use a `for` loop.
 #| echo: true 
 test_integers = [1, 2, 3, 4]
 assert make_all_even(test_integers) == [2, 2, 4, 4]
-assert test_integers == [2, 2, 4, 4] # change persists
+assert test_integers == [2, 2, 4, 4] # remember, the list changes will persist!
 ```
 
 
@@ -86,8 +88,6 @@ main()
 ## Write a function
 
 It returns a list of integers that represent the indices of the vowels in the string
-
-Name file `indices_of_vowels.py` and submit to Gradescope. 
 
 Use a `for` loop.
 
@@ -128,7 +128,7 @@ main()
 Syntax: `range(start, stop, step)`
 
 -   `start` Optional. An integer specifying at which position to start. Default is 0
--   `stop` Required. An integer specifying at which position to stop (NOT included).
+-   `stop` Required. An integer specifying at which position to stop (stop is *exclusive* meaning it is not included in the resulting list).
 -   `step` Optional. An integer specifying the incrementation. Default is 1
 
 ## More on how to use `range()`
@@ -192,7 +192,7 @@ main()
 
 ## Write a function
 
-It returns a **new**  list in reversed order, containing items at every other index in the original list.
+It returns a **new**  list in reversed order, containing items at every other index in the original list. The first element of the new list should be the last element of the original list.
 
 Use a `for` loop.
 
@@ -227,6 +227,8 @@ main()
 ```
 
 ## Write a function
+
+It returns the sum of every other number from a list of integers, starting at index 0.
 
 Test cases:
 

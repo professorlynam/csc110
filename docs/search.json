@@ -930,7 +930,7 @@
     "href": "slides-08-01.html#summary",
     "title": "mutability (slides)",
     "section": "Summary",
-    "text": "Summary\nWhen working with lists, once they are changed in a function, the changes happen to the object in memory\nChanges to lists persist once the function has finished running"
+    "text": "Summary\nWhen working with lists, once they are changed in a function, the changes happen to the object in memory\nChanges to lists persist once the function has finished running\nWith that in mind…"
   },
   {
     "objectID": "slides-08-01.html#pop-list-method",
@@ -8385,5 +8385,12 @@
     "title": "random (slides)",
     "section": "Quick Review: While Loops",
     "text": "Quick Review: While Loops\nTake a look at these while loops. Discuss with your table: what will be printed after each while loop runs?\n\nindex, list_of_ints = 0, [5, 3, 3, 4, 6, 9, 17, 8, 99]\nwhile index &lt; len(list_of_ints): # while loop 1\n  print(list_of_ints[index])\n  index += 4\nfifth_w_found, long_string, index, counter = False, \"Wow, what a long string when will it end what a pain, we need to find a fifth w.\", 0, 0\nwhile not fifth_w_found: # while loop 2\n  if long_string[index] == \"w\":\n    counter += 1\n    index += 2\n  elif long_string[index] == \"y\":\n    index += 3\n  elif long_string[index] == \"z\" or long_string[index] == \",\":\n    index += 5\n  else:\n    print(long_string[index], end=\"\")\n    index += 1\n  if counter &gt;= 5:\n    fifth_w_found = True"
+  },
+  {
+    "objectID": "slides-08-01.html#quick-check---class-activity",
+    "href": "slides-08-01.html#quick-check---class-activity",
+    "title": "mutability (slides)",
+    "section": "Quick Check - Class Activity",
+    "text": "Quick Check - Class Activity\nWhat will be printed in both scenarios?\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nprint(advice) # Scenario 1\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nnew_string = changed_string\nadvice[0] = new_string\nnew_string = \"New String\"\nprint(advice) # Scenario 2"
   }
 ]
