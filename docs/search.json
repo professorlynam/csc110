@@ -933,6 +933,13 @@
     "text": "Summary\nWhen working with lists, once they are changed in a function, the changes happen to the object in memory\nChanges to lists persist once the function has finished running\nWith that in mind…"
   },
   {
+    "objectID": "slides-08-01.html#quick-check---class-activity",
+    "href": "slides-08-01.html#quick-check---class-activity",
+    "title": "mutability (slides)",
+    "section": "Quick Check - Class Activity",
+    "text": "Quick Check - Class Activity\nWhat will be printed in both scenarios?\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nprint(advice) # Scenario 1\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nnew_string = changed_string\nadvice[0] = new_string\nnew_string = \"New String\"\nprint(advice) # Scenario 2"
+  },
+  {
     "objectID": "slides-08-01.html#pop-list-method",
     "href": "slides-08-01.html#pop-list-method",
     "title": "mutability (slides)",
@@ -1001,13 +1008,6 @@
     "title": "mutability (slides)",
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef reverse_list(items):\n  index = len(items) - 1 # initialize index\n  inverted_list = []\n  while index &gt;= 0:\n    inverted_list.append(items[index])\n    index -= 1\n  return inverted_list\n    \ndef main():\n  strings = [\"banana\", \"apple\", \"grape\"]\n  assert reverse_list(strings) == [\"grape\", \"apple\", \"banana\"]\n  assert strings == [\"banana\", \"apple\", \"grape\"]\n  print(\"Passed test\")\n  \nmain()\n\nPassed test"
-  },
-  {
-    "objectID": "slides-08-01.html#quiz-06",
-    "href": "slides-08-01.html#quiz-06",
-    "title": "mutability (slides)",
-    "section": "Quiz 06",
-    "text": "Quiz 06\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
   },
   {
     "objectID": "slides-07-01.html#sequences",
@@ -7187,49 +7187,84 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9671168546273743\n8"
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.522224880895405\n0",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-07-02.html#write-a-function",
     "href": "slides-07-02.html#write-a-function",
     "title": "random (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is pick_winner\nIt takes a list as argument\nIt generates a random index, and returns the item at that position\n\n\nwinner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\nprint(winner)"
+    "text": "Write a function\n\nFunction name is pick_winner\nIt takes a list as argument\nIt generates a random index, and returns the item at that position\n\n\nwinner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\nprint(winner)",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-07-02.html#write-a-function-solution",
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary"
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-07-02.html#setting-a-seed",
     "href": "slides-07-02.html#setting-a-seed",
     "title": "random (slides)",
     "section": "Setting a seed",
-    "text": "Setting a seed\nWhat happens when you run pick_winner multiple times?\nTo get always the same result (for autograding purposes, for example) we can set a seed.\n\nimport random\n\ndef pick_winner(names):\n  random.seed(123)\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter"
+    "text": "Setting a seed\nWhat happens when you run pick_winner multiple times?\nTo get always the same result (for autograding purposes, for example) we can set a seed.\n\nimport random\n\ndef pick_winner(names):\n  random.seed(123)\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-07-02.html#write-a-function-1",
     "href": "slides-07-02.html#write-a-function-1",
     "title": "random (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a function random_list that takes as argument a list of numbers. Iterate over each list element (with a while loop), replacing each integer with a random number between zero and the original number. Set the seed as 123 in your function.\n\n# test case\nassert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]"
+    "text": "Write a function\nWrite a function random_list that takes as argument a list of numbers. Iterate over each list element (with a while loop), replacing each integer with a random number between zero and the original number. Set the seed as 123 in your function.\n\n# test case\nassert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-07-02.html#write-a-function-solution-1",
     "href": "slides-07-02.html#write-a-function-solution-1",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef random_list(numbers):\n  random.seed(123)\n  index = 0\n  while index &lt; len(numbers):\n    item = numbers[index]\n    numbers[index] = random.randint(0, item)\n    index += 1\n  return numbers\n\nif __name__ == \"__main__\":\n  assert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]\n  print(\"pass the test\")\n\npass the test"
+    "text": "Write a function – solution\n\nimport random\n\ndef random_list(numbers):\n  random.seed(123)\n  index = 0\n  while index &lt; len(numbers):\n    item = numbers[index]\n    numbers[index] = random.randint(0, item)\n    index += 1\n  return numbers\n\nif __name__ == \"__main__\":\n  assert random_list([3, 2, 1, 3, 5]) == [0, 1, 0, 3, 2]\n  print(\"pass the test\")\n\npass the test",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-07-02.html#quick-review-while-loops",
+    "href": "slides-07-02.html#quick-review-while-loops",
+    "title": "random (slides)",
+    "section": "Quick Review: While Loops",
+    "text": "Quick Review: While Loops\nTake a look at these while loops. Discuss with your table: what will be printed after each while loop runs?\n\nindex, list_of_ints = 0, [5, 3, 3, 4, 6, 9, 17, 8, 99]\nwhile index &lt; len(list_of_ints): # while loop 1\n  print(list_of_ints[index])\n  index += 4\nfifth_w_found, long_string, index, counter = False, \"Wow, what a long string when will it end what a pain, we need to find a fifth w.\", 0, 0\nwhile not fifth_w_found: # while loop 2\n  if long_string[index] == \"w\":\n    counter += 1\n    index += 2\n  elif long_string[index] == \"y\":\n    index += 3\n  elif long_string[index] == \"z\" or long_string[index] == \",\":\n    index += 5\n  else:\n    print(long_string[index], end=\"\")\n    index += 1\n  if counter &gt;= 5:\n    fifth_w_found = True",
+    "crumbs": [
+      "Module 7 - Data Structures (lists)",
+      "random (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#while-vs.-for-loops",
     "href": "slides-08-02.html#while-vs.-for-loops",
     "title": "for loops with range (slides)",
     "section": "while vs. for loops",
-    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nindex = 0\nwhile index &lt; 3:\n  print(index)\n  index += 1\n\n0\n1\n2\n\n\n\nfor index in range(3):\n  print(index)\n\n0\n1\n2"
+    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nindex = 0\nwhile index &lt; 3:\n  print(index)\n  index += 1\n\n0\n1\n2\n\n\n\n# range(start, stop) is an python function that creates a list of integers \n# from start (inclusive, defaults to 0) to stop (exclusive)\nfor index in range(3):\n  print(index)\n\n0\n1\n2"
   },
   {
     "objectID": "slides-08-02.html#while-vs.-for-loops-1",
@@ -7243,7 +7278,7 @@
     "href": "slides-08-02.html#write-a-function",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt iterates over the list, changing odd numbers to even number (even up).\nUse a for loop.\n\ntest_integers = [1, 2, 3, 4]\nassert make_all_even(test_integers) == [2, 2, 4, 4]\nassert test_integers == [2, 2, 4, 4] # change persists"
+    "text": "Write a function\nIt iterates over the list, changing odd numbers to even numbers (by adding one to the odd numbers).\nUse a for loop.\n\ntest_integers = [1, 2, 3, 4]\nassert make_all_even(test_integers) == [2, 2, 4, 4]\nassert test_integers == [2, 2, 4, 4] # remember, the list changes will persist!"
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution",
@@ -7257,7 +7292,7 @@
     "href": "slides-08-02.html#write-a-function-1",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a list of integers that represent the indices of the vowels in the string\nName file indices_of_vowels.py and submit to Gradescope.\nUse a for loop.\nTest cases:\n\nassert indices_of_vowels(\"hello\") == [1, 4]\nassert indices_of_vowels(\"\") == []\nassert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]"
+    "text": "Write a function\nIt returns a list of integers that represent the indices of the vowels in the string\nUse a for loop.\nTest cases:\n\nassert indices_of_vowels(\"hello\") == [1, 4]\nassert indices_of_vowels(\"\") == []\nassert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]"
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-1",
@@ -7271,7 +7306,7 @@
     "href": "slides-08-02.html#more-on-how-to-use-range",
     "title": "for loops with range (slides)",
     "section": "More on how to use range()",
-    "text": "More on how to use range()\nSyntax: range(start, stop, step)\n\nstart Optional. An integer specifying at which position to start. Default is 0\nstop Required. An integer specifying at which position to stop (NOT included).\nstep Optional. An integer specifying the incrementation. Default is 1"
+    "text": "More on how to use range()\nSyntax: range(start, stop, step)\n\nstart Optional. An integer specifying at which position to start. Default is 0\nstop Required. An integer specifying at which position to stop (stop is exclusive meaning it is not included in the resulting list).\nstep Optional. An integer specifying the incrementation. Default is 1"
   },
   {
     "objectID": "slides-08-02.html#more-on-how-to-use-range-1",
@@ -7299,7 +7334,7 @@
     "href": "slides-08-02.html#write-a-function-3",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a new list in reversed order, containing items at every other index in the original list.\nUse a for loop.\nTest cases:\n\ncharacters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\nassert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\nassert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]"
+    "text": "Write a function\nIt returns a new list in reversed order, containing items at every other index in the original list. The first element of the new list should be the last element of the original list.\nUse a for loop.\nTest cases:\n\ncharacters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\nassert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\nassert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]"
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-3",
@@ -7313,7 +7348,7 @@
     "href": "slides-08-02.html#write-a-function-4",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nTest cases:\n\nmy_numbers = [0, 1, 0, 3, 0]\nassert add_every_two(my_numbers) == 0"
+    "text": "Write a function\nIt returns the sum of every other number from a list of integers, starting at index 0.\nTest cases:\n\nmy_numbers = [0, 1, 0, 3, 0]\nassert add_every_two(my_numbers) == 0"
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-4",
@@ -7321,6 +7356,13 @@
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef add_every_two(numbers):\n  result = 0\n  for i in range(0, len(numbers), 2):\n    result += numbers[i]\n  return result\n\ndef main():\n  my_numbers = [0, 1, 0, 3, 0]\n  assert add_every_two(my_numbers) == 0\n  \nmain()"
+  },
+  {
+    "objectID": "slides-08-02.html#quiz-07",
+    "href": "slides-08-02.html#quiz-07",
+    "title": "for loops with range (slides)",
+    "section": "Quiz 07",
+    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
   },
   {
     "objectID": "slides-09-02.html#review-of-for-in-range",
@@ -8378,19 +8420,5 @@
       "Watch",
       "Video Lessons"
     ]
-  },
-  {
-    "objectID": "slides-07-02.html#quick-review-while-loops",
-    "href": "slides-07-02.html#quick-review-while-loops",
-    "title": "random (slides)",
-    "section": "Quick Review: While Loops",
-    "text": "Quick Review: While Loops\nTake a look at these while loops. Discuss with your table: what will be printed after each while loop runs?\n\nindex, list_of_ints = 0, [5, 3, 3, 4, 6, 9, 17, 8, 99]\nwhile index &lt; len(list_of_ints): # while loop 1\n  print(list_of_ints[index])\n  index += 4\nfifth_w_found, long_string, index, counter = False, \"Wow, what a long string when will it end what a pain, we need to find a fifth w.\", 0, 0\nwhile not fifth_w_found: # while loop 2\n  if long_string[index] == \"w\":\n    counter += 1\n    index += 2\n  elif long_string[index] == \"y\":\n    index += 3\n  elif long_string[index] == \"z\" or long_string[index] == \",\":\n    index += 5\n  else:\n    print(long_string[index], end=\"\")\n    index += 1\n  if counter &gt;= 5:\n    fifth_w_found = True"
-  },
-  {
-    "objectID": "slides-08-01.html#quick-check---class-activity",
-    "href": "slides-08-01.html#quick-check---class-activity",
-    "title": "mutability (slides)",
-    "section": "Quick Check - Class Activity",
-    "text": "Quick Check - Class Activity\nWhat will be printed in both scenarios?\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nprint(advice) # Scenario 1\n\nchanged_string = \"Do\"\nadvice = [\"Don't\", \"try to change\", \"an element of\", \"a string\"]\nadvice[0] = changed_string\nchanged_string = \"Don't\"\nnew_string = changed_string\nadvice[0] = new_string\nnew_string = \"New String\"\nprint(advice) # Scenario 2"
   }
 ]
