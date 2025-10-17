@@ -147,6 +147,7 @@ website:
         - mutability.qmd
         - control_flow_for.md
         - assignments-08.qmd
+        - slides-08-01.qmd
       - section: "Module 9 - Data Structures (dictionaries)"
         contents:
         - data_structures_dict.md

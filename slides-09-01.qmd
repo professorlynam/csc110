@@ -7,9 +7,6 @@ df-print: kable
 
 # CSc 110 - dictionaries
 
-## Announcements
-
-* Last lab for short project 06 is Today -- no lab this week, we re-start lab sessions Tuesday Mar 18 
 
 
 
@@ -41,7 +38,7 @@ df-print: kable
 
     -   Elements **in** the list are the **values**
 
--   Keys (indices) are used to acess or modify the elements in the list
+-   Keys (indices) are used to acecss or modify the elements in the list
 
 ![](list_key_value.png)
 
@@ -78,21 +75,22 @@ Example (mapping strings to integers)
 ```{python}
 #| eval: true
 #| echo: true
-singers = { "Taylor Swift": 1989,
-            "JVKE":  2001,
-            "Bruno Mars":  1983}
+programming_languages = { "FORTRAN": 1957,
+            "BASIC":  1964,
+            "C":  1972,
+            "Python": 2991}
         
-# Using the key "JVKE" 
-# to lookup the number 2001
-singers["JVKE"]
+# Using the key "BASIC" 
+# to lookup the number 1964
+programming_languages["BASIC"]
 
-# Modifying the value associated with "Bruno Mars" 
-singers["Bruno Mars"] = 1985
+# Modifying the value associated with "Python" 
+programming_languages["Python"] = 1991
 
 # add a new key and value pair
-singers["Doja Cat"] = 1995
+programming_languages["Java"] = 1995
 
-print(singers)
+print(programming_languages)
 ```
 
 ## Evaluate the expressions
@@ -139,9 +137,6 @@ word_count["cannot"]
 word_count["foot"]
 ```
 
-
-## Attendance
-Attendance Evaluate the expression on Gradescope.
 
 
 ## Review: list methods
