@@ -151,11 +151,11 @@ website:
       - section: "Module 9 - Data Structures (dictionaries)"
         contents:
         - data_structures_dict.md
-        - assignments-08.qmd
+        - assignments-09.qmd
       - section: "Module 10 - Reading and Writing Text Files"
         contents:
         - io.md
-        - assignments-09.qmd
+        - assignments-10.qmd
       - section: "Module 11 - Data Structures (tuples)"
         contents:
         - data_structures_tuples.md
