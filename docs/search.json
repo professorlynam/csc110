@@ -769,7 +769,7 @@
     "href": "slides-09-01.html#mapping-1",
     "title": "intro to dictionaries (slides)",
     "section": "Mapping",
-    "text": "Mapping\n\nLists map keys to values too!\n\nIndices of the list are the keys\nElements in the list are the values\n\nKeys (indices) are used to acecss or modify the elements in the list"
+    "text": "Mapping\n\nLists map keys to values too!\n\nIndices of the list are the keys\nElements in the list are the values\n\nKeys (indices) are used to access or modify the elements in the list"
   },
   {
     "objectID": "slides-09-01.html#mapping-and-lists",

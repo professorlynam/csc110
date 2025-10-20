@@ -38,7 +38,7 @@ df-print: kable
 
     -   Elements **in** the list are the **values**
 
--   Keys (indices) are used to acecss or modify the elements in the list
+-   Keys (indices) are used to access or modify the elements in the list
 
 ![](list_key_value.png)
 
