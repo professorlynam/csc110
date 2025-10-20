@@ -148,10 +148,13 @@ website:
         - control_flow_for.md
         - assignments-08.qmd
         - slides-08-01.qmd
+        - slides-08-02.qmd
       - section: "Module 9 - Data Structures (dictionaries)"
         contents:
         - data_structures_dict.md
         - assignments-09.qmd
+        - slides-09-01.qmd
+        - slides-09-02.qmd
       - section: "Module 10 - Reading and Writing Text Files"
         contents:
         - io.md

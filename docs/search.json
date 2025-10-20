@@ -755,105 +755,165 @@
     "href": "slides-09-01.html#data-structure",
     "title": "intro to dictionaries (slides)",
     "section": "Data Structure",
-    "text": "Data Structure\n\nA data-structure is a way of arranging and organizing data in a computer program\nPython has several useful data-structures built into the language\n\nOne is a list (already covered)\nAnother, dictionary"
+    "text": "Data Structure\n\nA data-structure is a way of arranging and organizing data in a computer program\nPython has several useful data-structures built into the language\n\nOne is a list (already covered)\nAnother, dictionary",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#mapping",
     "href": "slides-09-01.html#mapping",
     "title": "intro to dictionaries (slides)",
     "section": "Mapping",
-    "text": "Mapping\n\nMany data structures allow data to be stored and retrieved using a concept called mapping\nMapping is the process of associating one value with another (a key with a value)\n\nSometimes also referred to as Hashing or Associativity"
+    "text": "Mapping\n\nMany data structures allow data to be stored and retrieved using a concept called mapping\nMapping is the process of associating one value with another (a key with a value)\n\nSometimes also referred to as Hashing or Associativity",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#mapping-1",
     "href": "slides-09-01.html#mapping-1",
     "title": "intro to dictionaries (slides)",
     "section": "Mapping",
-    "text": "Mapping\n\nLists map keys to values too!\n\nIndices of the list are the keys\nElements in the list are the values\n\nKeys (indices) are used to access or modify the elements in the list"
+    "text": "Mapping\n\nLists map keys to values too!\n\nIndices of the list are the keys\nElements in the list are the values\n\nKeys (indices) are used to access or modify the elements in the list",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#mapping-and-lists",
     "href": "slides-09-01.html#mapping-and-lists",
     "title": "intro to dictionaries (slides)",
     "section": "Mapping and Lists",
-    "text": "Mapping and Lists\n\nnumbers = [12, 49, -2, 26, 5, 17, -6]\n\n# Using the key 3 to lookup the associated value of 26\n# and then save the value into variable\nnew = numbers[3]\n\n# Modifying the list so that the key 5 now maps to 77\n# instead of 17\nnumbers[5] = 77"
+    "text": "Mapping and Lists\n\nnumbers = [12, 49, -2, 26, 5, 17, -6]\n\n# Using the key 3 to lookup the associated value of 26\n# and then save the value into variable\nnew = numbers[3]\n\n# Modifying the list so that the key 5 now maps to 77\n# instead of 17\nnumbers[5] = 77",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#dictionary",
     "href": "slides-09-01.html#dictionary",
     "title": "intro to dictionaries (slides)",
     "section": "Dictionary",
-    "text": "Dictionary\n\nLike lists:\n\nAssociates a set of keys to their corresponding values\nEach key has exactly 1 associated value\n\nUnlike lists:\n\nThe keys can be types other than ints: strings"
+    "text": "Dictionary\n\nLike lists:\n\nAssociates a set of keys to their corresponding values\nEach key has exactly 1 associated value\n\nUnlike lists:\n\nThe keys can be types other than ints: strings",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#dictionary-1",
     "href": "slides-09-01.html#dictionary-1",
     "title": "intro to dictionaries (slides)",
     "section": "Dictionary",
-    "text": "Dictionary\nExample (mapping strings to integers)\n\nprogramming_languages = { \"FORTRAN\": 1957,\n            \"BASIC\":  1964,\n            \"C\":  1972,\n            \"Python\": 2991}\n        \n# Using the key \"BASIC\" \n# to lookup the number 1964\nprogramming_languages[\"BASIC\"]\n\n# Modifying the value associated with \"Python\" \nprogramming_languages[\"Python\"] = 1991\n\n# add a new key and value pair\nprogramming_languages[\"Java\"] = 1995\n\nprint(programming_languages)\n\n{'FORTRAN': 1957, 'BASIC': 1964, 'C': 1972, 'Python': 1991, 'Java': 1995}"
+    "text": "Dictionary\nExample (mapping strings to integers)\n\nprogramming_languages = { \"FORTRAN\": 1957,\n            \"BASIC\":  1964,\n            \"C\":  1972,\n            \"Python\": 2991}\n        \n# Using the key \"BASIC\" \n# to lookup the number 1964\nprogramming_languages[\"BASIC\"]\n\n# Modifying the value associated with \"Python\" \nprogramming_languages[\"Python\"] = 1991\n\n# add a new key and value pair\nprogramming_languages[\"Java\"] = 1995\n\nprint(programming_languages)\n\n{'FORTRAN': 1957, 'BASIC': 1964, 'C': 1972, 'Python': 1991, 'Java': 1995}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#evaluate-the-expressions",
     "href": "slides-09-01.html#evaluate-the-expressions",
     "title": "intro to dictionaries (slides)",
     "section": "Evaluate the expressions",
-    "text": "Evaluate the expressions\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"sanded\": 13}\nword_count[\"cannot\"] = 90\nword_count[\"and\"] = 110\nword_count[\"foot\"] = \"feet\"\nword_count[\"and\"] += 10\n\n# what will these evaluate to?\nword_count[\"and\"] \nword_count[\"cannot\"]\nword_count[\"foot\"]"
+    "text": "Evaluate the expressions\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"sanded\": 13}\nword_count[\"cannot\"] = 90\nword_count[\"and\"] = 110\nword_count[\"foot\"] = \"feet\"\nword_count[\"and\"] += 10\n\n# what will these evaluate to?\nword_count[\"and\"] \nword_count[\"cannot\"]\nword_count[\"foot\"]",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#evaluate-the-expressions-1",
     "href": "slides-09-01.html#evaluate-the-expressions-1",
     "title": "intro to dictionaries (slides)",
     "section": "Evaluate the expressions",
-    "text": "Evaluate the expressions\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"sanded\": 13}\nword_count[\"cannot\"] = 90\nword_count[\"and\"] = 110\nword_count[\"foot\"] = \"feet\"\nword_count[\"and\"] += 10\n\n# what will these evaluate to?\nword_count[\"and\"]\n\n120\n\n\n\nword_count[\"cannot\"]\n\n90\n\n\n\nword_count[\"foot\"]\n\n'feet'"
+    "text": "Evaluate the expressions\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"sanded\": 13}\nword_count[\"cannot\"] = 90\nword_count[\"and\"] = 110\nword_count[\"foot\"] = \"feet\"\nword_count[\"and\"] += 10\n\n# what will these evaluate to?\nword_count[\"and\"]\n\n120\n\n\n\nword_count[\"cannot\"]\n\n90\n\n\n\nword_count[\"foot\"]\n\n'feet'",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#review-list-methods",
     "href": "slides-09-01.html#review-list-methods",
     "title": "intro to dictionaries (slides)",
     "section": "Review: list methods",
-    "text": "Review: list methods\n\n.append(value)\n.remove(value)\n.pop(index)"
+    "text": "Review: list methods\n\n.append(value)\n.remove(value)\n.pop(index)",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#dictionary-operations",
     "href": "slides-09-01.html#dictionary-operations",
     "title": "intro to dictionaries (slides)",
     "section": "Dictionary operations",
-    "text": "Dictionary operations\nAdds a new key/value pair:\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}\nscores['A+'] = 7  # key not in the original dictionary   \n\nChanges value associated with a key:\n\nscores['B'] = 20    # key in the dictionary\n\nRetrieves a value:\n\nscores['C']    \n\nRemoves a key/value pair:\n\nscores.pop('E')"
+    "text": "Dictionary operations\nAdds a new key/value pair:\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}\nscores['A+'] = 7  # key not in the original dictionary   \n\nChanges value associated with a key:\n\nscores['B'] = 20    # key in the dictionary\n\nRetrieves a value:\n\nscores['C']    \n\nRemoves a key/value pair:\n\nscores.pop('E')",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#the-in-operator",
     "href": "slides-09-01.html#the-in-operator",
     "title": "intro to dictionaries (slides)",
     "section": "The in operator",
-    "text": "The in operator\nWith strings:\n\n\"a\" in \"aeiou\"\n\nTrue\n\n\nWith lists:\n\n1 in [1, 2, 3, 4, 5]\n\nTrue\n\n\nCheck if an item is a dictionary key:\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"Sanded\": 13}\n\"why\" in word_count\n\nTrue"
+    "text": "The in operator\nWith strings:\n\n\"a\" in \"aeiou\"\n\nTrue\n\n\nWith lists:\n\n1 in [1, 2, 3, 4, 5]\n\nTrue\n\n\nCheck if an item is a dictionary key:\n\nword_count = {\"and\": 324, \"why\": 134, \"cannot\": 76, \"Sanded\": 13}\n\"why\" in word_count\n\nTrue",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#write-a-function",
     "href": "slides-09-01.html#write-a-function",
     "title": "intro to dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a dictionary with the count of every vowel in the string.\nUse for loop.\n\nassert count_vowels(\"\") == {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\nassert count_vowels(\"pineapple\") == {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}"
+    "text": "Write a function\nIt returns a dictionary with the count of every vowel in the string.\nUse for loop.\n\nassert count_vowels(\"\") == {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\nassert count_vowels(\"pineapple\") == {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#write-a-function-solution",
     "href": "slides-09-01.html#write-a-function-solution",
     "title": "intro to dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_vowels(string):\n  counts = {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\n  for i in range(len(string)):\n    char = string[i]\n    if char in counts:\n      counts[char] += 1\n  return counts\n\ndef main():\n  assert count_vowels(\"\") == {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\n  assert count_vowels(\"pineapple\") == {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}\n  \nmain()"
+    "text": "Write a function – solution\n\ndef count_vowels(string):\n  counts = {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\n  for i in range(len(string)):\n    char = string[i]\n    if char in counts:\n      counts[char] += 1\n  return counts\n\ndef main():\n  assert count_vowels(\"\") == {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0}\n  assert count_vowels(\"pineapple\") == {\"a\": 1, \"e\": 2, \"i\": 1, \"o\": 0, \"u\": 0}\n  \nmain()",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#write-a-function-1",
     "href": "slides-09-01.html#write-a-function-1",
     "title": "intro to dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns the dictionary with the count of every characters in the string.\n\nassert count_chars(\"\") == {}\nassert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}"
+    "text": "Write a function\nIt returns the dictionary with the count of every characters in the string.\n\nassert count_chars(\"\") == {}\nassert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#write-a-function-solution-1",
     "href": "slides-09-01.html#write-a-function-solution-1",
     "title": "intro to dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_chars(string):\n  counts = {}\n  for i in range(len(string)):\n    char = string[i]\n    if char in counts:\n      counts[char] += 1\n    else:\n      counts[char] = 1\n      \n  return counts\n\ndef main():\n  assert count_chars(\"\") == {}\n  assert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}\n  print(\"pass all test cases\")\n\nmain()\n\npass all test cases"
+    "text": "Write a function – solution\n\ndef count_chars(string):\n  counts = {}\n  for i in range(len(string)):\n    char = string[i]\n    if char in counts:\n      counts[char] += 1\n    else:\n      counts[char] = 1\n      \n  return counts\n\ndef main():\n  assert count_chars(\"\") == {}\n  assert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}\n  print(\"pass all test cases\")\n\nmain()\n\npass all test cases",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "intro to dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-08-01.html#lists-vs-strings",
@@ -7265,7 +7325,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.330666035033376\n1",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9089806684592462\n6",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7342,245 +7402,374 @@
     "href": "slides-08-02.html#while-vs.-for-loops",
     "title": "for loops with range (slides)",
     "section": "while vs. for loops",
-    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nindex = 0\nwhile index &lt; 3:\n  print(index)\n  index += 1\n\n0\n1\n2\n\n\n\n# range(start, stop) is an python function that creates a list of integers \n# from start (inclusive, defaults to 0) to stop (exclusive)\nfor index in range(3):\n  print(index)\n\n0\n1\n2"
+    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nindex = 0\nwhile index &lt; 3:\n  print(index)\n  index += 1\n\n0\n1\n2\n\n\n\n# range(start, stop) is an python function that creates a list of integers \n# from start (inclusive, defaults to 0) to stop (exclusive)\nfor index in range(3):\n  print(index)\n\n0\n1\n2",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#while-vs.-for-loops-1",
     "href": "slides-08-02.html#while-vs.-for-loops-1",
     "title": "for loops with range (slides)",
     "section": "while vs. for loops",
-    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nvalues = [70, 20, 30]\nindex = 0\nwhile index &lt; len(values):\n  print(values[index])\n  index += 1\n\n70\n20\n30\n\n\n\nvalues = [70, 20, 30]\nfor index in range(len(values)):\n  print(values[index])\n\n70\n20\n30"
+    "text": "while vs. for loops\nIn addition to while, we can use for to create loops\n\nvalues = [70, 20, 30]\nindex = 0\nwhile index &lt; len(values):\n  print(values[index])\n  index += 1\n\n70\n20\n30\n\n\n\nvalues = [70, 20, 30]\nfor index in range(len(values)):\n  print(values[index])\n\n70\n20\n30",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function",
     "href": "slides-08-02.html#write-a-function",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt iterates over the list, changing odd numbers to even numbers (by adding one to the odd numbers).\nUse a for loop.\n\ntest_integers = [1, 2, 3, 4]\nassert make_all_even(test_integers) == [2, 2, 4, 4]\nassert test_integers == [2, 2, 4, 4] # remember, the list changes will persist!"
+    "text": "Write a function\nIt iterates over the list, changing odd numbers to even numbers (by adding one to the odd numbers).\nUse a for loop.\n\ntest_integers = [1, 2, 3, 4]\nassert make_all_even(test_integers) == [2, 2, 4, 4]\nassert test_integers == [2, 2, 4, 4] # remember, the list changes will persist!",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution",
     "href": "slides-08-02.html#write-a-function-solution",
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef make_all_even(integers):\n  # for each index in list\n  for index in range(len(integers)):\n    integers[index] += integers[index] % 2 # add zero if even, one if odd\n  return integers\n      \ndef main():\n  test_integers = [1, 2, 3, 4]\n  assert make_all_even(test_integers) == [2, 2, 4, 4]\n  assert test_integers == [2, 2, 4, 4]\n  print(test_integers) \n  \nmain()\n\n[2, 2, 4, 4]"
+    "text": "Write a function – solution\n\ndef make_all_even(integers):\n  # for each index in list\n  for index in range(len(integers)):\n    integers[index] += integers[index] % 2 # add zero if even, one if odd\n  return integers\n      \ndef main():\n  test_integers = [1, 2, 3, 4]\n  assert make_all_even(test_integers) == [2, 2, 4, 4]\n  assert test_integers == [2, 2, 4, 4]\n  print(test_integers) \n  \nmain()\n\n[2, 2, 4, 4]",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-1",
     "href": "slides-08-02.html#write-a-function-1",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a list of integers that represent the indices of the vowels in the string\nUse a for loop.\nTest cases:\n\nassert indices_of_vowels(\"hello\") == [1, 4]\nassert indices_of_vowels(\"\") == []\nassert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]"
+    "text": "Write a function\nIt returns a list of integers that represent the indices of the vowels in the string\nUse a for loop.\nTest cases:\n\nassert indices_of_vowels(\"hello\") == [1, 4]\nassert indices_of_vowels(\"\") == []\nassert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-1",
     "href": "slides-08-02.html#write-a-function-solution-1",
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef indices_of_vowels(string):\n  result = [] # initialize empty list to hold indices\n  # for every index in list\n  for index in range(len(string)):\n    if string[index] in \"aeiou\": # check if character is vowel\n      result.append(index) # append index to result\n  return result\n\ndef main():\n  assert indices_of_vowels(\"hello\") == [1, 4]\n  assert indices_of_vowels(\"\") == []\n  assert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]\n\nmain()"
+    "text": "Write a function – solution\n\ndef indices_of_vowels(string):\n  result = [] # initialize empty list to hold indices\n  # for every index in list\n  for index in range(len(string)):\n    if string[index] in \"aeiou\": # check if character is vowel\n      result.append(index) # append index to result\n  return result\n\ndef main():\n  assert indices_of_vowels(\"hello\") == [1, 4]\n  assert indices_of_vowels(\"\") == []\n  assert indices_of_vowels(\"aeiou\") == [0, 1, 2, 3, 4]\n\nmain()",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#more-on-how-to-use-range",
     "href": "slides-08-02.html#more-on-how-to-use-range",
     "title": "for loops with range (slides)",
     "section": "More on how to use range()",
-    "text": "More on how to use range()\nSyntax: range(start, stop, step)\n\nstart Optional. An integer specifying at which position to start. Default is 0\nstop Required. An integer specifying at which position to stop (stop is exclusive meaning it is not included in the resulting list).\nstep Optional. An integer specifying the incrementation. Default is 1"
+    "text": "More on how to use range()\nSyntax: range(start, stop, step)\n\nstart Optional. An integer specifying at which position to start. Default is 0\nstop Required. An integer specifying at which position to stop (stop is exclusive meaning it is not included in the resulting list).\nstep Optional. An integer specifying the incrementation. Default is 1",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#more-on-how-to-use-range-1",
     "href": "slides-08-02.html#more-on-how-to-use-range-1",
     "title": "for loops with range (slides)",
     "section": "More on how to use range()",
-    "text": "More on how to use range()\n\nfor n in range(0, 5, 1): # step is 1, same as range(5)\n  print(n)\n\n0\n1\n2\n3\n4\n\n\n\nfor n in range(0, 5, 2): # step is 2\n  print(n)\n\n0\n2\n4\n\n\n\nfor n in range(5, 0, -2): # step is -2\n  print(n)\n\n5\n3\n1"
+    "text": "More on how to use range()\n\nfor n in range(0, 5, 1): # step is 1, same as range(5)\n  print(n)\n\n0\n1\n2\n3\n4\n\n\n\nfor n in range(0, 5, 2): # step is 2\n  print(n)\n\n0\n2\n4\n\n\n\nfor n in range(5, 0, -2): # step is -2\n  print(n)\n\n5\n3\n1",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-2",
     "href": "slides-08-02.html#write-a-function-2",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a new string with items at even indices in characters concatenated together.\nUse a for loop.\nTest cases:\n\ncharacters = [\"a\", \"e\", \"p\", \"o\", \"p\", \"w\", \"l\", \"i\", \"e\", \"f\"]\nassert every_two_together(characters) == \"apple\"\nassert every_two_together([]) == \"\""
+    "text": "Write a function\nIt returns a new string with items at even indices in characters concatenated together.\nUse a for loop.\nTest cases:\n\ncharacters = [\"a\", \"e\", \"p\", \"o\", \"p\", \"w\", \"l\", \"i\", \"e\", \"f\"]\nassert every_two_together(characters) == \"apple\"\nassert every_two_together([]) == \"\"",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-2",
     "href": "slides-08-02.html#write-a-function-solution-2",
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef every_two_together(chars):\n  new_string = \"\"\n  for i in range(0, len(chars), 2):\n    new_string += chars[i]\n  return new_string\n\ndef main():\n  characters = [\"a\", \"e\", \"p\", \"o\", \"p\", \"w\", \"l\", \"i\", \"e\", \"f\"]\n  assert every_two_together(characters) == \"apple\"\n  assert every_two_together([]) == \"\"\n  \nmain()"
+    "text": "Write a function – solution\n\ndef every_two_together(chars):\n  new_string = \"\"\n  for i in range(0, len(chars), 2):\n    new_string += chars[i]\n  return new_string\n\ndef main():\n  characters = [\"a\", \"e\", \"p\", \"o\", \"p\", \"w\", \"l\", \"i\", \"e\", \"f\"]\n  assert every_two_together(characters) == \"apple\"\n  assert every_two_together([]) == \"\"\n  \nmain()",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-3",
     "href": "slides-08-02.html#write-a-function-3",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a new list in reversed order, containing items at every other index in the original list. The first element of the new list should be the last element of the original list.\nUse a for loop.\nTest cases:\n\ncharacters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\nassert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\nassert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]"
+    "text": "Write a function\nIt returns a new list in reversed order, containing items at every other index in the original list. The first element of the new list should be the last element of the original list.\nUse a for loop.\nTest cases:\n\ncharacters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\nassert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\nassert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-3",
     "href": "slides-08-02.html#write-a-function-solution-3",
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef every_two(chars):\n  result = []\n  for i in range(len(chars)-1, -1, -2):\n    result.append(chars[i])\n  return result\n\ndef main():\n  characters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\n  assert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\n  assert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]\n  print(\"pass the test case\")\n  \nmain()\n\npass the test case"
+    "text": "Write a function – solution\n\ndef every_two(chars):\n  result = []\n  for i in range(len(chars)-1, -1, -2):\n    result.append(chars[i])\n  return result\n\ndef main():\n  characters = [\"o\", \"e\", \"k\", \"l\", \"c\", \"p\", \"l\", \"p\", \"m\", \"a\"]\n  assert every_two(characters) == [\"a\", \"p\", \"p\", \"l\", \"e\"]\n  assert every_two([\"y\", \"e\", \"o\", \"e\", \"j\"]) == [\"j\", \"o\", \"y\"]\n  print(\"pass the test case\")\n  \nmain()\n\npass the test case",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-4",
     "href": "slides-08-02.html#write-a-function-4",
     "title": "for loops with range (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns the sum of every other number from a list of integers, starting at index 0.\nTest cases:\n\nmy_numbers = [0, 1, 0, 3, 0]\nassert add_every_two(my_numbers) == 0"
+    "text": "Write a function\nIt returns the sum of every other number from a list of integers, starting at index 0.\nTest cases:\n\nmy_numbers = [0, 1, 0, 3, 0]\nassert add_every_two(my_numbers) == 0",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#write-a-function-solution-4",
     "href": "slides-08-02.html#write-a-function-solution-4",
     "title": "for loops with range (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef add_every_two(numbers):\n  result = 0\n  for i in range(0, len(numbers), 2):\n    result += numbers[i]\n  return result\n\ndef main():\n  my_numbers = [0, 1, 0, 3, 0]\n  assert add_every_two(my_numbers) == 0\n  \nmain()"
+    "text": "Write a function – solution\n\ndef add_every_two(numbers):\n  result = 0\n  for i in range(0, len(numbers), 2):\n    result += numbers[i]\n  return result\n\ndef main():\n  my_numbers = [0, 1, 0, 3, 0]\n  assert add_every_two(my_numbers) == 0\n  \nmain()",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-08-02.html#quiz-07",
     "href": "slides-08-02.html#quiz-07",
     "title": "for loops with range (slides)",
     "section": "Quiz 07",
-    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
+    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function.",
+    "crumbs": [
+      "Module 8 - Control Flow (for statements)",
+      "for loops with range (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#review-of-for-in-range",
     "href": "slides-09-02.html#review-of-for-in-range",
     "title": "for loops – iterating over items (slides)",
     "section": "Review of for in range():",
-    "text": "Review of for in range():\n\nfor n in range(5):\n  print(n)\n\n0\n1\n2\n3\n4\n\n\n\nnumbers = [2, 1, 4, 6, 23, 2]\nfor i in range(len(numbers)):\n  print(numbers[i])\n\n2\n1\n4\n6\n23\n2"
+    "text": "Review of for in range():\n\nfor n in range(5):\n  print(n)\n\n0\n1\n2\n3\n4\n\n\n\nnumbers = [2, 1, 4, 6, 23, 2]\nfor i in range(len(numbers)):\n  print(numbers[i])\n\n2\n1\n4\n6\n23\n2",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#introducing-for-x-in-string",
     "href": "slides-09-02.html#introducing-for-x-in-string",
     "title": "for loops – iterating over items (slides)",
     "section": "Introducing for x in string:",
-    "text": "Introducing for x in string:\n\nstring = \"hello\"\nfor n in string:\n  print(n)\n\nh\ne\nl\nl\no"
+    "text": "Introducing for x in string:\n\nstring = \"hello\"\nfor n in string:\n  print(n)\n\nh\ne\nl\nl\no",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#introducing-for-x-in-list",
     "href": "slides-09-02.html#introducing-for-x-in-list",
     "title": "for loops – iterating over items (slides)",
     "section": "Introducing for x in list:",
-    "text": "Introducing for x in list:\n\nnumbers = [2, 1, 4, 6, 23, 2]\nfor n in numbers:\n  print(n)\n\n2\n1\n4\n6\n23\n2"
+    "text": "Introducing for x in list:\n\nnumbers = [2, 1, 4, 6, 23, 2]\nfor n in numbers:\n  print(n)\n\n2\n1\n4\n6\n23\n2",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function",
     "href": "slides-09-02.html#write-a-function",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function",
-    "text": "Write a function\nModify your count_chars function. Use for x in string instead of for x in range(len(string)).\n\nassert count_chars(\"\") == {}\nassert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}"
+    "text": "Write a function\nModify your count_chars function. Use for x in string instead of for x in range(len(string)).\n\nassert count_chars(\"\") == {}\nassert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution",
     "href": "slides-09-02.html#write-a-function-solution",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_chars(string):\n  counts = {}\n  for char in string:\n    if char in counts:\n      counts[char] += 1\n    else:\n      counts[char] = 1\n      \n  return counts\n\ndef main():\n  assert count_chars(\"\") == {}\n  assert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}\n  print(\"Passed all tests.\")\n\nmain()\n\nPassed all tests."
+    "text": "Write a function – solution\n\ndef count_chars(string):\n  counts = {}\n  for char in string:\n    if char in counts:\n      counts[char] += 1\n    else:\n      counts[char] = 1\n      \n  return counts\n\ndef main():\n  assert count_chars(\"\") == {}\n  assert count_chars(\"banana\") == {\"b\": 1, \"a\": 3, \"n\": 2}\n  print(\"Passed all tests.\")\n\nmain()\n\nPassed all tests.",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#a-note-on-two-methods",
     "href": "slides-09-02.html#a-note-on-two-methods",
     "title": "for loops – iterating over items (slides)",
     "section": "A Note on two methods",
-    "text": "A Note on two methods\nfor i in range(len(list)): VS. for x in list:\n\nMutate the list: option 1 (need to use index i to mutate)\n\n\nnumbers = [2, 1, 4]\nfor i in range(len(numbers)):\n  numbers[i] += 1\nnumbers\n\n[3, 2, 5]\n\n\n\nGet the values: both options\n\n\nnumbers = [2, 1, 4]\nfor n in numbers:\n  print(n)\n\n2\n1\n4"
+    "text": "A Note on two methods\nfor i in range(len(list)): VS. for x in list:\n\nMutate the list: option 1 (need to use index i to mutate)\n\n\nnumbers = [2, 1, 4]\nfor i in range(len(numbers)):\n  numbers[i] += 1\nnumbers\n\n[3, 2, 5]\n\n\n\nGet the values: both options\n\n\nnumbers = [2, 1, 4]\nfor n in numbers:\n  print(n)\n\n2\n1\n4",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-1",
     "href": "slides-09-02.html#write-a-function-1",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a dictionary that maps each negative value in numbers to its frequency in numbers.\n\nassert tally_negatives([1, -2, 0, -4, -2]) == {-2: 2, -4: 1}\nassert tally_negatives([]) == {}"
+    "text": "Write a function\nIt returns a dictionary that maps each negative value in numbers to its frequency in numbers.\n\nassert tally_negatives([1, -2, 0, -4, -2]) == {-2: 2, -4: 1}\nassert tally_negatives([]) == {}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-1",
     "href": "slides-09-02.html#write-a-function-solution-1",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef tally_negatives(numbers):\n  tally = {}\n  for n in numbers:\n    if n &lt; 0:\n      if n not in tally:\n        tally[n] = 0\n      tally[n] += 1\n  return tally\n\ndef main():\n  assert tally_negatives([1, -2, 0, -4, -2]) == {-2: 2, -4: 1}\n  assert tally_negatives([]) == {}\n  print(\"Passed all tests.\")\n  \nmain()\n\nPassed all tests."
+    "text": "Write a function – solution\n\ndef tally_negatives(numbers):\n  tally = {}\n  for n in numbers:\n    if n &lt; 0:\n      if n not in tally:\n        tally[n] = 0\n      tally[n] += 1\n  return tally\n\ndef main():\n  assert tally_negatives([1, -2, 0, -4, -2]) == {-2: 2, -4: 1}\n  assert tally_negatives([]) == {}\n  print(\"Passed all tests.\")\n  \nmain()\n\nPassed all tests.",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#iterating-a-dictionary",
     "href": "slides-09-02.html#iterating-a-dictionary",
     "title": "for loops – iterating over items (slides)",
     "section": "Iterating a dictionary",
-    "text": "Iterating a dictionary\nIterating keys:\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key in scores:\n  print(key)\n\nA\nB\nC\nD\n\n\nAnother option: dict.keys():\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key in scores.keys():\n  print(key)\n\nA\nB\nC\nD"
+    "text": "Iterating a dictionary\nIterating keys:\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key in scores:\n  print(key)\n\nA\nB\nC\nD\n\n\nAnother option: dict.keys():\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key in scores.keys():\n  print(key)\n\nA\nB\nC\nD",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#iterating-a-dictionary-1",
     "href": "slides-09-02.html#iterating-a-dictionary-1",
     "title": "for loops – iterating over items (slides)",
     "section": "Iterating a dictionary",
-    "text": "Iterating a dictionary\nIterating values: dict.values():\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor value in scores.values():\n  print(value)\n\n10\n25\n27\n10\n\n\nIterating both keys and values: dict.items()\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key, value in scores.items():\n  print(key, value)\n\nA 10\nB 25\nC 27\nD 10"
+    "text": "Iterating a dictionary\nIterating values: dict.values():\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor value in scores.values():\n  print(value)\n\n10\n25\n27\n10\n\n\nIterating both keys and values: dict.items()\n\nscores = {'A': 10, 'B': 25, 'C': 27, 'D': 10}\nfor key, value in scores.items():\n  print(key, value)\n\nA 10\nB 25\nC 27\nD 10",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-2",
     "href": "slides-09-02.html#write-a-function-2",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a list with all the keys and values in the dictionary.\nTest cases:\n\nassert keys_and_values({'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}) == \\\n    ['A', 10, 'B', 25, 'C', 27, 'D', 10, 'E', 5]"
+    "text": "Write a function\nIt returns a list with all the keys and values in the dictionary.\nTest cases:\n\nassert keys_and_values({'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}) == \\\n    ['A', 10, 'B', 25, 'C', 27, 'D', 10, 'E', 5]",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-2",
     "href": "slides-09-02.html#write-a-function-solution-2",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef keys_and_values(dictionary):\n  new_list = []\n  for key, value in dictionary.items():\n    new_list.append(key)\n    new_list.append(value)\n  return new_list\n\ndef main():\n  assert keys_and_values({'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}) == ['A', 10, 'B', 25, 'C', 27, 'D', 10, 'E', 5]\n  \nmain()"
-  },
-  {
-    "objectID": "slides-09-02.html#quiz-07",
-    "href": "slides-09-02.html#quiz-07",
-    "title": "for loops – iterating over items (slides)",
-    "section": "Quiz 07",
-    "text": "Quiz 07\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
+    "text": "Write a function – solution\n\ndef keys_and_values(dictionary):\n  new_list = []\n  for key, value in dictionary.items():\n    new_list.append(key)\n    new_list.append(value)\n  return new_list\n\ndef main():\n  assert keys_and_values({'A': 10, 'B': 25, 'C': 27, 'D': 10, 'E': 5}) == ['A', 10, 'B', 25, 'C', 27, 'D', 10, 'E', 5]\n  \nmain()",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-3",
     "href": "slides-09-02.html#write-a-function-3",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt mutates dict_1, by adding to it all key-values pairs in dict_2. If a key is in both dictionaries, the values are added.\nTest cases:\n\ndict_1 = {\"a\": 20, \"e\": 5}\ndict_2 = {\"e\": 10, \"i\": 2}\nassert merge_dictionaries(dict_1, dict_2) == {\"a\": 20, \"e\": 15, \"i\": 2}"
+    "text": "Write a function\nIt mutates dict_1, by adding to it all key-values pairs in dict_2. If a key is in both dictionaries, the values are added.\nTest cases:\n\ndict_1 = {\"a\": 20, \"e\": 5}\ndict_2 = {\"e\": 10, \"i\": 2}\nassert merge_dictionaries(dict_1, dict_2) == {\"a\": 20, \"e\": 15, \"i\": 2}",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-3",
     "href": "slides-09-02.html#write-a-function-solution-3",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef merge_dictionaries(dict_1, dict_2):\n  for key, value in dict_2.items():\n    if key in dict_1:\n      dict_1[key] += value\n    else:\n      dict_1[key] = value\n  return dict_1\n      \ndef main():\n  dict_1 = {\"a\": 20, \"e\": 5}\n  dict_2 = {\"e\": 10, \"i\": 2}\n  assert merge_dictionaries(dict_1, dict_2) == {\"a\": 20, \"e\": 15, \"i\": 2}\n  \nmain()"
+    "text": "Write a function – solution\n\ndef merge_dictionaries(dict_1, dict_2):\n  for key, value in dict_2.items():\n    if key in dict_1:\n      dict_1[key] += value\n    else:\n      dict_1[key] = value\n  return dict_1\n      \ndef main():\n  dict_1 = {\"a\": 20, \"e\": 5}\n  dict_2 = {\"e\": 10, \"i\": 2}\n  assert merge_dictionaries(dict_1, dict_2) == {\"a\": 20, \"e\": 15, \"i\": 2}\n  \nmain()",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-4",
     "href": "slides-09-02.html#write-a-function-4",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt mutate the list, multiply every number by 2. It returns the highest value in the mutated list.\nTest cases:\n\nassert max_list([2, 2, 1]) == 4\nassert max_list([5, 2, 1]) == 10\nassert max_list([]) == None"
+    "text": "Write a function\nIt mutate the list, multiply every number by 2. It returns the highest value in the mutated list.\nTest cases:\n\nassert max_list([2, 2, 1]) == 4\nassert max_list([5, 2, 1]) == 10\nassert max_list([]) == None",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-1-1",
     "href": "slides-09-02.html#write-a-function-solution-1-1",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n    for n in numbers:\n        if max == None or n &gt; max:\n            max =  n\n    return max\n\ndef main():\n  assert max_list([2, 2, 1]) == 4\n  assert max_list([5, 2, 1]) == 10\n  assert max_list([]) == None\n  print(\"pass\")\n  \nmain()\n\npass"
+    "text": "Write a function – solution 1\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n    for n in numbers:\n        if max == None or n &gt; max:\n            max =  n\n    return max\n\ndef main():\n  assert max_list([2, 2, 1]) == 4\n  assert max_list([5, 2, 1]) == 10\n  assert max_list([]) == None\n  print(\"pass\")\n  \nmain()\n\npass",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-1-continue",
     "href": "slides-09-02.html#write-a-function-solution-1-continue",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution 1 continue",
-    "text": "Write a function – solution 1 continue\n\nline 3: can we use for x in list?\nline 5: can we use for i in range(len(list))?\n\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n    for n in numbers:\n        if max == None or n &gt; max:\n            max =  n\n    return max"
+    "text": "Write a function – solution 1 continue\n\nline 3: can we use for x in list?\nline 5: can we use for i in range(len(list))?\n\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n    for n in numbers:\n        if max == None or n &gt; max:\n            max =  n\n    return max",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-2-1",
     "href": "slides-09-02.html#write-a-function-solution-2-1",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n        if max == None or numbers[i] &gt; max:\n            max = numbers[i]\n    return max\n\ndef main():\n  assert max_list([2, 2, 1]) == 4\n  assert max_list([5, 2, 1]) == 10\n  assert max_list([]) == None\n  print(\"pass\")\n  \nmain()\n\npass"
+    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n        if max == None or numbers[i] &gt; max:\n            max = numbers[i]\n    return max\n\ndef main():\n  assert max_list([2, 2, 1]) == 4\n  assert max_list([5, 2, 1]) == 10\n  assert max_list([]) == None\n  print(\"pass\")\n  \nmain()\n\npass",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-09-02.html#write-a-function-solution-2-continue",
     "href": "slides-09-02.html#write-a-function-solution-2-continue",
     "title": "for loops – iterating over items (slides)",
     "section": "Write a function – solution 2 continue",
-    "text": "Write a function – solution 2 continue\n\nline 3: can we use for x in list?\n\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n        if max == None or numbers[i] &gt; max:\n            max = numbers[i]\n    return max"
+    "text": "Write a function – solution 2 continue\n\nline 3: can we use for x in list?\n\n\ndef max_list(numbers):\n    max = None\n    for i in range(len(numbers)):\n        numbers[i] *= 2\n        if max == None or numbers[i] &gt; max:\n            max = numbers[i]\n    return max",
+    "crumbs": [
+      "Module 9 - Data Structures (dictionaries)",
+      "for loops -- iterating over items (slides)"
+    ]
   },
   {
     "objectID": "slides-10-02.html#review---iterating-lines-in-a-file",
@@ -8245,7 +8434,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",

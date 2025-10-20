@@ -4475,6 +4475,12 @@ vertical-align: -.125em;
  <span class="menu-text">mutability (slides)</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides-08-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">for loops with range (slides)</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -4496,6 +4502,18 @@ vertical-align: -.125em;
   <div class="sidebar-item-container"> 
   <a href="./assignments-09.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 9 Assignments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides-09-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">intro to dictionaries (slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides-09-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">for loops – iterating over items (slides)</span></a>
   </div>
 </li>
       </ul>
@@ -4694,7 +4712,7 @@ vertical-align: -.125em;
 <blockquote class="blockquote">
 <p>Imagine you have X amount of dollars in an investment account that earns 5% interest per year. How long (in years) does it take for the account balance to be times Y the original investment?</p>
 </blockquote>
-<div id="ac26bb9e" class="cell" data-execution_count="1">
+<div id="6deb5545" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># X amount of dollars is $10,000</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>initial_amount <span class="op">=</span> <span class="dv">10000</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -4715,7 +4733,7 @@ vertical-align: -.125em;
 </section>
 <section id="test-cases" class="level2">
 <h2 class="anchored" data-anchor-id="test-cases">Test cases</h2>
-<div id="1eb6ab83" class="cell" data-execution_count="2">
+<div id="9c31aecc" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># X amount of dollars is $10,000</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  initial_amount <span class="op">=</span> <span class="dv">10000</span></span>
@@ -4754,7 +4772,7 @@ Before You Begin
 <section id="example" class="level2">
 <h2 class="anchored" data-anchor-id="example">Example</h2>
 <p>Write a while loop to count how many years until you can run for president (simplistic example, for illustration purposes only):</p>
-<div id="00d76b47" class="cell" data-execution_count="3">
+<div id="90e4aee9" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_years(current_age, age_goal):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  years <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  age <span class="op">=</span> current_age</span>
@@ -4775,7 +4793,7 @@ Before You Begin
 <section id="format-method" class="level2">
 <h2 class="anchored" data-anchor-id="format-method"><code>.format()</code> method</h2>
 <p>Let’s update our function so it returns a string message instead of an integer:</p>
-<div id="8eea08c4" class="cell" data-execution_count="4">
+<div id="37e97092" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_years(current_age, age_goal):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  years <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  age <span class="op">=</span> current_age</span>
@@ -4798,7 +4816,7 @@ Before You Begin
 <section id="formatting-numbers" class="level2">
 <h2 class="anchored" data-anchor-id="formatting-numbers">Formatting numbers</h2>
 <p>Use <code>:</code> to specify formatting options,</p>
-<div id="7ee49d6a" class="cell" data-execution_count="5">
+<div id="03ec62c8" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>amount <span class="op">=</span> <span class="dv">10000000</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;I have $</span><span class="sc">{:,}</span><span class="st"> in my pocket.&quot;</span>.<span class="bu">format</span>(amount))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
