@@ -115,7 +115,6 @@ info.close()
 
 Function name `read_first_line`: given a `filename` string, open file in read (`'r'`) mode, read one line, close file, return that line.
 
-Name your file `first_read.py` and submit to gradescope.
 
 ## Reading a line example
 

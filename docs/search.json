@@ -615,140 +615,220 @@
     "href": "slides-10-01.html#key-concepts",
     "title": "files (slides)",
     "section": "Key Concepts",
-    "text": "Key Concepts\n\niterating a string/list/dictionary (+ if statements)\n\nwhile loop, for loops (two ways, difference?)\ndraw a loop table\n\npurpose of iterating, for example:\n\nmutate (list/dictionary methods)\naggregate (e.g., sum, factorial)\nget max or min\nconcatenate strings (string methods)"
+    "text": "Key Concepts\n\niterating a string/list/dictionary (+ if statements)\n\nwhile loop, for loops (two ways, difference?)\ndraw a loop table\n\npurpose of iterating, for example:\n\nmutate (list/dictionary methods)\naggregate (e.g., sum, factorial)\nget max or min\nconcatenate strings (string methods)",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#files-and-file-systems",
     "href": "slides-10-01.html#files-and-file-systems",
     "title": "files (slides)",
     "section": "Files and file systems",
-    "text": "Files and file systems\n\nOn (at least most of) our computers, there is a file system via which we can create, save, modify, and remove files\n\nOn Mac: can browse with Finder\nOn Windows: can browse with windows explorer\n\nFile systems are often hierarchical"
+    "text": "Files and file systems\n\nOn (at least most of) our computers, there is a file system via which we can create, save, modify, and remove files\n\nOn Mac: can browse with Finder\nOn Windows: can browse with windows explorer\n\nFile systems are often hierarchical",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#opening-a-file",
     "href": "slides-10-01.html#opening-a-file",
     "title": "files (slides)",
     "section": "Opening a file",
-    "text": "Opening a file\n\nTo open a file in a python program:\ninfo = open(file_name, mode)\nfile_name: the name of the file to open\n\nIt can also be a path\n\nmode: the mode in which to open in\n\n‘a’    ‘r’    ‘w’"
+    "text": "Opening a file\n\nTo open a file in a python program:\ninfo = open(file_name, mode)\nfile_name: the name of the file to open\n\nIt can also be a path\n\nmode: the mode in which to open in\n\n‘a’    ‘r’    ‘w’",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#absolute-vs-relative-path",
     "href": "slides-10-01.html#absolute-vs-relative-path",
     "title": "files (slides)",
     "section": "Absolute vs Relative path",
-    "text": "Absolute vs Relative path\n\nAn absolute path describes the location from the root directory.\n\n/home/doc/example.txt\n\nA relative path describes the location of a file relative to the current (working) directory.\n\nif .py and example.txt are in the same folder, the relative path is the filename itself - example.txt"
+    "text": "Absolute vs Relative path\n\nAn absolute path describes the location from the root directory.\n\n/home/doc/example.txt\n\nA relative path describes the location of a file relative to the current (working) directory.\n\nif .py and example.txt are in the same folder, the relative path is the filename itself - example.txt",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#opening-and-closing-a-file",
     "href": "slides-10-01.html#opening-and-closing-a-file",
     "title": "files (slides)",
     "section": "Opening and closing a file",
-    "text": "Opening and closing a file\ninfo.txt\nThe quick brown fox\njumped over\nthe lazy\nbear\nsitting by the tree\nread_file.py\n\ninfo = open('info.txt', 'r')\ninfo.close()"
+    "text": "Opening and closing a file\ninfo.txt\nThe quick brown fox\njumped over\nthe lazy\nbear\nsitting by the tree\nread_file.py\n\ninfo = open('info.txt', 'r')\ninfo.close()",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#reading-a-line",
     "href": "slides-10-01.html#reading-a-line",
     "title": "files (slides)",
     "section": "Reading a line",
-    "text": "Reading a line\nUse info object and call readline()to read a line\nread_file.py\n\ninfo = open('info.txt', 'r')\nline = info.readline()\ninfo.close()\n\nprint(line)\nassert line == \"The quick brown fox\\n\"\n\nThe quick brown fox"
+    "text": "Reading a line\nUse info object and call readline()to read a line\nread_file.py\n\ninfo = open('info.txt', 'r')\nline = info.readline()\ninfo.close()\n\nprint(line)\nassert line == \"The quick brown fox\\n\"\n\nThe quick brown fox",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#reading-three-lines",
     "href": "slides-10-01.html#reading-three-lines",
     "title": "files (slides)",
     "section": "Reading three lines",
-    "text": "Reading three lines\n\ninfo = open('info.txt', 'r')\nprint(info.readline())\nprint(info.readline())\nprint(info.readline())\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy"
+    "text": "Reading three lines\n\ninfo = open('info.txt', 'r')\nprint(info.readline())\nprint(info.readline())\nprint(info.readline())\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#reading-a-line-example",
     "href": "slides-10-01.html#reading-a-line-example",
     "title": "files (slides)",
     "section": "Reading a line example",
-    "text": "Reading a line example\ninfo.txt\nThe quick brown fox\njumped over\nthe lazy\nbear\nsitting by the tree\nfirst_read.py\n\ndef read_first_line(filename):\n  info = open(filename, 'r')\n  line = info.readline()\n  info.close()\n  return line\n\nassert read_first_line('info.txt') == \"The quick brown fox\\n\""
+    "text": "Reading a line example\ninfo.txt\nThe quick brown fox\njumped over\nthe lazy\nbear\nsitting by the tree\nfirst_read.py\n\ndef read_first_line(filename):\n  info = open(filename, 'r')\n  line = info.readline()\n  info.close()\n  return line\n\nassert read_first_line('info.txt') == \"The quick brown fox\\n\"",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#reading-lines",
     "href": "slides-10-01.html#reading-lines",
     "title": "files (slides)",
     "section": "Reading lines",
-    "text": "Reading lines\n\nfile.readline()\n\nreads one line from a file, returns a string\n\nfile.readlines()\n\nreads all of the lines, returns a list of strings\n\nfile.read()\n\nreturns one string"
+    "text": "Reading lines\n\nfile.readline()\n\nreads one line from a file, returns a string\n\nfile.readlines()\n\nreads all of the lines, returns a list of strings\n\nfile.read()\n\nreturns one string",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#iterating-over-a-file",
     "href": "slides-10-01.html#iterating-over-a-file",
     "title": "files (slides)",
     "section": "Iterating over a file",
-    "text": "Iterating over a file\nUse readlines():\n\ninfo = open('info.txt', 'r')\nfor line in info.readlines():\n    print(line)\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy\n\nbear\n\nsitting by the tree"
+    "text": "Iterating over a file\nUse readlines():\n\ninfo = open('info.txt', 'r')\nfor line in info.readlines():\n    print(line)\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy\n\nbear\n\nsitting by the tree",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#iterating-over-a-file-an-easier-way",
     "href": "slides-10-01.html#iterating-over-a-file-an-easier-way",
     "title": "files (slides)",
     "section": "Iterating over a file – an easier way",
-    "text": "Iterating over a file – an easier way\nHere info is iterable, so we can use for x in file loop:\n\ninfo = open('info.txt', 'r')\nfor line in info:\n    print(line)\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy\n\nbear\n\nsitting by the tree"
+    "text": "Iterating over a file – an easier way\nHere info is iterable, so we can use for x in file loop:\n\ninfo = open('info.txt', 'r')\nfor line in info:\n    print(line)\ninfo.close()\n\nThe quick brown fox\n\njumped over\n\nthe lazy\n\nbear\n\nsitting by the tree",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#more-string-methods",
     "href": "slides-10-01.html#more-string-methods",
     "title": "files (slides)",
     "section": "More string methods",
-    "text": "More string methods\nWe worked with .isnumeric(), a string method to check if a string contains only digit characters\nHere are some other useful string methods:\n\nstring.strip(chars) – removes any of the characters in chars from the beginning or end of string, returns a string\nstring.split(chars) – splits string at the chars, returns a list"
+    "text": "More string methods\nWe worked with .isnumeric(), a string method to check if a string contains only digit characters\nHere are some other useful string methods:\n\nstring.strip(chars) – removes any of the characters in chars from the beginning or end of string, returns a string\nstring.split(chars) – splits string at the chars, returns a list",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#more-string-methods-1",
     "href": "slides-10-01.html#more-string-methods-1",
     "title": "files (slides)",
     "section": "More string methods",
-    "text": "More string methods\n.strip() and .split(\" \")\n\ninfo = open('info.txt', 'r')\n\nline = info.readline()\nprint(line)\n\nline = line.strip(\"\\n\")\nprint(line)\n\nwords = line.split(\" \")\nprint(words)\n\ninfo.close()\n\nThe quick brown fox\n\nThe quick brown fox\n['The', 'quick', 'brown', 'fox']"
+    "text": "More string methods\n.strip() and .split(\" \")\n\ninfo = open('info.txt', 'r')\n\nline = info.readline()\nprint(line)\n\nline = line.strip(\"\\n\")\nprint(line)\n\nwords = line.split(\" \")\nprint(words)\n\ninfo.close()\n\nThe quick brown fox\n\nThe quick brown fox\n['The', 'quick', 'brown', 'fox']",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#write-your-code",
     "href": "slides-10-01.html#write-your-code",
     "title": "files (slides)",
     "section": "Write your code",
-    "text": "Write your code\nUse .strip() and .split(\" \") to print a list: ['The', 'quick', 'brown', 'fox']\n\nname = \"The-quick-brown-fox$\""
+    "text": "Write your code\nUse .strip() and .split(\" \") to print a list: ['The', 'quick', 'brown', 'fox']\n\nname = \"The-quick-brown-fox$\"",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#more-string-methods-2",
     "href": "slides-10-01.html#more-string-methods-2",
     "title": "files (slides)",
     "section": "More string methods",
-    "text": "More string methods\nUse only .strip():\n\nname = \"The-quick-brown-fox$\"\n\nprint(name.strip('$'))\n\nThe-quick-brown-fox\n\n\nUse .strip() and .split(\" \"):\n\nname = \"The-quick-brown-fox$\"\n\nprint(name.strip('$').split('-'))\n\n['The', 'quick', 'brown', 'fox']"
+    "text": "More string methods\nUse only .strip():\n\nname = \"The-quick-brown-fox$\"\n\nprint(name.strip('$'))\n\nThe-quick-brown-fox\n\n\nUse .strip() and .split(\" \"):\n\nname = \"The-quick-brown-fox$\"\n\nprint(name.strip('$').split('-'))\n\n['The', 'quick', 'brown', 'fox']",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#write-a-function-1",
     "href": "slides-10-01.html#write-a-function-1",
     "title": "files (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIt opens the file in read mode.\nIt iterates over the lines, stripping the line breaks and splitting each line by space.\nIt returns a list of lists, where each inner-list is a line containing all the words in that line\n\nTest case (download text file):\n\nassert lines_and_words(\"info.txt\") == [ ['The', 'quick', 'brown', 'fox'], \n                                        ['jumped', 'over'], ['the', 'lazy'],\n                                        ['bear'], ['sitting', 'by', 'the', 'tree'] ]"
+    "text": "Write a function\n\nIt opens the file in read mode.\nIt iterates over the lines, stripping the line breaks and splitting each line by space.\nIt returns a list of lists, where each inner-list is a line containing all the words in that line\n\nTest case (download text file):\n\nassert lines_and_words(\"info.txt\") == [ ['The', 'quick', 'brown', 'fox'], \n                                        ['jumped', 'over'], ['the', 'lazy'],\n                                        ['bear'], ['sitting', 'by', 'the', 'tree'] ]",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#write-a-function-solution",
     "href": "slides-10-01.html#write-a-function-solution",
     "title": "files (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef lines_and_words(file_name):\n  f = open(file_name, \"r\")\n  all_words = []\n  for line in f:\n    all_words.append(line.strip(\"\\n\").split(\" \"))\n  f.close()\n  return all_words\n  \n  \ndef main():\n  assert lines_and_words(\"info.txt\") == [ ['The', 'quick', 'brown', 'fox'], \n                                          ['jumped', 'over'], ['the', 'lazy'],\n                                          ['bear'], ['sitting', 'by', 'the', 'tree'] ]\n                                     \nmain()"
+    "text": "Write a function – solution\n\ndef lines_and_words(file_name):\n  f = open(file_name, \"r\")\n  all_words = []\n  for line in f:\n    all_words.append(line.strip(\"\\n\").split(\" \"))\n  f.close()\n  return all_words\n  \n  \ndef main():\n  assert lines_and_words(\"info.txt\") == [ ['The', 'quick', 'brown', 'fox'], \n                                          ['jumped', 'over'], ['the', 'lazy'],\n                                          ['bear'], ['sitting', 'by', 'the', 'tree'] ]\n                                     \nmain()",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#write-a-function-2",
     "href": "slides-10-01.html#write-a-function-2",
     "title": "files (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes a string file_name as argument and returns a dictionary with word counts.\nUse str.lower() to convert a string to lowercase.\nTest case:\n\nassert count_words(\"info.txt\") == {\"the\": 3, \"quick\": 1, \"brown\": 1,\n                                   \"fox\": 1 , \"jumped\": 1, \"over\": 1, \n                                   \"lazy\": 1, \"bear\": 1, \"sitting\": 1,\n                                   \"by\": 1, \"tree\": 1}"
+    "text": "Write a function\nIt takes a string file_name as argument and returns a dictionary with word counts.\nUse str.lower() to convert a string to lowercase.\nTest case:\n\nassert count_words(\"info.txt\") == {\"the\": 3, \"quick\": 1, \"brown\": 1,\n                                   \"fox\": 1 , \"jumped\": 1, \"over\": 1, \n                                   \"lazy\": 1, \"bear\": 1, \"sitting\": 1,\n                                   \"by\": 1, \"tree\": 1}",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#write-a-function-solution-1",
     "href": "slides-10-01.html#write-a-function-solution-1",
     "title": "files (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_words(file_name):\n  f = open(file_name, \"r\")\n  counts = {}\n  for line in f:\n    words = line.strip(\"\\n\").split(\" \")\n    for w in words:\n      lower_case_w = w.lower()\n      if lower_case_w not in counts:\n        counts[lower_case_w] = 1\n      else:\n        counts[lower_case_w] += 1\n  return counts\n\ndef main():\n  assert count_words(\"info.txt\") == {\"the\": 3, \"quick\": 1, \"brown\": 1,\n                                     \"fox\": 1 , \"jumped\": 1, \"over\": 1, \n                                     \"lazy\": 1, \"bear\": 1, \"sitting\": 1,\n                                     \"by\": 1, \"tree\": 1}\n                                 \nmain()"
+    "text": "Write a function – solution\n\ndef count_words(file_name):\n  f = open(file_name, \"r\")\n  counts = {}\n  for line in f:\n    words = line.strip(\"\\n\").split(\" \")\n    for w in words:\n      lower_case_w = w.lower()\n      if lower_case_w not in counts:\n        counts[lower_case_w] = 1\n      else:\n        counts[lower_case_w] += 1\n  return counts\n\ndef main():\n  assert count_words(\"info.txt\") == {\"the\": 3, \"quick\": 1, \"brown\": 1,\n                                     \"fox\": 1 , \"jumped\": 1, \"over\": 1, \n                                     \"lazy\": 1, \"bear\": 1, \"sitting\": 1,\n                                     \"by\": 1, \"tree\": 1}\n                                 \nmain()",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#quiz-08",
     "href": "slides-10-01.html#quiz-08",
     "title": "files (slides)",
     "section": "Quiz 08",
-    "text": "Quiz 08\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function."
+    "text": "Quiz 08\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function.",
+    "crumbs": [
+      "Module 10 - Reading and Writing Text Files",
+      "files (slides)"
+    ]
   },
   {
     "objectID": "slides-09-01.html#data-structure",
@@ -7325,7 +7405,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9089806684592462\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.31213921739290684\n4",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8434,7 +8514,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
