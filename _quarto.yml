@@ -160,6 +160,7 @@ website:
         - io.md
         - assignments-10.qmd
         - slides-10-01.qmd
+        - slides-10-02.qmd
       - section: "Module 11 - Data Structures (tuples)"
         contents:
         - data_structures_tuples.md
