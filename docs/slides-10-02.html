@@ -203,9 +203,17 @@
 <h1>CSc 110 - files and strings</h1>
 
 </section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Midterm 2 is next Wednesday (November 5th)</li>
+<li>Midterm 2 study guide has been posted on Piazza. See Piazza post for details</li>
+<li>The Midterm 2 review session will be held November 3rd, 5pm-7pm. The first hour (5pm-6pm) will be in GS 837, the second hour (6pm-7pm) will be in GS 228.</li>
+</ul>
+</section>
 <section id="review---iterating-lines-in-a-file" class="slide level2">
 <h2>Review - iterating lines in a file</h2>
-<div id="7751a2b0" class="cell" data-execution_count="1">
+<div id="b003ec68" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>info <span class="op">=</span> <span class="bu">open</span>(<span class="st">'info.txt'</span>, <span class="st">'r'</span>)</span>
 <span id="cb1-2"><a></a><span class="cf">for</span> line <span class="kw">in</span> info:</span>
 <span id="cb1-3"><a></a>    <span class="bu">print</span>(line)</span>
@@ -241,13 +249,13 @@ sitting by the tree</code></pre>
 <span id="cb3-4"><a></a>7</span>
 <span id="cb3-5"><a></a>2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>sum_numbers.py</p>
-<div id="aa69c8f5" class="cell" data-execution_count="2">
+<div id="571f8623" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="cf">assert</span> sum_all(<span class="st">"numbers.txt"</span>) <span class="op">==</span> <span class="dv">15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="e26ac0f4" class="cell" data-execution_count="3">
+<div id="aeca1835" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> sum_all(file_name):</span>
 <span id="cb5-2"><a></a>  total <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb5-3"><a></a>  f <span class="op">=</span> <span class="bu">open</span>(file_name, <span class="st">"r"</span>)</span>
@@ -278,7 +286,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="write-function" class="slide level2">
 <h2>Write function</h2>
-<div id="dde67d46" class="cell" data-execution_count="4">
+<div id="ac87a5c3" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="co"># opened the file in w mode</span></span>
 <span id="cb6-2"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb6-3"><a></a></span>
@@ -293,7 +301,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="5928505d" class="cell" data-execution_count="5">
+<div id="745bfd09" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb8-2"><a></a>f.write(<span class="st">'The slow wolf'</span>)</span>
 <span id="cb8-3"><a></a>f.write(<span class="st">'jumped over'</span>)</span>
@@ -303,7 +311,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code-1" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="1fb0f4b5" class="cell" data-execution_count="6">
+<div id="33ae8f63" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb9-2"><a></a>f.write(<span class="st">'The slow wolf'</span>)</span>
 <span id="cb9-3"><a></a>f.write(<span class="st">'jumped over'</span>)</span>
@@ -315,7 +323,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code-2" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="c76e4fe0" class="cell" data-execution_count="7">
+<div id="728b0e01" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb11-2"><a></a>f.write(<span class="st">'The slow wolf</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb11-3"><a></a>f.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
@@ -325,7 +333,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code-3" class="slide level2">
 <h2>Evaluate the code</h2>
-<div id="7fe5c215" class="cell" data-execution_count="8">
+<div id="4ce632cf" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'w'</span>)</span>
 <span id="cb12-2"><a></a>f.write(<span class="st">'The slow wolf</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb12-3"><a></a>f.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
@@ -339,7 +347,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code-continued" class="slide level2">
 <h2>Evaluate the code – continued</h2>
-<div id="ac94d894" class="cell" data-execution_count="9">
+<div id="6a3aa457" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'a'</span>)</span>
 <span id="cb14-2"><a></a>f.write(<span class="st">'The quick fox</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb14-3"><a></a>f.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
@@ -349,7 +357,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="evaluate-the-code-continued-1" class="slide level2">
 <h2>Evaluate the code – continued</h2>
-<div id="2a2d33aa" class="cell" data-execution_count="10">
+<div id="dc0871b7" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'words.txt'</span>, <span class="st">'a'</span>)</span>
 <span id="cb15-2"><a></a>f.write(<span class="st">'The quick fox</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb15-3"><a></a>f.write(<span class="st">'jumped over</span><span class="ch">\n</span><span class="st">'</span>)</span>
@@ -366,7 +374,7 @@ sitting by the tree</code></pre>
 <section id="write-key-value-to-a-file" class="slide level2">
 <h2>Write key, value to a file</h2>
 <p>Replace line 4 and line 5 with your code</p>
-<div id="3968faf3" class="cell" data-execution_count="11">
+<div id="335746fb" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a>info <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">2</span>, <span class="st">"b"</span>: <span class="dv">5</span>, <span class="st">"c"</span>: <span class="dv">0</span>}</span>
 <span id="cb17-2"><a></a>output <span class="op">=</span> <span class="bu">open</span>(<span class="st">"count.txt"</span>, <span class="st">"w"</span>)</span>
 <span id="cb17-3"><a></a></span>
@@ -384,7 +392,7 @@ sitting by the tree</code></pre>
 </section>
 <section id="write-key-value-to-a-file-1" class="slide level2">
 <h2>Write key, value to a file</h2>
-<div id="35492222" class="cell" data-execution_count="12">
+<div id="3ccfb817" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a></a>info <span class="op">=</span> {<span class="st">"a"</span>: <span class="dv">2</span>, <span class="st">"b"</span>: <span class="dv">5</span>, <span class="st">"c"</span>: <span class="dv">0</span>}</span>
 <span id="cb19-2"><a></a>output <span class="op">=</span> <span class="bu">open</span>(<span class="st">"count.txt"</span>, <span class="st">"w"</span>)</span>
 <span id="cb19-3"><a></a></span>
@@ -411,14 +419,14 @@ sitting by the tree</code></pre>
 <li><a href="alien.txt">Download test file</a>. Name your file as <code>read_and_write.py</code>.</li>
 </ul>
 <p>Test case:</p>
-<div id="3ba6d1ac" class="cell" data-execution_count="13">
+<div id="d6ddcb38" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a>write_word_count(<span class="st">"alien.txt"</span>)</span>
 <span id="cb21-2"><a></a><span class="co"># writes to out_alien.txt with word counts</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-two-functions-solution" class="slide level2">
 <h2>Write two functions – solution</h2>
-<div id="740ecc86" class="cell" data-execution_count="14">
+<div id="03c5eec4" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a></a><span class="kw">def</span> count_words(filename):</span>
 <span id="cb22-2"><a></a>  f <span class="op">=</span> <span class="bu">open</span>(filename, <span class="st">"r"</span>)</span>
 <span id="cb22-3"><a></a>  counts <span class="op">=</span> {}</span>
@@ -444,6 +452,20 @@ sitting by the tree</code></pre>
 <span id="cb22-23"><a></a>  </span>
 <span id="cb22-24"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="quiz-08" class="slide level2">
+<h2>Quiz 08</h2>
+<center>
+<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;">
+<a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time
+<div id="clock_block_cb650886c4849ee">
+
+</div>
+</div>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async=""></script>
+</center>
+<p>You have 10 minutes to complete the quiz.</p>
+<p>No need to write <code>main()</code> function.</p>
 
 
 </section></section>
