@@ -7878,7 +7878,7 @@
     "href": "slides-10-02.html#write-a-function",
     "title": "files and strings (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt reads the file with filename, iterates over each line in the numbers.txt and return the sum. Submit your attendance.\nnumbers.txt\n1\n0\n5\n7\n2\nsum_numbers.py\n\nassert sum_all(\"numbers.txt\") == 15",
+    "text": "Write a function\nIt reads the file with filename, iterates over each line in the numbers.txt and return the sum.\nnumbers.txt\n1\n0\n5\n7\n2\nsum_numbers.py\n\nassert sum_all(\"numbers.txt\") == 15",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "files and strings (slides)"
@@ -8010,7 +8010,7 @@
     "href": "slides-10-02.html#write-two-functions",
     "title": "files and strings (slides)",
     "section": "Write two functions",
-    "text": "Write two functions\n\nBoth functions takes a string file_name as argument:\n\ncount_words count frequency of each lowercase word, return a dictionary.\nwrite_word_count call count_words, iterate it and write a comma separated file (“out_” + file_name).\n\nDownload test file. Name your file as read_and_write.py.\n\nTest case:\n\nwrite_word_count(\"alien.txt\")\n# writes to out_alien.txt with word counts",
+    "text": "Write two functions\n\nBoth functions takes a string file_name as argument:\n\ncount_words count frequency of each lowercase word, return a dictionary.\nwrite_word_count calls count_words, takes the returned dictionaries and writes the key value pairs, separated by a comma, to a file named “out_” + file_name.\n\nDownload test file. Name your file as read_and_write.py.\n\nTest case:\n\nwrite_word_count(\"alien.txt\")\n# writes to out_alien.txt with word counts",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "files and strings (slides)"
