@@ -63,7 +63,6 @@ main()
 2.  It takes a variable number of arguments: `*values`
 3.  It returns the highest and lowest values in `values`
 
-Name your file `min_max_tuple.py`, submit to Gradescope.
 
 ```{python}
 #| eval: false

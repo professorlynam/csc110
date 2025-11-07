@@ -63,6 +63,7 @@ def sum_all(file_name):
   for line in f:
     number = int(line.strip("\n"))
     total += number
+  f.close()
   return total
 
 def main():
