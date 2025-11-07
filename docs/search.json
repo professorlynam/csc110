@@ -520,95 +520,158 @@
     "text": "Write a function – solution 2\n\ndef max_list(numbers):\n  max = None\n  for n in numbers:\n    if max == None or n &gt; max:\n      max = n\n  return max\n\ndef get_highest_average(lists):\n    means = []\n    highest_mean = None\n    for i in range(len(lists)):\n        if len(lists[i]) &gt; 0:\n            total = 0\n            for j in range(len(lists[i])):\n                total += lists[i][j]\n            mean = total/len(lists[i])\n            means.append(mean)\n    highest_mean = max_list(means)\n    return highest_mean\n\ndef main():\n    assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n    assert get_highest_average([[1, 1, 1], []]) == 1\n    assert get_highest_average([[], []]) == None\n    assert get_highest_average([]) == None\n    \n    weeks = [ [100, 100, 105, 105, 102, 102, 100],\n              [70, 71, 75, 72, 81, 80, 74],\n              [78, 72, 74, 71, 70, 70, 70],\n              [30, 32, 40, 38, 31, 32, 30] ]\n    average = get_highest_average(weeks)\n    assert average == 102\n  \nmain()"
   },
   {
+    "objectID": "slides-11-01.html#announcements",
+    "href": "slides-11-01.html#announcements",
+    "title": "returning tuples (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nMidterm 2 is next Wednesday (November 5th)\nMidterm 2 study guide has been posted on Piazza. See Piazza post for details\nThe Midterm 2 review session will be held November 3rd, 5pm-7pm. The first hour (5pm-6pm) will be in GS 837, the second hour (6pm-7pm) will be in GS 228.",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
+  },
+  {
     "objectID": "slides-11-01.html#what-are-tuples",
     "href": "slides-11-01.html#what-are-tuples",
     "title": "returning tuples (slides)",
     "section": "What are tuples?",
-    "text": "What are tuples?\n\nimmutable lists\na sequence of zero or more values (just like lists)\naddressable by index (just like lists)\niterable (just like lists)"
+    "text": "What are tuples?\n\nimmutable lists\na sequence of zero or more values (just like lists)\naddressable by index (just like lists)\niterable (just like lists)",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#tuple-syntax",
     "href": "slides-11-01.html#tuple-syntax",
     "title": "returning tuples (slides)",
     "section": "tuple syntax",
-    "text": "tuple syntax\nUse () to create a new tuple:\n\nmy_tuple = (2, 4, 6)\nmy_tuple[0]\n\n2\n\n\n\nmy_tuple[2]\n\n6\n\n\nEmpty tuple:\n\nempty = ()\nempty\n\n()"
+    "text": "tuple syntax\nUse () to create a new tuple:\n\nmy_tuple = (2, 4, 6)\nmy_tuple[0]\n\n2\n\n\n\nmy_tuple[2]\n\n6\n\n\nEmpty tuple:\n\nempty = ()\nempty\n\n()",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#tuples-are-immutable",
     "href": "slides-11-01.html#tuples-are-immutable",
     "title": "returning tuples (slides)",
     "section": "tuples are immutable",
-    "text": "tuples are immutable\nNo assignment is allowed\n\nmy_tuple = (2, 4, 6)\nmy_tuple[1] = 99 # will fail and cause an exception"
+    "text": "tuples are immutable\nNo assignment is allowed\n\nmy_tuple = (2, 4, 6)\nmy_tuple[1] = 99 # will fail and cause an exception",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#why-use-tuples",
     "href": "slides-11-01.html#why-use-tuples",
     "title": "returning tuples (slides)",
     "section": "Why use tuples?",
-    "text": "Why use tuples?\n\nThey are a little more efficient than lists\nThey can be used as dictionary keys (important)\nWhen functions return multiple values, it returns a tuple"
+    "text": "Why use tuples?\n\nThey are a little more efficient than lists\nThey can be used as dictionary keys (important)\nWhen functions return multiple values, it returns a tuple",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#why-use-tuples-1",
     "href": "slides-11-01.html#why-use-tuples-1",
     "title": "returning tuples (slides)",
     "section": "Why use tuples?",
-    "text": "Why use tuples?\nTuples can be used as dictionary keys (lists cannot).\n\ncoordinates = {\n    (40.7128, -74.0060): \"New York\",\n    (34.0522, -118.2437): \"Los Angeles\",\n    (51.5074, -0.1278): \"London\"\n}\n\ncoordinates\n\n{(40.7128, -74.006): 'New York',\n (34.0522, -118.2437): 'Los Angeles',\n (51.5074, -0.1278): 'London'}"
+    "text": "Why use tuples?\nTuples can be used as dictionary keys (lists cannot).\n\ncoordinates = {\n    (40.7128, -74.0060): \"New York\",\n    (34.0522, -118.2437): \"Los Angeles\",\n    (51.5074, -0.1278): \"London\"\n}\n\ncoordinates\n\n{(40.7128, -74.006): 'New York',\n (34.0522, -118.2437): 'Los Angeles',\n (51.5074, -0.1278): 'London'}",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#returning-multiple-values",
     "href": "slides-11-01.html#returning-multiple-values",
     "title": "returning tuples (slides)",
     "section": "Returning multiple values",
-    "text": "Returning multiple values\n\ndef low_high(x, y):\n  if x &lt; y:\n    return x, y\n  else:\n    return y, x\n  \ndef main():\n  print(low_high(4, 2))\n  low, high = low_high(4, 2)\n  assert low == 2\n  assert high == 4\n  \nmain()\n\n(2, 4)"
+    "text": "Returning multiple values\n\ndef low_high(x, y):\n  if x &lt; y:\n    return x, y\n  else:\n    return y, x\n  \ndef main():\n  print(low_high(4, 2))\n  low, high = low_high(4, 2)\n  assert low == 2\n  assert high == 4\n  \nmain()\n\n(2, 4)",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function",
     "href": "slides-11-01.html#write-a-function",
     "title": "returning tuples (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt calculates and returns the total and average of all people’s numbers.\n\ngrades = ['Eric', 90, 'Sam', 87, 'Josh', 83, 'Susan', 100]\ntotal, mean = descr_stats(grades)\nassert total == 360\nassert mean == 90.0"
+    "text": "Write a function\nIt calculates and returns the total and average of all people’s numbers.\n\ngrades = ['Eric', 90, 'Sam', 87, 'Josh', 83, 'Susan', 100]\ntotal, mean = descr_stats(grades)\nassert total == 360\nassert mean == 90.0",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution",
     "href": "slides-11-01.html#write-a-function-solution",
     "title": "returning tuples (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef descr_stats(numbers):\n  total = 0\n  count = 0\n  for i in range(1, len(numbers), 2):\n    total += numbers[i]\n    count += 1\n  return total, total/count\n\ndef main():\n  grades = ['Eric', 90, 'Sam', 87, 'Josh', 83, 'Susan', 100]\n  print(descr_stats(grades))\n  total, mean = descr_stats(grades)\n  assert total == 360\n  assert mean == 90.0\n\nmain()\n\n(360, 90.0)"
+    "text": "Write a function – solution\n\ndef descr_stats(numbers):\n  total = 0\n  count = 0\n  for i in range(1, len(numbers), 2):\n    total += numbers[i]\n    count += 1\n  return total, total/count\n\ndef main():\n  grades = ['Eric', 90, 'Sam', 87, 'Josh', 83, 'Susan', 100]\n  print(descr_stats(grades))\n  total, mean = descr_stats(grades)\n  assert total == 360\n  assert mean == 90.0\n\nmain()\n\n(360, 90.0)",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-1",
     "href": "slides-11-01.html#write-a-function-1",
     "title": "returning tuples (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes a dictionary as argument and returns the sum and the multiplication of the values in the dictionary\n\ntest_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\ntotal, mult = sum_and_multiplication(test_dict)\nassert total == 10\nassert mult == 30"
+    "text": "Write a function\nIt takes a dictionary as an argument and returns the sum and the multiplication of the values in the dictionary\n\ntest_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\ntotal, mult = sum_and_multiplication(test_dict)\nassert total == 10\nassert mult == 30",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution-1",
     "href": "slides-11-01.html#write-a-function-solution-1",
     "title": "returning tuples (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef sum_and_multiplication(dictionary):\n  total = 0\n  multiplication = 1\n  for k in dictionary:\n    total += dictionary[k]\n    multiplication *= dictionary[k]\n  return total, multiplication\n\ndef main():\n  test_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\n  total, mult = sum_and_multiplication(test_dict)\n  assert total == 10\n  assert mult == 30\n  \nmain()"
+    "text": "Write a function – solution 1\n\ndef sum_and_multiplication(dictionary):\n  total = 0\n  multiplication = 1\n  for k in dictionary:\n    total += dictionary[k]\n    multiplication *= dictionary[k]\n  return total, multiplication\n\ndef main():\n  test_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\n  total, mult = sum_and_multiplication(test_dict)\n  assert total == 10\n  assert mult == 30\n  \nmain()",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution-2",
     "href": "slides-11-01.html#write-a-function-solution-2",
     "title": "returning tuples (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef sum_and_multiplication(dictionary):\n  total = 0\n  multiplication = 1\n  for v in dictionary.values():\n    total += v\n    multiplication *= v\n  return total, multiplication\n\ndef main():\n  test_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\n  total, mult = sum_and_multiplication(test_dict)\n  assert total == 10\n  assert mult == 30\n  \nmain()"
+    "text": "Write a function – solution 2\n\ndef sum_and_multiplication(dictionary):\n  total = 0\n  multiplication = 1\n  for v in dictionary.values():\n    total += v\n    multiplication *= v\n  return total, multiplication\n\ndef main():\n  test_dict = {\"a\": 2, \"b\": 3, \"c\": 5}\n  total, mult = sum_and_multiplication(test_dict)\n  assert total == 10\n  assert mult == 30\n  \nmain()",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-2",
     "href": "slides-11-01.html#write-a-function-2",
     "title": "returning tuples (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes one list of integers as argument and returns two lists: one with all the odd numbers and the other with all the even numbers.\n\nassert odds_and_evens([2,6,1]) == ([1], [2,6])"
+    "text": "Write a function\nIt takes one list of integers as argument and returns two lists: one with all the odd numbers and the other with all the even numbers.\n\nassert odds_and_evens([2,6,1]) == ([1], [2,6])",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#write-a-function-solution-3",
     "href": "slides-11-01.html#write-a-function-solution-3",
     "title": "returning tuples (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef odds_and_evens(integers):\n  odds = []\n  evens = []\n  for n in integers:\n    if n % 2 == 0:\n      evens.append(n)\n    else:\n      odds.append(n)\n  return odds, evens\n      \ndef main():\n  assert odds_and_evens([2,6,1]) == ([1], [2,6])\n  \nmain()"
+    "text": "Write a function – solution\n\ndef odds_and_evens(integers):\n  odds = []\n  evens = []\n  for n in integers:\n    if n % 2 == 0:\n      evens.append(n)\n    else:\n      odds.append(n)\n  return odds, evens\n      \ndef main():\n  assert odds_and_evens([2,6,1]) == ([1], [2,6])\n  \nmain()",
+    "crumbs": [
+      "Module 11 - Data Structures (tuples)",
+      "returning tuples (slides)"
+    ]
   },
   {
     "objectID": "slides-10-01.html#key-concepts",
@@ -7394,7 +7457,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9082870657309613\n5",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.8606439221125477\n5",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7889,7 +7952,7 @@
     "href": "slides-10-02.html#write-a-function-solution",
     "title": "files and strings (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef sum_all(file_name):\n  total = 0\n  f = open(file_name, \"r\")\n  for line in f:\n    number = int(line.strip(\"\\n\"))\n    total += number\n  return total\n\ndef main():\n  assert sum_all(\"numbers.txt\") == 15\n\nmain()",
+    "text": "Write a function – solution\n\ndef sum_all(file_name):\n  total = 0\n  f = open(file_name, \"r\")\n  for line in f:\n    number = int(line.strip(\"\\n\"))\n    total += number\n  f.close()\n  return total\n\ndef main():\n  assert sum_all(\"numbers.txt\") == 15\n\nmain()",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "files and strings (slides)"
@@ -8589,7 +8652,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'pear', 'pear', 'apple', 'apple']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
