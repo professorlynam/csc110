@@ -19,11 +19,12 @@ use `i` to represent index, `v` to represent value:
 
 |   Method    | List | Dictionary | Tuple |
 |:------------:|:----------|:--------------|:-----------|
-|  Create  |  my_l = [] |      |   my_t = ()  |
-|  Retrieve  |    my_l[i] |    my_d[k]   |    |
-|  Update |   |      |      |
-|  Add  |     |     my_d[k] = v   |       |
-|  Delete  |  my_l.pop(i) <br> my_l.remove(v) |     |       |
+|  Create  |  my_l = [] |   my_d = {}   |   my_t = ()  |
+|  Retrieve  |    my_l[i] |    my_d[k]   |  my_t[i]  |
+|  Update |  my_l[i] = v  |  my_d[k] = v    |    -  |
+|  Add  | my_l.insert(i, v) <br> my_l.append(v)    |     my_d[k] = v   |     -  |
+|  Delete  |  my_l.pop(i) <br> my_l.remove(v) |  my_d.pop(k)    |     -  |
+
 
 ## A comparison
 
@@ -274,7 +275,6 @@ for key, value in my_dictionary.items():
 4.  It returns an **integer** with the count
 5.  Use a **list** for this
 
-Name your file `names.py` and submit to Gradescope.
 
 ```{python}
 #| eval: false

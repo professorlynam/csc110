@@ -286,7 +286,7 @@
     "href": "slides-13-01.html#a-comparison---fill-in-the-missing-cells",
     "title": "data structures – review (slides)",
     "section": "A comparison - fill in the missing cells",
-    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\n\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\nmy_d[k]\n\n\n\nUpdate\n\n\n\n\n\nAdd\n\nmy_d[k] = v\n\n\n\nDelete\nmy_l.pop(i)  my_l.remove(v)"
+    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\n\n\n\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\nmy_d[k]\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\nmy_l.insert(i, v)  my_l.append(v)\nmy_d[k] = v\n-\n\n\nDelete\nmy_l.pop(i)  my_l.remove(v)\nmy_d.pop(k)\n-"
   },
   {
     "objectID": "slides-13-01.html#a-comparison",
@@ -391,7 +391,7 @@
     "href": "slides-13-01.html#write-a-function",
     "title": "data structures – review (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is count_names that opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a list for this\n\nName your file names.py and submit to Gradescope.\n\nassert count_names(\"names.txt\") == 11"
+    "text": "Write a function\n\nIts name is count_names that opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a list for this\n\n\nassert count_names(\"names.txt\") == 11"
   },
   {
     "objectID": "slides-13-01.html#write-a-function-solution",
