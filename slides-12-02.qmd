@@ -291,7 +291,6 @@ main()
 
 It mutates the sublist items by reversing each string (use `string[::-1]` to reverse it) and returns the argument list.
 
-Name file `reverse_strings.py` and submit your attendance.
 
 Test cases:
 

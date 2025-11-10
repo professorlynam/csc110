@@ -166,6 +166,7 @@ website:
         - data_structures_tuples.md
         - assignments-11.qmd
         - slides-11-01.qmd
+        - slides-11-02.qmd
       - section: "Module 12 - Data Structures (2D lists)"
         contents:
         - assignments-12.qmd
