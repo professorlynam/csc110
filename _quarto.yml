@@ -170,6 +170,7 @@ website:
       - section: "Module 12 - Data Structures (2D lists)"
         contents:
         - assignments-12.qmd
+        - slides-12-01.qmd
       - section: "Module 13 - Data Structures (sets)"
         contents:
         - data_structures_sets.md

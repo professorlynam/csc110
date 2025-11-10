@@ -872,6 +872,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Module 12 Assignments</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides-12-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">more on for loops (slides)</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -997,14 +1003,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Most values in Python (strings, lists, integers, floats, booleans) are objects. Mutable objects can be changed once they are created. Immutable objects cannot be changed once they are created.</p>
 <p>Immutable objects in Python include integers, floats, strings, and tuples (we will work with tuples in the future, no need to worry about them now). Lists are mutable. (so are dictionaries, which we will also be working with in the future)</p>
 <p>Here’s how we can change a list:</p>
-<div id="50a6c251" class="cell" data-execution_count="1">
+<div id="6e5cd766" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>songs <span class="op">=</span> [<span class="st">"Lavender Haze"</span>, <span class="st">"Calm Down"</span>, <span class="st">"As It Was"</span>, <span class="st">"About Damn Time"</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']</code></pre>
 </div>
 </div>
-<div id="f1884cc6" class="cell" data-execution_count="2">
+<div id="13a3f67e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>songs[<span class="dv">0</span>] <span class="op">=</span> <span class="st">"Flowers"</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -1022,14 +1028,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>.remove()</code> removes the first element with the provided value: <code>list.remove(value)</code></li>
 </ul>
 <p>Here’s how <code>.append()</code> works:</p>
-<div id="2d0f8e4e" class="cell" data-execution_count="3">
+<div id="d955504e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>songs <span class="op">=</span> [<span class="st">"Lavender Haze"</span>, <span class="st">"Calm Down"</span>, <span class="st">"As It Was"</span>, <span class="st">"About Damn Time"</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']</code></pre>
 </div>
 </div>
-<div id="dd6f7078" class="cell" data-execution_count="4">
+<div id="b75dc1c8" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>songs.append(<span class="st">"Flowers"</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -1037,14 +1043,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Here’s how <code>.insert()</code> works:</p>
-<div id="e52d7a1d" class="cell" data-execution_count="5">
+<div id="80d611ff" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>songs <span class="op">=</span> [<span class="st">"Lavender Haze"</span>, <span class="st">"Calm Down"</span>, <span class="st">"As It Was"</span>, <span class="st">"About Damn Time"</span>]</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>['Lavender Haze', 'Calm Down', 'As It Was', 'About Damn Time']</code></pre>
 </div>
 </div>
-<div id="e8472491" class="cell" data-execution_count="6">
+<div id="ab3fb3de" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>songs.insert(<span class="dv">0</span>, <span class="st">"Flowers"</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
@@ -1052,25 +1058,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Here’s how <code>.pop()</code> works:</p>
-<div id="83f31e52" class="cell" data-execution_count="7">
+<div id="ef4981cc" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>songs <span class="op">=</span> [<span class="st">"Lavender Haze"</span>, <span class="st">"Calm Down"</span>, <span class="st">"As It Was"</span>, <span class="st">"About Damn Time"</span>]</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>songs.pop(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>'Lavender Haze'</code></pre>
 </div>
 </div>
-<div id="9a992c75" class="cell" data-execution_count="8">
+<div id="b04baf30" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>['Calm Down', 'As It Was', 'About Damn Time']</code></pre>
 </div>
 </div>
 <p>Here’s how <code>.remove()</code> works:</p>
-<div id="5804c27e" class="cell" data-execution_count="9">
+<div id="3b583df3" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>songs <span class="op">=</span> [<span class="st">"Lavender Haze"</span>, <span class="st">"Calm Down"</span>, <span class="st">"As It Was"</span>, <span class="st">"About Damn Time"</span>]</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>songs.remove(<span class="st">"Lavender Haze"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="1e00cd96" class="cell" data-execution_count="10">
+<div id="ecb6e6c1" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>songs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>['Calm Down', 'As It Was', 'About Damn Time']</code></pre>
@@ -1080,7 +1086,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="modifying-a-list-inside-a-function" class="level1">
 <h1>Modifying a list inside a function</h1>
 <p>Since lists are <code>mutable</code>, any changes to lists inside a function persist once the function finishes running (which is not the case with <code>immutable</code> objects). So there’s no need for a <code>return</code> from a function if all you are doing is modifying a list.</p>
-<div id="c5c80d9b" class="cell" data-execution_count="11">
+<div id="d62f6d64" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_adverbs(words):</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  index <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(words):</span>

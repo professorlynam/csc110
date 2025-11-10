@@ -440,84 +440,132 @@
     "href": "slides-12-01.html#lists-within-lists",
     "title": "more on for loops (slides)",
     "section": "lists within lists",
-    "text": "lists within lists\nWe’ve worked with lists of integers, list of strings, and lists of floats – but we can also have lists of lists:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9"
+    "text": "lists within lists\nWe’ve worked with lists of integers, list of strings, and lists of floats – but we can also have lists of lists:\n\nlists = [[9,  8,  7,  8],\n         [10, 20, 30, 4],\n         [5,  50, 55, 4]]\nlists[0]\n\n[9, 8, 7, 8]\n\n\n\nlists[0][0]\n\n9",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#d-lists",
     "href": "slides-12-01.html#d-lists",
     "title": "more on for loops (slides)",
     "section": "2D lists",
-    "text": "2D lists\n\nThe “first dimension”: index of the outer list\nThe “second dimension”: index of the inner list\n\n\nlists = [[9,  8,  7,  8], # index 0 of outer list\n         [10, 20, 30, 4], # index 1 of outer list\n         [5,  50, 55, 4]] # index 2 of outer list"
+    "text": "2D lists\n\nThe “first dimension”: index of the outer list\nThe “second dimension”: index of the inner list\n\n\nlists = [[9,  8,  7,  8], # index 0 of outer list\n         [10, 20, 30, 4], # index 1 of outer list\n         [5,  50, 55, 4]] # index 2 of outer list",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#evaluate-the-expressions",
     "href": "slides-12-01.html#evaluate-the-expressions",
     "title": "more on for loops (slides)",
     "section": "Evaluate the Expressions",
-    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]   \n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\nitems[2][5]\nitems[3][2]"
+    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]   \n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\nitems[2][5]\nitems[3][2]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#evaluate-the-expressions-1",
     "href": "slides-12-01.html#evaluate-the-expressions-1",
     "title": "more on for loops (slides)",
     "section": "Evaluate the Expressions",
-    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]\n\n5\n\n\n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\n\n6\n\n\n\nitems[2][5] # will throw error\n\n\nitems[3][2]\n\n30"
+    "text": "Evaluate the Expressions\n\nnumbers = [[4, 2, 3],\n           [0, 2, 5]]\nnumbers[1][2]\n\n5\n\n\n\nitems = [[9, 7, 8],\n         [1, 2, 3, 4, 5, 6],\n         [5],\n         [10, 20, 30]]\nitems[1][5]\n\n6\n\n\n\nitems[2][5] # will throw error\n\n\nitems[3][2]\n\n30",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#for-loops-with-lists-of-lists",
     "href": "slides-12-01.html#for-loops-with-lists-of-lists",
     "title": "more on for loops (slides)",
     "section": "for loops with lists of lists",
-    "text": "for loops with lists of lists\n\nitems = [[9, 7, 8],\n         [5],\n         [10, 20, 30]]\n         \nfor i in range(len(items)):\n  print(items[i])\n  for j in range(len(items[i])):\n    print( items[i][j] )\n\n[9, 7, 8]\n9\n7\n8\n[5]\n5\n[10, 20, 30]\n10\n20\n30"
+    "text": "for loops with lists of lists\n\nitems = [[9, 7, 8],\n         [5],\n         [10, 20, 30]]\n         \nfor i in range(len(items)):\n  print(items[i])\n  for j in range(len(items[i])):\n    print( items[i][j] )\n\n[9, 7, 8]\n9\n7\n8\n[5]\n5\n[10, 20, 30]\n10\n20\n30",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function",
     "href": "slides-12-01.html#write-a-function",
     "title": "more on for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns a single list that flattens that list of lists into a single list that contains exactly the same values. Do not use any list methods besides .append().\n\nassert flatten([]) == []\nassert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\nassert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]"
+    "text": "Write a function\nIt returns a single list that flattens that list of lists into a single list that contains exactly the same values. Do not use any list methods besides .append().\n\nassert flatten([]) == []\nassert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\nassert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-solution",
     "href": "slides-12-01.html#write-a-function-solution",
     "title": "more on for loops (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef flatten(numbers):\n  new_list = []\n  for i in range(len(numbers)):\n    for j in range(len(numbers[i])):\n      new_list.append(numbers[i][j])\n  return new_list\n\ndef main():\n  assert flatten([]) == []\n  assert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\n  assert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]\n\nmain()"
+    "text": "Write a function – solution\n\ndef flatten(numbers):\n  new_list = []\n  for i in range(len(numbers)):\n    for j in range(len(numbers[i])):\n      new_list.append(numbers[i][j])\n  return new_list\n\ndef main():\n  assert flatten([]) == []\n  assert flatten([[1, 2, 3], [4, 5, 6]]) == [1, 2, 3, 4, 5, 6]\n  assert flatten([[1, 2, 3], [4]]) == [1, 2, 3, 4]\n\nmain()",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-1",
     "href": "slides-12-01.html#write-a-function-1",
     "title": "more on for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes an argument, lists, which is a 2D list of numbers (floats or integers) and calculates the average of each sublist, and returns the highest average.\n\nassert get_highest_average([[1, 1, 1], [2, 2]]) == 2\nassert get_highest_average([[], []]) == None\nassert get_highest_average([]) == None"
+    "text": "Write a function\nIt takes an argument, lists, which is a 2D list of numbers (floats or integers) and calculates the average of each sublist, and returns the highest average.\n\nassert get_highest_average([[1, 1, 1], [2, 2]]) == 2\nassert get_highest_average([[], []]) == None\nassert get_highest_average([]) == None",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-solution-1",
     "href": "slides-12-01.html#write-a-function-solution-1",
     "title": "more on for loops (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\nAn illustration:\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '24px', 'fontFamily': 'Inter'}}}%%\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; id1[calculate mean: 4] --&gt; E1[highest mean: 4]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; id2[calculate mean: 7] --&gt; E2[highest mean: 7]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; id3[calculate mean: 5]--&gt; E3[highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style E1 fill:#feffad,stroke:#333,stroke-width:2px\n  style E2 fill:#feffad,stroke:#333,stroke-width:2px\n  style E3 fill:#feffad,stroke:#333,stroke-width:2px"
+    "text": "Write a function – solution 1\nAn illustration:\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '24px', 'fontFamily': 'Inter'}}}%%\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; id1[calculate mean: 4] --&gt; E1[highest mean: 4]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; id2[calculate mean: 7] --&gt; E2[highest mean: 7]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; id3[calculate mean: 5]--&gt; E3[highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style E1 fill:#feffad,stroke:#333,stroke-width:2px\n  style E2 fill:#feffad,stroke:#333,stroke-width:2px\n  style E3 fill:#feffad,stroke:#333,stroke-width:2px",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-solution-1-1",
     "href": "slides-12-01.html#write-a-function-solution-1-1",
     "title": "more on for loops (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef get_highest_average(numbers):\n    highest_mean = None\n    for i in range(len(numbers)):\n        if len(numbers[i]) &gt; 0:\n            total = 0\n            for j in range(len(numbers[i])):\n                total += numbers[i][j]\n            mean = total/len(numbers[i])\n            if highest_mean == None or mean &gt; highest_mean:\n                highest_mean = mean\n    return highest_mean\n\ndef main():\n  assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n  assert get_highest_average([[1, 1, 1], []]) == 1\n  assert get_highest_average([[], []]) == None\n  assert get_highest_average([]) == None\n  \n  weeks = [ [100, 100, 105, 105, 102, 102, 100],\n            [70, 71, 75, 72, 81, 80, 74],\n            [78, 72, 74, 71, 70, 70, 70],\n            [30, 32, 40, 38, 31, 32, 30] ]\n  average = get_highest_average(weeks)\n  assert average == 102\n  \nmain()"
+    "text": "Write a function – solution 1\n\ndef get_highest_average(numbers):\n    highest_mean = None\n    for i in range(len(numbers)):\n        if len(numbers[i]) &gt; 0:\n            total = 0\n            for j in range(len(numbers[i])):\n                total += numbers[i][j]\n            mean = total/len(numbers[i])\n            if highest_mean == None or mean &gt; highest_mean:\n                highest_mean = mean\n    return highest_mean\n\ndef main():\n  assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n  assert get_highest_average([[1, 1, 1], []]) == 1\n  assert get_highest_average([[], []]) == None\n  assert get_highest_average([]) == None\n  \n  weeks = [ [100, 100, 105, 105, 102, 102, 100],\n            [70, 71, 75, 72, 81, 80, 74],\n            [78, 72, 74, 71, 70, 70, 70],\n            [30, 32, 40, 38, 31, 32, 30] ]\n  average = get_highest_average(weeks)\n  assert average == 102\n  \nmain()",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-solution-2",
     "href": "slides-12-01.html#write-a-function-solution-2",
     "title": "more on for loops (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\nAn illustration:\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '24px', 'fontFamily': 'Inter'}}}%%\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; id1[calculate mean: 4]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; id2[calculate mean: 7]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; id3[calculate mean: 5]\n  id1 --&gt; E[\"[4, 7, 5]\"]\n  id2 --&gt; E\n  id3 --&gt; E\n  \n  E --&gt; id4[highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id4 fill:#feffad,stroke:#333,stroke-width:2px"
+    "text": "Write a function – solution 2\nAn illustration:\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '24px', 'fontFamily': 'Inter'}}}%%\n\nflowchart LR\n  A[\"[[ ],  &lt;br&gt;  [2, 3, 7], &lt;br&gt; [15, 21, 3, 24], &lt;br&gt; [6, 4] ]\"] --&gt; B(\"len([]) &gt; 0 ?\") \n  A --&gt; SS(\"len([2, 3, 7]) &gt; 0 ?\") --&gt; id1[calculate mean: 4]\n  A --&gt; SSS(\"len([15, 2, 3, 8]) &gt; 0 ?\") --&gt; id2[calculate mean: 7]\n  A --&gt; SSSS(\"len([6, 4]) &gt; 0 ?\") --&gt; id3[calculate mean: 5]\n  id1 --&gt; E[\"[4, 7, 5]\"]\n  id2 --&gt; E\n  id3 --&gt; E\n  \n  E --&gt; id4[highest mean: 7]\n  \n\n  style id1 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id2 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id3 fill:#ffd5f1,stroke:#333,stroke-width:2px\n  style id4 fill:#feffad,stroke:#333,stroke-width:2px",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#write-a-function-solution-2-1",
     "href": "slides-12-01.html#write-a-function-solution-2-1",
     "title": "more on for loops (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n  max = None\n  for n in numbers:\n    if max == None or n &gt; max:\n      max = n\n  return max\n\ndef get_highest_average(lists):\n    means = []\n    highest_mean = None\n    for i in range(len(lists)):\n        if len(lists[i]) &gt; 0:\n            total = 0\n            for j in range(len(lists[i])):\n                total += lists[i][j]\n            mean = total/len(lists[i])\n            means.append(mean)\n    highest_mean = max_list(means)\n    return highest_mean\n\ndef main():\n    assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n    assert get_highest_average([[1, 1, 1], []]) == 1\n    assert get_highest_average([[], []]) == None\n    assert get_highest_average([]) == None\n    \n    weeks = [ [100, 100, 105, 105, 102, 102, 100],\n              [70, 71, 75, 72, 81, 80, 74],\n              [78, 72, 74, 71, 70, 70, 70],\n              [30, 32, 40, 38, 31, 32, 30] ]\n    average = get_highest_average(weeks)\n    assert average == 102\n  \nmain()"
+    "text": "Write a function – solution 2\n\ndef max_list(numbers):\n  max = None\n  for n in numbers:\n    if max == None or n &gt; max:\n      max = n\n  return max\n\ndef get_highest_average(lists):\n    means = []\n    highest_mean = None\n    for i in range(len(lists)):\n        if len(lists[i]) &gt; 0:\n            total = 0\n            for j in range(len(lists[i])):\n                total += lists[i][j]\n            mean = total/len(lists[i])\n            means.append(mean)\n    highest_mean = max_list(means)\n    return highest_mean\n\ndef main():\n    assert get_highest_average([[1, 1, 1], [2, 2]]) == 2\n    assert get_highest_average([[1, 1, 1], []]) == 1\n    assert get_highest_average([[], []]) == None\n    assert get_highest_average([]) == None\n    \n    weeks = [ [100, 100, 105, 105, 102, 102, 100],\n              [70, 71, 75, 72, 81, 80, 74],\n              [78, 72, 74, 71, 70, 70, 70],\n              [30, 32, 40, 38, 31, 32, 30] ]\n    average = get_highest_average(weeks)\n    assert average == 102\n  \nmain()",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "more on for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-11-01.html#announcements",
@@ -7457,7 +7505,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7139630887021565\n2",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.307304964848496\n8",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7479,7 +7527,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8227,13 +8275,6 @@
     "text": "Write a function – solution\n\ndef nested_min(lists):\n  min = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if min == None or lists[i][j] &lt; min:\n        min = lists[i][j]\n  return min\n\ndef main():\n  assert nested_min([[], []]) == None\n  assert nested_min([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 0\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
   },
   {
-    "objectID": "slides-12-02.html#quiz-09",
-    "href": "slides-12-02.html#quiz-09",
-    "title": "nested for loops (slides)",
-    "section": "Quiz 09",
-    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz."
-  },
-  {
     "objectID": "slides-12-02.html#mutate-nested-lists",
     "href": "slides-12-02.html#mutate-nested-lists",
     "title": "nested for loops (slides)",
@@ -8267,6 +8308,13 @@
     "title": "nested for loops (slides)",
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef reverse_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = strings[i][j][::-1]\n  return strings\n\ndef main():\n  original_strings = [[\"desserts\", \"raw\", \"live\"],\n                      [\"smart\", \"knits\"]]\n  reverse_strings_nested(original_strings)   \n  assert  original_strings == [[\"stressed\", \"war\", \"evil\"],\n                               [\"trams\", \"stink\"]]\n  \n  print(original_strings)\n  \nmain()\n\n[['stressed', 'war', 'evil'], ['trams', 'stink']]"
+  },
+  {
+    "objectID": "slides-12-02.html#quiz-09",
+    "href": "slides-12-02.html#quiz-09",
+    "title": "nested for loops (slides)",
+    "section": "Quiz 09",
+    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz."
   },
   {
     "objectID": "slides-13-02.html#data-structures-in-python",
@@ -8672,7 +8720,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
