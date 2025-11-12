@@ -286,7 +286,7 @@
     "href": "slides-13-01.html#a-comparison---fill-in-the-missing-cells",
     "title": "data structures – review (slides)",
     "section": "A comparison - fill in the missing cells",
-    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\n\n\n\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\nmy_d[k]\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\nmy_l.insert(i, v)  my_l.append(v)\nmy_d[k] = v\n-\n\n\nDelete\nmy_l.pop(i)  my_l.remove(v)\nmy_d.pop(k)\n-"
+    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\n\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\n\nmy_d[k] = v\n-\n\n\nDelete\n\n\n-"
   },
   {
     "objectID": "slides-13-01.html#a-comparison",
