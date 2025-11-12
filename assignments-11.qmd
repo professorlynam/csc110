@@ -45,7 +45,7 @@ Name the program `create_tuples.py`. Make sure that gradescope gives you the poi
 
 ## Programming Problem 22
 
-**Due date: `r assignments %>% filter(assessment == "Module 10 Programming Problems") %>% pull(formatted_date)` at 9pm**
+**Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 9pm**
 
 Write a Python function that does the following:
 

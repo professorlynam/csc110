@@ -43,7 +43,7 @@ assert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]
 
 ## Programming Problem 22
 
-**Due date: `r assignments %>% filter(assessment == "Module 11 Programming Problems") %>% pull(formatted_date)` at 9pm**
+**Due date: `r assignments %>% filter(assessment == "Module 12 Programming Problems") %>% pull(formatted_date)` at 9pm**
 
 Write a `lowercase_items` function that given a 2D list of strings as argument, it **mutates** and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the `.lower()` string method. Name your file `lowercasing.py`. Make sure that gradescope gives you the points for passing the test case.
 
