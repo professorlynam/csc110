@@ -4483,22 +4483,22 @@
     ]
   },
   {
-    "objectID": "assignments-12.html#programming-problem-21",
-    "href": "assignments-12.html#programming-problem-21",
+    "objectID": "assignments-12.html#programming-problem-23",
+    "href": "assignments-12.html#programming-problem-23",
     "title": "Module 12 Assignments",
-    "section": "Programming Problem 21",
-    "text": "Programming Problem 21\nWrite a remove_zero_sides function that given a 2D list as argument, it mutates and returns the list removing any first and last values that are equal to zero. Name your file filter.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nnumbers = [[0, 1, 2], [0], [], [2, 4, 0], [0, 0], [0, 20, 3, 10, 0]]\nremove_zero_sides(numbers)\nassert numbers ==  [[1, 2], [], [], [2, 4], [], [20, 3, 10]]\n\nmore_numbers = [[0], [], [0, 0], [0, 1], [2, 0]]\nassert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]",
+    "section": "Programming Problem 23",
+    "text": "Programming Problem 23\nWrite a remove_zero_sides function that given a 2D list as argument, it mutates and returns the list removing any first and last values that are equal to zero. Name your file filter.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nnumbers = [[0, 1, 2], [0], [], [2, 4, 0], [0, 0], [0, 20, 3, 10, 0]]\nremove_zero_sides(numbers)\nassert numbers ==  [[1, 2], [], [], [2, 4], [], [20, 3, 10]]\n\nmore_numbers = [[0], [], [0, 0], [0, 1], [2, 0]]\nassert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]",
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "Module 12 Assignments"
     ]
   },
   {
-    "objectID": "assignments-12.html#programming-problem-22",
-    "href": "assignments-12.html#programming-problem-22",
+    "objectID": "assignments-12.html#programming-problem-24",
+    "href": "assignments-12.html#programming-problem-24",
     "title": "Module 12 Assignments",
-    "section": "Programming Problem 22",
-    "text": "Programming Problem 22\nDue date: Wednesday, November 19, 2025 at 9pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
+    "section": "Programming Problem 24",
+    "text": "Programming Problem 24\nDue date: Wednesday, November 19, 2025 at 9pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "Module 12 Assignments"
@@ -5934,7 +5934,7 @@
     "href": "project-13.html",
     "title": "Programming Project 13 (BONUS)",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: at 9pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, December 08, 2025 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 13 (BONUS)"
@@ -7505,7 +7505,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.558284820579247\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.20810313982191853\n3",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8720,7 +8720,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
@@ -8895,7 +8895,7 @@
     "href": "syllabus.html#assignment-due-dates",
     "title": "Syllabus",
     "section": "Assignment due dates",
-    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, August 27, 2025\nin class\n\n\nQuiz 02\nWednesday, September 03, 2025\nin class\n\n\nModule 1 Programming Problems\nFriday, September 05, 2025\n9pm\n\n\nQuiz 03\nWednesday, September 10, 2025\nin class\n\n\nModule 2 Programming Problems\nWednesday, September 10, 2025\n9pm\n\n\nShort Programming Project 1\nWednesday, September 10, 2025\n9pm\n\n\nProgramming Project 1\nFriday, September 12, 2025\n9pm\n\n\nQuiz 04\nWednesday, September 17, 2025\nin class\n\n\nModule 3 Programming Problems\nWednesday, September 17, 2025\n9pm\n\n\nShort Programming Project 2\nWednesday, September 17, 2025\n9pm\n\n\nProgramming Project 2\nFriday, September 19, 2025\n9pm\n\n\nQuiz 05\nWednesday, September 24, 2025\nin class\n\n\nModule 4 Programming Problems\nWednesday, September 24, 2025\n9pm\n\n\nShort Programming Project 3\nWednesday, September 24, 2025\n9pm\n\n\nProgramming Project 3\nFriday, September 26, 2025\n9pm\n\n\nQuiz 06\nWednesday, October 01, 2025\nin class\n\n\nModule 5 Programming Problems\nWednesday, October 01, 2025\n9pm\n\n\nShort Programming Project 4\nWednesday, October 01, 2025\n9pm\n\n\nProgramming Project 4\nFriday, October 03, 2025\n9pm\n\n\nMidterm 1\nWednesday, October 08, 2025\nin class\n\n\nModule 6 Programming Problems\nFriday, October 10, 2025\n9pm\n\n\nShort Programming Project 5\nMonday, October 13, 2025\n9pm\n\n\nProgramming Project 5\nFriday, October 10, 2025\n9pm\n\n\nQuiz 07\nWednesday, October 15, 2025\nin class\n\n\nModule 7 Programming Problems\nWednesday, October 15, 2025\n9pm\n\n\nShort Programming Project 6\nWednesday, October 15, 2025\n9pm\n\n\nProgramming Project 6\nFriday, October 17, 2025\n9pm\n\n\nQuiz 08\nWednesday, October 22, 2025\nin class\n\n\nModule 8 Programming Problems\nWednesday, October 22, 2025\n9pm\n\n\nShort Programming Project 7\nWednesday, October 22, 2025\n9pm\n\n\nProgramming Project 7\nFriday, October 24, 2025\n9pm\n\n\nQuiz 09\nWednesday, October 29, 2025\nin class\n\n\nModule 9 Programming Problems\nWednesday, October 29, 2025\n9pm\n\n\nMidterm 2\nWednesday, November 05, 2025\nin class\n\n\nModule 10 Programming Problems\nWednesday, November 05, 2025\n9pm\n\n\nShort Programming Project 8\nWednesday, November 05, 2025\n9pm\n\n\nProgramming Project 8\nFriday, November 07, 2025\n9pm\n\n\nModule 11 Programming Problems\nWednesday, November 12, 2025\n9pm\n\n\nShort Programming Project 9\nWednesday, November 12, 2025\n9pm\n\n\nProgramming Project 9\nFriday, November 14, 2025\n9pm\n\n\nQuiz 10\nWednesday, November 19, 2025\nin class\n\n\nModule 12 Programming Problems\nWednesday, November 19, 2025\n9pm\n\n\nShort Programming Project 10\nWednesday, November 19, 2025\n9pm\n\n\nProgramming Project 10\nFriday, November 21, 2025\n9pm\n\n\nQuiz 11\nWednesday, November 26, 2025\nin class\n\n\nModule 13 Programming Problems\nWednesday, November 26, 2025\n9pm\n\n\nShort Programming Project 11\nWednesday, November 26, 2025\n9pm\n\n\nProgramming Project 11\nMonday, December 01, 2025\n9pm\n\n\nQuiz 12\nWednesday, December 03, 2025\nin class\n\n\nModule 14 Programming Problems\nFriday, December 05, 2025\n9pm\n\n\nShort Programming Project 12\nFriday, December 05, 2025\n9pm\n\n\nProgramming Project 12\nMonday, December 08, 2025\n9pm\n\n\nFinal Exam\nFriday, December 12, 2025\n6pm-8pm",
+    "text": "Assignment due dates\n\n\n\n\n\n\n\n\n\n\nAssessment\nDate\nTime/Location\n\n\n\n\nQuiz 01\nWednesday, August 27, 2025\nin class\n\n\nQuiz 02\nWednesday, September 03, 2025\nin class\n\n\nModule 1 Programming Problems\nFriday, September 05, 2025\n9pm\n\n\nQuiz 03\nWednesday, September 10, 2025\nin class\n\n\nModule 2 Programming Problems\nWednesday, September 10, 2025\n9pm\n\n\nShort Programming Project 1\nWednesday, September 10, 2025\n9pm\n\n\nProgramming Project 1\nFriday, September 12, 2025\n9pm\n\n\nQuiz 04\nWednesday, September 17, 2025\nin class\n\n\nModule 3 Programming Problems\nWednesday, September 17, 2025\n9pm\n\n\nShort Programming Project 2\nWednesday, September 17, 2025\n9pm\n\n\nProgramming Project 2\nFriday, September 19, 2025\n9pm\n\n\nQuiz 05\nWednesday, September 24, 2025\nin class\n\n\nModule 4 Programming Problems\nWednesday, September 24, 2025\n9pm\n\n\nShort Programming Project 3\nWednesday, September 24, 2025\n9pm\n\n\nProgramming Project 3\nFriday, September 26, 2025\n9pm\n\n\nQuiz 06\nWednesday, October 01, 2025\nin class\n\n\nModule 5 Programming Problems\nWednesday, October 01, 2025\n9pm\n\n\nShort Programming Project 4\nWednesday, October 01, 2025\n9pm\n\n\nProgramming Project 4\nFriday, October 03, 2025\n9pm\n\n\nMidterm 1\nWednesday, October 08, 2025\nin class\n\n\nModule 6 Programming Problems\nFriday, October 10, 2025\n9pm\n\n\nShort Programming Project 5\nMonday, October 13, 2025\n9pm\n\n\nProgramming Project 5\nFriday, October 10, 2025\n9pm\n\n\nQuiz 07\nWednesday, October 15, 2025\nin class\n\n\nModule 7 Programming Problems\nWednesday, October 15, 2025\n9pm\n\n\nShort Programming Project 6\nWednesday, October 15, 2025\n9pm\n\n\nProgramming Project 6\nFriday, October 17, 2025\n9pm\n\n\nQuiz 08\nWednesday, October 22, 2025\nin class\n\n\nModule 8 Programming Problems\nWednesday, October 22, 2025\n9pm\n\n\nShort Programming Project 7\nWednesday, October 22, 2025\n9pm\n\n\nProgramming Project 7\nFriday, October 24, 2025\n9pm\n\n\nQuiz 09\nWednesday, October 29, 2025\nin class\n\n\nModule 9 Programming Problems\nWednesday, October 29, 2025\n9pm\n\n\nMidterm 2\nWednesday, November 05, 2025\nin class\n\n\nModule 10 Programming Problems\nWednesday, November 05, 2025\n9pm\n\n\nShort Programming Project 8\nWednesday, November 05, 2025\n9pm\n\n\nProgramming Project 8\nFriday, November 07, 2025\n9pm\n\n\nModule 11 Programming Problems\nWednesday, November 12, 2025\n9pm\n\n\nShort Programming Project 9\nWednesday, November 12, 2025\n9pm\n\n\nProgramming Project 9\nFriday, November 14, 2025\n9pm\n\n\nQuiz 10\nWednesday, November 19, 2025\nin class\n\n\nModule 12 Programming Problems\nWednesday, November 19, 2025\n9pm\n\n\nShort Programming Project 10\nWednesday, November 19, 2025\n9pm\n\n\nProgramming Project 10\nFriday, November 21, 2025\n9pm\n\n\nQuiz 11\nWednesday, November 26, 2025\nin class\n\n\nModule 13 Programming Problems\nWednesday, November 26, 2025\n9pm\n\n\nShort Programming Project 11\nWednesday, November 26, 2025\n9pm\n\n\nProgramming Project 11\nMonday, December 01, 2025\n9pm\n\n\nQuiz 12\nWednesday, December 03, 2025\nin class\n\n\nModule 14 Programming Problems\nFriday, December 05, 2025\n9pm\n\n\nShort Programming Project 12\nFriday, December 05, 2025\n9pm\n\n\nProgramming Project 12\nMonday, December 08, 2025\n9pm\n\n\nProgramming Project 13\nMonday, December 08, 2025\n9pm\n\n\nFinal Exam\nFriday, December 12, 2025\n6pm-8pm",
     "crumbs": [
       "Start Here",
       "Syllabus"
@@ -8972,28 +8972,6 @@
     "crumbs": [
       "Watch",
       "Video Lessons"
-    ]
-  },
-  {
-    "objectID": "assignments-12.html#programming-problem-23",
-    "href": "assignments-12.html#programming-problem-23",
-    "title": "Module 12 Assignments",
-    "section": "Programming Problem 23",
-    "text": "Programming Problem 23\nWrite a remove_zero_sides function that given a 2D list as argument, it mutates and returns the list removing any first and last values that are equal to zero. Name your file filter.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nnumbers = [[0, 1, 2], [0], [], [2, 4, 0], [0, 0], [0, 20, 3, 10, 0]]\nremove_zero_sides(numbers)\nassert numbers ==  [[1, 2], [], [], [2, 4], [], [20, 3, 10]]\n\nmore_numbers = [[0], [], [0, 0], [0, 1], [2, 0]]\nassert remove_zero_sides(more_numbers) == [[], [], [], [1], [2]]",
-    "crumbs": [
-      "Module 12 - Data Structures (2D lists)",
-      "Module 12 Assignments"
-    ]
-  },
-  {
-    "objectID": "assignments-12.html#programming-problem-24",
-    "href": "assignments-12.html#programming-problem-24",
-    "title": "Module 12 Assignments",
-    "section": "Programming Problem 24",
-    "text": "Programming Problem 24\nDue date: Wednesday, November 19, 2025 at 9pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
-    "crumbs": [
-      "Module 12 - Data Structures (2D lists)",
-      "Module 12 Assignments"
     ]
   }
 ]
