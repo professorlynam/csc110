@@ -279,161 +279,253 @@
     "href": "slides-13-01.html#data-structures-in-python",
     "title": "data structures – review (slides)",
     "section": "Data Structures in Python",
-    "text": "Data Structures in Python\n\nlists (mutable)\ndictionaries (mutable)\ntuples (immutable)"
+    "text": "Data Structures in Python\n\nlists (mutable)\ndictionaries (mutable)\ntuples (immutable)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#a-comparison---fill-in-the-missing-cells",
     "href": "slides-13-01.html#a-comparison---fill-in-the-missing-cells",
     "title": "data structures – review (slides)",
     "section": "A comparison - fill in the missing cells",
-    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\n\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\n\nmy_d[k] = v\n-\n\n\nDelete\n\n\n-"
+    "text": "A comparison - fill in the missing cells\nuse i to represent index, v to represent value:\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\n\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\n\nmy_d[k] = v\n-\n\n\nDelete\n\n\n-",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#a-comparison",
     "href": "slides-13-01.html#a-comparison",
     "title": "data structures – review (slides)",
     "section": "A comparison",
-    "text": "A comparison\nOther ways for update: my_l[i] += v, my_d[i] += v\n\n\n\n\n\n\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\nmy_d[k]\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\nmy_l.insert(i, v)  my_l.append(v)\nmy_d[k] = v\n-\n\n\nDelete\nmy_l.pop(i)  my_l.remove(v)\nmy_d.pop(k)\n-"
+    "text": "A comparison\nOther ways for update: my_l[i] += v, my_d[i] += v\n\n\n\n\n\n\n\n\n\nMethod\nList\nDictionary\nTuple\n\n\n\n\nCreate\nmy_l = []\nmy_d = {}\nmy_t = ()\n\n\nRetrieve\nmy_l[i]\nmy_d[k]\nmy_t[i]\n\n\nUpdate\nmy_l[i] = v\nmy_d[k] = v\n-\n\n\nAdd\nmy_l.insert(i, v)  my_l.append(v)\nmy_d[k] = v\n-\n\n\nDelete\nmy_l.pop(i)  my_l.remove(v)\nmy_d.pop(k)\n-",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#lists",
     "href": "slides-13-01.html#lists",
     "title": "data structures – review (slides)",
     "section": "Lists",
-    "text": "Lists\n\nstore:\n\nordered items\nelements of different types\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable"
+    "text": "Lists\n\nstore:\n\nordered items\nelements of different types\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#lists-1",
     "href": "slides-13-01.html#lists-1",
     "title": "data structures – review (slides)",
     "section": "Lists",
-    "text": "Lists\nIndexing to retrieve values:\n\nmy_list = [\"a\", 1, \"b\", 2]\nmy_list[0]\n\n'a'\n\n\nIndexing to mutate values:\n\nmy_list[0] = 5\nmy_list\n\n[5, 1, 'b', 2]"
+    "text": "Lists\nIndexing to retrieve values:\n\nmy_list = [\"a\", 1, \"b\", 2]\nmy_list[0]\n\n'a'\n\n\nIndexing to mutate values:\n\nmy_list[0] = 5\nmy_list\n\n[5, 1, 'b', 2]",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#list-methods",
     "href": "slides-13-01.html#list-methods",
     "title": "data structures – review (slides)",
     "section": "List methods",
-    "text": "List methods\n\n.append(value)\n.insert(index, value)\n.pop(index)\n.remove(value)"
+    "text": "List methods\n\n.append(value)\n.insert(index, value)\n.pop(index)\n.remove(value)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#tuples",
     "href": "slides-13-01.html#tuples",
     "title": "data structures – review (slides)",
     "section": "Tuples",
-    "text": "Tuples\n\nstore:\n\nordered items\nelements of different types\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable"
+    "text": "Tuples\n\nstore:\n\nordered items\nelements of different types\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#tuples-1",
     "href": "slides-13-01.html#tuples-1",
     "title": "data structures – review (slides)",
     "section": "Tuples",
-    "text": "Tuples\nIndexing to retrieve values:\n\nmy_tuple = (\"a\", 1, \"b\", 2)\nmy_tuple[0]\n\n'a'\n\n\nNot possible to mutate/change values in tuples\nNo methods to change it (because tuples are immutable)"
+    "text": "Tuples\nIndexing to retrieve values:\n\nmy_tuple = (\"a\", 1, \"b\", 2)\nmy_tuple[0]\n\n'a'\n\n\nNot possible to mutate/change values in tuples\nNo methods to change it (because tuples are immutable)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#dictionaries",
     "href": "slides-13-01.html#dictionaries",
     "title": "data structures – review (slides)",
     "section": "Dictionaries",
-    "text": "Dictionaries\n\nstore pairs of items key: value\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable"
+    "text": "Dictionaries\n\nstore pairs of items key: value\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#dictionaries-1",
     "href": "slides-13-01.html#dictionaries-1",
     "title": "data structures – review (slides)",
     "section": "Dictionaries",
-    "text": "Dictionaries\nUse key to retrieve values:\n\nmy_dict = {\"banana\": 10, \"apple\": 3, \"orange\": 40}\nmy_dict[\"banana\"]\n\n10\n\n\nUse key to add key: value pairs:\n\nmy_dict[\"pear\"] = 5\nmy_dict\n\n{'banana': 10, 'apple': 3, 'orange': 40, 'pear': 5}\n\n\nUse key to mutate value associated with key:\n\nmy_dict[\"pear\"] += 5\nmy_dict\n\n{'banana': 10, 'apple': 3, 'orange': 40, 'pear': 10}"
+    "text": "Dictionaries\nUse key to retrieve values:\n\nmy_dict = {\"banana\": 10, \"apple\": 3, \"orange\": 40}\nmy_dict[\"banana\"]\n\n10\n\n\nUse key to add key: value pairs:\n\nmy_dict[\"pear\"] = 5\nmy_dict\n\n{'banana': 10, 'apple': 3, 'orange': 40, 'pear': 5}\n\n\nUse key to mutate value associated with key:\n\nmy_dict[\"pear\"] += 5\nmy_dict\n\n{'banana': 10, 'apple': 3, 'orange': 40, 'pear': 10}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#dictionary-methods",
     "href": "slides-13-01.html#dictionary-methods",
     "title": "data structures – review (slides)",
     "section": "Dictionary methods",
-    "text": "Dictionary methods\n\n.values()\n.items()\n.pop()"
+    "text": "Dictionary methods\n\n.values()\n.items()\n.pop()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#evaluate-the-code",
     "href": "slides-13-01.html#evaluate-the-code",
     "title": "data structures – review (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\nIndicate when errors are thrown\n\nmy_list = [2, 3, 1, 2]\nmy_list.append(3)\nmy_list.insert(0, 1)\nmy_list[3] = 4\nmy_list[6] = 10\nmy_list # evaluate what this list holds at this point\n\nmy_tuple = (3, 4, 1)\nmy_tuple.append(3)\nmy_tuple # evaluate what this tuple holds at this point\n\nmy_dictionary = {3: 4, 1: 2, 5: 4}\nmy_dictionary[5] = 10\nmy_dictionary # evaluate what this dictionary holds at this point\n\nmy_dictionary.append(4: 5)\nmy_dictionary # evaluate what this dictionary holds at this point"
+    "text": "Evaluate the code\nIndicate when errors are thrown\n\nmy_list = [2, 3, 1, 2]\nmy_list.append(3)\nmy_list.insert(0, 1)\nmy_list[3] = 4\nmy_list[6] = 10\nmy_list # evaluate what this list holds at this point\n\nmy_tuple = (3, 4, 1)\nmy_tuple.append(3)\nmy_tuple # evaluate what this tuple holds at this point\n\nmy_dictionary = {3: 4, 1: 2, 5: 4}\nmy_dictionary[5] = 10\nmy_dictionary # evaluate what this dictionary holds at this point\n\nmy_dictionary.append(4: 5)\nmy_dictionary # evaluate what this dictionary holds at this point",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#evaluate-the-code-1",
     "href": "slides-13-01.html#evaluate-the-code-1",
     "title": "data structures – review (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\nIndicate when errors are thrown\n\nmy_list = [2, 3, 1, 2]\nmy_list.append(3)\nmy_list.insert(0, 1)\nmy_list[3] = 4\n# error --- my_list[6] = 10\nmy_list # evaluate what this list holds at this point\n\n[1, 2, 3, 4, 2, 3]\n\n\n\nmy_tuple = (3, 4, 1)\n# error --- my_tupple.append(3)\nmy_tuple # evaluate what this tuple holds at this point\n\n(3, 4, 1)\n\n\n\nmy_dictionary = {3: 4, 1: 2, 5: 4}\nmy_dictionary[5] = 10\nmy_dictionary # evaluate what this dictionary holds at this point\n\n{3: 4, 1: 2, 5: 10}\n\n\n\n# error --- my_dictionary.append(4: 5)\nmy_dictionary # evaluate what this dictionary holds at this point\n\n{3: 4, 1: 2, 5: 10}"
+    "text": "Evaluate the code\nIndicate when errors are thrown\n\nmy_list = [2, 3, 1, 2]\nmy_list.append(3)\nmy_list.insert(0, 1)\nmy_list[3] = 4\n# error --- my_list[6] = 10\nmy_list # evaluate what this list holds at this point\n\n[1, 2, 3, 4, 2, 3]\n\n\n\nmy_tuple = (3, 4, 1)\n# error --- my_tupple.append(3)\nmy_tuple # evaluate what this tuple holds at this point\n\n(3, 4, 1)\n\n\n\nmy_dictionary = {3: 4, 1: 2, 5: 4}\nmy_dictionary[5] = 10\nmy_dictionary # evaluate what this dictionary holds at this point\n\n{3: 4, 1: 2, 5: 10}\n\n\n\n# error --- my_dictionary.append(4: 5)\nmy_dictionary # evaluate what this dictionary holds at this point\n\n{3: 4, 1: 2, 5: 10}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#iterating-over-data-structures",
     "href": "slides-13-01.html#iterating-over-data-structures",
     "title": "data structures – review (slides)",
     "section": "Iterating over data structures",
-    "text": "Iterating over data structures\nUse for x in data_structure to retrieve values/keys (cannot make changes with this type of loop)\n\nmy_list = [3, 5, 5]\nfor value in my_list:\n  print(value)\n\n3\n5\n5\n\n\n\nmy_tuple = (3, 5, 5)\nfor value in my_tuple:\n  print(value)\n\n3\n5\n5"
+    "text": "Iterating over data structures\nUse for x in data_structure to retrieve values/keys (cannot make changes with this type of loop)\n\nmy_list = [3, 5, 5]\nfor value in my_list:\n  print(value)\n\n3\n5\n5\n\n\n\nmy_tuple = (3, 5, 5)\nfor value in my_tuple:\n  print(value)\n\n3\n5\n5",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#iterating-over-dictionaries",
     "href": "slides-13-01.html#iterating-over-dictionaries",
     "title": "data structures – review (slides)",
     "section": "Iterating over dictionaries",
-    "text": "Iterating over dictionaries\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor key in my_dictionary:\n  print(key)\n\n3\n5\n\n\nYou can change values in a dictionary with for key in dictionary\n\nmy_dictionary = {\"a\": 2, \"b\": 3}\nfor key in my_dictionary:\n  my_dictionary[key] += 1\nmy_dictionary\n\n{'a': 3, 'b': 4}"
+    "text": "Iterating over dictionaries\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor key in my_dictionary:\n  print(key)\n\n3\n5\n\n\nYou can change values in a dictionary with for key in dictionary\n\nmy_dictionary = {\"a\": 2, \"b\": 3}\nfor key in my_dictionary:\n  my_dictionary[key] += 1\nmy_dictionary\n\n{'a': 3, 'b': 4}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#iterating-over-dictionaries-1",
     "href": "slides-13-01.html#iterating-over-dictionaries-1",
     "title": "data structures – review (slides)",
     "section": "Iterating over dictionaries",
-    "text": "Iterating over dictionaries\nUse for x in data_structure.method() for dictionaries\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor value in my_dictionary.values():\n  print(value)\n\na\nb\n\n\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor key, value in my_dictionary.items():\n  print(value)\n  print(key)\n\na\n3\nb\n5"
+    "text": "Iterating over dictionaries\nUse for x in data_structure.method() for dictionaries\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor value in my_dictionary.values():\n  print(value)\n\na\nb\n\n\n\nmy_dictionary = {3: \"a\", 5: \"b\"}\nfor key, value in my_dictionary.items():\n  print(value)\n  print(key)\n\na\n3\nb\n5",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#write-a-function",
     "href": "slides-13-01.html#write-a-function",
     "title": "data structures – review (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is count_names that opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a list for this\n\n\nassert count_names(\"names.txt\") == 11"
+    "text": "Write a function\n\nIts name is count_names that opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a list for this\n\n\nassert count_names(\"names.txt\") == 11",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#write-a-function-solution",
     "href": "slides-13-01.html#write-a-function-solution",
     "title": "data structures – review (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_list = []\n  for line in f:\n    name = line.strip()\n    if name not in name_list and name != \"\":\n      name_list.append(name)\n  f.close()\n  return len(name_list)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()"
+    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_list = []\n  for line in f:\n    name = line.strip()\n    if name not in name_list and name != \"\":\n      name_list.append(name)\n  f.close()\n  return len(name_list)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#write-a-function-1",
     "href": "slides-13-01.html#write-a-function-1",
     "title": "data structures – review (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is count_names\nIt opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a dictionary for this\n\n\nassert count_names(\"names.txt\") == 11"
+    "text": "Write a function\n\nIts name is count_names\nIt opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a dictionary for this\n\n\nassert count_names(\"names.txt\") == 11",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#write-a-function-solution-1",
     "href": "slides-13-01.html#write-a-function-solution-1",
     "title": "data structures – review (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_dict = {}\n  for line in f:\n    name = line.strip()\n    if name not in name_dict and name != \"\":\n      name_dict[name] = \"\"\n  f.close()\n  return len(name_dict)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()"
+    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_dict = {}\n  for line in f:\n    name = line.strip()\n    if name not in name_dict and name != \"\":\n      name_dict[name] = \"\"\n  f.close()\n  return len(name_dict)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#can-we-change-size-while-iterating",
     "href": "slides-13-01.html#can-we-change-size-while-iterating",
     "title": "data structures – review (slides)",
     "section": "Can we change size while iterating?",
-    "text": "Can we change size while iterating?\nGo to Python Tutor and visualize the execution.\n\nRemove values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\n\n\nAppend values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1)"
+    "text": "Can we change size while iterating?\nGo to Python Tutor and visualize the execution.\n\nRemove values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\n\n\nAppend values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#cannot-change-size-while-iterating",
     "href": "slides-13-01.html#cannot-change-size-while-iterating",
     "title": "data structures – review (slides)",
     "section": "Cannot change size while iterating",
-    "text": "Cannot change size while iterating\nIt’s not possible to remove or add items to a list/dictionary inside a for x in data_structure loop:\nWeird behavior:\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\nmy_list\n\n[3, 2]\n\n\nInfinite loop:\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1) # this causes an infinite loop"
+    "text": "Cannot change size while iterating\nIt’s not possible to remove or add items to a list/dictionary inside a for x in data_structure loop:\nWeird behavior:\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\nmy_list\n\n[3, 2]\n\n\nInfinite loop:\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1) # this causes an infinite loop",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#cannot-change-size-while-iterating-1",
     "href": "slides-13-01.html#cannot-change-size-while-iterating-1",
     "title": "data structures – review (slides)",
     "section": "Cannot change size while iterating",
-    "text": "Cannot change size while iterating\nIt’s not possible to remove or add items to a list/dictionary inside a for x in data_structure loop:\nError:\n\nmy_dict = {2: 0, 3: 1, 1: 0}\nfor key in my_dict:\n  my_dict.pop(key) # this causes an error"
+    "text": "Cannot change size while iterating\nIt’s not possible to remove or add items to a list/dictionary inside a for x in data_structure loop:\nError:\n\nmy_dict = {2: 0, 3: 1, 1: 0}\nfor key in my_dict:\n  my_dict.pop(key) # this causes an error",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "data structures -- review (slides)"
+    ]
   },
   {
     "objectID": "slides-12-01.html#lists-within-lists",
@@ -7505,7 +7597,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.20810313982191853\n3",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.28408639049930684\n2",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7527,7 +7619,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8209,112 +8301,176 @@
     "href": "slides-12-02.html#d-lists",
     "title": "nested for loops (slides)",
     "section": "2D lists",
-    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\nHow to retrieve first name \"Peter\"?\nHow to retrieve integer 23?"
+    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\nHow to retrieve first name \"Peter\"?\nHow to retrieve integer 23?",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#d-lists-1",
     "href": "slides-12-02.html#d-lists-1",
     "title": "nested for loops (slides)",
     "section": "2D lists",
-    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\n\npeople[0][0]\n\n'Ana'\n\n\nHow to retrieve first name \"Peter\"?\n\npeople[1][0]\n\n'Peter'\n\n\nHow to retrieve integer 23?\n\npeople[1][1]\n\n23"
+    "text": "2D lists\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n\nHow to retrieve first name \"Ana\"?\n\npeople[0][0]\n\n'Ana'\n\n\nHow to retrieve first name \"Peter\"?\n\npeople[1][0]\n\n'Peter'\n\n\nHow to retrieve integer 23?\n\npeople[1][1]\n\n23",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#nested-for-loops",
     "href": "slides-12-02.html#nested-for-loops",
     "title": "nested for loops (slides)",
     "section": "Nested for loops",
-    "text": "Nested for loops\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n          \nfor i in range(len(people)):\n  for j in range(len(people[i])):\n    print(people[i][j])\n\nAna\n34\nB\nPeter\n23\nA"
+    "text": "Nested for loops\n\npeople = [[\"Ana\", 34, \"B\"],\n          [\"Peter\", 23, \"A\"]]\n          \nfor i in range(len(people)):\n  for j in range(len(people[i])):\n    print(people[i][j])\n\nAna\n34\nB\nPeter\n23\nA",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function",
     "href": "slides-12-02.html#write-a-function",
     "title": "nested for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns the highest value among all the numbers in the list.\nTest cases\n\nassert nested_max([[], []]) == None\nassert nested_max([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 5"
+    "text": "Write a function\nIt returns the highest value among all the numbers in the list.\nTest cases\n\nassert nested_max([[], []]) == None\nassert nested_max([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 5",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-solution",
     "href": "slides-12-02.html#write-a-function-solution",
     "title": "nested for loops (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\ndef main():\n  assert nested_max([[], []]) == None\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 5\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#loop-table",
     "href": "slides-12-02.html#loop-table",
     "title": "nested for loops (slides)",
     "section": "Loop Table",
-    "text": "Loop Table\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\nmax_nested([[], [], [2, 1], [0, 5])\n\nDraw a loop table with:\n\nvalues of i, j,len(lists[i]), lists[i][j], and max for each nested loop iteration\nHint: both values of j and lists[i][j] are \"-\" if an inner list is empty"
+    "text": "Loop Table\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if max == None or lists[i][j] &gt; max:\n        max = lists[i][j]\n  return max\n\nmax_nested([[], [], [2, 1], [0, 5])\n\nDraw a loop table with:\n\nvalues of i, j,len(lists[i]), lists[i][j], and max for each nested loop iteration\nHint: both values of j and lists[i][j] are \"-\" if an inner list is empty",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#loop-table-solution",
     "href": "slides-12-02.html#loop-table-solution",
     "title": "nested for loops (slides)",
     "section": "Loop Table – solution",
-    "text": "Loop Table – solution\n\nmax_nested([[], [], [2, 1], [0, 5])\n\n\n\n\n\n\nijlen(lists[i])lists[i][j]max\n\n\n\n0-0-None\n\n1-0-None\n\n20222\n\n21212\n\n30202\n\n31255"
+    "text": "Loop Table – solution\n\nmax_nested([[], [], [2, 1], [0, 5])\n\n\n\n\n\n\nijlen(lists[i])lists[i][j]max\n\n\n\n0-0-None\n\n1-0-None\n\n20222\n\n21212\n\n30202\n\n31255",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#read-solution-correct-or-not",
     "href": "slides-12-02.html#read-solution-correct-or-not",
     "title": "nested for loops (slides)",
     "section": "Read solution: correct or not?",
-    "text": "Read solution: correct or not?\n\ndef max_list(numbers):\n  max = None\n  for n in numbers:\n    if max == None or n &gt; max:\n      max = n\n  return max\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    max_of_sublist = max_list(lists[i])\n    if max == None or  max_of_sublist &gt; max:\n      max = max_of_sublist\n  return max\n\ndef main():\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [],\n                     [5, 1]]) == 5\n\nmain()"
+    "text": "Read solution: correct or not?\n\ndef max_list(numbers):\n  max = None\n  for n in numbers:\n    if max == None or n &gt; max:\n      max = n\n  return max\n\ndef nested_max(lists):\n  max = None\n  for i in range(len(lists)):\n    max_of_sublist = max_list(lists[i])\n    if max == None or  max_of_sublist &gt; max:\n      max = max_of_sublist\n  return max\n\ndef main():\n  assert nested_max([[1, 2, 3, 2, 1],\n                     [],\n                     [5, 1]]) == 5\n\nmain()",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-1",
     "href": "slides-12-02.html#write-a-function-1",
     "title": "nested for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt returns the lowest number in all inner lists.\nTest cases:\n\nassert nested_min([[], []]) == None\nassert nested_min([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 0"
+    "text": "Write a function\nIt returns the lowest number in all inner lists.\nTest cases:\n\nassert nested_min([[], []]) == None\nassert nested_min([[1, 2, 3, 2, 1],\n                   [2, 3, 2, 1, 5],\n                   [0, 1]]) == 0",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-solution-1",
     "href": "slides-12-02.html#write-a-function-solution-1",
     "title": "nested for loops (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef nested_min(lists):\n  min = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if min == None or lists[i][j] &lt; min:\n        min = lists[i][j]\n  return min\n\ndef main():\n  assert nested_min([[], []]) == None\n  assert nested_min([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 0\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution\n\ndef nested_min(lists):\n  min = None\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      if min == None or lists[i][j] &lt; min:\n        min = lists[i][j]\n  return min\n\ndef main():\n  assert nested_min([[], []]) == None\n  assert nested_min([[1, 2, 3, 2, 1],\n                     [2, 3, 2, 1, 5],\n                     [0, 1]]) == 0\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#mutate-nested-lists",
     "href": "slides-12-02.html#mutate-nested-lists",
     "title": "nested for loops (slides)",
     "section": "Mutate nested lists",
-    "text": "Mutate nested lists\nIn addition to retrieving a value from nested lists, we can also mutate a value in a sublist.\n\npeople = [[\"Ana\", 24, \"B\"],\n          [\"Peter\", 23, \"A\"]]\npeople\n\n[['Ana', 24, 'B'], ['Peter', 23, 'A']]\n\n\n\npeople[0][1] = 54\npeople\n\n[['Ana', 54, 'B'], ['Peter', 23, 'A']]"
+    "text": "Mutate nested lists\nIn addition to retrieving a value from nested lists, we can also mutate a value in a sublist.\n\npeople = [[\"Ana\", 24, \"B\"],\n          [\"Peter\", 23, \"A\"]]\npeople\n\n[['Ana', 24, 'B'], ['Peter', 23, 'A']]\n\n\n\npeople[0][1] = 54\npeople\n\n[['Ana', 54, 'B'], ['Peter', 23, 'A']]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-2",
     "href": "slides-12-02.html#write-a-function-2",
     "title": "nested for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt mutates the sublist items by multiplying each number in each sublist by 2 and returns the argument list.\nTest cases\n\nassert double_nested([[], []]) == [[], []]\nassert double_nested([[1, 2, 3, 2, 1],\n                     [0, 1]]) == [[2, 4, 6, 4, 2],\n                                  [0, 2]]"
+    "text": "Write a function\nIt mutates the sublist items by multiplying each number in each sublist by 2 and returns the argument list.\nTest cases\n\nassert double_nested([[], []]) == [[], []]\nassert double_nested([[1, 2, 3, 2, 1],\n                     [0, 1]]) == [[2, 4, 6, 4, 2],\n                                  [0, 2]]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-solution-2",
     "href": "slides-12-02.html#write-a-function-solution-2",
     "title": "nested for loops (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef double_nested(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      lists[i][j] *= 2\n  return lists\n\ndef main():\n  assert double_nested([[], []]) == [[], []]\n  assert double_nested([[1, 2, 3, 2, 1],\n                        [0, 1]]) == [[2, 4, 6, 4, 2],\n                                     [0, 2]]\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests"
+    "text": "Write a function – solution\n\ndef double_nested(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])):\n      lists[i][j] *= 2\n  return lists\n\ndef main():\n  assert double_nested([[], []]) == [[], []]\n  assert double_nested([[1, 2, 3, 2, 1],\n                        [0, 1]]) == [[2, 4, 6, 4, 2],\n                                     [0, 2]]\n  print(\"Passed all tests\")\nmain()\n\nPassed all tests",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-3",
     "href": "slides-12-02.html#write-a-function-3",
     "title": "nested for loops (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt mutates the sublist items by reversing each string (use string[::-1] to reverse it) and returns the argument list.\nTest cases:\n\nassert reverse_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]) == [[\"stressed\", \"war\", \"evil\"],\n                                                        [\"trams\", \"stink\"]]"
+    "text": "Write a function\nIt mutates the sublist items by reversing each string (use string[::-1] to reverse it) and returns the argument list.\nTest cases:\n\nassert reverse_strings_nested([[\"desserts\", \"raw\", \"live\"],\n                               [\"smart\", \"knits\"]]) == [[\"stressed\", \"war\", \"evil\"],\n                                                        [\"trams\", \"stink\"]]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#write-a-function-solution-3",
     "href": "slides-12-02.html#write-a-function-solution-3",
     "title": "nested for loops (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef reverse_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = strings[i][j][::-1]\n  return strings\n\ndef main():\n  original_strings = [[\"desserts\", \"raw\", \"live\"],\n                      [\"smart\", \"knits\"]]\n  reverse_strings_nested(original_strings)   \n  assert  original_strings == [[\"stressed\", \"war\", \"evil\"],\n                               [\"trams\", \"stink\"]]\n  \n  print(original_strings)\n  \nmain()\n\n[['stressed', 'war', 'evil'], ['trams', 'stink']]"
+    "text": "Write a function – solution\n\ndef reverse_strings_nested(strings):\n  for i in range(len(strings)):\n    for j in range(len(strings[i])):\n      strings[i][j] = strings[i][j][::-1]\n  return strings\n\ndef main():\n  original_strings = [[\"desserts\", \"raw\", \"live\"],\n                      [\"smart\", \"knits\"]]\n  reverse_strings_nested(original_strings)   \n  assert  original_strings == [[\"stressed\", \"war\", \"evil\"],\n                               [\"trams\", \"stink\"]]\n  \n  print(original_strings)\n  \nmain()\n\n[['stressed', 'war', 'evil'], ['trams', 'stink']]",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-12-02.html#quiz-09",
     "href": "slides-12-02.html#quiz-09",
     "title": "nested for loops (slides)",
     "section": "Quiz 09",
-    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz."
+    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
+    "crumbs": [
+      "Module 12 - Data Structures (2D lists)",
+      "nested for loops (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#data-structures-in-python",
@@ -8720,7 +8876,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",

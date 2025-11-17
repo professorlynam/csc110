@@ -171,10 +171,12 @@ website:
         contents:
         - assignments-12.qmd
         - slides-12-01.qmd
+        - slides-12-02.qmd
       - section: "Module 13 - Data Structures (sets)"
         contents:
         - data_structures_sets.md
         - assignments-13.qmd
+        - slides-13-01.qmd
       - section: "Module 14 - Control Flow with different Data Structures"
         contents:
         - structures-review.qmd
