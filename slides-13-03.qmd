@@ -25,7 +25,6 @@ s2 = {3, 4, 5}
 s1.union(s2)
 ```
 
-![union](images/union.png)
 
 ## intersection
 
@@ -37,7 +36,6 @@ s2 = {3, 4, 5}
 s1.intersection(s2)
 ```
 
-![intersection](images/intersection.png)
 
 ## Evaluate the code
 

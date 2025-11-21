@@ -216,63 +216,99 @@
     "href": "slides-13-03.html#set-methods",
     "title": "sets (slides)",
     "section": "Set methods",
-    "text": "Set methods\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\n.union(set2) returns a set with the all elements in both sets\n.intersection(set2) returns a set with the all elements in common"
+    "text": "Set methods\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\n.union(set2) returns a set with the all elements in both sets\n.intersection(set2) returns a set with the all elements in common",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#union",
     "href": "slides-13-03.html#union",
     "title": "sets (slides)",
     "section": "union",
-    "text": "union\n\ns1 = {1, 2, 3}\ns2 = {3, 4, 5}\ns1.union(s2)\n\n{1, 2, 3, 4, 5}\n\n\n\nunion"
+    "text": "union\n\ns1 = {1, 2, 3}\ns2 = {3, 4, 5}\ns1.union(s2)\n\n{1, 2, 3, 4, 5}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#intersection",
     "href": "slides-13-03.html#intersection",
     "title": "sets (slides)",
     "section": "intersection",
-    "text": "intersection\n\ns1 = {1, 2, 3}\ns2 = {3, 4, 5}\ns1.intersection(s2)\n\n{3}\n\n\n\nintersection"
+    "text": "intersection\n\ns1 = {1, 2, 3}\ns2 = {3, 4, 5}\ns1.intersection(s2)\n\n{3}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#evaluate-the-code",
     "href": "slides-13-03.html#evaluate-the-code",
     "title": "sets (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\npresences = {\"Anna\", \"Beatrice\", \"Claude\"}\nabsences = {\"Elvin\", \"Harley\"}\nabsences.add(\"Becca\")\npresences.union(absences)\n\ntask_1 = {\"Anna\", \"Beatrice\", \"Claude\"}\ntask_2 = {\"Anna\", \"Elvin\", \"Harley\", \"Beatrice\"}\ntask_1.intersection(task_2)\n\ntask_2.discard(\"Anna\")\ntask_1.intersection(task_2)"
+    "text": "Evaluate the code\n\npresences = {\"Anna\", \"Beatrice\", \"Claude\"}\nabsences = {\"Elvin\", \"Harley\"}\nabsences.add(\"Becca\")\npresences.union(absences)\n\ntask_1 = {\"Anna\", \"Beatrice\", \"Claude\"}\ntask_2 = {\"Anna\", \"Elvin\", \"Harley\", \"Beatrice\"}\ntask_1.intersection(task_2)\n\ntask_2.discard(\"Anna\")\ntask_1.intersection(task_2)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#evaluate-the-code-1",
     "href": "slides-13-03.html#evaluate-the-code-1",
     "title": "sets (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\npresences = {\"Anna\", \"Beatrice\", \"Claude\"}\nabsences = {\"Elvin\", \"Harley\"}\nabsences.add(\"Becca\")\npresences.union(absences)\n\n{'Anna', 'Beatrice', 'Becca', 'Claude', 'Elvin', 'Harley'}\n\n\n\ntask_1 = {\"Anna\", \"Beatrice\", \"Claude\"}\ntask_2 = {\"Anna\", \"Elvin\", \"Harley\", \"Beatrice\"}\ntask_1.intersection(task_2)\n\n{'Anna', 'Beatrice'}\n\n\n\ntask_2.discard(\"Anna\")\ntask_1.intersection(task_2)\n\n{'Beatrice'}"
+    "text": "Evaluate the code\n\npresences = {\"Anna\", \"Beatrice\", \"Claude\"}\nabsences = {\"Elvin\", \"Harley\"}\nabsences.add(\"Becca\")\npresences.union(absences)\n\n{'Anna', 'Beatrice', 'Becca', 'Claude', 'Elvin', 'Harley'}\n\n\n\ntask_1 = {\"Anna\", \"Beatrice\", \"Claude\"}\ntask_2 = {\"Anna\", \"Elvin\", \"Harley\", \"Beatrice\"}\ntask_1.intersection(task_2)\n\n{'Anna', 'Beatrice'}\n\n\n\ntask_2.discard(\"Anna\")\ntask_1.intersection(task_2)\n\n{'Beatrice'}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#write-a-function",
     "href": "slides-13-03.html#write-a-function",
     "title": "sets (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is common_values\nIt takes two sets are arguments\nIt returns False if the sets have no elements in common, True otherwise\n\n\nassert common_values({1, 2, 3}, {3, 4, 5}) == True\nassert common_values({1, 2, 3}, {30, 40, 50}) == False"
+    "text": "Write a function\n\nIts name is common_values\nIt takes two sets are arguments\nIt returns False if the sets have no elements in common, True otherwise\n\n\nassert common_values({1, 2, 3}, {3, 4, 5}) == True\nassert common_values({1, 2, 3}, {30, 40, 50}) == False",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#write-a-function-solution",
     "href": "slides-13-03.html#write-a-function-solution",
     "title": "sets (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef common_values(set_1, set_2):\n  return len(set_1.intersection(set_2)) != 0\n\nif __name__ == \"__main__\":\n  assert common_values({1, 2, 3}, {3, 4, 5}) == True\n  assert common_values({1, 2, 3}, {30, 40, 50}) == False\n  print(\"Passed tests.\")\n\nPassed tests."
+    "text": "Write a function – solution\n\ndef common_values(set_1, set_2):\n  return len(set_1.intersection(set_2)) != 0\n\nif __name__ == \"__main__\":\n  assert common_values({1, 2, 3}, {3, 4, 5}) == True\n  assert common_values({1, 2, 3}, {30, 40, 50}) == False\n  print(\"Passed tests.\")\n\nPassed tests.",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#write-a-function-1",
     "href": "slides-13-03.html#write-a-function-1",
     "title": "sets (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nFunction name is discard_elements\nIt takes two sets as argument: set_1 and set_2\nIt mutates the first set (set_1) removing all elements it has in common with set_2\n\n\ntest_set = {1, 2, 3, 4}\ndiscard_elements(test_set, {2})\nassert test_set == {1, 3, 4}"
+    "text": "Write a function\n\nFunction name is discard_elements\nIt takes two sets as argument: set_1 and set_2\nIt mutates the first set (set_1) removing all elements it has in common with set_2\n\n\ntest_set = {1, 2, 3, 4}\ndiscard_elements(test_set, {2})\nassert test_set == {1, 3, 4}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#write-a-function-solution-1",
     "href": "slides-13-03.html#write-a-function-solution-1",
     "title": "sets (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef discard_elements(set_1, set_2):\n  to_remove = set_1.intersection(set_2)\n  for value in to_remove:\n    set_1.discard(value)\n    \nif __name__ == \"__main__\":\n  test_set = {1, 2, 3, 4}\n  discard_elements(test_set, {2})\n  assert test_set == {1, 3, 4}\n  print(test_set)\n\n{1, 3, 4}"
+    "text": "Write a function – solution\n\ndef discard_elements(set_1, set_2):\n  to_remove = set_1.intersection(set_2)\n  for value in to_remove:\n    set_1.discard(value)\n    \nif __name__ == \"__main__\":\n  test_set = {1, 2, 3, 4}\n  discard_elements(test_set, {2})\n  assert test_set == {1, 3, 4}\n  print(test_set)\n\n{1, 3, 4}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-01.html#data-structures-in-python",
@@ -7597,7 +7633,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.4751303162374929\n8",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.06766203437104501\n9",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8477,105 +8513,165 @@
     "href": "slides-13-02.html#data-structures-in-python",
     "title": "intro to sets (slides)",
     "section": "Data Structures in Python",
-    "text": "Data Structures in Python\n\nlists (mutable)\ndictionaries (mutable)\ntuples (immutable)\nsets (mutable)"
+    "text": "Data Structures in Python\n\nlists (mutable)\ndictionaries (mutable)\ntuples (immutable)\nsets (mutable)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#lists",
     "href": "slides-13-02.html#lists",
     "title": "intro to sets (slides)",
     "section": "Lists",
-    "text": "Lists\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable"
+    "text": "Lists\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse square brackets ([]) syntax for creating a list\nallow indexing (integers starting at 0) with square brackets ([]) as well\nare mutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#tuples",
     "href": "slides-13-02.html#tuples",
     "title": "intro to sets (slides)",
     "section": "Tuples",
-    "text": "Tuples\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable"
+    "text": "Tuples\n\nstore:\n\nordered items (it keeps the original order)\nelements of different types\nrepeated elements\n\nuse parentheses (()) syntax for creating a tuple\nallow indexing (integers starting at 0) with square brackets ([])\nare immutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#dictionaries",
     "href": "slides-13-02.html#dictionaries",
     "title": "intro to sets (slides)",
     "section": "Dictionaries",
-    "text": "Dictionaries\n\nstore pairs of items key: value\nkeys have to be unique (no repeated keys allowed)\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable"
+    "text": "Dictionaries\n\nstore pairs of items key: value\nkeys have to be unique (no repeated keys allowed)\nuse curly brackets ({}) with key and value separated by colon (:)\nallow value retrieval through key with square brackets ([])\nare mutable",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#sets",
     "href": "slides-13-02.html#sets",
     "title": "intro to sets (slides)",
     "section": "Sets",
-    "text": "Sets\n\nstore:\n\ndo NOT store items in the order you created them\nCANNOT use square brackets to retrieve an item\ndo NOT allow repeated items to be stored\n\nuse set() to initiate an empty set\nuse curly brackets ({}) for creating a set with values\nuse for x in set to iterate over the elements in a set"
+    "text": "Sets\n\nstore:\n\ndo NOT store items in the order you created them\nCANNOT use square brackets to retrieve an item\ndo NOT allow repeated items to be stored\n\nuse set() to initiate an empty set\nuse curly brackets ({}) for creating a set with values\nuse for x in set to iterate over the elements in a set",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#set-methods",
     "href": "slides-13-02.html#set-methods",
     "title": "intro to sets (slides)",
     "section": "Set methods",
-    "text": "Set methods\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\nYou can also use in and len() with sets"
+    "text": "Set methods\n\n.add(value) adds an element to the set\n.discard(value) discards the specified value\nYou can also use in and len() with sets",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#converting-data-structure",
     "href": "slides-13-02.html#converting-data-structure",
     "title": "intro to sets (slides)",
     "section": "Converting data structure",
-    "text": "Converting data structure\n\nset() to convert a list/tuple into a set\n\n\nprint(set([3, 2, 2, 1]), set((3, 2, 2, 1)))\n\n{1, 2, 3} {1, 2, 3}\n\n\n\nlist() to convert a set/tuple into a list\n\n\nprint(list({3, 2, 2, 1}), list((3, 2, 2, 1)))\n\n[1, 2, 3] [3, 2, 2, 1]\n\n\n\ntuple() to convert a list/set into a tuple\n\n\nprint(tuple({3, 2, 2, 1}), tuple([3, 2, 2, 1]))\n\n(1, 2, 3) (3, 2, 2, 1)"
+    "text": "Converting data structure\n\nset() to convert a list/tuple into a set\n\n\nprint(set([3, 2, 2, 1]), set((3, 2, 2, 1)))\n\n{1, 2, 3} {1, 2, 3}\n\n\n\nlist() to convert a set/tuple into a list\n\n\nprint(list({3, 2, 2, 1}), list((3, 2, 2, 1)))\n\n[1, 2, 3] [3, 2, 2, 1]\n\n\n\ntuple() to convert a list/set into a tuple\n\n\nprint(tuple({3, 2, 2, 1}), tuple([3, 2, 2, 1]))\n\n(1, 2, 3) (3, 2, 2, 1)",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#evaluate-the-code",
     "href": "slides-13-02.html#evaluate-the-code",
     "title": "intro to sets (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers_list = [2, 1, 2, 1, 3, 4, 1]\nnumbers_list # evaluate this line\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line"
+    "text": "Evaluate the code\n\nnumbers_list = [2, 1, 2, 1, 3, 4, 1]\nnumbers_list # evaluate this line\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#evaluate-the-code-1",
     "href": "slides-13-02.html#evaluate-the-code-1",
     "title": "intro to sets (slides)",
     "section": "Evaluate the code",
-    "text": "Evaluate the code\n\nnumbers_list = [2, 1, 2, 1, 3, 4, 1]\nnumbers_list # evaluate this line\n\n[2, 1, 2, 1, 3, 4, 1]\n\n\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4}\n\n\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4}\n\n\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4, 5}\n\n\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n{2, 3, 4, 5}"
+    "text": "Evaluate the code\n\nnumbers_list = [2, 1, 2, 1, 3, 4, 1]\nnumbers_list # evaluate this line\n\n[2, 1, 2, 1, 3, 4, 1]\n\n\n\nnumbers_set = set(numbers_list)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4}\n\n\n\nnumbers_set.add(1)\nnumbers_set.add(2)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4}\n\n\n\nnumbers_set.add(5)\nnumbers_set # evaluate this line\n\n{1, 2, 3, 4, 5}\n\n\n\nnumbers_set.discard(6)\nnumbers_set.discard(1)\nnumbers_set # evaluate this line\n\n{2, 3, 4, 5}",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#write-a-function",
     "href": "slides-13-02.html#write-a-function",
     "title": "intro to sets (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is count_names\nIt opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a set for this\n\n\nassert count_names(\"names.txt\") == 11"
+    "text": "Write a function\n\nIts name is count_names\nIt opens in read mode a file that contains a name per line, with repeated names\nIt counts how many unique names there are in the file\nIt returns an integer with the count\nUse a set for this\n\n\nassert count_names(\"names.txt\") == 11",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#write-a-function-solution",
     "href": "slides-13-02.html#write-a-function-solution",
     "title": "intro to sets (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_set = set()\n  for line in f:\n    name = line.strip()\n    if name != \"\":\n      name_set.add(name)\n  f.close()\n  return len(name_set)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()"
+    "text": "Write a function – solution\n\ndef count_names(file_name):\n  f = open(file_name, \"r\")\n  name_set = set()\n  for line in f:\n    name = line.strip()\n    if name != \"\":\n      name_set.add(name)\n  f.close()\n  return len(name_set)\n\ndef main():\n  assert count_names(\"names.txt\") == 11\n  \nmain()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#write-a-function-1",
     "href": "slides-13-02.html#write-a-function-1",
     "title": "intro to sets (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is has_duplicates\nIt takes a variable number of arguments: *values\nIt returns True if there are repeated elements in values, False otherwise\n\n\nassert has_duplicates(3, 2, 1, 2, 3) == True\nassert has_duplicates(3, 20, 1, 2, 13) == False"
+    "text": "Write a function\n\nIts name is has_duplicates\nIt takes a variable number of arguments: *values\nIt returns True if there are repeated elements in values, False otherwise\n\n\nassert has_duplicates(3, 2, 1, 2, 3) == True\nassert has_duplicates(3, 20, 1, 2, 13) == False",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#write-a-function-solution-1",
     "href": "slides-13-02.html#write-a-function-solution-1",
     "title": "intro to sets (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef has_duplicates(*values):\n  values_set = set(values)\n  return len(values) &gt; len(values_set)\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()"
+    "text": "Write a function – solution 1\n\ndef has_duplicates(*values):\n  values_set = set(values)\n  return len(values) &gt; len(values_set)\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#write-a-function-solution-2",
     "href": "slides-13-02.html#write-a-function-solution-2",
     "title": "intro to sets (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef has_duplicates(*values):\n  unique_values = set()\n  for v in values:\n    if v not in unique_values:\n      unique_values.add(v)\n    else:\n      return True\n  return False\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()"
+    "text": "Write a function – solution 2\n\ndef has_duplicates(*values):\n  unique_values = set()\n  for v in values:\n    if v not in unique_values:\n      unique_values.add(v)\n    else:\n      return True\n  return False\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-13-02.html#quiz-10",
     "href": "slides-13-02.html#quiz-10",
     "title": "intro to sets (slides)",
     "section": "Quiz 10",
-    "text": "Quiz 10\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz."
+    "text": "Quiz 10\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
+    "crumbs": [
+      "Module 13 - Data Structures (sets)",
+      "intro to sets (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#lists-are-mutable",
@@ -8876,7 +8972,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
