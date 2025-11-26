@@ -9,10 +9,9 @@ df-print: kable
 
 ## Announcements
 
-* Fill out SCS at [scsonline.ucatt.arizona.edu](https://scsonline.ucatt.arizona.edu/index.php)
-* If 80% of students complete the survey, one of your lowest quizzes grade will be replaced with full points (2.5/2.5 pts)
-* Review session next Tuesday at 5pm.
-* Midterm 3 next Wednesday, Apr 23.
+* Fill out SCS! It helps me improve as an instructor!
+* Programming Project 13 is a bonus project, due at the same time as Programming Project 12. It counts as extra credit toward the programming project category of your final grade (and is great practice for the final!)
+* Speaking of the final... Friday December 12th, 6pm-8pm, Modern Languages room 350
 
 ## Combining lists
 
@@ -230,7 +229,6 @@ if __name__ == "__main__":
 
 ## Write python code
 
-Name your file `prime_numbers.py` and submit for attendance. Test cases:
 
 ```{python}
 #| echo: true

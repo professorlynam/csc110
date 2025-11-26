@@ -147,7 +147,6 @@ numbers
 1. It takes one argument: a list of strings
 1. It `mutates` and `returns` the argument list removing all strings that end in vowel
 
-Name as `delete_from_list.py`, submit to Gradescope.
 
 ```{python}
 #| echo: true

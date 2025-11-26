@@ -30,7 +30,6 @@ names_ages
 
 It **mutates** the dictionary, multiplying each value by 0.056 and rounding the result to two decimals
 
-Name file as `sales_tax.py` and submit to Gradescope
 
 ```{python}
 #| eval: false

@@ -183,6 +183,8 @@ website:
         contents:
         - structures-review.qmd
         - assignments-14.qmd
+        - slides-14-01.qmd
+        - slides-14-02.qmd
       - section: "Module 15 - Handling Exceptions"
         contents:
         - exceptions.md

@@ -118,98 +118,154 @@
     "href": "slides-14-02.html#dictionaries-are-mutable",
     "title": "mutating dictionaries (slides)",
     "section": "Dictionaries are mutable",
-    "text": "Dictionaries are mutable\n\nchanges to a dictionary in a function will remain after the function finishes running\nyou can change dictionary values using keys"
+    "text": "Dictionaries are mutable\n\nchanges to a dictionary in a function will remain after the function finishes running\nyou can change dictionary values using keys",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#changing-values-in-a-dictionary",
     "href": "slides-14-02.html#changing-values-in-a-dictionary",
     "title": "mutating dictionaries (slides)",
     "section": "Changing values in a dictionary",
-    "text": "Changing values in a dictionary\nYou can change dictionary values using keys\n\nnames_ages = {\"Paul\": 32, \"Patricia\": 44, \"Eduardo\": 27}\nfor key in names_ages:\n  names_ages[key] += 1\nnames_ages\n\n{'Paul': 33, 'Patricia': 45, 'Eduardo': 28}"
+    "text": "Changing values in a dictionary\nYou can change dictionary values using keys\n\nnames_ages = {\"Paul\": 32, \"Patricia\": 44, \"Eduardo\": 27}\nfor key in names_ages:\n  names_ages[key] += 1\nnames_ages\n\n{'Paul': 33, 'Patricia': 45, 'Eduardo': 28}",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function",
     "href": "slides-14-02.html#write-a-function",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt mutates the dictionary, multiplying each value by 0.056 and rounding the result to two decimals\nName file as sales_tax.py and submit to Gradescope\n\ngroceries = {\"banana\": 2.50, \"milk\": 4.25, \"bread\": 3.68}\nsales_tax(groceries)\nassert groceries == {'banana': 0.14, 'milk': 0.24, 'bread': 0.21}"
+    "text": "Write a function\nIt mutates the dictionary, multiplying each value by 0.056 and rounding the result to two decimals\n\ngroceries = {\"banana\": 2.50, \"milk\": 4.25, \"bread\": 3.68}\nsales_tax(groceries)\nassert groceries == {'banana': 0.14, 'milk': 0.24, 'bread': 0.21}",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-solution",
     "href": "slides-14-02.html#write-a-function-solution",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef sales_tax(dictionary):\n  for key in dictionary:\n    dictionary[key] = round(dictionary[key] * 0.056, 2)\n  return dictionary\n\ndef main():\n  groceries = {\"banana\": 2.50, \"milk\": 4.25, \"bread\": 3.68}\n  sales_tax(groceries)\n  assert groceries == {'banana': 0.14, 'milk': 0.24, 'bread': 0.21}\n  print(groceries)\n  \nmain()\n\n{'banana': 0.14, 'milk': 0.24, 'bread': 0.21}"
+    "text": "Write a function – solution\n\ndef sales_tax(dictionary):\n  for key in dictionary:\n    dictionary[key] = round(dictionary[key] * 0.056, 2)\n  return dictionary\n\ndef main():\n  groceries = {\"banana\": 2.50, \"milk\": 4.25, \"bread\": 3.68}\n  sales_tax(groceries)\n  assert groceries == {'banana': 0.14, 'milk': 0.24, 'bread': 0.21}\n  print(groceries)\n  \nmain()\n\n{'banana': 0.14, 'milk': 0.24, 'bread': 0.21}",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#removing-dictionary-key-value",
     "href": "slides-14-02.html#removing-dictionary-key-value",
     "title": "mutating dictionaries (slides)",
     "section": "Removing dictionary key: value",
-    "text": "Removing dictionary key: value\nCannot iterate over a dictionary and change its size:\n\ncounts = {\"a\": 10, \"e\": 4, \"i\": 3}\nfor key in counts:\n  counts.pop(key)\n\nRuntimeError: dictionary changed size during iteration"
+    "text": "Removing dictionary key: value\nCannot iterate over a dictionary and change its size:\n\ncounts = {\"a\": 10, \"e\": 4, \"i\": 3}\nfor key in counts:\n  counts.pop(key)\n\nRuntimeError: dictionary changed size during iteration",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#removing-dictionary-key-value-1",
     "href": "slides-14-02.html#removing-dictionary-key-value-1",
     "title": "mutating dictionaries (slides)",
     "section": "Removing dictionary key: value",
-    "text": "Removing dictionary key: value\n\nStep 1: use another data structure (like a set) instead\nStep 2: iterate that data structure\n\n\ncounts = {\"a\": 10, \"e\": 4, \"i\": 3}\nkeys = set(counts)\nfor k in keys:\n  counts.pop(k)\ncounts\n\n{}"
+    "text": "Removing dictionary key: value\n\nStep 1: use another data structure (like a set) instead\nStep 2: iterate that data structure\n\n\ncounts = {\"a\": 10, \"e\": 4, \"i\": 3}\nkeys = set(counts)\nfor k in keys:\n  counts.pop(k)\ncounts\n\n{}",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-1",
     "href": "slides-14-02.html#write-a-function-1",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes a dictionary as argument, with string keys. It mutates and returns the dictionary argument removing keys that start and end with the same character\n\nstudents = {\"Anna\": \"A\", \"Peter\": \"B\", \"Bob\": \"D\", \"Cedric\": \"A\"}\nremove_records(students)\nassert students == {\"Peter\": \"B\"}"
+    "text": "Write a function\nIt takes a dictionary as argument, with string keys. It mutates and returns the dictionary argument removing keys that start and end with the same character\n\nstudents = {\"Anna\": \"A\", \"Peter\": \"B\", \"Bob\": \"D\", \"Cedric\": \"A\"}\nremove_records(students)\nassert students == {\"Peter\": \"B\"}",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-solution-1",
     "href": "slides-14-02.html#write-a-function-solution-1",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef remove_records(dictionary):\n  for k in set(dictionary):\n    if len(k) &gt; 0 and k[0].lower() == k[-1].lower():\n      dictionary.pop(k)\n  return dictionary\n      \ndef main():\n  students = {\"Anna\": \"A\", \"Peter\": \"B\", \"Bob\": \"D\", \"Cedric\": \"A\"}\n  remove_records(students)\n  assert students == {\"Peter\": \"B\"}\n  \nmain()"
+    "text": "Write a function – solution\n\ndef remove_records(dictionary):\n  for k in set(dictionary):\n    if len(k) &gt; 0 and k[0].lower() == k[-1].lower():\n      dictionary.pop(k)\n  return dictionary\n      \ndef main():\n  students = {\"Anna\": \"A\", \"Peter\": \"B\", \"Bob\": \"D\", \"Cedric\": \"A\"}\n  remove_records(students)\n  assert students == {\"Peter\": \"B\"}\n  \nmain()",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#create-a-list-with-duplicate-items",
     "href": "slides-14-02.html#create-a-list-with-duplicate-items",
     "title": "mutating dictionaries (slides)",
     "section": "Create a list with duplicate items",
-    "text": "Create a list with duplicate items\nCreate a list with a total of five 'a':\n\nnew_list = ['a'] * 5\nnew_list\n\n['a', 'a', 'a', 'a', 'a']\n\n\nCreate a list with a total of three 1:\n\nnew_list = [1] * 3\nnew_list\n\n[1, 1, 1]"
+    "text": "Create a list with duplicate items\nCreate a list with a total of five 'a':\n\nnew_list = ['a'] * 5\nnew_list\n\n['a', 'a', 'a', 'a', 'a']\n\n\nCreate a list with a total of three 1:\n\nnew_list = [1] * 3\nnew_list\n\n[1, 1, 1]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-2",
     "href": "slides-14-02.html#write-a-function-2",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes a dictionary as argument, with strings as keys and integers as values (assume all values are positive). It mutates and returns the dictionary, replacing each value with a list of the key repeated by the value.\n\ntest_dictionary = {\"a\": 5, \"b\": 2, \"c\": 3}\nrepetition(test_dictionary)\nassert test_dictionary == {\"a\": [\"a\", \"a\", \"a\", \"a\", \"a\"], \n                           \"b\": [\"b\", \"b\"], \"c\": [\"c\", \"c\", \"c\"] }"
+    "text": "Write a function\nIt takes a dictionary as argument, with strings as keys and integers as values (assume all values are positive). It mutates and returns the dictionary, replacing each value with a list of the key repeated by the value.\n\ntest_dictionary = {\"a\": 5, \"b\": 2, \"c\": 3}\nrepetition(test_dictionary)\nassert test_dictionary == {\"a\": [\"a\", \"a\", \"a\", \"a\", \"a\"], \n                           \"b\": [\"b\", \"b\"], \"c\": [\"c\", \"c\", \"c\"] }",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-solution-2",
     "href": "slides-14-02.html#write-a-function-solution-2",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef repetition(dictionary):\n  for key, value in dictionary.items():\n    dictionary[key] = [key] * value\n  return dictionary\n\ndef main():\n  test_dictionary = {\"a\": 5, \"b\": 2, \"c\": 3}\n  repetition(test_dictionary)\n  assert test_dictionary == {\"a\": [\"a\", \"a\", \"a\", \"a\", \"a\"], \n                           \"b\": [\"b\", \"b\"], \"c\": [\"c\", \"c\", \"c\"] }\n  \nmain()"
+    "text": "Write a function – solution\n\ndef repetition(dictionary):\n  for key, value in dictionary.items():\n    dictionary[key] = [key] * value\n  return dictionary\n\ndef main():\n  test_dictionary = {\"a\": 5, \"b\": 2, \"c\": 3}\n  repetition(test_dictionary)\n  assert test_dictionary == {\"a\": [\"a\", \"a\", \"a\", \"a\", \"a\"], \n                           \"b\": [\"b\", \"b\"], \"c\": [\"c\", \"c\", \"c\"] }\n  \nmain()",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-3",
     "href": "slides-14-02.html#write-a-function-3",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt has two parameters: a dictionary that maps one-letter strings to lists of strings, and a string. It returns a list with strings (names) from the lists in the dictionary that include the second parameter (string) as a substring (this search is not case sensitive)\nTest case:\n\nnames = {\"R\": [\"Randy\", \"Roger\"], \"S\": [\"Steve\", \"Sally\"], \"T\": [\"Tanner\"]}\nassert get_names(names, \"er\") == [\"Roger\", \"Tanner\"]"
+    "text": "Write a function\nIt has two parameters: a dictionary that maps one-letter strings to lists of strings, and a string. It returns a list with strings (names) from the lists in the dictionary that include the second parameter (string) as a substring (this search is not case sensitive)\nTest case:\n\nnames = {\"R\": [\"Randy\", \"Roger\"], \"S\": [\"Steve\", \"Sally\"], \"T\": [\"Tanner\"]}\nassert get_names(names, \"er\") == [\"Roger\", \"Tanner\"]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#write-a-function-solution-3",
     "href": "slides-14-02.html#write-a-function-solution-3",
     "title": "mutating dictionaries (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef get_names(dictionary, string):\n  new_list = []\n  for name_list in dictionary.values():\n    for name in name_list:\n      if string.lower() in name.lower():\n        new_list.append(name)\n  return new_list\n\ndef main():\n  names = { \"R\": [\"Randy\", \"Roger\"], \n            \"S\": [\"Steve\", \"Sally\"], \n            \"T\": [\"Tanner\"] }\n  print( get_names(names, \"er\") ) # [\"Roger\", \"Tanner\"]\n  \nmain()\n\n['Roger', 'Tanner']"
+    "text": "Write a function – solution\n\ndef get_names(dictionary, string):\n  new_list = []\n  for name_list in dictionary.values():\n    for name in name_list:\n      if string.lower() in name.lower():\n        new_list.append(name)\n  return new_list\n\ndef main():\n  names = { \"R\": [\"Randy\", \"Roger\"], \n            \"S\": [\"Steve\", \"Sally\"], \n            \"T\": [\"Tanner\"] }\n  print( get_names(names, \"er\") ) # [\"Roger\", \"Tanner\"]\n  \nmain()\n\n['Roger', 'Tanner']",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-14-02.html#quiz-11",
     "href": "slides-14-02.html#quiz-11",
     "title": "mutating dictionaries (slides)",
     "section": "Quiz 11",
-    "text": "Quiz 11\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz."
+    "text": "Quiz 11\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating dictionaries (slides)"
+    ]
   },
   {
     "objectID": "slides-13-03.html#set-methods",
@@ -7633,7 +7689,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.06766203437104501\n9",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.010938723710313347\n6",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7655,7 +7711,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8678,119 +8734,183 @@
     "href": "slides-14-01.html#lists-are-mutable",
     "title": "mutating lists (slides)",
     "section": "Lists are mutable",
-    "text": "Lists are mutable\n\nchanges to a list in a function will remain after the function finishes running\nchanges to individual list elements do not change the list itself"
+    "text": "Lists are mutable\n\nchanges to a list in a function will remain after the function finishes running\nchanges to individual list elements do not change the list itself",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#changing-a-list-in-a-loop",
     "href": "slides-14-01.html#changing-a-list-in-a-loop",
     "title": "mutating lists (slides)",
     "section": "Changing a list in a loop",
-    "text": "Changing a list in a loop\nChanges to individual list elements do not change the list itself\n\nnumbers = [1, 2, 1, 4, 5]\nfor n in numbers:\n  n += 1\nnumbers\n\n[1, 2, 1, 4, 5]\n\n\nUse a for i in range loop instead:\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)):\n  numbers[i] += 1\nnumbers\n\n[2, 3, 2, 5, 6]"
+    "text": "Changing a list in a loop\nChanges to individual list elements do not change the list itself\n\nnumbers = [1, 2, 1, 4, 5]\nfor n in numbers:\n  n += 1\nnumbers\n\n[1, 2, 1, 4, 5]\n\n\nUse a for i in range loop instead:\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)):\n  numbers[i] += 1\nnumbers\n\n[2, 3, 2, 5, 6]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function",
     "href": "slides-14-01.html#write-a-function",
     "title": "mutating lists (slides)",
     "section": "Write a function",
-    "text": "Write a function\nIt takes a 2D list of integers as argument with at least one inner list. It mutates the list, replace each inner list with a tuple. The tuple is the total and mean of that inner list.\n\ntest_list = [[2, 4, 6, 8], [], [2, 3, 4]]\ntotal_mean(test_list)\nassert test_list == [(20, 5.0), (None, None), (9, 3.0)]\nassert total_mean([[2, 4, 6, 8], [], [2, 3, 4]]) == [(20, 5.0), (None, None), (9, 3.0)]"
+    "text": "Write a function\nIt takes a 2D list of integers as argument with at least one inner list. It mutates the list, replace each inner list with a tuple. The tuple is the total and mean of that inner list.\n\ntest_list = [[2, 4, 6, 8], [], [2, 3, 4]]\ntotal_mean(test_list)\nassert test_list == [(20, 5.0), (None, None), (9, 3.0)]\nassert total_mean([[2, 4, 6, 8], [], [2, 3, 4]]) == [(20, 5.0), (None, None), (9, 3.0)]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-solution",
     "href": "slides-14-01.html#write-a-function-solution",
     "title": "mutating lists (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\nline 2: can we use for sublist in lists?\nline 7: can we use for n in lists[i]?\n\ndef total_mean(lists):\n    for i in range(len(lists)): # \n        total = None\n        mean = None\n        if len(lists[i]) &gt; 0: \n            total = 0\n            for j in range(len(lists[i])): # \n                total += lists[i][j]\n            mean = total/len(lists[i])\n        lists[i] = total, mean \n    return lists"
+    "text": "Write a function – solution\nline 2: can we use for sublist in lists?\nline 7: can we use for n in lists[i]?\n\ndef total_mean(lists):\n    for i in range(len(lists)): # \n        total = None\n        mean = None\n        if len(lists[i]) &gt; 0: \n            total = 0\n            for j in range(len(lists[i])): # \n                total += lists[i][j]\n            mean = total/len(lists[i])\n        lists[i] = total, mean \n    return lists",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-solution-1",
     "href": "slides-14-01.html#write-a-function-solution-1",
     "title": "mutating lists (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef total_mean(lists):\n    for i in range(len(lists)): #must use for i in range(len(lists))\n        total = None\n        mean = None\n        if len(lists[i]) &gt; 0: \n            total = 0\n            for j in range(len(lists[i])): #can also use for n in lists[i]\n                total += lists[i][j]\n            mean = total/len(lists[i])\n        lists[i] = total, mean #need to use i to mutate lists\n    return lists\n    \ndef main():\n  test_list = [[2, 4, 6, 8], [], [2, 3, 4]]\n  total_mean(test_list)\n  assert test_list == [(20, 5.0), (None, None), (9, 3.0)]\n  assert total_mean([[2, 4, 6, 8], [], [2, 3, 4]]) == [(20, 5.0), (None, None), (9, 3.0)]\n  \nmain()"
+    "text": "Write a function – solution\n\ndef total_mean(lists):\n    for i in range(len(lists)): #must use for i in range(len(lists))\n        total = None\n        mean = None\n        if len(lists[i]) &gt; 0: \n            total = 0\n            for j in range(len(lists[i])): #can also use for n in lists[i]\n                total += lists[i][j]\n            mean = total/len(lists[i])\n        lists[i] = total, mean #need to use i to mutate lists\n    return lists\n    \ndef main():\n  test_list = [[2, 4, 6, 8], [], [2, 3, 4]]\n  total_mean(test_list)\n  assert test_list == [(20, 5.0), (None, None), (9, 3.0)]\n  assert total_mean([[2, 4, 6, 8], [], [2, 3, 4]]) == [(20, 5.0), (None, None), (9, 3.0)]\n  \nmain()",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#removing-list-elements-in-a-loop",
     "href": "slides-14-01.html#removing-list-elements-in-a-loop",
     "title": "mutating lists (slides)",
     "section": "Removing list elements in a loop",
-    "text": "Removing list elements in a loop\nfor i in range when removing list items throws an ERROR.\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)):\n  numbers.pop(i)\nnumbers\n\nERROR"
+    "text": "Removing list elements in a loop\nfor i in range when removing list items throws an ERROR.\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)):\n  numbers.pop(i)\nnumbers\n\nERROR",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#removing-list-elements-in-a-loop-1",
     "href": "slides-14-01.html#removing-list-elements-in-a-loop-1",
     "title": "mutating lists (slides)",
     "section": "Removing list elements in a loop",
-    "text": "Removing list elements in a loop\nVisualize the execution in Python Tutor.\n\nOption 1: while loop without adjusting i\n\n\nnumbers = [1, 2, 1, 4, 5]\ni = 0\nwhile i &lt; len(numbers):\n  numbers.pop(i)\nnumbers\n\n[]\n\n\n\nOption 2: for loop but go backwards\n\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)-1, -1, -1):\n  numbers.pop(i)\nnumbers\n\n[]"
+    "text": "Removing list elements in a loop\nVisualize the execution in Python Tutor.\n\nOption 1: while loop without adjusting i\n\n\nnumbers = [1, 2, 1, 4, 5]\ni = 0\nwhile i &lt; len(numbers):\n  numbers.pop(i)\nnumbers\n\n[]\n\n\n\nOption 2: for loop but go backwards\n\n\nnumbers = [1, 2, 1, 4, 5]\nfor i in range(len(numbers)-1, -1, -1):\n  numbers.pop(i)\nnumbers\n\n[]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-1",
     "href": "slides-14-01.html#write-a-function-1",
     "title": "mutating lists (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is remove_names\nIt takes one argument: a list of strings\nIt mutates and returns the argument list removing all strings that end in vowel\n\nName as delete_from_list.py, submit to Gradescope.\n\nnames = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\nremove_names(names)\nassert names == [\"Philip\", \"Peter\"]"
+    "text": "Write a function\n\nIts name is remove_names\nIt takes one argument: a list of strings\nIt mutates and returns the argument list removing all strings that end in vowel\n\n\nnames = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\nremove_names(names)\nassert names == [\"Philip\", \"Peter\"]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-solution-1-1",
     "href": "slides-14-01.html#write-a-function-solution-1-1",
     "title": "mutating lists (slides)",
     "section": "Write a function – solution 1",
-    "text": "Write a function – solution 1\n\ndef remove_names(string_list):\n  i = 0\n  while i &lt; len(string_list):\n    if string_list[i][-1].lower() in \"aeiou\":\n      string_list.pop(i)\n    else:\n      i += 1\n  return string_list\n      \ndef main():\n  names = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\n  remove_names(names)\n  assert names == [\"Philip\", \"Peter\"]\n\nmain()"
+    "text": "Write a function – solution 1\n\ndef remove_names(string_list):\n  i = 0\n  while i &lt; len(string_list):\n    if string_list[i][-1].lower() in \"aeiou\":\n      string_list.pop(i)\n    else:\n      i += 1\n  return string_list\n      \ndef main():\n  names = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\n  remove_names(names)\n  assert names == [\"Philip\", \"Peter\"]\n\nmain()",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-solution-2",
     "href": "slides-14-01.html#write-a-function-solution-2",
     "title": "mutating lists (slides)",
     "section": "Write a function – solution 2",
-    "text": "Write a function – solution 2\n\ndef remove_names(string_list):\n  for i in range(len(string_list)-1, -1, -1):\n    if string_list[i][-1].lower() in \"aeiou\":\n      string_list.pop(i)\n  return string_list\n      \ndef main():\n  names = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\n  remove_names(names)\n  assert names == [\"Philip\", \"Peter\"]\n\nmain()"
+    "text": "Write a function – solution 2\n\ndef remove_names(string_list):\n  for i in range(len(string_list)-1, -1, -1):\n    if string_list[i][-1].lower() in \"aeiou\":\n      string_list.pop(i)\n  return string_list\n      \ndef main():\n  names = [\"Beatrice\", \"ASA\", \"Philip\", \"Anna\", \"Peter\"]\n  remove_names(names)\n  assert names == [\"Philip\", \"Peter\"]\n\nmain()",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#removing-elements-from-inner-lists-in-2d-lists",
     "href": "slides-14-01.html#removing-elements-from-inner-lists-in-2d-lists",
     "title": "mutating lists (slides)",
     "section": "Removing elements from inner lists in 2D lists",
-    "text": "Removing elements from inner lists in 2D lists\n\nlists_of_numbers = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\nfor inner_list in lists_of_numbers:\n  for i in range(len(inner_list)-1, -1, -1):\n    inner_list.pop(i)\n    \nprint(lists_of_numbers)\n\n[[], []]"
+    "text": "Removing elements from inner lists in 2D lists\n\nlists_of_numbers = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\nfor inner_list in lists_of_numbers:\n  for i in range(len(inner_list)-1, -1, -1):\n    inner_list.pop(i)\n    \nprint(lists_of_numbers)\n\n[[], []]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-2",
     "href": "slides-14-01.html#write-a-function-2",
     "title": "mutating lists (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\nIts name is remove_odds\nIt takes a list of lists of integers as argument\nIt mutates the inner list, removing odd numbers\n\n\nlists_of_numbers = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\nremove_odds(lists_of_numbers)\nassert lists_of_numbers == [ [2, 2], [4, 2] ]"
+    "text": "Write a function\n\nIts name is remove_odds\nIt takes a list of lists of integers as argument\nIt mutates the inner list, removing odd numbers\n\n\nlists_of_numbers = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\nremove_odds(lists_of_numbers)\nassert lists_of_numbers == [ [2, 2], [4, 2] ]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-solution-3",
     "href": "slides-14-01.html#write-a-function-solution-3",
     "title": "mutating lists (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\ndef remove_odds(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])-1, -1, -1):\n      if lists[i][j] % 2 != 0:\n        lists[i].pop(j)\n  return lists\n\ndef main():\n  test_list = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\n  remove_odds(test_list)\n  assert test_list == [ [2, 2], [4, 2] ]\n  print(test_list) # [ [2, 2], [4, 2] ]\n  \nmain()\n\n[[2, 2], [4, 2]]"
+    "text": "Write a function – solution\n\ndef remove_odds(lists):\n  for i in range(len(lists)):\n    for j in range(len(lists[i])-1, -1, -1):\n      if lists[i][j] % 2 != 0:\n        lists[i].pop(j)\n  return lists\n\ndef main():\n  test_list = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\n  remove_odds(test_list)\n  assert test_list == [ [2, 2], [4, 2] ]\n  print(test_list) # [ [2, 2], [4, 2] ]\n  \nmain()\n\n[[2, 2], [4, 2]]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-questions",
     "href": "slides-14-01.html#write-a-function-questions",
     "title": "mutating lists (slides)",
     "section": "Write a function – questions",
-    "text": "Write a function – questions\nline 2: can we use for innerlist in lists?\nline 3: can we use for X in list?\n\ndef remove_odds(lists):\n  for i in range(len(lists)): #\n    for j in range(len(lists[i])-1, -1, -1): #\n      if lists[i][j] % 2 != 0:\n        lists[i].pop(j)\n  return lists"
+    "text": "Write a function – questions\nline 2: can we use for innerlist in lists?\nline 3: can we use for X in list?\n\ndef remove_odds(lists):\n  for i in range(len(lists)): #\n    for j in range(len(lists[i])-1, -1, -1): #\n      if lists[i][j] % 2 != 0:\n        lists[i].pop(j)\n  return lists",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#write-a-function-answers",
     "href": "slides-14-01.html#write-a-function-answers",
     "title": "mutating lists (slides)",
     "section": "Write a function – answers",
-    "text": "Write a function – answers\n\ndef remove_odds(lists):\n  for inner_list in lists: # yes we can\n    for i in range(len(inner_list)-1, -1, -1): # no \n      if inner_list[i] % 2 != 0:\n        inner_list.pop(i)\n  return lists\n\ndef main():\n  test_list = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\n  remove_odds(test_list)\n  assert test_list == [ [2, 2], [4, 2] ]\n  print(test_list) # [ [2, 2], [4, 2] ]\n  \nmain()\n\n[[2, 2], [4, 2]]"
+    "text": "Write a function – answers\n\ndef remove_odds(lists):\n  for inner_list in lists: # yes we can\n    for i in range(len(inner_list)-1, -1, -1): # no \n      if inner_list[i] % 2 != 0:\n        inner_list.pop(i)\n  return lists\n\ndef main():\n  test_list = [ [2, 3, 1, 2], [4, 5, 2, 1] ]\n  remove_odds(test_list)\n  assert test_list == [ [2, 2], [4, 2] ]\n  print(test_list) # [ [2, 2], [4, 2] ]\n  \nmain()\n\n[[2, 2], [4, 2]]",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-01.html#determine-the-ouput",
     "href": "slides-14-01.html#determine-the-ouput",
     "title": "mutating lists (slides)",
     "section": "Determine the ouput",
-    "text": "Determine the ouput\ndata.txt\nharsh sitting spins\ndaybed trees fox a b c\ncode.py\n\ndef write_result(input_filename, output_filename):\n  data = open(input_filename, 'r')\n  result = open(output_filename, 'w')\n  for line in data:\n    words = line.strip().split(' ')\n    for w in words:\n      if w[0] == w[-1]:\n        result.write(w + '\\n')\n  data.close()\n  result.close()\n  \nif __name__ == '__main__':\n  write_result('data.txt', 'result.txt')"
+    "text": "Determine the ouput\ndata.txt\nharsh sitting spins\ndaybed trees fox a b c\ncode.py\n\ndef write_result(input_filename, output_filename):\n  data = open(input_filename, 'r')\n  result = open(output_filename, 'w')\n  for line in data:\n    words = line.strip().split(' ')\n    for w in words:\n      if w[0] == w[-1]:\n        result.write(w + '\\n')\n  data.close()\n  result.close()\n  \nif __name__ == '__main__':\n  write_result('data.txt', 'result.txt')",
+    "crumbs": [
+      "Module 14 - Control Flow with different Data Structures",
+      "mutating lists (slides)"
+    ]
   },
   {
     "objectID": "slides-14-03.html#announcements",
     "href": "slides-14-03.html#announcements",
     "title": "more on lists (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nFill out SCS at scsonline.ucatt.arizona.edu\nIf 80% of students complete the survey, one of your lowest quizzes grade will be replaced with full points (2.5/2.5 pts)\nReview session next Tuesday at 5pm.\nMidterm 3 next Wednesday, Apr 23."
+    "text": "Announcements\n\nFill out SCS! It helps me improve as an instructor!\nProgramming Project 13 is a bonus project, due at the same time as Programming Project 12. It counts as extra credit toward the programming project category of your final grade (and is great practice for the final!)\nSpeaking of the final… Friday December 12th, 6pm-8pm, Modern Languages room 350"
   },
   {
     "objectID": "slides-14-03.html#combining-lists",
@@ -8867,7 +8987,7 @@
     "href": "slides-14-03.html#write-python-code-1",
     "title": "more on lists (slides)",
     "section": "Write python code",
-    "text": "Write python code\nName your file prime_numbers.py and submit for attendance. Test cases:\n\nif __name__ == \"__main__\":\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    result = create_dictionary(numbers)\n    assert result == {102: False, 250: False, 509: True, 345: False, \n                      2: True, 4: False, 547: True}\n\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    mutate_list(numbers)\n    assert numbers == [False, False, True, False, True, False, True]\n\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    remove_primes(numbers)\n    assert numbers == [102, 250, 345, 4]"
+    "text": "Write python code\n\nif __name__ == \"__main__\":\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    result = create_dictionary(numbers)\n    assert result == {102: False, 250: False, 509: True, 345: False, \n                      2: True, 4: False, 547: True}\n\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    mutate_list(numbers)\n    assert numbers == [False, False, True, False, True, False, True]\n\n    numbers = [102, 250, 509, 345, 2, 4, 547]\n    remove_primes(numbers)\n    assert numbers == [102, 250, 345, 4]"
   },
   {
     "objectID": "slides-14-03.html#write-python-code-solution",
@@ -8972,7 +9092,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']"
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']"
   },
   {
     "objectID": "slides-16-01.html#write-a-function-1",
