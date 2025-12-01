@@ -1,0 +1,47 @@
+---
+title: "selection sort (class slides)"
+format: revealjs
+slide-number: true
+df-print: kable
+---
+
+
+# CSC -- selection sort
+
+## Sorting a List
+
+* Suppose we'd like a list to be in sorted order (like from smallest to largest)
+* Is there an easy way to sort a list?
+
+```{python}
+#| echo: true
+#| eval: true
+unsorted_list = [2, 4, 1, 7, 15, 10, 9]
+try:
+    sorted_list = sort(unsorted_list)
+    assert sorted_list == [1, 2, 4, 7, 9, 10, 15]
+except:
+    print('Failed to sort the list')
+```
+
+## Sorting a List with Selection Sort
+
+* There are lots of ways of sorting a list
+* Selection sort is a **simple** sort
+* Selection sort works like this: divide the list into 'sorted' and 'unsorted', starting with nothing in the 'sorted' section and every element in the 'unsorted' section
+* Search the list for the minimum element, and swap it with the first element of the list: this is the start of our 'sorted' section
+* Seach the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list
+* Repeat until there's nothing but the last element in the 'unsorted' section
+
+## Selection Sort: Example
+
+* [2, 4, 1, 7], find the minimum in the unsorted section
+* [1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section
+* [1, 4, 2, 7], find the minimum of our unsorted section
+* [1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section
+* [1, 2, 4, 7], find the minimum of our unsorted section
+* [1, 2, 4, 7], no swap needed, as it's already in the correct spot. index 0 through 2 is our sorted section, since there's only one element left in the 'unsorted' section, the list is sorted!
+
+## Selection Sort terms
+
+* We call the process of finding the minimum a **sweep** and each the process of swapping the elements a **swap**

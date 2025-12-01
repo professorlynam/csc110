@@ -185,12 +185,16 @@ website:
         - assignments-14.qmd
         - slides-14-01.qmd
         - slides-14-02.qmd
+        - slides-14-03.qmd
       - section: "Module 15 - Handling Exceptions"
         contents:
         - exceptions.md
+        - slides-15-01.qmd
+        - slides-15-02.qmd
       - section: "Module 16 - Review"
         contents:
         - final-review.qmd
+        - slides-16-01.qmd
 
 format:
   html:

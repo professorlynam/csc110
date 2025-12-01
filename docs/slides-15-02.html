@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>CSc 110 Computer Programming I – tuples (slides)</title>
+  <title>CSc 110 Computer Programming I – selection sort (class slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -192,109 +192,62 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">tuples (slides)</h1>
+  <h1 class="title">selection sort (class slides)</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
 <section>
-<section id="csc-110---tuples" class="title-slide slide level1 center">
-<h1>CSc 110 - tuples</h1>
+<section id="csc-selection-sort" class="title-slide slide level1 center">
+<h1>CSC – selection sort</h1>
 
 </section>
-<section id="variable-length-parameter" class="slide level2">
-<h2>Variable length parameter</h2>
-<p>Sometimes you want to handle a variable number of parameters (like <code>print</code> does)</p>
-<div id="9cbf4227" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="sorting-a-list" class="slide level2">
+<h2>Sorting a List</h2>
+<ul>
+<li>Suppose we’d like a list to be in sorted order (like from smallest to largest)</li>
+<li>Is there an easy way to sort a list?</li>
+</ul>
+<div id="98d32983" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>unsorted_list <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">15</span>, <span class="dv">10</span>, <span class="dv">9</span>]</span>
+<span id="cb1-2"><a></a><span class="cf">try</span>:</span>
+<span id="cb1-3"><a></a>    sorted_list <span class="op">=</span> sort(unsorted_list)</span>
+<span id="cb1-4"><a></a>    <span class="cf">assert</span> sorted_list <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">15</span>]</span>
+<span id="cb1-5"><a></a><span class="cf">except</span>:</span>
+<span id="cb1-6"><a></a>    <span class="bu">print</span>(<span class="st">'Failed to sort the list'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>1 2 3 4 5</code></pre>
+<pre><code>Failed to sort the list</code></pre>
 </div>
 </div>
 </section>
-<section id="variable-length-parameter-1" class="slide level2">
-<h2>Variable length parameter</h2>
-<p>Add a <code>*</code> before your parameter name so that it accepts a variable number of arguments, gathering them into a tuple</p>
-<div id="a44f20db" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> func(<span class="op">*</span>values):</span>
-<span id="cb3-2"><a></a>  <span class="bu">print</span>(values)</span>
-<span id="cb3-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
-<span id="cb3-4"><a></a>    <span class="bu">print</span>(v)</span>
-<span id="cb3-5"><a></a>  </span>
-<span id="cb3-6"><a></a><span class="kw">def</span> main():</span>
-<span id="cb3-7"><a></a>  func(<span class="dv">0</span>, <span class="dv">2</span>, <span class="st">'quick'</span>, <span class="dv">4</span>, <span class="st">'brown'</span>, <span class="st">'fox'</span>)</span>
-<span id="cb3-8"><a></a>  </span>
-<span id="cb3-9"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(0, 2, 'quick', 4, 'brown', 'fox')
-0
-2
-quick
-4
-brown
-fox</code></pre>
-</div>
-</div>
+<section id="sorting-a-list-with-selection-sort" class="slide level2">
+<h2>Sorting a List with Selection Sort</h2>
+<ul>
+<li>There are lots of ways of sorting a list</li>
+<li>Selection sort is a <strong>simple</strong> sort</li>
+<li>Selection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section</li>
+<li>Search the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section</li>
+<li>Seach the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list</li>
+<li>Repeat until there’s nothing but the last element in the ‘unsorted’ section</li>
+</ul>
 </section>
-<section id="variable-length-parameter-2" class="slide level2">
-<h2>Variable length parameter</h2>
-<p>Add a <code>*</code> before your parameter name so that it accepts a variable number of arguments, gathering them into a tuple</p>
-<div id="3f7c30c9" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> concatenate(<span class="op">*</span>values):</span>
-<span id="cb5-2"><a></a>  new_string <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb5-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
-<span id="cb5-4"><a></a>    new_string <span class="op">+=</span> <span class="bu">str</span>(v) <span class="op">+</span> <span class="st">" "</span></span>
-<span id="cb5-5"><a></a>  <span class="cf">return</span> new_string[:<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb5-6"><a></a></span>
-<span id="cb5-7"><a></a><span class="kw">def</span> main():</span>
-<span id="cb5-8"><a></a>  <span class="bu">print</span>( concatenate(<span class="st">"The"</span>, <span class="st">"temperature"</span>, <span class="st">"is"</span>, <span class="dv">82</span>, <span class="st">"degrees"</span>))</span>
-<span id="cb5-9"><a></a>  </span>
-<span id="cb5-10"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The temperature is 82 degrees</code></pre>
-</div>
-</div>
+<section id="selection-sort-example" class="slide level2">
+<h2>Selection Sort: Example</h2>
+<ul>
+<li>[2, 4, 1, 7], find the minimum in the unsorted section</li>
+<li>[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section</li>
+<li>[1, 4, 2, 7], find the minimum of our unsorted section</li>
+<li>[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section</li>
+<li>[1, 2, 4, 7], find the minimum of our unsorted section</li>
+<li>[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!</li>
+</ul>
 </section>
-<section id="write-a-function" class="slide level2">
-<h2>Write a function</h2>
-<ol type="1">
-<li>Its name is <code>min_max</code></li>
-<li>It takes a variable number of arguments: <code>*values</code></li>
-<li>It returns the highest and lowest values in <code>values</code></li>
-</ol>
-<div id="1ffe1ff6" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="cf">assert</span> min_max(<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">1</span>)</span>
-<span id="cb7-2"><a></a><span class="cf">assert</span> min_max(<span class="dv">3</span>,<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">3</span>)</span>
-<span id="cb7-3"><a></a><span class="cf">assert</span> min_max(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>) <span class="op">==</span> (<span class="dv">2</span>, <span class="dv">6</span>)</span>
-<span id="cb7-4"><a></a><span class="cf">assert</span> min_max() <span class="op">==</span> (<span class="va">None</span>, <span class="va">None</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="write-a-function-solution" class="slide level2">
-<h2>Write a function – solution</h2>
-<div id="c5c2c845" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="kw">def</span> min_max(<span class="op">*</span>values):</span>
-<span id="cb8-2"><a></a>  <span class="bu">max</span> <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb8-3"><a></a>  <span class="bu">min</span> <span class="op">=</span> <span class="va">None</span></span>
-<span id="cb8-4"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
-<span id="cb8-5"><a></a>    <span class="cf">if</span> <span class="bu">max</span> <span class="op">==</span> <span class="va">None</span> <span class="kw">or</span> v <span class="op">&gt;</span> <span class="bu">max</span>:</span>
-<span id="cb8-6"><a></a>      <span class="bu">max</span> <span class="op">=</span> v</span>
-<span id="cb8-7"><a></a>    <span class="cf">if</span> <span class="bu">min</span> <span class="op">==</span> <span class="va">None</span> <span class="kw">or</span> v <span class="op">&lt;</span> <span class="bu">min</span>:</span>
-<span id="cb8-8"><a></a>      <span class="bu">min</span> <span class="op">=</span> v</span>
-<span id="cb8-9"><a></a>  <span class="cf">return</span> <span class="bu">min</span>, <span class="bu">max</span></span>
-<span id="cb8-10"><a></a></span>
-<span id="cb8-11"><a></a><span class="kw">def</span> main():</span>
-<span id="cb8-12"><a></a>  <span class="cf">assert</span> min_max(<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">1</span>)</span>
-<span id="cb8-13"><a></a>  <span class="cf">assert</span> min_max(<span class="dv">3</span>,<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">3</span>)</span>
-<span id="cb8-14"><a></a>  <span class="cf">assert</span> min_max(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>) <span class="op">==</span> (<span class="dv">2</span>, <span class="dv">6</span>)</span>
-<span id="cb8-15"><a></a>  <span class="cf">assert</span> min_max() <span class="op">==</span> (<span class="va">None</span>, <span class="va">None</span>)</span>
-<span id="cb8-16"><a></a>  <span class="bu">print</span>(<span class="st">"Passed all tests"</span>)</span>
-<span id="cb8-17"><a></a>  </span>
-<span id="cb8-18"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Passed all tests</code></pre>
-</div>
-</div>
+<section id="selection-sort-terms" class="slide level2">
+<h2>Selection Sort terms</h2>
+<ul>
+<li>We call the process of finding the minimum a <strong>sweep</strong> and each the process of swapping the elements a <strong>swap</strong></li>
+</ul>
 
 
 </section></section>
