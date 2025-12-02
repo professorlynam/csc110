@@ -190,7 +190,6 @@ website:
         contents:
         - exceptions.md
         - slides-15-01.qmd
-        - slides-15-02.qmd
       - section: "Module 16 - Review"
         contents:
         - final-review.qmd

@@ -30,7 +30,7 @@ except:
 * Selection sort is a **simple** sort
 * Selection sort works like this: divide the list into 'sorted' and 'unsorted', starting with nothing in the 'sorted' section and every element in the 'unsorted' section
 * Search the list for the minimum element, and swap it with the first element of the list: this is the start of our 'sorted' section
-* Seach the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list
+* Search the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list
 * Repeat until there's nothing but the last element in the 'unsorted' section
 
 ## Selection Sort: Example
