@@ -192,7 +192,6 @@ website:
         - slides-15-01.qmd
       - section: "Module 16 - Review"
         contents:
-        - final-review.qmd
         - slides-16-01.qmd
 
 format:
