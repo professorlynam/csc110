@@ -47,7 +47,7 @@ website:
     contents:
       - section: "Start Here"
         contents: 
-        - syllabus.Rmd
+        - syllabus.pdf
         - schedule.qmd
         - tas.qmd
         - zoom.qmd
