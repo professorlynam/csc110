@@ -29,11 +29,11 @@ Midterm (individual) exams (pencil and paper format):
 
 The final exam date and time is:
 
-The final exam date, time and room is: December 12th, 6pm-8pm, room: [Modern Languages room 350](https://classrooms.registrar.arizona.edu/67/350)
+The final exam date, time and room is: May 8th, 6pm-8pm, room: TBA
 
 You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.
 
-All assignments that are submitted on Gradescope are due at 9pm (Wednesdays for programming problems, short projects and Fridays for programming projects).
+All assignments that are submitted on Gradescope are due at 9pm (Typically Wednesdays for programming problems, short projects and Fridays for programming projects).
 
 
 # Week 1 (`r schedule %>% filter(week_number == 1 & term == "spring 2026") %>% pull(formatted_start)`)
