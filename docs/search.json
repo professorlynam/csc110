@@ -249,7 +249,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -2802,17 +2802,6 @@
     "title": "python basics and operations (slides)",
     "section": "Quiz 01",
     "text": "Quiz 01\nAccess gradescope, discuss with your group members and work on quiz 01. Answers can be found at:\n\nSyllabus\nTAs and Office Hours\nOnline discussion and office hours",
-    "crumbs": [
-      "Module 2 - Functions, Operators, and Expressions",
-      "python basics and operations (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-02-01.html#cs-buddy-mentor-program-sign-up",
-    "href": "slides-02-01.html#cs-buddy-mentor-program-sign-up",
-    "title": "python basics and operations (slides)",
-    "section": "CS Buddy Mentor Program Sign-Up",
-    "text": "CS Buddy Mentor Program Sign-Up\nhttps://forms.gle/QHsa6kkgdSr1KPt79",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "python basics and operations (slides)"
@@ -6677,6 +6666,13 @@
     "text": "Quiz 01\nAccess gradescope, discuss with your group members and work on quiz 01. Answers can be found at:\n\nSyllabus\nTAs and Office Hours\nOnline discussion and office hours"
   },
   {
+    "objectID": "slides-01-02.html#announcements",
+    "href": "slides-01-02.html#announcements",
+    "title": "python basics and operations (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nWe’ll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due next Friday!\nThe lab schedule will announced next Wednesday–the first lab cycle will be from 21st to the 28th"
+  },
+  {
     "objectID": "slides-01-02.html#did-you-set-up-your-workspace",
     "href": "slides-01-02.html#did-you-set-up-your-workspace",
     "title": "python basics and operations (slides)",
@@ -7923,7 +7919,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.45202397679919293\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.4036573394085865\n4",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7945,7 +7941,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -9349,12 +9345,5 @@
       "Watch",
       "Video Lessons"
     ]
-  },
-  {
-    "objectID": "slides-01-02.html#announcements",
-    "href": "slides-01-02.html#announcements",
-    "title": "python basics and operations (slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nWe’ll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due next Friday!\nThe lab schedule will announced next Wednesday–the first lab cycle will be from 21st to the 28th"
   }
 ]
