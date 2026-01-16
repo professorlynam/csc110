@@ -14,16 +14,11 @@ Access gradescope, discuss with your group members and work on quiz 01. Answers 
 
 # CSc 110 Python Basics
 
-
-## CS Buddy Mentor Program Sign-Up
-
-https://forms.gle/QHsa6kkgdSr1KPt79
-![sign-up QR Code](cs_buddy_link.png)
-
 ## Announcements
 
--   Current plan is to host lab sessions on Tuesday, one lab 10-11am, one lab 12pm-1pm, and one lab either 3pm-4pm or 4pm-5pm
--   Full schedule for office hours can be found at [https://professorlynam.github.io/csc110/tas.html](https://professorlynam.github.io/csc110/tas.html)
+-   We'll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because...
+-   The first batch of programming problems are due next Friday!
+-   The lab schedule will announced next Wednesday--the first lab cycle will be from 21st to the 28th
 
 ## Did you set up your workspace?
 

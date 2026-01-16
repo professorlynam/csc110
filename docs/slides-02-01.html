@@ -212,15 +212,12 @@
 <h1>CSc 110 Python Basics</h1>
 
 </section>
-<section id="cs-buddy-mentor-program-sign-up" class="slide level2">
-<h2>CS Buddy Mentor Program Sign-Up</h2>
-<p>https://forms.gle/QHsa6kkgdSr1KPt79 <img data-src="cs_buddy_link.png" alt="sign-up QR Code"></p>
-</section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <ul>
-<li>Current plan is to host lab sessions on Tuesday, one lab 10-11am, one lab 12pm-1pm, and one lab either 3pm-4pm or 4pm-5pm</li>
-<li>Full schedule for office hours can be found at <a href="https://professorlynam.github.io/csc110/tas.html">https://professorlynam.github.io/csc110/tas.html</a></li>
+<li>We’ll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…</li>
+<li>The first batch of programming problems are due next Friday!</li>
+<li>The lab schedule will announced next Wednesday–the first lab cycle will be from 21st to the 28th</li>
 </ul>
 </section>
 <section id="did-you-set-up-your-workspace" class="slide level2">
@@ -248,14 +245,14 @@
 <li><code>print()</code> sends characters (strings) to the <strong>standard output</strong></li>
 <li>By default, the <strong>standard output</strong> of a python program goes to the console.</li>
 </ul>
-<div id="1fc6f831" class="cell" data-execution_count="1">
+<div id="fed48852" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="st">"some characters"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>some characters</code></pre>
 </div>
 </div>
 <p><br></p>
-<div id="3a5dd6d8" class="cell" data-execution_count="2">
+<div id="f073ed46" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="bu">print</span>(<span class="st">'some characters'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>some characters</code></pre>
@@ -268,7 +265,7 @@
 <ul>
 <li>What will the standard output display when the code below is run?</li>
 </ul>
-<div id="b593c22e" class="cell" data-execution_count="3">
+<div id="d9d8d0ef" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="bu">print</span>(<span class="st">"hello"</span> <span class="op">+</span> <span class="st">"world"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -280,7 +277,7 @@
 <li>String concatenation with <code>+</code> and <code>,</code>. What is the difference?</li>
 <li>Combine both repetition and concatenation to print the following:</li>
 </ul>
-<div id="b621ace7" class="cell" data-execution_count="4">
+<div id="e8b23b5f" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code>They sang AaAaAaAaAaAaAaAaAaAa</code></pre>
 </div>
@@ -289,21 +286,21 @@
 <section id="string-operations-2" class="slide level2">
 <h2>String operations</h2>
 <p>solution 1:</p>
-<div id="850b7d0c" class="cell" data-execution_count="5">
+<div id="e9e7b203" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="bu">print</span>(<span class="st">"They sang"</span>, <span class="st">"Aa"</span> <span class="op">*</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>They sang AaAaAaAaAaAaAaAaAaAa</code></pre>
 </div>
 </div>
 <p>solution 2:</p>
-<div id="7944a98a" class="cell" data-execution_count="6">
+<div id="1778ea8d" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="bu">print</span>(<span class="st">"They"</span>, <span class="st">"sang"</span>, <span class="st">"Aa"</span> <span class="op">*</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>They sang AaAaAaAaAaAaAaAaAaAa</code></pre>
 </div>
 </div>
 <p>solution 3:</p>
-<div id="5855d963" class="cell" data-execution_count="7">
+<div id="2946f590" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="bu">print</span>(<span class="st">"They"</span> <span class="op">+</span> <span class="st">" "</span>  <span class="op">+</span> <span class="st">"sang"</span> <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> <span class="st">"Aa"</span> <span class="op">*</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>They sang AaAaAaAaAaAaAaAaAaAa</code></pre>
@@ -315,7 +312,7 @@
 <ul>
 <li>What will the standard output display when the code below is run?</li>
 </ul>
-<div id="7910ac1b" class="cell" data-execution_count="8">
+<div id="25edd4b0" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a><span class="bu">print</span>(<span class="st">'Are'</span>)</span>
 <span id="cb13-2"><a></a><span class="bu">print</span>(<span class="st">'You'</span>)</span>
 <span id="cb13-3"><a></a><span class="bu">print</span>(<span class="st">'In'</span>)</span>
@@ -327,7 +324,7 @@
 <ul>
 <li>By default, the <code>print</code> function moves the cursor to the next line after printing, unless you specify otherwise.</li>
 </ul>
-<div id="c7d843d1" class="cell" data-execution_count="9">
+<div id="1971aaad" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a><span class="bu">print</span>(<span class="st">'Are'</span>, end <span class="op">=</span> <span class="st">' '</span>)</span>
 <span id="cb14-2"><a></a><span class="bu">print</span>(<span class="st">'You'</span>, end <span class="op">=</span> <span class="st">' '</span>)</span>
 <span id="cb14-3"><a></a><span class="bu">print</span>(<span class="st">'In'</span>, end <span class="op">=</span> <span class="st">' '</span>)</span>
@@ -351,7 +348,7 @@
 <section id="dealing-with-special-characters-1" class="slide level2">
 <h2>Dealing with special characters</h2>
 <p>double quotes:</p>
-<div id="3b345908" class="cell" data-execution_count="10">
+<div id="6df0f6b0" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a><span class="bu">print</span>(<span class="st">"He said, </span><span class="ch">\"</span><span class="st">What's up?</span><span class="ch">\"</span><span class="st">"</span>)</span>
 <span id="cb16-2"><a></a><span class="bu">print</span>(<span class="st">"Joe's friend didn't reply."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -360,7 +357,7 @@ Joe's friend didn't reply.</code></pre>
 </div>
 </div>
 <p>single quotes:</p>
-<div id="c22f6520" class="cell" data-execution_count="11">
+<div id="36b6e55b" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="bu">print</span>(<span class="st">'He said, "What</span><span class="ch">\'</span><span class="st">s up?"'</span>)</span>
 <span id="cb18-2"><a></a><span class="bu">print</span>(<span class="st">'Joe</span><span class="ch">\'</span><span class="st">s friend didn</span><span class="ch">\'</span><span class="st">t reply.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -385,7 +382,7 @@ Joe's friend didn't reply.</code></pre>
 <section id="demonstration-of-variable-assignment" class="slide level2">
 <h2>Demonstration of variable assignment</h2>
 <p>Variable assignment does not produce any output to the console. Run the following code:</p>
-<div id="98d9eaa1" class="cell" data-execution_count="12">
+<div id="eb24d5a5" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a></a>first_name <span class="op">=</span> <span class="st">"Mary"</span></span>
 <span id="cb20-2"><a></a>family_name <span class="op">=</span> <span class="st">"Silva"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -394,14 +391,14 @@ Joe's friend didn't reply.</code></pre>
 <section id="variables-improve-readability" class="slide level2">
 <h2>Variables improve readability</h2>
 <p>Without variables:</p>
-<div id="cfea878f" class="cell" data-execution_count="13">
+<div id="7d229a61" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a><span class="bu">print</span>(<span class="st">"The total price is"</span>, <span class="dv">100</span> <span class="op">*</span> <span class="fl">1.08</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>The total price is 108.0</code></pre>
 </div>
 </div>
 <p>With variables:</p>
-<div id="a01bd77b" class="cell" data-execution_count="14">
+<div id="948ccbb3" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a></a>base_price <span class="op">=</span> <span class="dv">100</span></span>
 <span id="cb23-2"><a></a>tax_rate <span class="op">=</span> <span class="fl">1.08</span></span>
 <span id="cb23-3"><a></a>total_price <span class="op">=</span> base_price <span class="op">*</span> tax_rate</span>
@@ -436,7 +433,7 @@ Joe's friend didn't reply.</code></pre>
 </section>
 <section id="operations---examples" class="slide level2">
 <h2>Operations - examples</h2>
-<div id="12242c15" class="cell" data-execution_count="15">
+<div id="55325aa7" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a><span class="bu">print</span>(<span class="dv">10</span> <span class="op">+</span> <span class="dv">5</span> <span class="op">-</span> <span class="dv">5</span>) <span class="co"># addition and subtraction</span></span>
 <span id="cb25-2"><a></a><span class="bu">print</span>(<span class="dv">10</span> <span class="op">*</span> <span class="dv">5</span> <span class="op">/</span> <span class="dv">4</span>) <span class="co"># multiplication and division</span></span>
 <span id="cb25-3"><a></a><span class="bu">print</span>(<span class="dv">25</span> <span class="op">**</span> <span class="dv">2</span>) <span class="co"># square </span></span>
@@ -485,7 +482,7 @@ c = (3 // (4 // 5)) + 1
 </section>
 <section id="pemdas-answer" class="slide level2">
 <h2>PEMDAS – answer</h2>
-<div id="8b4db8f4" class="cell" data-execution_count="16">
+<div id="48a80adb" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a></a>a1 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span>  <span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>  <span class="op">*</span> <span class="dv">5</span></span>
 <span id="cb27-2"><a></a>a2 <span class="op">=</span> <span class="dv">5</span> <span class="op">/</span> (<span class="dv">5</span> <span class="op">*</span> <span class="dv">10</span>) <span class="op">*</span> <span class="dv">5</span></span>
 <span id="cb27-3"><a></a></span>
@@ -516,11 +513,11 @@ c = (3 // (4 // 5)) + 1
 <h2><code>round()</code></h2>
 <p>Use the round() function to get a floating-point number rounded to the specified number of decimals.</p>
 <p>Syntax:</p>
-<div id="40ee8b74" class="cell" data-execution_count="17">
+<div id="f07e4298" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a></a><span class="bu">round</span>(number, ndigits<span class="op">*</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The number of digits (<code>ndigits</code>) is optional, but we will often round number to two decimals:</p>
-<div id="85f56f07" class="cell" data-execution_count="18">
+<div id="e0f3ce6f" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a><span class="bu">round</span>(<span class="fl">392.68750000000006</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>392.69</code></pre>
@@ -531,11 +528,11 @@ c = (3 // (4 // 5)) + 1
 <h2><code>round()</code></h2>
 <p>Use the round() function to get a floating-point number rounded to the specified number of decimals.</p>
 <p>Syntax:</p>
-<div id="534ef051" class="cell" data-execution_count="19">
+<div id="1dd218cb" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a></a><span class="bu">round</span>(number, ndigits<span class="op">*</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Rounding is done toward the nearest even choice:</p>
-<div id="178e0bd5" class="cell" data-execution_count="20">
+<div id="1667e193" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a></a><span class="bu">print</span>(<span class="bu">round</span>(<span class="fl">51.6</span>))</span>
 <span id="cb33-2"><a></a><span class="bu">print</span>(<span class="bu">round</span>(<span class="fl">51.4</span>))</span>
 <span id="cb33-3"><a></a><span class="bu">print</span>(<span class="bu">round</span>(<span class="fl">51.5</span>))</span>
@@ -552,7 +549,7 @@ c = (3 // (4 // 5)) + 1
 <h2>Operations and Variable Assignments</h2>
 <p>Variable assignments are not like math — they can appear in equations that make no mathematical sense.</p>
 <p><br></p>
-<div id="bfe49890" class="cell" data-execution_count="21">
+<div id="5a5f022e" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a></a>x <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb35-2"><a></a><span class="bu">print</span>(x)</span>
 <span id="cb35-3"><a></a>x <span class="op">=</span> x <span class="op">+</span> <span class="dv">2</span></span>
@@ -573,7 +570,7 @@ c = (3 // (4 // 5)) + 1
 <section id="comments" class="slide level2">
 <h2>Comments</h2>
 <p>Comments are text that is meant to be read, but not executed. The purpose is to improve readability.</p>
-<div id="126e89af" class="cell" data-execution_count="22">
+<div id="bb629f56" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a></a><span class="co"># assign a radius value</span></span>
 <span id="cb36-2"><a></a>radius <span class="op">=</span> <span class="dv">3</span></span>
 <span id="cb36-3"><a></a><span class="co"># compute the area of a circle and round to two decimals</span></span>
