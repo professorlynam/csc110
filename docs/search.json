@@ -6652,7 +6652,7 @@
     "href": "short-projects.html",
     "title": "Short Projects Dates",
     "section": "",
-    "text": "Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions.\nThe 2 lowest grade for short programming projects will be dropped at the end of the semester. There will be one lab session for you to work on a maximum of one short programming project submission you have missed.\nTo schedule your lab session go to the weekly lab session spreadsheet.\n\nLab Schedule\nThis is for information only.\n\nLab 01: Sep 03 to Sep 09\nLab 02: Sep 10 to Sep 16\nLab 03: Sep 17 to Sep 23\nLab 04: Sep 24 to Sep 30\nLab 05: Oct 01 to Oct 07\nLab 06: Oct 08 to Oct 14\nLab 07: oct 15 to Oct 21\nCATCH UP WEEK: Oct 22 to Oct 28\nLab 08: Oct 29 to Nov 04\nLab 09: Nov 05 to Nov 11\nLab 10: Nov 12 to Nov 18\nLab 11: Nov 19 to Nov 25\nLab 12: Dec 01 to Dec 04",
+    "text": "Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions.\nThe 2 lowest grade for short programming projects will be dropped at the end of the semester. There will be one lab session for you to work on a maximum of one short programming project submission you have missed.\nTo schedule your lab session go to the weekly lab session spreadsheet.\n\nLab Schedule\nThis is for information only.\n\nLab 01: Jan 04 to Jan 28\nLab 02: Jan 29 to Feb 04\nLab 03: Feb 05 to Feb 11\nLab 04: Feb 12 to Feb 18\nLab 05: Feb 19 to Feb 27\nLab 06: Feb 28 to Mar 04\nLab 07: Mar 05 to Mar 18\nCATCH UP WEEK: Mar 19 to Mar 25\nLab 08: Mar 26 to Apr 01\nLab 09: Apr 02 to Apr 08\nLab 10: Apr 09 to Apr 15\nLab 11: Apr 16 to Apr 22\nLab 12: Apr 23 to May 01",
     "crumbs": [
       "Short Projects",
       "Short Projects Dates"
@@ -7919,7 +7919,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.4036573394085865\n4",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.0044324394297295955\n8",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7941,7 +7941,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
