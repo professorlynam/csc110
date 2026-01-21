@@ -9,10 +9,9 @@ df-print: kable
 
 ## Announcements
 
--   The lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.
--   Session sign-up sheet will be posted sometime after class today
--   First labs will be Sept 8th and 9th
--   TAs will start holding office hours next week
+-   The lab session schedule is set up! Here's a quick walkthrough of what to do
+-   First labs will be Jan 26th
+-   TAs (and myself) are holding office hours this week! Come on by if you need help with your Python set-up, Programming Problems 1/2, etc!
 
 ## Functions
 

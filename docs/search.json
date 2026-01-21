@@ -6852,7 +6852,7 @@
     "href": "slides-02-02.html#announcements",
     "title": "functions (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nThe lab session schedule is as follows: Monday 3:30-4:20pm, GS 930. Tuesday 10am-10:50am, GS 228. Tuesday 12pm-12:50pm, GS 906.\nSession sign-up sheet will be posted sometime after class today\nFirst labs will be Sept 8th and 9th\nTAs will start holding office hours next week",
+    "text": "Announcements\n\nThe lab session schedule is set up! Here’s a quick walkthrough of what to do\nFirst labs will be Jan 26th\nTAs (and myself) are holding office hours this week! Come on by if you need help with your Python set-up, Programming Problems 1/2, etc!",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "functions (slides)"
@@ -7919,7 +7919,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.0044324394297295955\n8",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7670353223199537\n7",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7941,7 +7941,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
