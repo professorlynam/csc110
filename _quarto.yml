@@ -107,10 +107,9 @@ website:
         - slides-02-01.qmd
         - slides-02-02.qmd
         - assignments-02.qmd
-      - section: "Module 3 - Decomposition and More on Functions"
+      - section: "Module 3 - More on Functions"
         contents: 
         - functions.md
-        - slides-03-01.qmd
         - slides-03-02.qmd
         - assignments-03.qmd
       - section: "Module 4 - Built-In Functions and Decomposition"

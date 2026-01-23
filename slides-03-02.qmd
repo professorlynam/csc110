@@ -6,35 +6,6 @@ slide-number: true
 
 # CSC 110 - More on Functions in Python
 
-## Announcements
-
--   Our first lab will be hosted next Monday and Tuesday.
-
--   Double-check to make sure you've signed up for the lab time you want!
-
--   Programming Problem 1 is due tonight at 9pm (I'd recommend turning in PP2 as well)
-
--   Project 1 is now available for submissions on Gradescope (due Sept 12th), start early!
-
-## Discussion
-
-Take a look at the functions you've made, then look at the code we started with
-
--   Which version is more readable? Why it is better?
-
-![](all_three_guitars.png){height=350px}
-
-## Discussion
-
-Consider:
-
--   What if we wanted to print out a hundred different guitars?
-
--   What if we wanted to make 50 different varieties of guitars (or add new heads/bodies/necks)
-
--   What if you're collaborating with Prof Lynam, and he accidentally types something into one of the guitar string literals?
-
-
 ## Function Comments
 
 -   Every function created is required to have a function comment, including main

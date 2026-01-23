@@ -249,7 +249,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'pear', 'pear', 'apple', 'apple']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -2592,209 +2592,133 @@
     "href": "slides-03-01.html#announcements",
     "title": "decomposition (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nDue to faulty info provided to our lab coordinator, we have to move the Tuesday 12pm-1pm lab to Monday 12pm-1pm\nIf you’ve signed up for that lab, please make sure you can make the schedule change, if not change to a different lab time\nIf you’ve received accommodation from me already for class schedule conflicts, please check to see if this new time works for you. If so, switch to this new lab\nIf you require accommodation for class schedule conflicts due to this change, please email me",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Announcements\n\nDue to faulty info provided to our lab coordinator, we have to move the Tuesday 12pm-1pm lab to Monday 12pm-1pm\nIf you’ve signed up for that lab, please make sure you can make the schedule change, if not change to a different lab time\nIf you’ve received accommodation from me already for class schedule conflicts, please check to see if this new time works for you. If so, switch to this new lab\nIf you require accommodation for class schedule conflicts due to this change, please email me"
   },
   {
     "objectID": "slides-03-01.html#quiz-2",
     "href": "slides-03-01.html#quiz-2",
     "title": "decomposition (slides)",
     "section": "Quiz 2",
-    "text": "Quiz 2\n\nQuiz 2 will be passed out by the TAs\nDo not start the quiz until I say start (No writing anything until I give the okay!)\nYou will have ten minutes to complete the quiz\nRaise your hand when you finish the quiz, and a TA will collect it",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Quiz 2\n\nQuiz 2 will be passed out by the TAs\nDo not start the quiz until I say start (No writing anything until I give the okay!)\nYou will have ten minutes to complete the quiz\nRaise your hand when you finish the quiz, and a TA will collect it"
   },
   {
     "objectID": "slides-03-01.html#program-decomposition",
     "href": "slides-03-01.html#program-decomposition",
     "title": "decomposition (slides)",
     "section": "Program decomposition",
-    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code."
   },
   {
     "objectID": "slides-03-01.html#print-a-classic-guitar",
     "href": "slides-03-01.html#print-a-classic-guitar",
     "title": "decomposition (slides)",
     "section": "Print a classic guitar",
-    "text": "Print a classic guitar\n\nprint(\"      ___\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Print a classic guitar\n\nprint(\"      ___\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")"
   },
   {
     "objectID": "slides-03-01.html#print-a-retro-head-guitar",
     "href": "slides-03-01.html#print-a-retro-head-guitar",
     "title": "decomposition (slides)",
     "section": "Print a retro head guitar",
-    "text": "Print a retro head guitar\n\nprint(\"     ._-_.\")\nprint(\"    +|\\G/|+\")\nprint(\"    +|\\./|+\")\nprint(\"    +|\\./|+\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Print a retro head guitar\n\nprint(\"     ._-_.\")\nprint(\"    +|\\G/|+\")\nprint(\"    +|\\./|+\")\nprint(\"    +|\\./|+\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")"
   },
   {
     "objectID": "slides-03-01.html#print-a-retro-head-long-neck-guitar",
     "href": "slides-03-01.html#print-a-retro-head-long-neck-guitar",
     "title": "decomposition (slides)",
     "section": "Print a retro head long neck guitar",
-    "text": "Print a retro head long neck guitar\n\nprint(\"     ._-_.\")\nprint(\"    +|\\G/|+\")\nprint(\"    +|\\./|+\")\nprint(\"    +|\\./|+\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Print a retro head long neck guitar\n\nprint(\"     ._-_.\")\nprint(\"    +|\\G/|+\")\nprint(\"    +|\\./|+\")\nprint(\"    +|\\./|+\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")"
   },
   {
     "objectID": "slides-03-01.html#class-activity-one",
     "href": "slides-03-01.html#class-activity-one",
     "title": "decomposition (slides)",
     "section": "Class activity one",
-    "text": "Class activity one\nCompare the three types of guitar, write your answers:\n\nwhich parts of code are the same?\nwhich parts of code are different?",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Class activity one\nCompare the three types of guitar, write your answers:\n\nwhich parts of code are the same?\nwhich parts of code are different?"
   },
   {
     "objectID": "slides-03-01.html#class-activity-one-answers",
     "href": "slides-03-01.html#class-activity-one-answers",
     "title": "decomposition (slides)",
     "section": "Class activity one – answers",
-    "text": "Class activity one – answers\nClassic guitar vs. Retro head guitar:\n\nwhich parts of code are the same?\n\nthe neck\nthe body\n\nwhich parts of code are different?\n\nthe head: line 1-4",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Class activity one – answers\nClassic guitar vs. Retro head guitar:\n\nwhich parts of code are the same?\n\nthe neck\nthe body\n\nwhich parts of code are different?\n\nthe head: line 1-4"
   },
   {
     "objectID": "slides-03-01.html#class-activity-one-answers-1",
     "href": "slides-03-01.html#class-activity-one-answers-1",
     "title": "decomposition (slides)",
     "section": "Class activity one – answers",
-    "text": "Class activity one – answers\nRetro head guitar vs. Retro head long neck guitar:\n\nwhich parts of code are the same?\n\nthe head\nthe body\n\nwhich parts of code are different?\n\nthe neck",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Class activity one – answers\nRetro head guitar vs. Retro head long neck guitar:\n\nwhich parts of code are the same?\n\nthe head\nthe body\n\nwhich parts of code are different?\n\nthe neck"
   },
   {
     "objectID": "slides-03-01.html#decomposition",
     "href": "slides-03-01.html#decomposition",
     "title": "decomposition (slides)",
     "section": "Decomposition",
-    "text": "Decomposition\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_retro_guitar():\n    print_retro_head()\n    print_neck()\n    print_body()\n    \ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_retro_guitar() # print retro head guitar\n    print_long_guitar() # print long neck guitar\n\nmain()",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Decomposition\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_retro_guitar():\n    print_retro_head()\n    print_neck()\n    print_body()\n    \ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_retro_guitar() # print retro head guitar\n    print_long_guitar() # print long neck guitar\n\nmain()"
   },
   {
     "objectID": "slides-03-01.html#class-activity-two",
     "href": "slides-03-01.html#class-activity-two",
     "title": "decomposition (slides)",
     "section": "Class activity two",
-    "text": "Class activity two\nRead the code for classic guitar, write your answers:\n\nwhich lines of code are the same?\n\nin the head:\nin the neck:\nin the body:",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Class activity two\nRead the code for classic guitar, write your answers:\n\nwhich lines of code are the same?\n\nin the head:\nin the neck:\nin the body:"
   },
   {
     "objectID": "slides-03-01.html#print-a-classic-guitar-1",
     "href": "slides-03-01.html#print-a-classic-guitar-1",
     "title": "decomposition (slides)",
     "section": "Print a classic guitar",
-    "text": "Print a classic guitar\n\nprint(\"      ___\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Print a classic guitar\n\nprint(\"      ___\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"    o|* *|o\")\nprint(\"     \\===/\")\nprint(\"      |||\")\nprint(\"      |||\")\nprint(\"   ___|||___\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"|     |||     |\")\nprint(\" \\   (|||)   /\")\nprint(\"  |   |||   |\")\nprint(\"  /   |||   \\ \")\nprint(\" /    |||    \\ \")\nprint(\"/     |||     \\ \")\nprint(\"|    [===]    |\")\nprint(\" \\           /\")\nprint(\"  '.       .'\")\nprint(\"   '-------'\")"
   },
   {
     "objectID": "slides-03-01.html#class-activity-two-answers",
     "href": "slides-03-01.html#class-activity-two-answers",
     "title": "decomposition (slides)",
     "section": "Class activity two – answers",
-    "text": "Class activity two – answers\nRead the code for classic guitar, answer the questions:\n\nwhich lines of code are the same?\n\nin the head: line 2 - 4\nin the neck: line 6 - 7\nin the body: line 9 - 10 and line 14 - 15",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Class activity two – answers\nRead the code for classic guitar, answer the questions:\n\nwhich lines of code are the same?\n\nin the head: line 2 - 4\nin the neck: line 6 - 7\nin the body: line 9 - 10 and line 14 - 15"
   },
   {
     "objectID": "slides-03-01.html#write-functions",
     "href": "slides-03-01.html#write-functions",
     "title": "decomposition (slides)",
     "section": "Write functions",
-    "text": "Write functions\nWrite functions print_head, print_neck, and print_body:",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Write functions\nWrite functions print_head, print_neck, and print_body:"
   },
   {
     "objectID": "slides-03-01.html#write-functions-answers",
     "href": "slides-03-01.html#write-functions-answers",
     "title": "decomposition (slides)",
     "section": "Write functions – answers",
-    "text": "Write functions – answers\n\ndef print_head():\n    print(\"      ___\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Write functions – answers\n\ndef print_head():\n    print(\"      ___\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"    o|* *|o\")\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(\"  /   |||   \\ \")\n    print(\" /    |||    \\ \")\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()"
   },
   {
     "objectID": "slides-03-01.html#write-functions-improved-answers",
     "href": "slides-03-01.html#write-functions-improved-answers",
     "title": "decomposition (slides)",
     "section": "Write functions – improved answers",
-    "text": "Write functions – improved answers\n\ndef print_head():\n    print(\"      ___\")\n    pattern = \"    o|* *|o\"\n    print(pattern)\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    pattern = \"  /   |||   \\ \" + \"\\n\" + \" /    |||    \\ \" \n    print(pattern)\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(pattern)\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Write functions – improved answers\n\ndef print_head():\n    print(\"      ___\")\n    pattern = \"    o|* *|o\"\n    print(pattern)\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    pattern = \"  /   |||   \\ \" + \"\\n\" + \" /    |||    \\ \" \n    print(pattern)\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(pattern)\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_long_guitar() # print long neck guitar\n\nmain()"
   },
   {
     "objectID": "slides-03-01.html#write-a-function",
     "href": "slides-03-01.html#write-a-function",
     "title": "decomposition (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite print_retro_head:",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Write a function\nWrite print_retro_head:"
   },
   {
     "objectID": "slides-03-01.html#write-a-function-answer",
     "href": "slides-03-01.html#write-a-function-answer",
     "title": "decomposition (slides)",
     "section": "Write a function – answer",
-    "text": "Write a function – answer\n\ndef print_head():\n    print(\"      ___\")\n    pattern = \"    o|* *|o\"\n    print(pattern)\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_retro_head():\n    print(\"     ._-_.\")\n    print(\"    +|\\G/|+\")\n    pattern = \"    +|\\./|+\"\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    pattern = \"  /   |||   \\ \" + \"\\n\" + \" /    |||    \\ \" \n    print(pattern)\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(pattern)\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_retro_guitar():\n    print_retro_head()\n    print_neck()\n    print_body()\n    \ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_retro_guitar() # print retro head guitar\n    print_long_guitar() # print long neck guitar\n\nmain()",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Write a function – answer\n\ndef print_head():\n    print(\"      ___\")\n    pattern = \"    o|* *|o\"\n    print(pattern)\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_retro_head():\n    print(\"     ._-_.\")\n    print(\"    +|\\G/|+\")\n    pattern = \"    +|\\./|+\"\n    print(pattern)\n    print(pattern)\n    print(\"     \\===/\")\n\ndef print_neck():\n    print(\"      |||\" + \"\\n\" + \"      |||\")\n    \ndef print_body():\n    print(\"   ___|||___\")\n    pattern = \"  /   |||   \\ \" + \"\\n\" + \" /    |||    \\ \" \n    print(pattern)\n    print(\"|     |||     |\")\n    print(\" \\   (|||)   /\")\n    print(\"  |   |||   |\")\n    print(pattern)\n    print(\"/     |||     \\ \")\n    print(\"|    [===]    |\")\n    print(\" \\           /\")\n    print(\"  '.       .'\")\n    print(\"   '-------'\")\n\ndef print_classic_guitar():\n    print_head()\n    print_neck()\n    print_body()\n\ndef print_retro_guitar():\n    print_retro_head()\n    print_neck()\n    print_body()\n    \ndef print_long_guitar():\n    print_head()\n    print_neck()\n    print_neck()\n    print_body()\n\ndef main():\n    print_classic_guitar() # print classic guitar\n    print_retro_guitar() # print retro head guitar\n    print_long_guitar() # print long neck guitar\n\nmain()"
   },
   {
     "objectID": "slides-03-01.html#discussion",
     "href": "slides-03-01.html#discussion",
     "title": "decomposition (slides)",
     "section": "Discussion",
-    "text": "Discussion\nTake a look at the functions you’ve made, then look at the code we started with\n\nWhich version is more readable? Why it is better?",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "decomposition (slides)"
-    ]
+    "text": "Discussion\nTake a look at the functions you’ve made, then look at the code we started with\n\nWhich version is more readable? Why it is better?"
   },
   {
     "objectID": "slides-02-01.html#quiz-01",
@@ -4651,7 +4575,7 @@
     "section": "",
     "text": "As previously discussed, functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times. This is known as calling the function.\nI’d like to emphasize that the function concept is probably the most important building block of any non-trivial software (in any programming language), so we will keep exploring various aspects of functions in this chapter.\nIf you need a refresher on the basics of functions, go back to the first functions reading.\n\n\nLike we discussed before, comments are very important for documenting your code. Each function should have its function specified in your function comment.\nExample:\ndef circle_area(radius):\n  '''\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n  '''\n  # compute the area of a circle\n  area = 3.1415 * radius**2\n  return area\n\n\nresult = circle_area(radius=4)\nprint(\"The area of a circle of radius 4 is\", result)\nOutput:\n\nThe area of a circle of radius 4 is 50.264\n\nWhen you create a string literal right after a function definition, as seen in the example above, that is also called a docstring. Docstrings are attributes that can be retrieved using the __doc__ method as shown in the example below.\nExample:\ndef circle_area(radius):\n  '''\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n  '''\n  # compute the area of a circle\n  area = 3.1415 * radius**2\n  return area\n\n\nprint(circle_area.__doc__)\nOutput:\n\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n\nYou can also get docstrings from built-in functions:\nExample:\nprint(print.__doc__)\nOutput:\n\nprint(value, ..., sep=' ', end='\\n', file=sys.stdout, flush=False)\n\nPrints the values to a stream, or to sys.stdout by default.\nOptional keyword arguments:\nfile:  a file-like object (stream); defaults to the current sys.stdout.\nsep:   string inserted between values, default a space.\nend:   string appended after the last value, default a newline.\nflush: whether to forcibly flush the stream.\n\n\n\n\nIf you have some functions with many parameters and you want to specify only some of them, then you can give values for such parameters by naming them - this is called keyword arguments - we use the name (keyword) instead of the position (which we have been using all along) to specify the arguments to the function.\nThere are two advantages - one, using the function is easier since we do not need to worry about the order of the arguments. Two, we can give values to only those parameters to which we want to, provided that the other parameters have default argument values.\ndef func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\n\nfunc(3, 7)\nfunc(25, c=24)\nfunc(c=50, a=100)\nOutput:\n\na is 3 and b is 7 and c is 10\na is 25 and b is 5 and c is 24\na is 100 and b is 5 and c is 50\n\nHow It Works\nThe function named func has one parameter without a default argument value, followed by two parameters with default argument values.\nIn the first usage, func(3, 7), the parameter a gets the value 3, the parameter b gets the value 7 and c gets the default value of 10.\nIn the second usage func(25, c=24), the variable a gets the value of 25 due to the position of the argument. Then, the parameter c gets the value of 24 due to naming i.e. keyword arguments. The variable b gets the default value of 5.\nIn the third usage func(c=50, a=100), we use keyword arguments for all specified values. Notice that we are specifying the value for parameter c before that for a even though a is defined before c in the function definition.\n\n\n\nWe have seen so many aspects of functions but note that we still haven’t covered all aspects of them. However, we have already covered most of what you’ll use regarding Python functions on an everyday basis.",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions"
     ]
   },
@@ -4662,7 +4586,7 @@
     "section": "",
     "text": "Like we discussed before, comments are very important for documenting your code. Each function should have its function specified in your function comment.\nExample:\ndef circle_area(radius):\n  '''\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n  '''\n  # compute the area of a circle\n  area = 3.1415 * radius**2\n  return area\n\n\nresult = circle_area(radius=4)\nprint(\"The area of a circle of radius 4 is\", result)\nOutput:\n\nThe area of a circle of radius 4 is 50.264\n\nWhen you create a string literal right after a function definition, as seen in the example above, that is also called a docstring. Docstrings are attributes that can be retrieved using the __doc__ method as shown in the example below.\nExample:\ndef circle_area(radius):\n  '''\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n  '''\n  # compute the area of a circle\n  area = 3.1415 * radius**2\n  return area\n\n\nprint(circle_area.__doc__)\nOutput:\n\n  This function calculates the area of a circle,\n  given a radius.\n  Parameters: \n  * radius: integer or float\n  It returns a float value representing the area,\n  of the circle with the provided radius.\n\nYou can also get docstrings from built-in functions:\nExample:\nprint(print.__doc__)\nOutput:\n\nprint(value, ..., sep=' ', end='\\n', file=sys.stdout, flush=False)\n\nPrints the values to a stream, or to sys.stdout by default.\nOptional keyword arguments:\nfile:  a file-like object (stream); defaults to the current sys.stdout.\nsep:   string inserted between values, default a space.\nend:   string appended after the last value, default a newline.\nflush: whether to forcibly flush the stream.",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions"
     ]
   },
@@ -4673,7 +4597,7 @@
     "section": "",
     "text": "If you have some functions with many parameters and you want to specify only some of them, then you can give values for such parameters by naming them - this is called keyword arguments - we use the name (keyword) instead of the position (which we have been using all along) to specify the arguments to the function.\nThere are two advantages - one, using the function is easier since we do not need to worry about the order of the arguments. Two, we can give values to only those parameters to which we want to, provided that the other parameters have default argument values.\ndef func(a, b=5, c=10):\n    print('a is', a, 'and b is', b, 'and c is', c)\n\nfunc(3, 7)\nfunc(25, c=24)\nfunc(c=50, a=100)\nOutput:\n\na is 3 and b is 7 and c is 10\na is 25 and b is 5 and c is 24\na is 100 and b is 5 and c is 50\n\nHow It Works\nThe function named func has one parameter without a default argument value, followed by two parameters with default argument values.\nIn the first usage, func(3, 7), the parameter a gets the value 3, the parameter b gets the value 7 and c gets the default value of 10.\nIn the second usage func(25, c=24), the variable a gets the value of 25 due to the position of the argument. Then, the parameter c gets the value of 24 due to naming i.e. keyword arguments. The variable b gets the default value of 5.\nIn the third usage func(c=50, a=100), we use keyword arguments for all specified values. Notice that we are specifying the value for parameter c before that for a even though a is defined before c in the function definition.",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions"
     ]
   },
@@ -4684,7 +4608,7 @@
     "section": "",
     "text": "We have seen so many aspects of functions but note that we still haven’t covered all aspects of them. However, we have already covered most of what you’ll use regarding Python functions on an everyday basis.",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions"
     ]
   },
@@ -5207,7 +5131,7 @@
     "section": "",
     "text": "Due date: Wednesday, February 04, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "Module 3 Assignments"
     ]
   },
@@ -5218,7 +5142,7 @@
     "section": "Programming Problem 5",
     "text": "Programming Problem 5\nWrite two python functions. The first function does the following:\n\nIts name is get_digit.\nThis function takes an integer as input.\nIt returns the first digit (from the left) of a two-digit number.\n\nThe second function cube takes an integer n as input. It returns the cube of that number (i.e., n * n * n).\nIn the main function, call the get_digit to get the number and then call cube to calculate the cube of that number. Finally, print the result.\nName the program cube.py. You are only allowed to use operations learned in the class. Make sure that gradescope gives you the points for passing the test cases.\nDevelopment test cases:\n\nprint(get_digit(28)) # 2\nprint(get_digit(91)) # 9\nprint(get_digit(10)) # 1\n\nprint(cube(2)) # 8\nprint(cube(3)) # 27\nprint(cube(1)) # 1",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "Module 3 Assignments"
     ]
   },
@@ -5229,7 +5153,7 @@
     "section": "Programming Problem 6",
     "text": "Programming Problem 6\nWrite two python functions.\n\nThe first function, calculate_tax, takes an integer as input. It uses a tax rate of 0.07 and returns the product of the input and the tax rate.\nThe second function, calculate_total, takes three integers as input: the number of cupcakes, croissants, and bagels. The price of a cupcake is 3.5, a croissant is 5.0, and a bagel is 2.5. It calculates the total cost of the items a customer will buy, including tax. The function returns the total rounded to two decimal places.\n\nIn the main function, call the calculate_total to get the total cost and print the result.\nName the program bakery.py. You are only allowed to use operations learned in the class. Make sure that gradescope gives you the points for passing the test cases.\nDevelopment test cases:\n\ntotal_after_tax = calculate_total(5, 1, 6)\nprint(total_after_tax) # 40.12\nprint(calculate_total(0, 3, 0)) # 16.05",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "Module 3 Assignments"
     ]
   },
@@ -7046,46 +6970,13 @@
     ]
   },
   {
-    "objectID": "slides-03-02.html#announcements",
-    "href": "slides-03-02.html#announcements",
-    "title": "More on Functions (class slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nOur first lab will be hosted next Monday and Tuesday.\nDouble-check to make sure you’ve signed up for the lab time you want!\nProgramming Problem 1 is due tonight at 9pm (I’d recommend turning in PP2 as well)\nProject 1 is now available for submissions on Gradescope (due Sept 12th), start early!",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "More on Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#discussion",
-    "href": "slides-03-02.html#discussion",
-    "title": "More on Functions (class slides)",
-    "section": "Discussion",
-    "text": "Discussion\nTake a look at the functions you’ve made, then look at the code we started with\n\nWhich version is more readable? Why it is better?",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "More on Functions (class slides)"
-    ]
-  },
-  {
-    "objectID": "slides-03-02.html#discussion-1",
-    "href": "slides-03-02.html#discussion-1",
-    "title": "More on Functions (class slides)",
-    "section": "Discussion",
-    "text": "Discussion\nConsider:\n\nWhat if we wanted to print out a hundred different guitars?\nWhat if we wanted to make 50 different varieties of guitars (or add new heads/bodies/necks)\nWhat if you’re collaborating with Prof Lynam, and he accidentally types something into one of the guitar string literals?",
-    "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
-      "More on Functions (class slides)"
-    ]
-  },
-  {
     "objectID": "slides-03-02.html#function-comments",
     "href": "slides-03-02.html#function-comments",
     "title": "More on Functions (class slides)",
     "section": "Function Comments",
     "text": "Function Comments\n\nEvery function created is required to have a function comment, including main\nFunction comments are a multi-line string (as opposed to using # for other comments)",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7096,7 +6987,7 @@
     "section": "Function Comments",
     "text": "Function Comments\n\n'''\nProf Lynam\nCSC110\nClass Demonstration\nThis program has two functions: one to calculate the area of a sphere,\nthe other to calculate the volume of a sphere.\nThe main() function is called to print to the standard output the\narea and volume of a sphere of radius .75\n'''\ndef sphere_area(radius):\n  '''\n  This function calculates the area of a sphere of given radius.\n  Args:\n    radius: integer representing the radius of the sphere\n  Returns:\n    The float representing the area of a sphere of the given radius\n  '''\n  area = 4 * 3.1415 * radius**2\n  return round(area, 2)\n\ndef sphere_volume(radius):\n  '''\n  This function calculates the volume of a sphere of given radius.\n  Args:\n    radius: integer representing the radius of the sphere\n  Returns:\n    The float representing the volume of a sphere of the given radius\n  '''\n  volume = (1 / 3) * sphere_area(radius) * radius\n  return round(volume, 2)\n\ndef main():\n  '''\n  This function prints the area and volume of a sphere of radius .75.\n  Args:\n    None\n  Returns:\n    None\n  '''\n  r = .75\n  a = sphere_area(r)\n  v = sphere_volume(r)\n  print(a, v)\n  \nmain()\n\n7.07 1.77",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7107,7 +6998,7 @@
     "section": "Global vs. Local variables (scope)",
     "text": "Global vs. Local variables (scope)\n\nEvery variable that is created has a particular scope\nThe scope of a variable is the region in the code where the variable can be used or modified",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7118,7 +7009,7 @@
     "section": "Global vs. Local variables (scope)",
     "text": "Global vs. Local variables (scope)\n\nLocal Variables have local scope – for example, a variable assigned inside a function can only be used or modified within that function\nGlobal Variables have global scope – for example, a variable declared outside a function can be accessed or modified across multiple functions",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7129,7 +7020,7 @@
     "section": "Global vs. Local variables (scope)",
     "text": "Global vs. Local variables (scope)\n\nIn the previous program we wrote (volume and area of sphere), r, v and a are local variables within the main() function.\nThe variable radius and area are local within the sphere_area(radius) function scope.\nThe variable radius and volume are local within sphere_volume(radius)",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7140,7 +7031,7 @@
     "section": "Global or Local?",
     "text": "Global or Local?\n\na = 10               # What are the global and local variables?\nb = 5                # Is the output of the two programs the same \n                     # or different?\ndef sum():\n  return a + b\n\ndef main():\n  print(sum())\n  \nmain()\n\nvs.\n\ndef sum(a, b):\n  return a + b\n\ndef main():\n  print(sum(10, 5))\n  \nmain()",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7151,7 +7042,7 @@
     "section": "Argument vs. Parameter",
     "text": "Argument vs. Parameter\n\nNever set variables as global variables, pass values to functions when called\nWhen a function is defined, the variables you want to pass to the function are called parameter variables\nWhen the function is then called, the values you pass to the function are called arguments",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7162,7 +7053,7 @@
     "section": "Argument or Parameter?",
     "text": "Argument or Parameter?\n\n# The parameters are a and b\ndef add(a, b):\n    return a+b\n  \n# The arguments being passed through are 5 and 4\nadd(5, 4)",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7173,7 +7064,7 @@
     "section": "Write a function",
     "text": "Write a function\nWrite a Python function called tell_story that takes three arguments: hero and villain, representing the names of two characters, and repetition, representing the number of times to tell the story. The function should print out the following bedtime story:\n“hero set out to slay the evil villain!\nBut he set his sword variable to global.\nSo villain accessed his sword and set it to None.\nUse local variables next time, hero!”\nWrite the main function, and call the ‘tell_story’ with the following test case: tell_story(“CSc 110 student”, “Professor”, 2)",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7184,7 +7075,7 @@
     "section": "Write a function – Part 2",
     "text": "Write a function – Part 2\n\nMake sure all variables are local within the program.\nCall the test case once with literals (tell_story(“CSc 110 student”, “Professor”, 2)), and once by passing in those values with local variables defined in main\nFinally, add function comments for main and ‘tell_story’",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7195,7 +7086,7 @@
     "section": "Write a function",
     "text": "Write a function\n\ndef tell_story_a(hero, villain, repetition):\n  '''\n  This function prints a bedtime story a specified number of times\n  Args:\n    hero: string representing the name of the hero\n    villain: string representing the name of the villain\n    repetition: integer dictating how many times to repeat printing the story\n  Returns:\n    None\n  '''\n  story_string = \"\"\n  story_string = hero + \" set out to slay the evil \" + villain + \"!\\n\"\n  story_string = story_string + \"But he set his sword variable to global.\\n\"\n  story_string = story_string + \"So \" + villain + \" accessed his sword and set it to None.\\n\"\n  story_string = story_string + \"Use local variables next time, \" + hero + \"!\\n\"\n  story_string = story_string * repetition\n  print(story_string, end='')\n  \ndef tell_story_b(hero, villain, repetition):\n  '''\n  This function prints a bedtime story a specified number of times\n  Args:\n    hero: string representing the name of the hero\n    villain: string representing the name of the villain\n    repetition: integer dictating how many times to repeat printing the story\n  Returns:\n    None\n  '''\n  for i in range(repetition):\n    print(hero + \" set out to slay the evil \" + villain + \"!\")\n    print(\"But he set his sword variable to global.\")\n    print(\"So \" + villain + \" accessed his sword and set it to None.\")\n    print(\"Use local variables next time, \" + hero + \"!\")\n\ndef main():\n  '''\n  This function calls both tell_story functions to test them out,\n  once with local variables and once with literals\n  '''\n  tell_story_a(\"CSc 110 student\", \"Professor\", 2)\n  parameter_variable_a = \"CSc 110 student\"\n  parameter_variable_b = \"Professor\"\n  parameter_variable_c = 2\n  tell_story_b(parameter_variable_a, parameter_variable_b, parameter_variable_c)\n  \nmain()",
     "crumbs": [
-      "Module 3 - Decomposition and More on Functions",
+      "Module 3 - More on Functions",
       "More on Functions (class slides)"
     ]
   },
@@ -7919,7 +7810,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7670353223199537\n7",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7364254151027713\n0",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7941,7 +7832,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
