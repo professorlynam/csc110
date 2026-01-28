@@ -2427,7 +2427,7 @@
     "href": "slides-04-01.html#write-a-function",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function called tell_story that takes three arguments: hero and villain, representing the names of two characters, and repetition, representing the number of times to tell the story. The function should print out the following bedtime story:\n“hero set out to slay the evil villain!\nBut he set his sword variable to global.\nSo villain accessed his sword and set it to None.\nUse local variables next time, hero!”\nWrite the main function, and call the ‘tell_story’ with the following test case: tell_story(“CSc 110 student”, “Professor”, 2)",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting\nIt takes two arguments, first_name and last_name\nIt returns a string with a greeting using first_name and last_name\n\n\nprint( greeting(\"Mickey\", \"Mouse\") ) # Hello, Mickey Mouse!",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2449,7 +2449,7 @@
     "href": "slides-04-01.html#write-a-function-1",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\ndef tell_story_a(hero, villain, repetition):\n  '''\n  This function prints a bedtime story a specified number of times\n  Args:\n    hero: string representing the name of the hero\n    villain: string representing the name of the villain\n    repetition: integer dictating how many times to repeat printing the story\n  Returns:\n    None\n  '''\n  story_string = \"\"\n  story_string = hero + \" set out to slay the evil \" + villain + \"!\\n\"\n  story_string = story_string + \"But he set his sword variable to global.\\n\"\n  story_string = story_string + \"So \" + villain + \" accessed his sword and set it to None.\\n\"\n  story_string = story_string + \"Use local variables next time, \" + hero + \"!\\n\"\n  story_string = story_string * repetition\n  print(story_string, end='')\n  \ndef tell_story_b(hero, villain, repetition):\n  '''\n  This function prints a bedtime story a specified number of times\n  Args:\n    hero: string representing the name of the hero\n    villain: string representing the name of the villain\n    repetition: integer dictating how many times to repeat printing the story\n  Returns:\n    None\n  '''\n  for i in range(repetition):\n    print(hero + \" set out to slay the evil \" + villain + \"!\")\n    print(\"But he set his sword variable to global.\")\n    print(\"So \" + villain + \" accessed his sword and set it to None.\")\n    print(\"Use local variables next time, \" + hero + \"!\")\n\ndef main():\n  '''\n  This function calls both tell_story functions to test them out,\n  once with local variables and once with literals\n  '''\n  tell_story_a(\"CSc 110 student\", \"Professor\", 2)\n  parameter_variable_a = \"CSc 110 student\"\n  parameter_variable_b = \"Professor\"\n  parameter_variable_c = 2\n  tell_story_b(parameter_variable_a, parameter_variable_b, parameter_variable_c)\n  \nmain()",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting_again with no parameters\nIt first prompts you to enter your first name\nIt again prompts you to enter your last name\nIt returns a string with the same greeting as greeting but replace with your first and last name\n\n\nprint( greeting_again() )",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2471,7 +2471,7 @@
     "href": "slides-04-01.html#write-a-function-2",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting\nIt takes two arguments, first_name and last_name\nIt returns a string with a greeting using first_name and last_name\n\n\nprint( greeting(\"Mickey\", \"Mouse\") ) # Hello, Mickey Mouse!",
+    "text": "Write a function\n\ndef greeting(first, last):\n    message = \"Hello, \" + first + \" \" + last + \"!\"\n    return message\n\ndef greeting_again():\n    first = input(\"Enter your first name:\\n\")\n    last = input(\"Enter your last name:\\n\")\n    message = \"Hello, \" + first + \" \" + last + \"!\"\n    return message\n\ndef main():\n    print(greeting(\"Mickey\", \"Mouse\"))\n    print(greeting_again())\n\nmain()",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2493,7 +2493,7 @@
     "href": "slides-04-01.html#write-a-function-3",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is greeting_again with no parameters\nIt first prompts you to enter your first name\nIt again prompts you to enter your last name\nIt returns a string with the same greeting as greeting but replace with your first and last name\n\n\nprint( greeting_again() )",
+    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is count_characters\nIt takes three string arguments, a, b and c\nIt returns the total number of characters for all three strings\n\n\nprint( count_characters(\"hel\", \"lo\", \"world\") ) # 10\nprint( count_characters(\"\", \"\", \"\") ) # 0\nprint( count_characters(\" \", \" \", \" \") ) # 3\nprint( count_characters(\"10\", \"2\", \"3\") ) # 4",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2504,7 +2504,7 @@
     "href": "slides-04-01.html#write-a-function-4",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\ndef greeting(first, last):\n    message = \"Hello, \" + first + \" \" + last + \"!\"\n    return message\n\ndef greeting_again():\n    first = input(\"Enter your first name:\\n\")\n    last = input(\"Enter your last name:\\n\")\n    message = \"Hello, \" + first + \" \" + last + \"!\"\n    return message\n\ndef main():\n    print(greeting(\"Mickey\", \"Mouse\"))\n    print(greeting_again())\n\nmain()",
+    "text": "Write a function\n\ndef count_characters(a, b, c):\n    return len(a) + len(b) + len(c)\n\ndef main():\n    print( count_characters(\"hel\", \"lo\", \"world\") ) # 10\n    print( count_characters(\"\", \"\", \"\") ) # 0\n    print( count_characters(\" \", \" \", \" \") ) # 3\n    print( count_characters(\"10\", \"2\", \"3\") ) # 4\n\nmain()\n\n10\n0\n3\n4",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2526,7 +2526,7 @@
     "href": "slides-04-01.html#write-a-function-5",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\nWrite a Python function that does the following:\n\nIts name is count_characters\nIt takes three string arguments, a, b and c\nIt returns the total number of characters for all three strings\n\n\nprint( count_characters(\"hel\", \"lo\", \"world\") ) # 10\nprint( count_characters(\"\", \"\", \"\") ) # 0\nprint( count_characters(\" \", \" \", \" \") ) # 3\nprint( count_characters(\"10\", \"2\", \"3\") ) # 4",
+    "text": "Write a function\nWrite a Python function calculate_year_born with no parameters. It prompts user to enter their age input().\nIt converts user’s age to integer and calculates (imperfectly) the year a person of age was born by subtracting age from 2025.\nIt returns an integer representing the approximate year person of age was born.\n\nprint( calculate_year_born() ) # user enters 60, function returns 1965",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2537,7 +2537,7 @@
     "href": "slides-04-01.html#write-a-function-6",
     "title": "built-in functions (slides)",
     "section": "Write a function",
-    "text": "Write a function\n\ndef count_characters(a, b, c):\n    return len(a) + len(b) + len(c)\n\ndef main():\n    print( count_characters(\"hel\", \"lo\", \"world\") ) # 10\n    print( count_characters(\"\", \"\", \"\") ) # 0\n    print( count_characters(\" \", \" \", \" \") ) # 3\n    print( count_characters(\"10\", \"2\", \"3\") ) # 4\n\nmain()\n\n10\n0\n3\n4",
+    "text": "Write a function\n\ndef calculate_year_born():\n    str_age = input(\"what's your age?\\n\")\n    age = int(str_age)\n    year_born = 2025 - age\n    return year_born\n\ndef main():\n    print(calculate_year_born())\n\nmain()",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -9235,6 +9235,17 @@
     "crumbs": [
       "Watch",
       "Video Lessons"
+    ]
+  },
+  {
+    "objectID": "slides-04-01.html#type",
+    "href": "slides-04-01.html#type",
+    "title": "built-in functions (slides)",
+    "section": "type()",
+    "text": "type()\n\nThe type() function takes in an argument, and returns that argument’s data type\n\n\nprint(type(1))\nprint(type(\"some_random_string\"))\nprint(type(1.593214))\n\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;\n&lt;class 'float'&gt;",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "built-in functions (slides)"
     ]
   }
 ]
