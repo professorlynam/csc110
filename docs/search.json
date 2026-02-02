@@ -7093,23 +7093,23 @@
   {
     "objectID": "slides-04-02.html#quick-review",
     "href": "slides-04-02.html#quick-review",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Quick Review",
-    "text": "Quick Review\n\nround(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)\ninteger versus float (why bother with integers?)\nString concatenation versus repetition\n\n\nstory_part_one = \"First word\"\nstory_part_two = \"Second word\"\n# string concatenation uses the '+' operator to combine two strings together\nwhole_story = story_part_one + story_part_two\n\n# string repetition takes a string, and uses the '*' operator \n# to repeat it a number of times equal to an integer you specify\nwhole_story_repeated = whole_story * 6",
+    "text": "Quick Review\n\nround(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)\ninteger versus float (why bother with integers?)",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
     "objectID": "slides-04-02.html#the-purpose-of-autograding",
     "href": "slides-04-02.html#the-purpose-of-autograding",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "The Purpose of Autograding",
     "text": "The Purpose of Autograding\n\nAutograders are for giving class staff the resources to grade a lot of code (and thereby giving students the chance to practice coding often)\nAutograders are not for replacing the process of comparing your code’s output with the given expected output, and identifying errors yourself before submitting\nYou should be ~90% sure that your code works correctly before submitting it to Gradescope",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
@@ -7126,12 +7126,12 @@
   {
     "objectID": "slides-04-02.html#class-activity-one",
     "href": "slides-04-02.html#class-activity-one",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Class activity one",
-    "text": "Class activity one\nRead the code, discuss and answer the question in 1-2 sentences using natural language:\n\nWhat problem does the code solve?",
+    "text": "Class activity one\nRead the code, discuss with your table and write an answer on your white board: what problem does this code solve?\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \"))\nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
@@ -7170,56 +7170,56 @@
   {
     "objectID": "slides-04-02.html#activity-two-answers",
     "href": "slides-04-02.html#activity-two-answers",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Activity two – answers",
-    "text": "Activity two – answers\nRead the code and write the questions:\n\nwhich lines of code are similar?\n\nline 2-4, line 6-8, line 10-12\n\nwhich lines of code are unique?\n\nline 1, line 14-15",
+    "text": "Activity two – answers\nRead the code and write the questions:\n\nwhich lines of code are similar?\n\nline 2-4, line 5-7, line 8-10\n\nwhich lines of code are unique?\n\nline 1, line 11-12",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
     "objectID": "slides-04-02.html#activity-two-continued",
     "href": "slides-04-02.html#activity-two-continued",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Activity two – continued",
-    "text": "Activity two – continued\nWhich lines can be grouped together into a function?\n\nline 2, 6, 10:\n\n\nbox_w = int(input(\"Box width? \")) \n\nfit_w = box_w // cube_len\n\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\n\nWhat are the parameters of this function? In other words, what information must be known beforehand?",
+    "text": "Activity two – continued\nWhich lines can be grouped together into a function?\n\nline 1, 5, 8:\n\n\nbox_w = int(input(\"Box width? \")) \n\nfit_w = box_w // cube_len\n\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\n\nWhat are the parameters of this function? In other words, what information must be known beforehand?",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
     "objectID": "slides-04-02.html#activity-two-answers-continued",
     "href": "slides-04-02.html#activity-two-answers-continued",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Activity two – answers continued",
     "text": "Activity two – answers continued\nGiven the length of a cube and the name of a box side:\n\nIt prompts you to the enter the length of the side\nIt calculates the number of cube that can fit in the side\nIt prints the message and return the number.",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
     "objectID": "slides-04-02.html#write-a-function",
     "href": "slides-04-02.html#write-a-function",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Write a function",
     "text": "Write a function\nWrite function get_fit that takes the length of a cube (integer) and the name of a side (string)\n\nIt prompts you to the enter the length of the side\nIt calculates the number of cube that can fit in the side\nIt print the message and return the number.\n\n\ndef main():\n    cube_len = int(input(\"Cube length? \"))\n    fit_w = get_fit(cube_len, 'width')\n    fit_h = get_fit(cube_len, 'height')\n    fit_l = get_fit(cube_len, 'length')\n    result = fit_w * fit_h * fit_l\n    print(str(result) + \" Rubik's cubes will fit in that container.\")",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
     "objectID": "slides-04-02.html#write-a-function-answer",
     "href": "slides-04-02.html#write-a-function-answer",
-    "title": "more on decomposition (slides)",
+    "title": "Program Decomposition (slides)",
     "section": "Write a function – answer",
     "text": "Write a function – answer\n\ndef get_fit(cube, side):\n    large = int(input(\"Box {}? \".format(side)))\n    fit = large // cube\n    print(\"{} Rubik's cubes will fit {}-wise.\".format(fit, side))\n    return fit\n\ndef main():\n    cube_len = int(input(\"Cube length? \"))\n    fit_w = get_fit(cube_len, 'width')\n    fit_h = get_fit(cube_len, 'height')\n    fit_l = get_fit(cube_len, 'length')\n    result = fit_w * fit_h * fit_l\n    print(str(result) + \" Rubik's cubes will fit in that container.\")\n\nmain()",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
@@ -9246,6 +9246,39 @@
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#program-decomposition",
+    "href": "slides-04-02.html#program-decomposition",
+    "title": "Program Decomposition (slides)",
+    "section": "Program decomposition",
+    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "Program Decomposition (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#how-to-decompose-this-program",
+    "href": "slides-04-02.html#how-to-decompose-this-program",
+    "title": "Program Decomposition (slides)",
+    "section": "How to decompose this program?",
+    "text": "How to decompose this program?\n\nThis program is confusing to read! And it has a lot of repeated code. Can we separate out some of the code into functions, and then call the functions?\nBefore we do that, we need to identify what can grouped together, and what can’t. Which lines fall into the former category, and which lines fall into the latter? Discuss, and write your answers on your white boards.",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "Program Decomposition (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-02.html#line-grouping-activity-two",
+    "href": "slides-04-02.html#line-grouping-activity-two",
+    "title": "Program Decomposition (slides)",
+    "section": "Line Grouping: Activity two",
+    "text": "Line Grouping: Activity two\n\nWhich lines are similar? Which lines are unique?\n\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \"))\nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "Program Decomposition (slides)"
     ]
   }
 ]
