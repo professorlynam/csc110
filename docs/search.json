@@ -2423,6 +2423,28 @@
     ]
   },
   {
+    "objectID": "slides-04-01.html#built-in-functions",
+    "href": "slides-04-01.html#built-in-functions",
+    "title": "built-in functions (slides)",
+    "section": "Built-in Functions",
+    "text": "Built-in Functions\n\nprint()\nround()\ntype()\ninput()\nlen()\nint()\nfloat()",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "built-in functions (slides)"
+    ]
+  },
+  {
+    "objectID": "slides-04-01.html#type",
+    "href": "slides-04-01.html#type",
+    "title": "built-in functions (slides)",
+    "section": "type()",
+    "text": "type()\n\nThe type() function takes in an argument, and returns that argument’s data type\n\n\nprint(type(1))\nprint(type(\"some_random_string\"))\nprint(type(1.593214))\n\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;\n&lt;class 'float'&gt;",
+    "crumbs": [
+      "Module 4 - Built-In Functions and Decomposition",
+      "built-in functions (slides)"
+    ]
+  },
+  {
     "objectID": "slides-04-01.html#write-a-function",
     "href": "slides-04-01.html#write-a-function",
     "title": "built-in functions (slides)",
@@ -2434,11 +2456,11 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#write-a-function-part-2",
-    "href": "slides-04-01.html#write-a-function-part-2",
+    "objectID": "slides-04-01.html#input-function",
+    "href": "slides-04-01.html#input-function",
     "title": "built-in functions (slides)",
-    "section": "Write a function – Part 2",
-    "text": "Write a function – Part 2\n\nMake sure all variables are local within the program.\nCall the test case once with literals (tell_story(“CSc 110 student”, “Professor”, 2)), and once by passing in those values with local variables defined in main\nFinally, add function comments for main and ‘tell_story’",
+    "section": "input() function",
+    "text": "input() function\n\nThe input() function prompts the user to input text in the standard output\nWhatever is inside the parentheses in input() will be written to the standard output (without a trailing newline, which you can add using \\n).\nThe function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that\ninput() always returns a string\n\n\ninput(\"What's your name?\\n\")",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2456,17 +2478,6 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#built-in-functions",
-    "href": "slides-04-01.html#built-in-functions",
-    "title": "built-in functions (slides)",
-    "section": "Built-in Functions",
-    "text": "Built-in Functions\n\nprint()\nround()\ntype()\ninput()\nlen()\nint()\nfloat()",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "built-in functions (slides)"
-    ]
-  },
-  {
     "objectID": "slides-04-01.html#write-a-function-2",
     "href": "slides-04-01.html#write-a-function-2",
     "title": "built-in functions (slides)",
@@ -2478,11 +2489,11 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#input-function",
-    "href": "slides-04-01.html#input-function",
+    "objectID": "slides-04-01.html#len-function",
+    "href": "slides-04-01.html#len-function",
     "title": "built-in functions (slides)",
-    "section": "input() function",
-    "text": "input() function\n\nThe input() function prompts the user to input text in the standard output\nWhatever is inside the parentheses in input() will be written to the standard output (without a trailing newline, which you can add using \\n).\nThe function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that\ninput() always returns a string\n\n\ninput(\"What's your name?\\n\")",
+    "section": "len() function",
+    "text": "len() function\n\nThe len() function can be used with many types – we will be using it with string for now\nIt returns the number of characters in a string\n\n\ncharacter_count = len(\"Mickey\")\nprint(character_count)\n\n6",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "built-in functions (slides)"
@@ -2511,39 +2522,6 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#len-function",
-    "href": "slides-04-01.html#len-function",
-    "title": "built-in functions (slides)",
-    "section": "len() function",
-    "text": "len() function\n\nThe len() function can be used with many types – we will be using it with string for now\nIt returns the number of characters in a string\n\n\ncharacter_count = len(\"Mickey\")\nprint(character_count)\n\n6",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "built-in functions (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-01.html#write-a-function-5",
-    "href": "slides-04-01.html#write-a-function-5",
-    "title": "built-in functions (slides)",
-    "section": "Write a function",
-    "text": "Write a function\nWrite a Python function calculate_year_born with no parameters. It prompts user to enter their age input().\nIt converts user’s age to integer and calculates (imperfectly) the year a person of age was born by subtracting age from 2025.\nIt returns an integer representing the approximate year person of age was born.\n\nprint( calculate_year_born() ) # user enters 60, function returns 1965",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "built-in functions (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-01.html#write-a-function-6",
-    "href": "slides-04-01.html#write-a-function-6",
-    "title": "built-in functions (slides)",
-    "section": "Write a function",
-    "text": "Write a function\n\ndef calculate_year_born():\n    str_age = input(\"what's your age?\\n\")\n    age = int(str_age)\n    year_born = 2025 - age\n    return year_born\n\ndef main():\n    print(calculate_year_born())\n\nmain()",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "built-in functions (slides)"
-    ]
-  },
-  {
     "objectID": "slides-04-01.html#int-function",
     "href": "slides-04-01.html#int-function",
     "title": "built-in functions (slides)",
@@ -2566,8 +2544,8 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#write-a-function-7",
-    "href": "slides-04-01.html#write-a-function-7",
+    "objectID": "slides-04-01.html#write-a-function-5",
+    "href": "slides-04-01.html#write-a-function-5",
     "title": "built-in functions (slides)",
     "section": "Write a function",
     "text": "Write a function\nWrite a Python function calculate_year_born with no parameters. It prompts user to enter their age input().\nIt converts user’s age to integer and calculates (imperfectly) the year a person of age was born by subtracting age from 2025.\nIt returns an integer representing the approximate year person of age was born.\n\nprint( calculate_year_born() ) # user enters 60, function returns 1965",
@@ -2577,8 +2555,8 @@
     ]
   },
   {
-    "objectID": "slides-04-01.html#write-a-function-8",
-    "href": "slides-04-01.html#write-a-function-8",
+    "objectID": "slides-04-01.html#write-a-function-6",
+    "href": "slides-04-01.html#write-a-function-6",
     "title": "built-in functions (slides)",
     "section": "Write a function",
     "text": "Write a function\n\ndef calculate_year_born():\n    str_age = input(\"what's your age?\\n\")\n    age = int(str_age)\n    year_born = 2025 - age\n    return year_born\n\ndef main():\n    print(calculate_year_born())\n\nmain()",
@@ -7113,14 +7091,14 @@
     ]
   },
   {
-    "objectID": "slides-04-02.html#quiz-03",
-    "href": "slides-04-02.html#quiz-03",
-    "title": "more on decomposition (slides)",
-    "section": "Quiz 03",
-    "text": "Quiz 03\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nYour formula in your function should be Python code (in other words, do not just copy the formula in the instructions, make it so it uses actual symbols for Python operators)",
+    "objectID": "slides-04-02.html#program-decomposition",
+    "href": "slides-04-02.html#program-decomposition",
+    "title": "Program Decomposition (slides)",
+    "section": "Program decomposition",
+    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
@@ -7135,36 +7113,25 @@
     ]
   },
   {
-    "objectID": "slides-04-02.html#rubiks-cubes",
-    "href": "slides-04-02.html#rubiks-cubes",
-    "title": "more on decomposition (slides)",
-    "section": "Rubik’s Cubes",
-    "text": "Rubik’s Cubes\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \"))\nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\n\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\n\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\n\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
+    "objectID": "slides-04-02.html#how-to-decompose-this-program",
+    "href": "slides-04-02.html#how-to-decompose-this-program",
+    "title": "Program Decomposition (slides)",
+    "section": "How to decompose this program?",
+    "text": "How to decompose this program?\n\nThis program is confusing to read! And it has a lot of repeated code. Can we separate out some of the code into functions, and then call the functions?\nBefore we do that, we need to identify what can grouped together, and what can’t. Which lines fall into the former category, and which lines fall into the latter? Discuss, and write your answers on your white boards.",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
-    "objectID": "slides-04-02.html#activity-two",
-    "href": "slides-04-02.html#activity-two",
-    "title": "more on decomposition (slides)",
-    "section": "Activity two",
-    "text": "Activity two\nRead the code and write the questions:\n\nwhich lines of code are similar?\nwhich lines of code are unique?\nwhich lines can be grouped together into a function? what does the function do?",
+    "objectID": "slides-04-02.html#line-grouping-activity-two",
+    "href": "slides-04-02.html#line-grouping-activity-two",
+    "title": "Program Decomposition (slides)",
+    "section": "Line Grouping: Activity two",
+    "text": "Line Grouping: Activity two\n\nWhich lines are similar? Which lines are unique?\n\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \"))\nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-02.html#rubiks-cubes-1",
-    "href": "slides-04-02.html#rubiks-cubes-1",
-    "title": "more on decomposition (slides)",
-    "section": "Rubik’s Cubes",
-    "text": "Rubik’s Cubes\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \")) \nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\n\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\n\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\n\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "more on decomposition (slides)"
+      "Program Decomposition (slides)"
     ]
   },
   {
@@ -7810,7 +7777,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7364254151027713\n0",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.2876422394670456\n3",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7832,7 +7799,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -9235,50 +9202,6 @@
     "crumbs": [
       "Watch",
       "Video Lessons"
-    ]
-  },
-  {
-    "objectID": "slides-04-01.html#type",
-    "href": "slides-04-01.html#type",
-    "title": "built-in functions (slides)",
-    "section": "type()",
-    "text": "type()\n\nThe type() function takes in an argument, and returns that argument’s data type\n\n\nprint(type(1))\nprint(type(\"some_random_string\"))\nprint(type(1.593214))\n\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;\n&lt;class 'float'&gt;",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "built-in functions (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-02.html#program-decomposition",
-    "href": "slides-04-02.html#program-decomposition",
-    "title": "Program Decomposition (slides)",
-    "section": "Program decomposition",
-    "text": "Program decomposition\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "Program Decomposition (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-02.html#how-to-decompose-this-program",
-    "href": "slides-04-02.html#how-to-decompose-this-program",
-    "title": "Program Decomposition (slides)",
-    "section": "How to decompose this program?",
-    "text": "How to decompose this program?\n\nThis program is confusing to read! And it has a lot of repeated code. Can we separate out some of the code into functions, and then call the functions?\nBefore we do that, we need to identify what can grouped together, and what can’t. Which lines fall into the former category, and which lines fall into the latter? Discuss, and write your answers on your white boards.",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "Program Decomposition (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-04-02.html#line-grouping-activity-two",
-    "href": "slides-04-02.html#line-grouping-activity-two",
-    "title": "Program Decomposition (slides)",
-    "section": "Line Grouping: Activity two",
-    "text": "Line Grouping: Activity two\n\nWhich lines are similar? Which lines are unique?\n\n\ncube_len = int(input(\"Cube length? \"))\nbox_w = int(input(\"Box width? \"))\nbox_h = int(input(\"Box height? \"))\nbox_l = int(input(\"Box length? \"))\nfit_w = box_w // cube_len\nfit_h = box_h // cube_len\nfit_l = box_l // cube_len\nprint(str(fit_w) + \" Rubik's cubes will fit width-wise.\")\nprint(str(fit_h) + \" Rubik's cubes will fit height-wise.\")\nprint(str(fit_l) + \" Rubik's cubes will fit length-wise.\")\nres = fit_w * fit_h * fit_l\nprint(str(res)+\" Rubik's cubes will fit in that container.\")",
-    "crumbs": [
-      "Module 4 - Built-In Functions and Decomposition",
-      "Program Decomposition (slides)"
     ]
   }
 ]
