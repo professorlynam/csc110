@@ -20,6 +20,7 @@ Undergraduate Teaching Assistants (UGTAs) in the Department of Computer Science 
 -   Chahat Walia
 -   Hojae Lee
 -   Luke Zeman
+-   Johanna Delgado
 
 Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
 
