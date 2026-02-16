@@ -249,7 +249,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -7311,83 +7311,6 @@
     ]
   },
   {
-    "objectID": "slides-06-01.html#announcements",
-    "href": "slides-06-01.html#announcements",
-    "title": "while loop intro (slides)",
-    "section": "Announcements",
-    "text": "Announcements\nThere is a typo in Project 2: mushroom is sometimes referred to as “muchroom”. Use “muchroom” in your code; that is what the autograder checks for.\nProject 2 due tonight, Project 1 is graded–check feedback!\nTake advantage of Office Hours!\nMidterm 1 is less than 3 weeks away… I would start studying sooner rather than later\nModules 1 to 6 – study guide under practice problems page on website",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review",
-    "href": "slides-06-01.html#quick-review",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review",
-    "text": "Quick Review\n\nWhat’s the difference between printing a variable and returning a variable?",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review-class-activity",
-    "href": "slides-06-01.html#quick-review-class-activity",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review – Class Activity",
-    "text": "Quick Review – Class Activity\n\nConsider the following functions. Decide whether we should use the print function, or a return statement in that function:\nA function that takes in several integers, and calculates the area of a polygon.\nA function that shows the user a table of statistical results.\nA function that takes in a string, and reverses the order of the strings characters.\nA function that checks the input from a user to see if its valid.",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review-indentation",
-    "href": "slides-06-01.html#quick-review-indentation",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review – Indentation",
-    "text": "Quick Review – Indentation\n\nWhat’s the purpose of indenting certain lines of code in Python?",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review-class-activity-1",
-    "href": "slides-06-01.html#quick-review-class-activity-1",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review – Class Activity",
-    "text": "Quick Review – Class Activity\n\nDo we need to use indentation for any of the following?\nFunction definitions\nIf statements\nCalling the main function\nPerforming multiplication on two floats",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review-declaring-parameters-and-variables-in-python",
-    "href": "slides-06-01.html#quick-review-declaring-parameters-and-variables-in-python",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review – Declaring Parameters and Variables in Python",
-    "text": "Quick Review – Declaring Parameters and Variables in Python\n\nPython is a dynamically typed language, many other languages are statically typed\nThis means that variables types are determined at runtime instead of compile time\nSo no need to declare types of variables and parameters beforehand!\nExcept…",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-06-01.html#quick-review-style-guide",
-    "href": "slides-06-01.html#quick-review-style-guide",
-    "title": "while loop intro (slides)",
-    "section": "Quick Review – Style Guide",
-    "text": "Quick Review – Style Guide\n\nParameter types should be declared for functions in your function comments, as per the style guide\nWhy bother coding with a style guide? Two main reasons Link",
-    "crumbs": [
-      "Module 6 - Control Flow (while statements)",
-      "while loop intro (slides)"
-    ]
-  },
-  {
     "objectID": "slides-06-01.html#while-loops",
     "href": "slides-06-01.html#while-loops",
     "title": "while loop intro (slides)",
@@ -7744,7 +7667,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.1365351615274233\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.21073406262831684\n3",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
