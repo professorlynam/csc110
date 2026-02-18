@@ -9093,5 +9093,16 @@
       "Watch",
       "Video Lessons"
     ]
+  },
+  {
+    "objectID": "slides-06-02.html#announcements",
+    "href": "slides-06-02.html#announcements",
+    "title": "loops + strings (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nMidterm 1 is next week, on the 25th. It will cover everything through Module 6 (which we should finish this Friday)\nI posted a practice midterm on Piazza. I recommend you try it first (writing answers down on paper!) before looking at the key.\nThere will be a midterm review session led by TAs on the 23rd, from 5:30pm-7:30pm, in GS 906…\nBut no need to wait for help! Office Hours are a great place to review quizzes, assignments, and check your understanding of the material",
+    "crumbs": [
+      "Module 6 - Control Flow (while statements)",
+      "loops + strings (slides)"
+    ]
   }
 ]

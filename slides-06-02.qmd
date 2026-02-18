@@ -8,7 +8,7 @@ slide-number: true
   
 # String Manipulation
 
-##
+## Announcements
 
 -   Midterm 1 is next week, on the 25th. It will cover everything through Module 6 (which we should finish this Friday)
 -   I posted a practice midterm on Piazza. I recommend you try it first (writing answers down on paper!) before looking at the key.
