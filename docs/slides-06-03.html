@@ -206,28 +206,9 @@
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <ul>
-<li>Midterm 1 October 8th – BRING PHOTO ID</li>
-<li>Covers Modules 1 through 6</li>
-<li>Go over readings, class slides, code you’ve written for Short/Long Projects, Programming Problems</li>
-<li>Practice problems under <a href="https://professorlynam.github.io/csc110/practice-01.html">practice problems</a> page on website</li>
-</ul>
-</section>
-<section id="announcements-part-2" class="slide level2">
-<h2>Announcements (part 2)</h2>
-<ul>
-<li>Midterm 1 October 8th – BRING PHOTO ID</li>
-<li>Covers Modules 1 through 6</li>
-<li>A “Practice Midterm” will be posted on Piazza</li>
-<li>The TAs will be hosting an exam review next Tuesday (the 7th) from 5pm-7pm, in GS 228</li>
-</ul>
-</section>
-<section id="quick-review" class="slide level2">
-<h2>Quick Review</h2>
-<ul>
-<li>Variables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent.</li>
-<li>Gradescope has a “regrade” feature; use it if you feel something’s been misgraded</li>
-<li>If versus elif: how many if statements can you have in a row, and potentially have all of them be executed?</li>
-<li>How many statements in an elif block can be executed in a row?</li>
+<li>Midterm 1, covering modules 1 through 6, on February 25th, please bring photo ID</li>
+<li>Go over readings, class slides, code you’ve written for Short/Long Projects, Programming Problems, Practice Midterm</li>
+<li>The TAs will be hosting an exam review the 23rd, from 5:30pm-7:30pm, in GS 906</li>
 </ul>
 </section>
 <section id="while-loops" class="slide level2">
@@ -249,8 +230,8 @@
 </section>
 <section id="while-loops-with-aggregation" class="slide level2">
 <h2><code>while</code> loops with aggregation</h2>
-<p>Adding numbers from 1 to 5:</p>
-<div id="8a1f8c8b" class="cell" data-execution_count="1">
+<p>Let’s do a loop table! The column headers for your table should be index &lt;= 5, total, and index.</p>
+<div id="ad3d8fd4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>total <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb1-2"><a></a>index <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb1-3"><a></a><span class="cf">while</span> index <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
@@ -318,14 +299,14 @@ adding 5
 <h2>Write a function</h2>
 <p>Its name is <code>sum_all</code> and takes two numeric arguments: <code>low</code> and <code>high</code>. It runs a loop that iterates through the values <code>low</code> and <code>high</code> summing all values. It returns the sum of all values between <code>low</code> and <code>high</code>.</p>
 <p>HINT: Create a variable that will aggregate the sum. Use <code>while</code> (set the index as the <code>low</code> before the loop, use index in the <code>while</code> condition, update the index inside the loop).</p>
-<div id="1d62d445" class="cell" data-execution_count="2">
+<div id="15d8d242" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="cf">assert</span> sum_all(<span class="dv">1</span>, <span class="dv">3</span>) <span class="op">==</span> <span class="dv">6</span></span>
 <span id="cb3-2"><a></a><span class="cf">assert</span> sum_all(<span class="dv">0</span>, <span class="dv">5</span>) <span class="op">==</span> <span class="dv">15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="af0e585c" class="cell" data-execution_count="3">
+<div id="d8d81df3" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> sum_all(low, high):</span>
 <span id="cb4-2"><a></a>  total <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb4-3"><a></a>  index <span class="op">=</span> low</span>
@@ -345,14 +326,14 @@ adding 5
 <h2>Write a function</h2>
 <p>Write a function called <code>count_vowels</code> that takes a string as argument, and returns an integer with the number of vowels in the string.</p>
 <p>HINT: use <code>in</code> to determine if a character is a vowel. The vowels are <code>"a"</code>,<code>"e"</code>,<code>"i"</code>,<code>"o"</code>, and <code>"u"</code>.</p>
-<div id="512b89eb" class="cell" data-execution_count="4">
+<div id="03333c1a" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="cf">assert</span> count_vowels(<span class="st">"banana"</span>) <span class="op">==</span> <span class="dv">3</span></span>
 <span id="cb5-2"><a></a><span class="cf">assert</span> count_vowels(<span class="st">"fly"</span>) <span class="op">==</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="2a7d1453" class="cell" data-execution_count="5">
+<div id="f54760fd" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> count_vowels(string):</span>
 <span id="cb6-2"><a></a>  index <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb6-3"><a></a>  count <span class="op">=</span> <span class="dv">0</span></span>
@@ -377,7 +358,7 @@ adding 5
 <h2>Write a function</h2>
 <p>Its name is <code>factorial</code> and takes a numeric argument <code>number</code>. It returns the factorial of <code>number</code>. The factorial of a number is the product of that number and every number that comes before it, down to one.</p>
 <p>For example, factorial of 4: <code>1 * 2 * 3 * 4 = 24</code>.</p>
-<div id="486ddfb2" class="cell" data-execution_count="6">
+<div id="5d6c05ea" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="cf">assert</span> factorial(<span class="dv">4</span>) <span class="op">==</span> <span class="dv">24</span></span>
 <span id="cb8-2"><a></a><span class="cf">assert</span> factorial(<span class="dv">5</span>) <span class="op">==</span> <span class="dv">120</span></span>
 <span id="cb8-3"><a></a><span class="cf">assert</span> factorial(<span class="dv">0</span>) <span class="op">==</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -385,7 +366,7 @@ adding 5
 </section>
 <section id="write-a-function-solution-2" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="928b0fa7" class="cell" data-execution_count="7">
+<div id="86f1b0b5" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="kw">def</span> factorial(number):</span>
 <span id="cb9-2"><a></a>  result <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-3"><a></a>  index <span class="op">=</span> <span class="dv">1</span></span>
@@ -410,7 +391,7 @@ adding 5
 <li>It returns the <code>base</code> to the power of <code>exp</code></li>
 <li>Don’t use the <code>**</code> operator, use a <code>while</code> loop (define an <code>index</code> before the loop, use <code>index</code> in the <code>while</code> condition, change <code>index</code> inside the loop)</li>
 </ol>
-<div id="fee5e39d" class="cell" data-execution_count="8">
+<div id="4c017e4d" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="cf">assert</span> power(<span class="dv">2</span>, <span class="dv">4</span>) <span class="op">==</span> <span class="dv">16</span></span>
 <span id="cb10-2"><a></a><span class="cf">assert</span> power(<span class="dv">3</span>, <span class="dv">2</span>) <span class="op">==</span> <span class="dv">9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -418,7 +399,7 @@ adding 5
 <section id="write-a-function-solution-3" class="slide level2">
 <h2>Write a function – solution</h2>
 <p>Write more test cases for this function.</p>
-<div id="07609edc" class="cell" data-execution_count="9">
+<div id="64f97ad6" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a><span class="kw">def</span> power(base, exp):</span>
 <span id="cb11-2"><a></a>  result <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb11-3"><a></a>  index <span class="op">=</span> <span class="dv">1</span></span>
@@ -442,14 +423,14 @@ adding 5
 <li>It builds a new string containing only the vowels in the <code>string</code> argument</li>
 <li>It returns new string with vowels only (define an <code>index</code> before the loop, use index in the <code>while</code> condition, change <code>index</code> inside the loop)</li>
 </ol>
-<div id="f9b99d08" class="cell" data-execution_count="10">
+<div id="4df0b38f" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a><span class="bu">print</span>( vowels_only(<span class="st">"banana"</span>) ) <span class="co"># "aaa"</span></span>
 <span id="cb12-2"><a></a><span class="bu">print</span>( vowels_only(<span class="st">"fly"</span>) ) <span class="co"># ""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-4" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="110cdf4b" class="cell" data-execution_count="11">
+<div id="b449ef79" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a><span class="kw">def</span> vowels_only(string):</span>
 <span id="cb13-2"><a></a>  new_string <span class="op">=</span> <span class="st">""</span></span>
 <span id="cb13-3"><a></a>  index <span class="op">=</span> <span class="dv">0</span></span>
@@ -467,20 +448,6 @@ adding 5
 <pre><code>aaa</code></pre>
 </div>
 </div>
-</section>
-<section id="quiz-06" class="slide level2">
-<h2>Quiz 06</h2>
-<center>
-<div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;">
-<a href="//24timezones.com/Tucson/time" style="text-decoration: none" class="clock24" id="tz24-1695057604-c1393-eyJob3VydHlwZSI6IjEyIiwic2hvd2RhdGUiOiIwIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2NTA4ODZjNDg0OWVlIiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="World Time :: Tucson" target="_blank" rel="nofollow"></a>current time
-<div id="clock_block_cb650886c4849ee">
-
-</div>
-</div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async=""></script>
-</center>
-<p>You have 10 minutes to complete the quiz.</p>
-<p>No need to write <code>main()</code> function.</p>
 
 
 </section></section>
