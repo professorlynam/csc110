@@ -175,9 +175,6 @@ data.frame(index = c(0:4),
   kable(col.names = c("index", "index < len(numbers)", "numbers[index]", "total"))
 ```
 
-# Python Tutor
-
-You can also visualize code in python on [Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
 
 ## Using a control variable
 
