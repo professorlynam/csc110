@@ -226,13 +226,13 @@ advice
 #| eval: false
 advice = ["Don't", "try to change", "an element of", "a string"]
 index = 0
-while index < len(songs):
-  songs.pop(index)
+while index < len(advice):
+  advice.pop(index)
   
-print(songs)
+print(advice)
 ```
 
-We're not updating index in the while loop. Infinite loop?
+We're not updating index in the while loop! Infinite loop?
 
 ## Write two functions
 
