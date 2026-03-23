@@ -6,24 +6,6 @@ df-print: kable
 ---
 
 
-## Key Concepts
-
--   iterating a string/list/dictionary (+ if statements)
-
-    - while loop, for loops (two ways, difference?)
-    
-    -   draw a loop table
-
--   purpose of iterating, for example:
-
-    -   mutate (list/dictionary methods)
-    
-    -   aggregate (e.g., sum, factorial)
-    
-    -   get max or min
-    
-    -   concatenate strings (string methods)
-
 # CSc 110 - files
 
 ## Files and file systems
