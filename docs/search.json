@@ -249,7 +249,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1008,7 +1008,7 @@
     "href": "slides-11-01.html#announcements",
     "title": "returning tuples (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nMidterm 2 is next Wednesday (November 5th)\nMidterm 2 study guide has been posted on Piazza. See Piazza post for details\nThe Midterm 2 review session will be held November 3rd, 5pm-7pm. The first hour (5pm-6pm) will be in GS 837, the second hour (6pm-7pm) will be in GS 228.",
+    "text": "Announcements\n\nMidterm 2 is next Wednesday (April 1st)\nMidterm 2 study guide has been posted on Piazza. See Piazza post for details\nThe Midterm 2 review session will be held tonight, March 30th 5pm-7pm, GS 906.",
     "crumbs": [
       "Module 11 - Data Structures (tuples)",
       "returning tuples (slides)"
@@ -7623,7 +7623,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.1624990684171973\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.8496503714910459\n0",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7645,7 +7645,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8229,17 +8229,6 @@
     "title": "files and strings (slides)",
     "section": "Write two functions – solution",
     "text": "Write two functions – solution\n\ndef count_words(filename):\n  f = open(filename, \"r\")\n  counts = {}\n  for line in f:\n    words = line.strip(\"\\n\").split(\" \")\n    for w in words:\n      lower_w = w.lower()\n      if lower_w not in counts:\n        counts[lower_w] = 1\n      else:\n        counts[lower_w] += 1\n  return counts\n\ndef write_word_count(filename):\n  count_dict = count_words(filename)\n  output_file = open(\"out_\" + filename, \"w\")\n  for key, value in count_dict.items():\n    output_file.write(key + \",\" + str(value) + \"\\n\")\n  output_file.close()\n  \ndef main(): \n  write_word_count(\"alien.txt\")\n  \nmain()",
-    "crumbs": [
-      "Module 10 - Reading and Writing Text Files",
-      "files and strings (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-10-02.html#quiz-08",
-    "href": "slides-10-02.html#quiz-08",
-    "title": "files and strings (slides)",
-    "section": "Quiz 08",
-    "text": "Quiz 08\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.\nNo need to write main() function.",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "files and strings (slides)"

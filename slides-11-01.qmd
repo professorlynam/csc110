@@ -9,9 +9,9 @@ df-print: kable
 
 ## Announcements
 
--   Midterm 2 is next Wednesday (November 5th)
+-   Midterm 2 is next Wednesday (April 1st)
 -   Midterm 2 study guide has been posted on Piazza. See Piazza post for details
--   The Midterm 2 review session will be held November 3rd, 5pm-7pm. The first hour (5pm-6pm) will be in GS 837, the second hour (6pm-7pm) will be in GS 228.
+-   The Midterm 2 review session will be held tonight, March 30th 5pm-7pm, GS 906.
 
 ## What are tuples?
 
