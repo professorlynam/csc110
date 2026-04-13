@@ -7,11 +7,6 @@ df-print: kable
 
 # CSc 110 - returning tuples
 
-## Announcements
-
--   Midterm 2 is next Wednesday (April 1st)
--   Midterm 2 study guide has been posted on Piazza. See Piazza post for details
--   The Midterm 2 review session will be held tonight, March 30th 5pm-7pm, GS 906.
 
 ## What are tuples?
 

@@ -249,7 +249,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -843,7 +843,7 @@
     "href": "slides-13-01.html#can-we-change-size-while-iterating",
     "title": "data structures – review (slides)",
     "section": "Can we change size while iterating?",
-    "text": "Can we change size while iterating?\nGo to Python Tutor and visualize the execution.\n\nRemove values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\n\n\nAppend values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1)",
+    "text": "Can we change size while iterating?\n\nRemove values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.remove(value)\n\n\nAppend values using for x in list:\n\n\nmy_list = [2, 3, 1, 2]\nfor value in my_list:\n  my_list.append(value + 1)",
     "crumbs": [
       "Module 13 - Data Structures (sets)",
       "data structures -- review (slides)"
@@ -1001,17 +1001,6 @@
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "more on for loops (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-11-01.html#announcements",
-    "href": "slides-11-01.html#announcements",
-    "title": "returning tuples (slides)",
-    "section": "Announcements",
-    "text": "Announcements\n\nMidterm 2 is next Wednesday (April 1st)\nMidterm 2 study guide has been posted on Piazza. See Piazza post for details\nThe Midterm 2 review session will be held tonight, March 30th 5pm-7pm, GS 906.",
-    "crumbs": [
-      "Module 11 - Data Structures (tuples)",
-      "returning tuples (slides)"
     ]
   },
   {
@@ -7623,7 +7612,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9499780170011636\n0",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.6922746291208386\n7",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -7645,7 +7634,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8455,17 +8444,6 @@
     ]
   },
   {
-    "objectID": "slides-12-02.html#quiz-09",
-    "href": "slides-12-02.html#quiz-09",
-    "title": "nested for loops (slides)",
-    "section": "Quiz 09",
-    "text": "Quiz 09\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
-    "crumbs": [
-      "Module 12 - Data Structures (2D lists)",
-      "nested for loops (slides)"
-    ]
-  },
-  {
     "objectID": "slides-13-02.html#data-structures-in-python",
     "href": "slides-13-02.html#data-structures-in-python",
     "title": "intro to sets (slides)",
@@ -8614,17 +8592,6 @@
     "title": "intro to sets (slides)",
     "section": "Write a function – solution 2",
     "text": "Write a function – solution 2\n\ndef has_duplicates(*values):\n  unique_values = set()\n  for v in values:\n    if v not in unique_values:\n      unique_values.add(v)\n    else:\n      return True\n  return False\n\ndef main():\n  assert has_duplicates(3, 2, 1, 2, 3) == True\n  assert has_duplicates(3, 20, 1, 2, 13) == False\n  \nmain()",
-    "crumbs": [
-      "Module 13 - Data Structures (sets)",
-      "intro to sets (slides)"
-    ]
-  },
-  {
-    "objectID": "slides-13-02.html#quiz-10",
-    "href": "slides-13-02.html#quiz-10",
-    "title": "intro to sets (slides)",
-    "section": "Quiz 10",
-    "text": "Quiz 10\n\n\ncurrent time\n\n\n\n\n\n\nYou have 10 minutes to complete the quiz.",
     "crumbs": [
       "Module 13 - Data Structures (sets)",
       "intro to sets (slides)"

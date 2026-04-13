@@ -342,9 +342,7 @@ main()
 ```
 
 ## Can we change size while iterating?
-
-Go to [Python Tutor](https://pythontutor.com/) and visualize the execution. 
-
+ 
 -   Remove values using `for x in list`:
 ```{python}
 #| eval: false
