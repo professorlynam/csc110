@@ -7,16 +7,10 @@ df-print: kable
 
 # CSc 110 -- More lists
 
-## Announcements
-
-* Quiz 11 is now scheduled for this Wednesday (the 3rd). Its topic is: removing elements from data structures
-* Fill out SCS! It helps me improve as an instructor!
-* Programming Project 13 is a bonus project, due at the same time as Programming Project 12. It counts as extra credit toward the programming project category of your final grade (and is great practice for the final!)
-* Speaking of the final... Friday December 12th, 6pm-8pm, Modern Languages room 350
 
 ## Combining lists
 
-What will happen? Run this code on your computer and on [Python Tutor](https://pythontutor.com/visualize.html)
+What will happen?
 
 ```{python}
 #| eval: false
@@ -44,7 +38,7 @@ if __name__ == "__main__":
 
 ## Combining lists
 
-Will vegetables be mutated? Run this code on your computer and on [Python Tutor](https://pythontutor.com/visualize.html) 
+Will vegetables be mutated?
 
 ```{python}
 #| eval: true
@@ -63,7 +57,7 @@ if __name__ == "__main__":
 
 ## Combining lists
 
-Will vegetables be mutated? Run this code on your computer and on [Python Tutor](https://pythontutor.com/visualize.html) 
+Will vegetables be mutated?
 
 ```{python}
 #| eval: true

@@ -1,0 +1,105 @@
+---
+title: "selection sort (class slides)"
+format: revealjs
+slide-number: true
+df-print: kable
+---
+
+
+# CSC -- More on Decomposition
+
+## Program decomposition -- Review
+
+-   Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.
+
+-   It avoids unnecessary common code and improves the structural quality of code.
+
+
+## Decompose this function into at least 2 functions
+
+```{python}
+#| echo: true
+#| eval: false
+def main():
+    birthday = ""
+    fav_num = ""
+    counter = 0
+    count_dict = {}
+    while not birthday.isnumeric():
+        birthday = input("Enter the day of your birthday\n")
+    while not fav_num.isnumeric():
+        fav_num = input("Enter your favorite number\n")
+    for i in range(int(birthday) + 1):
+        if int(birthday) % i == 0:
+            counter += 1
+    count_dict["birthday"] = counter
+    counter = 0
+    for i in range(int(fav_num) + 1):
+        if int(fav_num) % i == 0:
+            counter += 1
+    count_dict["favorite number"] = counter
+```
+
+## Decomposition example solution
+
+```{python}
+#| echo: true
+#| eval: false
+def count_divisible(message):
+    num = ""
+    while not num.isnumeric():
+        num = input("Enter " + message + "\n")
+    counter = 0
+    for i in range (int(num) + 1):
+        if int(num) % i == 0:
+            counter += 1
+    return counter
+
+def main():
+    count_dict = {}
+    birthday_counter = count_divisible("the day of your birthday")
+    fav_num_counter = count_divisible("your favorite number")
+    count_dict["birthday"] = birthday_counter
+    count_dict["favorite number"] = fav_num_counter
+```
+
+## Decompose just from a description
+
+-   Create code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of "ae" in each string. In main(), print out the string with the most instances of "ae"
+
+## Decompose Possible Solution
+
+```{python}
+#| echo: true
+#| eval: false
+def check_string(s_to_check):
+    if s_to_check == "":
+        return False
+    for i in s_to_check:
+        if i not in "aeiou":
+            return False
+    return True
+
+def get_string():
+    a_string = ""
+    if not check_string(a_string):
+        a_string = input("Enter a string with only vowels\n")
+    return a_string
+
+def count_string(s_to_count):
+    counter = 0
+    for i in range(len(s_to_count) - 1):
+        if s_to_count[i] + s_to_count[i+1] == "ae":
+            counter += 1
+    return counter
+
+def main():
+    string_1 = get_string()
+    string_2 = get_string()
+    string_1_count = count_string(string_1)
+    string_2_count = count_string(string_2)
+    if string_1_count > string_2_count:
+        print(string_1)
+    else:
+        print(string_2)
+```

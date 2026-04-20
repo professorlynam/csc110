@@ -199,55 +199,101 @@
 
 </section>
 <section>
-<section id="csc-selection-sort" class="title-slide slide level1 center">
-<h1>CSC – selection sort</h1>
+<section id="csc-more-on-decomposition" class="title-slide slide level1 center">
+<h1>CSC – More on Decomposition</h1>
 
 </section>
-<section id="sorting-a-list" class="slide level2">
-<h2>Sorting a List</h2>
+<section id="program-decomposition-review" class="slide level2">
+<h2>Program decomposition – Review</h2>
 <ul>
-<li>Suppose we’d like a list to be in sorted order (like from smallest to largest)</li>
-<li>Is there an easy way to sort a list?</li>
+<li><p>Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.</p></li>
+<li><p>It avoids unnecessary common code and improves the structural quality of code.</p></li>
 </ul>
-<div id="2c0bf5f1" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>unsorted_list <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">15</span>, <span class="dv">10</span>, <span class="dv">9</span>]</span>
-<span id="cb1-2"><a></a><span class="cf">try</span>:</span>
-<span id="cb1-3"><a></a>    sorted_list <span class="op">=</span> sort(unsorted_list)</span>
-<span id="cb1-4"><a></a>    <span class="cf">assert</span> sorted_list <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">15</span>]</span>
-<span id="cb1-5"><a></a><span class="cf">except</span>:</span>
-<span id="cb1-6"><a></a>    <span class="bu">print</span>(<span class="st">'Failed to sort the list'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Failed to sort the list</code></pre>
+</section>
+<section id="decompose-this-function-into-at-least-2-functions" class="slide level2">
+<h2>Decompose this function into at least 2 functions</h2>
+<div id="e14b1e2d" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="kw">def</span> main():</span>
+<span id="cb1-2"><a></a>    birthday <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb1-3"><a></a>    fav_num <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb1-4"><a></a>    counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-5"><a></a>    count_dict <span class="op">=</span> {}</span>
+<span id="cb1-6"><a></a>    <span class="cf">while</span> <span class="kw">not</span> birthday.isnumeric():</span>
+<span id="cb1-7"><a></a>        birthday <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter the day of your birthday</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb1-8"><a></a>    <span class="cf">while</span> <span class="kw">not</span> fav_num.isnumeric():</span>
+<span id="cb1-9"><a></a>        fav_num <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your favorite number</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb1-10"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(birthday) <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb1-11"><a></a>        <span class="cf">if</span> <span class="bu">int</span>(birthday) <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-12"><a></a>            counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-13"><a></a>    count_dict[<span class="st">"birthday"</span>] <span class="op">=</span> counter</span>
+<span id="cb1-14"><a></a>    counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-15"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(fav_num) <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb1-16"><a></a>        <span class="cf">if</span> <span class="bu">int</span>(fav_num) <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-17"><a></a>            counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-18"><a></a>    count_dict[<span class="st">"favorite number"</span>] <span class="op">=</span> counter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="decomposition-example-solution" class="slide level2">
+<h2>Decomposition example solution</h2>
+<div id="f03d05ab" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="kw">def</span> count_divisible(message):</span>
+<span id="cb2-2"><a></a>    num <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb2-3"><a></a>    <span class="cf">while</span> <span class="kw">not</span> num.isnumeric():</span>
+<span id="cb2-4"><a></a>        num <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter "</span> <span class="op">+</span> message <span class="op">+</span> <span class="st">"</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb2-5"><a></a>    counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-6"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span> (<span class="bu">int</span>(num) <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb2-7"><a></a>        <span class="cf">if</span> <span class="bu">int</span>(num) <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb2-8"><a></a>            counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-9"><a></a>    <span class="cf">return</span> counter</span>
+<span id="cb2-10"><a></a></span>
+<span id="cb2-11"><a></a><span class="kw">def</span> main():</span>
+<span id="cb2-12"><a></a>    count_dict <span class="op">=</span> {}</span>
+<span id="cb2-13"><a></a>    birthday_counter <span class="op">=</span> count_divisible(<span class="st">"the day of your birthday"</span>)</span>
+<span id="cb2-14"><a></a>    fav_num_counter <span class="op">=</span> count_divisible(<span class="st">"your favorite number"</span>)</span>
+<span id="cb2-15"><a></a>    count_dict[<span class="st">"birthday"</span>] <span class="op">=</span> birthday_counter</span>
+<span id="cb2-16"><a></a>    count_dict[<span class="st">"favorite number"</span>] <span class="op">=</span> fav_num_counter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="sorting-a-list-with-selection-sort" class="slide level2">
-<h2>Sorting a List with Selection Sort</h2>
+<section id="decompose-just-from-a-description" class="slide level2">
+<h2>Decompose just from a description</h2>
 <ul>
-<li>There are lots of ways of sorting a list</li>
-<li>Selection sort is a <strong>simple</strong> sort</li>
-<li>Selection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section</li>
-<li>Search the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section</li>
-<li>Search the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list</li>
-<li>Repeat until there’s nothing but the last element in the ‘unsorted’ section</li>
+<li>Create code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”</li>
 </ul>
 </section>
-<section id="selection-sort-example" class="slide level2">
-<h2>Selection Sort: Example</h2>
-<ul>
-<li>[2, 4, 1, 7], find the minimum in the unsorted section</li>
-<li>[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section</li>
-<li>[1, 4, 2, 7], find the minimum of our unsorted section</li>
-<li>[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section</li>
-<li>[1, 2, 4, 7], find the minimum of our unsorted section</li>
-<li>[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!</li>
-</ul>
-</section>
-<section id="selection-sort-terms" class="slide level2">
-<h2>Selection Sort terms</h2>
-<ul>
-<li>We call the process of finding the minimum a <strong>sweep</strong> and each the process of swapping the elements a <strong>swap</strong></li>
-</ul>
+<section id="decompose-possible-solution" class="slide level2">
+<h2>Decompose Possible Solution</h2>
+<div id="cd6f75f8" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> check_string(s_to_check):</span>
+<span id="cb3-2"><a></a>    <span class="cf">if</span> s_to_check <span class="op">==</span> <span class="st">""</span>:</span>
+<span id="cb3-3"><a></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb3-4"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> s_to_check:</span>
+<span id="cb3-5"><a></a>        <span class="cf">if</span> i <span class="kw">not</span> <span class="kw">in</span> <span class="st">"aeiou"</span>:</span>
+<span id="cb3-6"><a></a>            <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb3-7"><a></a>    <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb3-8"><a></a></span>
+<span id="cb3-9"><a></a><span class="kw">def</span> get_string():</span>
+<span id="cb3-10"><a></a>    a_string <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb3-11"><a></a>    <span class="cf">if</span> <span class="kw">not</span> check_string(a_string):</span>
+<span id="cb3-12"><a></a>        a_string <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter a string with only vowels</span><span class="ch">\n</span><span class="st">"</span>)</span>
+<span id="cb3-13"><a></a>    <span class="cf">return</span> a_string</span>
+<span id="cb3-14"><a></a></span>
+<span id="cb3-15"><a></a><span class="kw">def</span> count_string(s_to_count):</span>
+<span id="cb3-16"><a></a>    counter <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-17"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(s_to_count) <span class="op">-</span> <span class="dv">1</span>):</span>
+<span id="cb3-18"><a></a>        <span class="cf">if</span> s_to_count[i] <span class="op">+</span> s_to_count[i<span class="op">+</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">"ae"</span>:</span>
+<span id="cb3-19"><a></a>            counter <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb3-20"><a></a>    <span class="cf">return</span> counter</span>
+<span id="cb3-21"><a></a></span>
+<span id="cb3-22"><a></a><span class="kw">def</span> main():</span>
+<span id="cb3-23"><a></a>    string_1 <span class="op">=</span> get_string()</span>
+<span id="cb3-24"><a></a>    string_2 <span class="op">=</span> get_string()</span>
+<span id="cb3-25"><a></a>    string_1_count <span class="op">=</span> count_string(string_1)</span>
+<span id="cb3-26"><a></a>    string_2_count <span class="op">=</span> count_string(string_2)</span>
+<span id="cb3-27"><a></a>    <span class="cf">if</span> string_1_count <span class="op">&gt;</span> string_2_count:</span>
+<span id="cb3-28"><a></a>        <span class="bu">print</span>(string_1)</span>
+<span id="cb3-29"><a></a>    <span class="cf">else</span>:</span>
+<span id="cb3-30"><a></a>        <span class="bu">print</span>(string_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section></section>

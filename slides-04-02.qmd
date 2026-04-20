@@ -6,20 +6,6 @@ slide-number: true
 
 # CSC 110 Program Decomposition
 
-## Quick Review
-
--   round(number_to_round, ndigits). ndigits if omitted or set to None, defaults to 0 (rounds to the nearest integer)
-
--   integer versus float (why bother with integers?)
-
-## The Purpose of Autograding
-
--   Autograders are for giving class staff the resources to grade a lot of code (and thereby giving students the chance to practice coding often)
-
--   Autograders are not for replacing the process of comparing your code's output with the given expected output, and identifying errors yourself before submitting
-
--   You should be ~90% sure that your code works correctly *before* submitting it to Gradescope
-
 ## Program decomposition
 
 -   Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.

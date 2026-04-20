@@ -9,13 +9,6 @@ df-print: kable
 # CSC -- Final exam review
 
 
-## Announcements
-
-* Fill out SCS! It helps me improve as an instructor!
-* Programming Project 13 is a bonus project, due at the same time as Programming Project 12. It counts as extra credit toward the programming project category of your final grade (and is great practice for the final!)
-* Speaking of the final... Friday December 12th, 6pm-8pm, Modern Languages room 350
-* Final Exam Review Session is: Wednesday December 10th, 5pm-7pm, GS 701
-
 
 # Review of strings
 
