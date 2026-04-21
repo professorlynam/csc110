@@ -227,7 +227,7 @@ All assignments that are submitted on Gradescope are due at 9pm (Typically Wedne
 
 -   [Module 13 Programming Problems](assignments-13.html) -- Due date: `r assignments %>% filter(assessment == "Module 13 Programming Problems") %>% pull(formatted_date)` at 9pm
 -   [Short Project 11](labs/lab11.html) -- Due date: `r assignments %>% filter(assessment == "Short Programming Project 11") %>% pull(formatted_date)` at 9pm
--   [Programming Project 11](project-10.html) -- Due date: `r assignments %>% filter(assessment == "Programming Project 11") %>% pull(formatted_date)` at 9pm
+-   [Programming Project 11](project-11.html) -- Due date: `r assignments %>% filter(assessment == "Programming Project 11") %>% pull(formatted_date)` at 9pm
 
 # Week 14 (`r schedule %>% filter(week_number == 14 & term == "spring 2026") %>% pull(formatted_start)`)
 

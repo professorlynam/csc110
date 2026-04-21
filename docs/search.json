@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.6847718008863426\n9",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.8488970752469565\n1",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8911,6 +8911,20 @@
     "text": "Decomposition example solution\n\ndef count_divisible(message):\n    num = \"\"\n    while not num.isnumeric():\n        num = input(\"Enter \" + message + \"\\n\")\n    counter = 0\n    for i in range (int(num) + 1):\n        if int(num) % i == 0:\n            counter += 1\n    return counter\n\ndef main():\n    count_dict = {}\n    birthday_counter = count_divisible(\"the day of your birthday\")\n    fav_num_counter = count_divisible(\"your favorite number\")\n    count_dict[\"birthday\"] = birthday_counter\n    count_dict[\"favorite number\"] = fav_num_counter"
   },
   {
+    "objectID": "slides-15-03.html#decompose-just-from-a-description",
+    "href": "slides-15-03.html#decompose-just-from-a-description",
+    "title": "selection sort (class slides)",
+    "section": "Decompose just from a description",
+    "text": "Decompose just from a description\n\nCreate code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”"
+  },
+  {
+    "objectID": "slides-15-03.html#decompose-possible-solution",
+    "href": "slides-15-03.html#decompose-possible-solution",
+    "title": "selection sort (class slides)",
+    "section": "Decompose Possible Solution",
+    "text": "Decompose Possible Solution\n\ndef check_string(s_to_check):\n    if s_to_check == \"\":\n        return False\n    for i in s_to_check:\n        if i not in \"aeiou\":\n            return False\n    return True\n\ndef get_string():\n    a_string = \"\"\n    if not check_string(a_string):\n        a_string = input(\"Enter a string with only vowels\\n\")\n    return a_string\n\ndef count_string(s_to_count):\n    counter = 0\n    for i in range(len(s_to_count) - 1):\n        if s_to_count[i] + s_to_count[i+1] == \"ae\":\n            counter += 1\n    return counter\n\ndef main():\n    string_1 = get_string()\n    string_2 = get_string()\n    string_1_count = count_string(string_1)\n    string_2_count = count_string(string_2)\n    if string_1_count &gt; string_2_count:\n        print(string_1)\n    else:\n        print(string_2)"
+  },
+  {
     "objectID": "strings.html",
     "href": "strings.html",
     "title": "String Manipulation",
@@ -8949,19 +8963,5 @@
       "Watch",
       "Video Lessons"
     ]
-  },
-  {
-    "objectID": "slides-15-03.html#decompose-just-from-a-description",
-    "href": "slides-15-03.html#decompose-just-from-a-description",
-    "title": "selection sort (class slides)",
-    "section": "Decompose just from a description",
-    "text": "Decompose just from a description\n\nCreate code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”"
-  },
-  {
-    "objectID": "slides-15-03.html#decompose-possible-solution",
-    "href": "slides-15-03.html#decompose-possible-solution",
-    "title": "selection sort (class slides)",
-    "section": "Decompose Possible Solution",
-    "text": "Decompose Possible Solution\n\ndef check_string(s_to_check):\n    if s_to_check == \"\":\n        return False\n    for i in s_to_check:\n        if i not in \"aeiou\":\n            return False\n    return True\n\ndef get_string():\n    a_string = \"\"\n    if not check_string(a_string):\n        a_string = input(\"Enter a string with only vowels\\n\")\n    return a_string\n\ndef count_string(s_to_count):\n    counter = 0\n    for i in range(len(s_to_count) - 1):\n        if s_to_count[i] + s_to_count[i+1] == \"ae\":\n            counter += 1\n    return counter\n\ndef main():\n    string_1 = get_string()\n    string_2 = get_string()\n    string_1_count = count_string(string_1)\n    string_2_count = count_string(string_2)\n    if string_1_count &gt; string_2_count:\n        print(string_1)\n    else:\n        print(string_2)"
   }
 ]
