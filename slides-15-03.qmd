@@ -1,5 +1,5 @@
 ---
-title: "selection sort (class slides)"
+title: "Program Decomposition Part 2 (class slides)"
 format: revealjs
 slide-number: true
 df-print: kable

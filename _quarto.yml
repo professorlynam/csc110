@@ -185,10 +185,11 @@ website:
         - slides-14-01.qmd
         - slides-14-02.qmd
         - slides-14-03.qmd
-      - section: "Module 15 - Handling Exceptions"
+      - section: "Module 15 - Handling Exceptions and Program Decomposition Part 2"
         contents:
         - exceptions.md
         - slides-15-01.qmd
+        - slides-15-02.qmd
       - section: "Module 16 - Review"
         contents:
         - slides-16-01.qmd

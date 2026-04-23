@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -271,28 +271,44 @@
     "href": "slides-15-02.html#sorting-a-list",
     "title": "selection sort (class slides)",
     "section": "Sorting a List",
-    "text": "Sorting a List\n\nSuppose we’d like a list to be in sorted order (like from smallest to largest)\nIs there an easy way to sort a list?\n\n\nunsorted_list = [2, 4, 1, 7, 15, 10, 9]\ntry:\n    sorted_list = sort(unsorted_list)\n    assert sorted_list == [1, 2, 4, 7, 9, 10, 15]\nexcept:\n    print('Failed to sort the list')\n\nFailed to sort the list"
+    "text": "Sorting a List\n\nSuppose we’d like a list to be in sorted order (like from smallest to largest)\nIs there an easy way to sort a list?\n\n\nunsorted_list = [2, 4, 1, 7, 15, 10, 9]\ntry:\n    sorted_list = sort(unsorted_list)\n    assert sorted_list == [1, 2, 4, 7, 9, 10, 15]\nexcept:\n    print('Failed to sort the list')\n\nFailed to sort the list",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "selection sort (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-02.html#sorting-a-list-with-selection-sort",
     "href": "slides-15-02.html#sorting-a-list-with-selection-sort",
     "title": "selection sort (class slides)",
     "section": "Sorting a List with Selection Sort",
-    "text": "Sorting a List with Selection Sort\n\nThere are lots of ways of sorting a list\nSelection sort is a simple sort\nSelection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section\nSearch the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section\nSearch the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list\nRepeat until there’s nothing but the last element in the ‘unsorted’ section"
+    "text": "Sorting a List with Selection Sort\n\nThere are lots of ways of sorting a list\nSelection sort is a simple sort\nSelection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section\nSearch the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section\nSearch the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list\nRepeat until there’s nothing but the last element in the ‘unsorted’ section",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "selection sort (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-02.html#selection-sort-example",
     "href": "slides-15-02.html#selection-sort-example",
     "title": "selection sort (class slides)",
     "section": "Selection Sort: Example",
-    "text": "Selection Sort: Example\n\n[2, 4, 1, 7], find the minimum in the unsorted section\n[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section\n[1, 4, 2, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section\n[1, 2, 4, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!"
+    "text": "Selection Sort: Example\n\n[2, 4, 1, 7], find the minimum in the unsorted section\n[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section\n[1, 4, 2, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section\n[1, 2, 4, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "selection sort (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-02.html#selection-sort-terms",
     "href": "slides-15-02.html#selection-sort-terms",
     "title": "selection sort (class slides)",
     "section": "Selection Sort terms",
-    "text": "Selection Sort terms\n\nWe call the process of finding the minimum a sweep and each the process of swapping the elements a swap"
+    "text": "Selection Sort terms\n\nWe call the process of finding the minimum a sweep and each the process of swapping the elements a swap",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "selection sort (class slides)"
+    ]
   },
   {
     "objectID": "slides-14-03.html#combining-lists",
@@ -1520,7 +1536,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.8488970752469565\n1",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.4429437565323625\n5",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -4461,14 +4477,14 @@
     "href": "assignments-honors.html",
     "title": "Honor’s Contract Assignment",
     "section": "",
-    "text": "Due date: May 6th at 9pm\nThis project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.\nDownload the Pokemon.csv file. Open the file in a spreadsheet-viewer of your choice, and take some time to examine it. Briefly, it is a list of Pokemon, with details about each, including their type, combat-related statistics, when they were introduced to the franchise (generation), and whether or not they are considered a ‘Legendary’ Pokemon. You are not permitted to change any values in the csv file for this project.\nFirst, write a Python function that does the following:\n\nIts name is get_data\nIt takes one argument: a file_name as a string meant to represent the file to strip data from (in our case “Pokemon.csv”)\nIt returns a list containing lists as values. Specifically, each list within the returned list should have all the data associated with a single Pokemon. The returned list should therefore have 800 lists contained within it, each of the 800 lists containing 13 values. The 13 values should be represented as the data type most appropriate to store them, ie “Bulbasaur” is a string, and “49” is an integer. Do not store the ‘header’ data, ie the first line of the csv file.\n\nFor this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python documentation directly to figure out how to use the csv.reader function. No other libraries may be imported.\nName the program pokemon_analysis.py. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.\nNow that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you’ve imported.\nWrite a Python function that does the following:\n\nIts name is get_max\nIt takes three arguments: data as the list of all our imported data, include_legendary as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’), and a category_number with an integer meant to represent the list index of the data we’re interested in. For example, a category_number of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).\nIt returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number, as well as the maximum value as a float, appended to the end of the list of strings.\n\nWrite a similar function that finds the Pokemon with the lowest values for a selected category, call it ‘get_min’.\nNow you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given category_number. Call them get_mean , get_std , and get_median respectively. Each function should also have the include_legendary Boolean argument, just like for get_max and get_min. Note that for get_median you’ll have to sort the data. Bubble sort is a potential sorting method for you to use.\nYou should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the ‘Attack’ statistic differs from the ‘HP’ statistic, etc.\nNow that you’ve gotten familiar with the data, it’s time to analyze specific Pokemon. Write a Python function does the following:\n\nIts name is analyze_pokemon\nIt takes two arguments: data as the list of all our imported data, and a name as a string meant to represent the name of the Pokemon.\nIt returns a list of floats containing the percentiles of where the Pokemon falls in each of the following categories: ‘Total’ , ‘HP’ , ‘Attack’ , ‘Defense’ , ‘Sp.Atk’ , ‘Sp.Def’ , and ‘Speed’. The percentile for a given category is calculated as follows: the number of values strictly below the targeted value divided by the total number of values in the category.\n\nNow that you’ve made all these statistical tools, it’s time to analyze some Pokemon!\nIdentify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the include_legendary argument). Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selecting based on the ‘Total’ category won’t tell you the whole story on the Pokemon’s potential!\nNow that you’ve selected six Pokemon, write up a report explaining your reasoning for your choices. You should use the statistical functions you’ve made to find numbers to support your arguments. The report should be at least 500 words, double-spaced, and include at least the following:\n\nYour choices of best and worst Pokemon, and your rationale behind each choice.\nA comparison between the three Pokemon for both categories, and a ‘final’ choice for each category with rationale.\nA summary of what you feel you’ve learned about data analysis and programming by completing this project.\n\nWhen you’ve completed the report, send it to my email, along with your pokemon_analysis.py file with the subject line: “Honor’s Contract Assignment Submission”."
+    "text": "Due date: May 6th at 9pm\nThis project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.\nDownload the Pokemon.csv file. Open the file in a spreadsheet-viewer of your choice, and take some time to examine it. Briefly, it is a list of Pokemon, with details about each, including their type, combat-related statistics, when they were introduced to the franchise (generation), and whether or not they are considered a ‘Legendary’ Pokemon. You are not permitted to change any values in the csv file for this project.\nFirst, write a Python function that does the following:\n\nIts name is get_data\nIt takes one argument: a file_name as a string meant to represent the file to strip data from (in our case “Pokemon.csv”)\nIt returns a list containing lists as values. Specifically, each list within the returned list should have all the data associated with a single Pokemon. The returned list should therefore have 800 lists contained within it, each of the 800 lists containing 13 values. The 13 values should be represented as the data type most appropriate to store them, ie “Bulbasaur” is a string, and “49” is an integer. Do not store the ‘header’ data, ie the first line of the csv file.\n\nFor this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python documentation directly to figure out how to use the csv.reader function. No other libraries may be imported.\nName the program pokemon_analysis.py. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.\nNow that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you’ve imported.\nWrite a Python function that does the following:\n\nIts name is get_max\nIt takes three arguments: data as the list of all our imported data, include_legendary as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’), and a category_number with an integer meant to represent the list index of the data we’re interested in. For example, a category_number of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).\nIt returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number, as well as the maximum value as a float, appended to the end of the list of strings.\n\nWrite a similar function that finds the Pokemon with the lowest values for a selected category, call it ‘get_min’.\nNow you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given category_number. Call them get_mean , get_std , and get_median respectively. Each function should also have the include_legendary Boolean argument, just like for get_max and get_min. Note that for get_median you’ll have to sort the data. Bubble sort is a potential sorting method for you to use. You may not use sorted() for this assignment.\nYou should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the ‘Attack’ statistic differs from the ‘HP’ statistic, etc.\nNow that you’ve gotten familiar with the data, it’s time to analyze specific Pokemon. Write a Python function does the following:\n\nIts name is analyze_pokemon\nIt takes two arguments: data as the list of all our imported data, and a name as a string meant to represent the name of the Pokemon.\nIt returns a list of floats containing the percentiles of where the Pokemon falls in each of the following categories: ‘Total’ , ‘HP’ , ‘Attack’ , ‘Defense’ , ‘Sp.Atk’ , ‘Sp.Def’ , and ‘Speed’. The percentile for a given category is calculated as follows: the number of values strictly below the targeted value divided by the total number of values in the category.\n\nNow that you’ve made all these statistical tools, it’s time to analyze some Pokemon!\nIdentify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the include_legendary argument). Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selecting based on the ‘Total’ category won’t tell you the whole story on the Pokemon’s potential!\nNow that you’ve selected six Pokemon, write up a report explaining your reasoning for your choices. You should use the statistical functions you’ve made to find numbers to support your arguments. The report should be at least 500 words, double-spaced, and include at least the following:\n\nYour choices of best and worst Pokemon, and your rationale behind each choice.\nA comparison between the three Pokemon for both categories, and a ‘final’ choice for each category with rationale.\nA summary of what you feel you’ve learned about data analysis and programming by completing this project.\n\nWhen you’ve completed the report, send it to my email, along with your pokemon_analysis.py file with the subject line: “Honor’s Contract Assignment Submission”."
   },
   {
     "objectID": "assignments-honors.html#pokemon-study",
     "href": "assignments-honors.html#pokemon-study",
     "title": "Honor’s Contract Assignment",
     "section": "",
-    "text": "Due date: May 6th at 9pm\nThis project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.\nDownload the Pokemon.csv file. Open the file in a spreadsheet-viewer of your choice, and take some time to examine it. Briefly, it is a list of Pokemon, with details about each, including their type, combat-related statistics, when they were introduced to the franchise (generation), and whether or not they are considered a ‘Legendary’ Pokemon. You are not permitted to change any values in the csv file for this project.\nFirst, write a Python function that does the following:\n\nIts name is get_data\nIt takes one argument: a file_name as a string meant to represent the file to strip data from (in our case “Pokemon.csv”)\nIt returns a list containing lists as values. Specifically, each list within the returned list should have all the data associated with a single Pokemon. The returned list should therefore have 800 lists contained within it, each of the 800 lists containing 13 values. The 13 values should be represented as the data type most appropriate to store them, ie “Bulbasaur” is a string, and “49” is an integer. Do not store the ‘header’ data, ie the first line of the csv file.\n\nFor this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python documentation directly to figure out how to use the csv.reader function. No other libraries may be imported.\nName the program pokemon_analysis.py. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.\nNow that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you’ve imported.\nWrite a Python function that does the following:\n\nIts name is get_max\nIt takes three arguments: data as the list of all our imported data, include_legendary as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’), and a category_number with an integer meant to represent the list index of the data we’re interested in. For example, a category_number of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).\nIt returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number, as well as the maximum value as a float, appended to the end of the list of strings.\n\nWrite a similar function that finds the Pokemon with the lowest values for a selected category, call it ‘get_min’.\nNow you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given category_number. Call them get_mean , get_std , and get_median respectively. Each function should also have the include_legendary Boolean argument, just like for get_max and get_min. Note that for get_median you’ll have to sort the data. Bubble sort is a potential sorting method for you to use.\nYou should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the ‘Attack’ statistic differs from the ‘HP’ statistic, etc.\nNow that you’ve gotten familiar with the data, it’s time to analyze specific Pokemon. Write a Python function does the following:\n\nIts name is analyze_pokemon\nIt takes two arguments: data as the list of all our imported data, and a name as a string meant to represent the name of the Pokemon.\nIt returns a list of floats containing the percentiles of where the Pokemon falls in each of the following categories: ‘Total’ , ‘HP’ , ‘Attack’ , ‘Defense’ , ‘Sp.Atk’ , ‘Sp.Def’ , and ‘Speed’. The percentile for a given category is calculated as follows: the number of values strictly below the targeted value divided by the total number of values in the category.\n\nNow that you’ve made all these statistical tools, it’s time to analyze some Pokemon!\nIdentify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the include_legendary argument). Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selecting based on the ‘Total’ category won’t tell you the whole story on the Pokemon’s potential!\nNow that you’ve selected six Pokemon, write up a report explaining your reasoning for your choices. You should use the statistical functions you’ve made to find numbers to support your arguments. The report should be at least 500 words, double-spaced, and include at least the following:\n\nYour choices of best and worst Pokemon, and your rationale behind each choice.\nA comparison between the three Pokemon for both categories, and a ‘final’ choice for each category with rationale.\nA summary of what you feel you’ve learned about data analysis and programming by completing this project.\n\nWhen you’ve completed the report, send it to my email, along with your pokemon_analysis.py file with the subject line: “Honor’s Contract Assignment Submission”."
+    "text": "Due date: May 6th at 9pm\nThis project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.\nDownload the Pokemon.csv file. Open the file in a spreadsheet-viewer of your choice, and take some time to examine it. Briefly, it is a list of Pokemon, with details about each, including their type, combat-related statistics, when they were introduced to the franchise (generation), and whether or not they are considered a ‘Legendary’ Pokemon. You are not permitted to change any values in the csv file for this project.\nFirst, write a Python function that does the following:\n\nIts name is get_data\nIt takes one argument: a file_name as a string meant to represent the file to strip data from (in our case “Pokemon.csv”)\nIt returns a list containing lists as values. Specifically, each list within the returned list should have all the data associated with a single Pokemon. The returned list should therefore have 800 lists contained within it, each of the 800 lists containing 13 values. The 13 values should be represented as the data type most appropriate to store them, ie “Bulbasaur” is a string, and “49” is an integer. Do not store the ‘header’ data, ie the first line of the csv file.\n\nFor this project, you may use the csv.reader function from the “csv” library of Python. However, you should read the Python documentation directly to figure out how to use the csv.reader function. No other libraries may be imported.\nName the program pokemon_analysis.py. Test the program yourself, printing out a few of the stored lists to make sure the data has been imported correctly.\nNow that you have the data stored, you may start manipulating it. You will create a few functions to get statistics out of the data you’ve imported.\nWrite a Python function that does the following:\n\nIts name is get_max\nIt takes three arguments: data as the list of all our imported data, include_legendary as a Boolean indicating whether to include Legendary Pokemon (a Pokemon for whom their thirteenth column says ‘TRUE’), and a category_number with an integer meant to represent the list index of the data we’re interested in. For example, a category_number of 5 would indicate we’re interested in the ‘Total’ data column (the 5th column of the spreadsheet).\nIt returns a list of strings containing the names of the Pokemon that have the highest values for the selected category_number, as well as the maximum value as a float, appended to the end of the list of strings.\n\nWrite a similar function that finds the Pokemon with the lowest values for a selected category, call it ‘get_min’.\nNow you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given category_number. Call them get_mean , get_std , and get_median respectively. Each function should also have the include_legendary Boolean argument, just like for get_max and get_min. Note that for get_median you’ll have to sort the data. Bubble sort is a potential sorting method for you to use. You may not use sorted() for this assignment.\nYou should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the ‘Attack’ statistic differs from the ‘HP’ statistic, etc.\nNow that you’ve gotten familiar with the data, it’s time to analyze specific Pokemon. Write a Python function does the following:\n\nIts name is analyze_pokemon\nIt takes two arguments: data as the list of all our imported data, and a name as a string meant to represent the name of the Pokemon.\nIt returns a list of floats containing the percentiles of where the Pokemon falls in each of the following categories: ‘Total’ , ‘HP’ , ‘Attack’ , ‘Defense’ , ‘Sp.Atk’ , ‘Sp.Def’ , and ‘Speed’. The percentile for a given category is calculated as follows: the number of values strictly below the targeted value divided by the total number of values in the category.\n\nNow that you’ve made all these statistical tools, it’s time to analyze some Pokemon!\nIdentify three Pokemon that could be contenders for the ‘best’ Pokemon (in terms of combat potential based on the relevant statistics). These Pokemon may not be Legendary Pokemon (which is why we’ve been writing our statistical functions with the include_legendary argument). Similarly, identify three Pokemon that could be contenders for the ‘worst’ Pokemon. You’re free to choose based on whatever criteria you’d like, but keep in mind that simply selecting based on the ‘Total’ category won’t tell you the whole story on the Pokemon’s potential!\nNow that you’ve selected six Pokemon, write up a report explaining your reasoning for your choices. You should use the statistical functions you’ve made to find numbers to support your arguments. The report should be at least 500 words, double-spaced, and include at least the following:\n\nYour choices of best and worst Pokemon, and your rationale behind each choice.\nA comparison between the three Pokemon for both categories, and a ‘final’ choice for each category with rationale.\nA summary of what you feel you’ve learned about data analysis and programming by completing this project.\n\nWhen you’ve completed the report, send it to my email, along with your pokemon_analysis.py file with the subject line: “Honor’s Contract Assignment Submission”."
   },
   {
     "objectID": "class-code.html",
@@ -4572,7 +4588,7 @@
     "section": "",
     "text": "Exceptions occur when exceptional situations occur in your program. For example, what if you are going to read a file and the file does not exist? Or what if you accidentally deleted it when the program was running? Such situations are handled using exceptions.\nSimilarly, what if your program had some invalid statements? This is handled by Python which raises its hands and tells you there is an error.\n\n\nConsider a simple print function call. What if we misspelt print as Print? Note the capitalization. In this case, Python raises a syntax error.\n&gt;&gt;&gt; Print(\"Hello World\")\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'Print' is not defined\n&gt;&gt;&gt; print(\"Hello World\")\nHello World\nObserve that a NameError is raised and also the location where the error was detected is printed. This is what an error handler for this error does.\n\n\n\nWe will try to read input from the user. Enter the first line below and hit the Enter key. When your computer prompts you for input, instead press [ctrl-d] on a Mac or [ctrl-z] with Windows and see what happens. (If you’re using Windows and neither option works, you can try [ctrl-c] in the Command Prompt to generate a KeyboardInterrupt error instead).\n&gt;&gt;&gt; s = input('Enter something --&gt; ')\nEnter something --&gt; Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nEOFError\nPython raises an error called EOFError which basically means it found an end of file symbol (which is represented by ctrl-d) when it did not expect to see it.\n\n\n\nWe can handle exceptions using the try..except statement. We basically put our usual statements within the try-block and put all our error handlers in the except-block.\nExample (save as exceptions_handle.py):\nExample:\ntry:\n    text = input('Enter something --&gt; ')\nexcept EOFError:\n    print('Why did you do an EOF on me?')\nexcept KeyboardInterrupt:\n    print('You cancelled the operation.')\nelse:\n    print('You entered', text)\nOutput:\n\n# Press ctrl + d\n$ python exceptions_handle.py\nEnter something --&gt; Why did you do an EOF on me?\n\n# Press ctrl + c\n$ python exceptions_handle.py\nEnter something --&gt; ^CYou cancelled the operation.\n\n$ python exceptions_handle.py\nEnter something --&gt; No exceptions\nYou entered No exceptions\n\nHow It Works\nWe put all the statements that might raise exceptions/errors inside the try block and then put handlers for the appropriate errors/exceptions in the except clause/block. The except clause can handle a single specified error or exception, or a parenthesized list of errors/exceptions. If no names of errors or exceptions are supplied, it will handle all errors and exceptions.\nNote that there has to be at least one except clause associated with every try clause. Otherwise, what’s the point of having a try block?\nIf any error or exception is not handled, then the default Python handler is called which just stops the execution of the program and prints an error message. We have already seen this in action above.\nYou can also have an else clause associated with a try..except block. The else clause is executed if no exception occurs.\nIn the next example, we will also see how to get the exception object so that we can retrieve additional information.\n\n\n\nAcquiring a resource in the try block and subsequently releasing the resource in the finally block is a common pattern. Hence, there is also a with statement that enables this to be done in a clean manner:\nwith open(\"poem.txt\") as f:\n    for line in f:\n        print(line, end='')\nHow It Works\nWe are using here the open function with the with statement - we leave the closing of the file to be done automatically by with open.\nWhat happens behind the scenes is that there is a protocol used by the with statement. It fetches the object returned by the open statement, let’s call it “thefile” in this case.",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "Exceptions"
     ]
   },
@@ -4583,7 +4599,7 @@
     "section": "",
     "text": "Consider a simple print function call. What if we misspelt print as Print? Note the capitalization. In this case, Python raises a syntax error.\n&gt;&gt;&gt; Print(\"Hello World\")\nTraceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nNameError: name 'Print' is not defined\n&gt;&gt;&gt; print(\"Hello World\")\nHello World\nObserve that a NameError is raised and also the location where the error was detected is printed. This is what an error handler for this error does.",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "Exceptions"
     ]
   },
@@ -4594,7 +4610,7 @@
     "section": "",
     "text": "We will try to read input from the user. Enter the first line below and hit the Enter key. When your computer prompts you for input, instead press [ctrl-d] on a Mac or [ctrl-z] with Windows and see what happens. (If you’re using Windows and neither option works, you can try [ctrl-c] in the Command Prompt to generate a KeyboardInterrupt error instead).\n&gt;&gt;&gt; s = input('Enter something --&gt; ')\nEnter something --&gt; Traceback (most recent call last):\n  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\nEOFError\nPython raises an error called EOFError which basically means it found an end of file symbol (which is represented by ctrl-d) when it did not expect to see it.",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "Exceptions"
     ]
   },
@@ -4605,7 +4621,7 @@
     "section": "",
     "text": "We can handle exceptions using the try..except statement. We basically put our usual statements within the try-block and put all our error handlers in the except-block.\nExample (save as exceptions_handle.py):\nExample:\ntry:\n    text = input('Enter something --&gt; ')\nexcept EOFError:\n    print('Why did you do an EOF on me?')\nexcept KeyboardInterrupt:\n    print('You cancelled the operation.')\nelse:\n    print('You entered', text)\nOutput:\n\n# Press ctrl + d\n$ python exceptions_handle.py\nEnter something --&gt; Why did you do an EOF on me?\n\n# Press ctrl + c\n$ python exceptions_handle.py\nEnter something --&gt; ^CYou cancelled the operation.\n\n$ python exceptions_handle.py\nEnter something --&gt; No exceptions\nYou entered No exceptions\n\nHow It Works\nWe put all the statements that might raise exceptions/errors inside the try block and then put handlers for the appropriate errors/exceptions in the except clause/block. The except clause can handle a single specified error or exception, or a parenthesized list of errors/exceptions. If no names of errors or exceptions are supplied, it will handle all errors and exceptions.\nNote that there has to be at least one except clause associated with every try clause. Otherwise, what’s the point of having a try block?\nIf any error or exception is not handled, then the default Python handler is called which just stops the execution of the program and prints an error message. We have already seen this in action above.\nYou can also have an else clause associated with a try..except block. The else clause is executed if no exception occurs.\nIn the next example, we will also see how to get the exception object so that we can retrieve additional information.",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "Exceptions"
     ]
   },
@@ -4616,7 +4632,7 @@
     "section": "",
     "text": "Acquiring a resource in the try block and subsequently releasing the resource in the finally block is a common pattern. Hence, there is also a with statement that enables this to be done in a clean manner:\nwith open(\"poem.txt\") as f:\n    for line in f:\n        print(line, end='')\nHow It Works\nWe are using here the open function with the with statement - we leave the closing of the file to be done automatically by with open.\nWhat happens behind the scenes is that there is a protocol used by the with statement. It fetches the object returned by the open statement, let’s call it “thefile” in this case.",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "Exceptions"
     ]
   },
@@ -8808,7 +8824,7 @@
     "section": "try: and except:",
     "text": "try: and except:\n\nCan be used to catch errors in a program without it having to crash!\nThe programmer can provide more information and/or context as to what happened\nCan make debugging easier if you provide clear error messages",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8819,7 +8835,7 @@
     "section": "try: and except:",
     "text": "try: and except:\n\nages = [35, 35, 23, 18, 45, 18, 72]\ntry:\n    print(ages[0] + ages[4])\nexcept:\n    print('Failed to print the sum of two ages')\n\n80\n\n\n\nages = [35, 35, 23, 18, 45, 18, 72]\ntry:\n    print(ages[0] + ages[7])\nexcept:\n    print('Failed to print the sum of two ages')\n\nFailed to print the sum of two ages",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8830,7 +8846,7 @@
     "section": "try: and except:",
     "text": "try: and except:\n\nages = [35, 35, 23, 18, 45, 18, 72]\ntry:\n    print(ages[0] + ages[7])\nexcept:\n    print('Failed to print the sum of two ages')\n    print('Tried to get a value from an index that does not exist in the list')\n\nFailed to print the sum of two ages\nTried to get a value from an index that does not exist in the list\n\n\n\nages = [35, 35, 23, 18, 45, 18, 72]\nprint(ages[0] + ages[7])\n\nIndexError: list index out of range",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8841,7 +8857,7 @@
     "section": "Write a function",
     "text": "Write a function\nWrite a python function called valid_input that takes a string as argument and returns False if the string is not a year (check if the length is 4, and if the string is an integer).\n\nprint(valid_input(\"2023\")) # True\nprint(valid_input(\"20235\")) # False\nprint(valid_input(\"test\")) # False",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8852,7 +8868,7 @@
     "section": "Write a function - solution",
     "text": "Write a function - solution\n\ndef valid_input(string):\n    if len(string) != 4:\n        return False\n    try:\n        int(string)\n        return True\n    except:\n        print(\"Invalid input. Please enter a valid year.\")\n        return False\n\ndef main():\n    print(valid_input(\"2023\"))\n    print(valid_input(\"20235\"))\n    print(valid_input(\"test\"))\n\nmain()\n\nTrue\nFalse\nInvalid input. Please enter a valid year.\nFalse",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8863,7 +8879,7 @@
     "section": "Write a function",
     "text": "Write a function\n\nIts name is read_numbers\nIt takes a string for a file name\nIt opens the file in read mode, it splits the lines by space\nIt returns a list with all float numbers in the file\nDownload test file\n\n\nprint( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8874,7 +8890,7 @@
     "section": "Write a function – solution",
     "text": "Write a function – solution\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except:\n        not_floats.append(w)\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\n[89.5, 50.2, 93.4, 69.0]",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
@@ -8885,42 +8901,42 @@
     "section": "Write a function – solution 2",
     "text": "Write a function – solution 2\n\ndef read_numbers(file_name):\n  floats = []\n  not_floats = []\n  f = open(file_name, \"r\")\n  for line in f:\n    words = line.strip().split(\" \")\n    for w in words:\n      try:\n        floats.append(float(w))\n      except Exception as err:\n        not_floats.append(w)\n        print(err)\n      else:\n        print(\"coverted\", w, \"successfully\")\n  f.close()\n  return floats\n\ndef main():\n  print( read_numbers(\"weather.txt\") ) # [89.5, 50.2, 93.4, 69.0]\n  \nmain()\n\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 89.5 successfully\ncould not convert string to float: 'Tucson'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 50.2 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'high'\ncould not convert string to float: 'temperature:'\ncoverted 93.4 successfully\ncould not convert string to float: 'Phoenix'\ncould not convert string to float: '--'\ncould not convert string to float: 'low'\ncould not convert string to float: 'temperature:'\ncoverted 69.0 successfully\n[89.5, 50.2, 93.4, 69.0]",
     "crumbs": [
-      "Module 15 - Handling Exceptions",
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
       "handling exceptions (class slides)"
     ]
   },
   {
     "objectID": "slides-15-03.html#program-decomposition-review",
     "href": "slides-15-03.html#program-decomposition-review",
-    "title": "selection sort (class slides)",
+    "title": "Program Decomposition Part 2 (class slides)",
     "section": "Program decomposition – Review",
     "text": "Program decomposition – Review\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code."
   },
   {
     "objectID": "slides-15-03.html#decompose-this-function-into-at-least-2-functions",
     "href": "slides-15-03.html#decompose-this-function-into-at-least-2-functions",
-    "title": "selection sort (class slides)",
+    "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose this function into at least 2 functions",
     "text": "Decompose this function into at least 2 functions\n\ndef main():\n    birthday = \"\"\n    fav_num = \"\"\n    counter = 0\n    count_dict = {}\n    while not birthday.isnumeric():\n        birthday = input(\"Enter the day of your birthday\\n\")\n    while not fav_num.isnumeric():\n        fav_num = input(\"Enter your favorite number\\n\")\n    for i in range(int(birthday) + 1):\n        if int(birthday) % i == 0:\n            counter += 1\n    count_dict[\"birthday\"] = counter\n    counter = 0\n    for i in range(int(fav_num) + 1):\n        if int(fav_num) % i == 0:\n            counter += 1\n    count_dict[\"favorite number\"] = counter"
   },
   {
     "objectID": "slides-15-03.html#decomposition-example-solution",
     "href": "slides-15-03.html#decomposition-example-solution",
-    "title": "selection sort (class slides)",
+    "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decomposition example solution",
     "text": "Decomposition example solution\n\ndef count_divisible(message):\n    num = \"\"\n    while not num.isnumeric():\n        num = input(\"Enter \" + message + \"\\n\")\n    counter = 0\n    for i in range (int(num) + 1):\n        if int(num) % i == 0:\n            counter += 1\n    return counter\n\ndef main():\n    count_dict = {}\n    birthday_counter = count_divisible(\"the day of your birthday\")\n    fav_num_counter = count_divisible(\"your favorite number\")\n    count_dict[\"birthday\"] = birthday_counter\n    count_dict[\"favorite number\"] = fav_num_counter"
   },
   {
     "objectID": "slides-15-03.html#decompose-just-from-a-description",
     "href": "slides-15-03.html#decompose-just-from-a-description",
-    "title": "selection sort (class slides)",
+    "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose just from a description",
     "text": "Decompose just from a description\n\nCreate code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”"
   },
   {
     "objectID": "slides-15-03.html#decompose-possible-solution",
     "href": "slides-15-03.html#decompose-possible-solution",
-    "title": "selection sort (class slides)",
+    "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose Possible Solution",
     "text": "Decompose Possible Solution\n\ndef check_string(s_to_check):\n    if s_to_check == \"\":\n        return False\n    for i in s_to_check:\n        if i not in \"aeiou\":\n            return False\n    return True\n\ndef get_string():\n    a_string = \"\"\n    if not check_string(a_string):\n        a_string = input(\"Enter a string with only vowels\\n\")\n    return a_string\n\ndef count_string(s_to_count):\n    counter = 0\n    for i in range(len(s_to_count) - 1):\n        if s_to_count[i] + s_to_count[i+1] == \"ae\":\n            counter += 1\n    return counter\n\ndef main():\n    string_1 = get_string()\n    string_2 = get_string()\n    string_1_count = count_string(string_1)\n    string_2_count = count_string(string_2)\n    if string_1_count &gt; string_2_count:\n        print(string_1)\n    else:\n        print(string_2)"
   },

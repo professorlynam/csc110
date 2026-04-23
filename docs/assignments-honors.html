@@ -926,7 +926,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true">
- <span class="menu-text">Module 15 - Handling Exceptions</span></a>
+ <span class="menu-text">Module 15 - Handling Exceptions and Program Decomposition Part 2</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -942,6 +942,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./slides-15-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">handling exceptions (class slides)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides-15-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">selection sort (class slides)</span></a>
   </div>
 </li>
       </ul>
@@ -1025,7 +1031,7 @@ ul.task-list li input[type="checkbox"] {
 <li>It returns a list of strings containing the names of the Pokemon that have the highest values for the selected <code>category_number</code>, as well as the maximum value as a float, appended to the end of the list of strings.</li>
 </ol>
 <p>Write a similar function that finds the Pokemon with the lowest values for a selected category, call it ‘get_min’.</p>
-<p>Now you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given <code>category_number</code>. Call them <code>get_mean</code> , <code>get_std</code> , and <code>get_median</code> respectively. Each function should also have the <code>include_legendary</code> Boolean argument, just like for <code>get_max</code> and <code>get_min</code>. Note that for <code>get_median</code> you’ll have to sort the data. <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort</a> is a potential sorting method for you to use.</p>
+<p>Now you’ll need to write a few more functions that get other relevant statistics from the data. Write functions that find the mean, standard deviation, and median for a given <code>category_number</code>. Call them <code>get_mean</code> , <code>get_std</code> , and <code>get_median</code> respectively. Each function should also have the <code>include_legendary</code> Boolean argument, just like for <code>get_max</code> and <code>get_min</code>. Note that for <code>get_median</code> you’ll have to sort the data. <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort</a> is a potential sorting method for you to use. You may not use <code>sorted()</code> for this assignment.</p>
 <p>You should use these methods to familiarize yourself with how the numbers of different categories are different, ie how the ‘Attack’ statistic differs from the ‘HP’ statistic, etc.</p>
 <p>Now that you’ve gotten familiar with the data, it’s time to analyze specific Pokemon. Write a Python function does the following:</p>
 <ol type="1">
