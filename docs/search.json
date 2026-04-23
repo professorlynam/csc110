@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -271,44 +271,28 @@
     "href": "slides-15-02.html#sorting-a-list",
     "title": "selection sort (class slides)",
     "section": "Sorting a List",
-    "text": "Sorting a List\n\nSuppose we’d like a list to be in sorted order (like from smallest to largest)\nIs there an easy way to sort a list?\n\n\nunsorted_list = [2, 4, 1, 7, 15, 10, 9]\ntry:\n    sorted_list = sort(unsorted_list)\n    assert sorted_list == [1, 2, 4, 7, 9, 10, 15]\nexcept:\n    print('Failed to sort the list')\n\nFailed to sort the list",
-    "crumbs": [
-      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
-      "selection sort (class slides)"
-    ]
+    "text": "Sorting a List\n\nSuppose we’d like a list to be in sorted order (like from smallest to largest)\nIs there an easy way to sort a list?\n\n\nunsorted_list = [2, 4, 1, 7, 15, 10, 9]\ntry:\n    sorted_list = sort(unsorted_list)\n    assert sorted_list == [1, 2, 4, 7, 9, 10, 15]\nexcept:\n    print('Failed to sort the list')\n\nFailed to sort the list"
   },
   {
     "objectID": "slides-15-02.html#sorting-a-list-with-selection-sort",
     "href": "slides-15-02.html#sorting-a-list-with-selection-sort",
     "title": "selection sort (class slides)",
     "section": "Sorting a List with Selection Sort",
-    "text": "Sorting a List with Selection Sort\n\nThere are lots of ways of sorting a list\nSelection sort is a simple sort\nSelection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section\nSearch the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section\nSearch the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list\nRepeat until there’s nothing but the last element in the ‘unsorted’ section",
-    "crumbs": [
-      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
-      "selection sort (class slides)"
-    ]
+    "text": "Sorting a List with Selection Sort\n\nThere are lots of ways of sorting a list\nSelection sort is a simple sort\nSelection sort works like this: divide the list into ‘sorted’ and ‘unsorted’, starting with nothing in the ‘sorted’ section and every element in the ‘unsorted’ section\nSearch the list for the minimum element, and swap it with the first element of the list: this is the start of our ‘sorted’ section\nSearch the unsorted section of the list for its minimum, and swap it with the next element after the sorted section of the list\nRepeat until there’s nothing but the last element in the ‘unsorted’ section"
   },
   {
     "objectID": "slides-15-02.html#selection-sort-example",
     "href": "slides-15-02.html#selection-sort-example",
     "title": "selection sort (class slides)",
     "section": "Selection Sort: Example",
-    "text": "Selection Sort: Example\n\n[2, 4, 1, 7], find the minimum in the unsorted section\n[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section\n[1, 4, 2, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section\n[1, 2, 4, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!",
-    "crumbs": [
-      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
-      "selection sort (class slides)"
-    ]
+    "text": "Selection Sort: Example\n\n[2, 4, 1, 7], find the minimum in the unsorted section\n[1, 4, 2, 7], swap it with the first element of the list. index 0 is our sorted section, indices 1 through 3 are our unsorted section\n[1, 4, 2, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], swap it with the second element of the list. index 0 through 1 is our sorted section, indices 2 through 3 are our unsorted section\n[1, 2, 4, 7], find the minimum of our unsorted section\n[1, 2, 4, 7], no swap needed, as it’s already in the correct spot. index 0 through 2 is our sorted section, since there’s only one element left in the ‘unsorted’ section, the list is sorted!"
   },
   {
     "objectID": "slides-15-02.html#selection-sort-terms",
     "href": "slides-15-02.html#selection-sort-terms",
     "title": "selection sort (class slides)",
     "section": "Selection Sort terms",
-    "text": "Selection Sort terms\n\nWe call the process of finding the minimum a sweep and each the process of swapping the elements a swap",
-    "crumbs": [
-      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
-      "selection sort (class slides)"
-    ]
+    "text": "Selection Sort terms\n\nWe call the process of finding the minimum a sweep and each the process of swapping the elements a swap"
   },
   {
     "objectID": "slides-14-03.html#combining-lists",
@@ -1536,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.4429437565323625\n5",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9673424797826398\n1",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -8910,35 +8894,55 @@
     "href": "slides-15-03.html#program-decomposition-review",
     "title": "Program Decomposition Part 2 (class slides)",
     "section": "Program decomposition – Review",
-    "text": "Program decomposition – Review\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code."
+    "text": "Program decomposition – Review\n\nProgram decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.\nIt avoids unnecessary common code and improves the structural quality of code.",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "Program Decomposition Part 2 (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-03.html#decompose-this-function-into-at-least-2-functions",
     "href": "slides-15-03.html#decompose-this-function-into-at-least-2-functions",
     "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose this function into at least 2 functions",
-    "text": "Decompose this function into at least 2 functions\n\ndef main():\n    birthday = \"\"\n    fav_num = \"\"\n    counter = 0\n    count_dict = {}\n    while not birthday.isnumeric():\n        birthday = input(\"Enter the day of your birthday\\n\")\n    while not fav_num.isnumeric():\n        fav_num = input(\"Enter your favorite number\\n\")\n    for i in range(int(birthday) + 1):\n        if int(birthday) % i == 0:\n            counter += 1\n    count_dict[\"birthday\"] = counter\n    counter = 0\n    for i in range(int(fav_num) + 1):\n        if int(fav_num) % i == 0:\n            counter += 1\n    count_dict[\"favorite number\"] = counter"
+    "text": "Decompose this function into at least 2 functions\n\ndef main():\n    birthday = \"\"\n    fav_num = \"\"\n    counter = 0\n    count_dict = {}\n    while not birthday.isnumeric():\n        birthday = input(\"Enter the day of your birthday\\n\")\n    while not fav_num.isnumeric():\n        fav_num = input(\"Enter your favorite number\\n\")\n    for i in range(int(birthday) + 1):\n        if int(birthday) % i == 0:\n            counter += 1\n    count_dict[\"birthday\"] = counter\n    counter = 0\n    for i in range(int(fav_num) + 1):\n        if int(fav_num) % i == 0:\n            counter += 1\n    count_dict[\"favorite number\"] = counter",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "Program Decomposition Part 2 (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-03.html#decomposition-example-solution",
     "href": "slides-15-03.html#decomposition-example-solution",
     "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decomposition example solution",
-    "text": "Decomposition example solution\n\ndef count_divisible(message):\n    num = \"\"\n    while not num.isnumeric():\n        num = input(\"Enter \" + message + \"\\n\")\n    counter = 0\n    for i in range (int(num) + 1):\n        if int(num) % i == 0:\n            counter += 1\n    return counter\n\ndef main():\n    count_dict = {}\n    birthday_counter = count_divisible(\"the day of your birthday\")\n    fav_num_counter = count_divisible(\"your favorite number\")\n    count_dict[\"birthday\"] = birthday_counter\n    count_dict[\"favorite number\"] = fav_num_counter"
+    "text": "Decomposition example solution\n\ndef count_divisible(message):\n    num = \"\"\n    while not num.isnumeric():\n        num = input(\"Enter \" + message + \"\\n\")\n    counter = 0\n    for i in range (int(num) + 1):\n        if int(num) % i == 0:\n            counter += 1\n    return counter\n\ndef main():\n    count_dict = {}\n    birthday_counter = count_divisible(\"the day of your birthday\")\n    fav_num_counter = count_divisible(\"your favorite number\")\n    count_dict[\"birthday\"] = birthday_counter\n    count_dict[\"favorite number\"] = fav_num_counter",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "Program Decomposition Part 2 (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-03.html#decompose-just-from-a-description",
     "href": "slides-15-03.html#decompose-just-from-a-description",
     "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose just from a description",
-    "text": "Decompose just from a description\n\nCreate code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”"
+    "text": "Decompose just from a description\n\nCreate code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of “ae” in each string. In main(), print out the string with the most instances of “ae”",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "Program Decomposition Part 2 (class slides)"
+    ]
   },
   {
     "objectID": "slides-15-03.html#decompose-possible-solution",
     "href": "slides-15-03.html#decompose-possible-solution",
     "title": "Program Decomposition Part 2 (class slides)",
     "section": "Decompose Possible Solution",
-    "text": "Decompose Possible Solution\n\ndef check_string(s_to_check):\n    if s_to_check == \"\":\n        return False\n    for i in s_to_check:\n        if i not in \"aeiou\":\n            return False\n    return True\n\ndef get_string():\n    a_string = \"\"\n    if not check_string(a_string):\n        a_string = input(\"Enter a string with only vowels\\n\")\n    return a_string\n\ndef count_string(s_to_count):\n    counter = 0\n    for i in range(len(s_to_count) - 1):\n        if s_to_count[i] + s_to_count[i+1] == \"ae\":\n            counter += 1\n    return counter\n\ndef main():\n    string_1 = get_string()\n    string_2 = get_string()\n    string_1_count = count_string(string_1)\n    string_2_count = count_string(string_2)\n    if string_1_count &gt; string_2_count:\n        print(string_1)\n    else:\n        print(string_2)"
+    "text": "Decompose Possible Solution\n\ndef check_string(s_to_check):\n    if s_to_check == \"\":\n        return False\n    for i in s_to_check:\n        if i not in \"aeiou\":\n            return False\n    return True\n\ndef get_string():\n    a_string = \"\"\n    if not check_string(a_string):\n        a_string = input(\"Enter a string with only vowels\\n\")\n    return a_string\n\ndef count_string(s_to_count):\n    counter = 0\n    for i in range(len(s_to_count) - 1):\n        if s_to_count[i] + s_to_count[i+1] == \"ae\":\n            counter += 1\n    return counter\n\ndef main():\n    string_1 = get_string()\n    string_2 = get_string()\n    string_1_count = count_string(string_1)\n    string_2_count = count_string(string_2)\n    if string_1_count &gt; string_2_count:\n        print(string_1)\n    else:\n        print(string_2)",
+    "crumbs": [
+      "Module 15 - Handling Exceptions and Program Decomposition Part 2",
+      "Program Decomposition Part 2 (class slides)"
+    ]
   },
   {
     "objectID": "strings.html",
