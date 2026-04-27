@@ -29,12 +29,12 @@ def main():
         birthday = input("Enter the day of your birthday\n")
     while not fav_num.isnumeric():
         fav_num = input("Enter your favorite number\n")
-    for i in range(int(birthday) + 1):
+    for i in range(1, int(birthday) + 1):
         if int(birthday) % i == 0:
             counter += 1
     count_dict["birthday"] = counter
     counter = 0
-    for i in range(int(fav_num) + 1):
+    for i in range(1, int(fav_num) + 1):
         if int(fav_num) % i == 0:
             counter += 1
     count_dict["favorite number"] = counter
@@ -50,7 +50,7 @@ def count_divisible(message):
     while not num.isnumeric():
         num = input("Enter " + message + "\n")
     counter = 0
-    for i in range (int(num) + 1):
+    for i in range (1, int(num) + 1):
         if int(num) % i == 0:
             counter += 1
     return counter
