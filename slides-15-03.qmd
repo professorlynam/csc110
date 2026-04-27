@@ -65,7 +65,9 @@ def main():
 
 ## Decompose just from a description
 
--   Create code that: asks the user for two strings, checking that strings have only vowels. Keep asking the user to enter the string again if their string had a non-vowel or was empty. Then, count the number of "ae" in each string. In main(), print out the string with the most instances of "ae"
+-   Create code that: asks the user for two strings, checking that strings have only vowels
+-   Keeps asking the user to enter the string if their string had a non-vowel or was empty
+-   Counts the number of "ae" in each string, then in main(), print out the string with the most instances of "ae"
 
 ## Decompose Possible Solution
 
