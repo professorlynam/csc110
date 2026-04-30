@@ -84,7 +84,7 @@ def check_string(s_to_check):
 
 def get_string():
     a_string = ""
-    if not check_string(a_string):
+    while not check_string(a_string):
         a_string = input("Enter a string with only vowels\n")
     return a_string
 
