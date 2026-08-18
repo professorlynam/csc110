@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.7264690515926908\n8",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.23335199884225988\n3",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -2677,7 +2677,7 @@
     "href": "project-9.html",
     "title": "Programming Project 9",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, April 10, 2026 at 9pm This programming project is an adaptation of Ben Dicken’s Spell Check Programming Assignment.\nYou should name the file spellcheck.py and have a function named correct_spelling to write out the ouput file.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, November 13, 2026 at 9pm This programming project is an adaptation of Ben Dicken’s Spell Check Programming Assignment.\nYou should name the file spellcheck.py and have a function named correct_spelling to write out the ouput file.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 9"
@@ -2754,7 +2754,7 @@
     "href": "project-7.html",
     "title": "Programming Project 7",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, March 20, 2026 at 9pm\nFor this programming project, you will create and manipulate 2D lists – which are lists that contain lists.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 23, 2026 at 9pm\nFor this programming project, you will create and manipulate 2D lists – which are lists that contain lists.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 7"
@@ -2831,7 +2831,7 @@
     "href": "project-5.html",
     "title": "Programming Project 5",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, March 02, 2026 at 9pm\nThis assignment is an adaptation of the MIT’s 6.0001 Introduction to Computer Science and Programming in Python programming set 1.\nMake sure you follow the provided style guide (you will be graded on it!).\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 09, 2026 at 9pm\nThis assignment is an adaptation of the MIT’s 6.0001 Introduction to Computer Science and Programming in Python programming set 1.\nMake sure you follow the provided style guide (you will be graded on it!).\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 5"
@@ -2864,7 +2864,7 @@
     "href": "project-3.html",
     "title": "Programming Project 3",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, February 13, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to validate or transform values conditionally. Make sure you follow the provided style guide (you will be graded on it!). You are allowed to use round(), str() and len(), but other than that you are not allowed to use any other built-in method or function from any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program grades.py. Make sure that gradescope gives you the points for passing the test cases.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 25, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to validate or transform values conditionally. Make sure you follow the provided style guide (you will be graded on it!). You are allowed to use round(), str() and len(), but other than that you are not allowed to use any other built-in method or function from any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program grades.py. Make sure that gradescope gives you the points for passing the test cases.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 3"
@@ -2930,7 +2930,7 @@
     "href": "project-13.html",
     "title": "Programming Project 13 (BONUS)",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, May 04, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Wednesday, December 09, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Encrypter / Decrypter Programming Assignment.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 13 (BONUS)"
@@ -2974,7 +2974,7 @@
     "href": "project-11.html",
     "title": "Programming Project 11",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, April 27, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Minesweeper Programming Assignment.\nYou should name the file minesweeper.py.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, December 04, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Minesweeper Programming Assignment.\nYou should name the file minesweeper.py.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 11"
@@ -3040,7 +3040,7 @@
     "href": "project-1.html",
     "title": "Programming Project 1",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, January 30, 2026 at 9pm\nIn this PA, you will be writing two simple programs that print out text. Note that this programming project is relatively straightforward. Not all of the future assignments will be this way. It is simple because we have not yet covered a wide variety of programming concepts, so there’s only so much I can reasonably expect you to be able to program. The programming projects will get more challenging, but also, hopefully, more interesting!\nMake sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 11, 2026 at 9pm\nIn this PA, you will be writing two simple programs that print out text. Note that this programming project is relatively straightforward. Not all of the future assignments will be this way. It is simple because we have not yet covered a wide variety of programming concepts, so there’s only so much I can reasonably expect you to be able to program. The programming projects will get more challenging, but also, hopefully, more interesting!\nMake sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 1"
@@ -3175,88 +3175,56 @@
     "href": "lab12.html",
     "title": "Short Project 12",
     "section": "",
-    "text": "In this lab session, you will be tasked with writing a program that finds certain words within a word search grid and returns the word mapped to the line and starting character location of each word. The information of the board, and the words will be provided via files you will need to read in.\nYou should name the file simple_wordsearch.py. Your code should have a function called search that returns a dictionary (see specification below).\nIn this short project, you will write code to look for horizontal non-inverted words only.\nDo not use methods not covered in class. You can use .find() – which is going to be covered during the lab session.\n\n\nYour python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this dictionary, you can use it to determine your word bank, which words you will need to look for within the puzzle.\n\n\n\nThis file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.\n\n\n\nThe program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}\n\n\n\n\nGradescope will call the following functions read_words(filename), read_puzzle(filename), and search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "In this lab session, you will be tasked with writing a program that finds certain words within a word search grid and returns the word mapped to the line and starting character location of each word. The information of the board, and the words will be provided via files you will need to read in.\nYou should name the file simple_wordsearch.py. Your code should have a function called search that returns a dictionary (see specification below).\nIn this short project, you will write code to look for horizontal non-inverted words only.\nDo not use methods not covered in class. You can use .find() – which is going to be covered during the lab session.\n\n\nYour python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle.\n\n\n\nThis file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.\n\n\n\nThe program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}\n\n\n\n\nGradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
   },
   {
     "objectID": "lab12.html#file-with-words-to-search",
     "href": "lab12.html#file-with-words-to-search",
     "title": "Short Project 12",
     "section": "",
-    "text": "Your python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this dictionary, you can use it to determine your word bank, which words you will need to look for within the puzzle.",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "Your python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle."
   },
   {
     "objectID": "lab12.html#puzzle-text-file",
     "href": "lab12.html#puzzle-text-file",
     "title": "Short Project 12",
     "section": "",
-    "text": "This file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "This file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case."
   },
   {
     "objectID": "lab12.html#output",
     "href": "lab12.html#output",
     "title": "Short Project 12",
     "section": "",
-    "text": "The program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "The program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}"
   },
   {
     "objectID": "lab12.html#function-names",
     "href": "lab12.html#function-names",
     "title": "Short Project 12",
     "section": "",
-    "text": "Gradescope will call the following functions read_words(filename), read_puzzle(filename), and search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "Gradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
   },
   {
     "objectID": "lab12.html#find",
     "href": "lab12.html#find",
     "title": "Short Project 12",
     "section": "",
-    "text": "The string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "The string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1"
   },
   {
     "objectID": "lab12.html#string-methods",
     "href": "lab12.html#string-methods",
     "title": "Short Project 12",
     "section": "",
-    "text": "We covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "We covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower"
   },
   {
     "objectID": "lab12.html#helper-function",
     "href": "lab12.html#helper-function",
     "title": "Short Project 12",
     "section": "",
-    "text": "For the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
-    "crumbs": [
-      "Short Projects",
-      "Short Project 12"
-    ]
+    "text": "For the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
   },
   {
     "objectID": "lab10.html",
@@ -3905,28 +3873,28 @@
     "href": "assignments-15.html",
     "title": "Module 15 Assignments",
     "section": "",
-    "text": "Due date: Friday, May 01, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is swap\nIt takes two arguments: a dictionary and a set\nIt swaps the key and value for all of the keys that exist in the dictionary that also exist in the set\nIt does not return anything\n\nTest cases:\n\ndict_data = {'a':'b', 'c':'d', 'e':'f'}\nset_data = {'c', 'e'}\nswap(dict_data, set_data)\nprint(dict_data) # {'a': 'b', 'd': 'c', 'f': 'e'}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {23, 110, 57}\nswap(dict_data, set_data)\nprint(dict_data) # {50: 45, 70: 50, 24: 23, 120: 110, 1: 57}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {100}\nswap(dict_data, set_data)\nprint(dict_data) # {23:24, 110:120, 50:45, 70:50, 57:1}\n\nName the program swap_structures.py. Make sure that gradescope gives you the points for passing the test case.\n\n\n\nDue date: Friday, May 01, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
+    "text": "Due date: Wednesday, December 09, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is swap\nIt takes two arguments: a dictionary and a set\nIt swaps the key and value for all of the keys that exist in the dictionary that also exist in the set\nIt does not return anything\n\nTest cases:\n\ndict_data = {'a':'b', 'c':'d', 'e':'f'}\nset_data = {'c', 'e'}\nswap(dict_data, set_data)\nprint(dict_data) # {'a': 'b', 'd': 'c', 'f': 'e'}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {23, 110, 57}\nswap(dict_data, set_data)\nprint(dict_data) # {50: 45, 70: 50, 24: 23, 120: 110, 1: 57}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {100}\nswap(dict_data, set_data)\nprint(dict_data) # {23:24, 110:120, 50:45, 70:50, 57:1}\n\nName the program swap_structures.py. Make sure that gradescope gives you the points for passing the test case.\n\n\n\nDue date: Wednesday, December 09, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
   },
   {
     "objectID": "assignments-15.html#programming-problem-29",
     "href": "assignments-15.html#programming-problem-29",
     "title": "Module 15 Assignments",
     "section": "",
-    "text": "Due date: Friday, May 01, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is swap\nIt takes two arguments: a dictionary and a set\nIt swaps the key and value for all of the keys that exist in the dictionary that also exist in the set\nIt does not return anything\n\nTest cases:\n\ndict_data = {'a':'b', 'c':'d', 'e':'f'}\nset_data = {'c', 'e'}\nswap(dict_data, set_data)\nprint(dict_data) # {'a': 'b', 'd': 'c', 'f': 'e'}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {23, 110, 57}\nswap(dict_data, set_data)\nprint(dict_data) # {50: 45, 70: 50, 24: 23, 120: 110, 1: 57}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {100}\nswap(dict_data, set_data)\nprint(dict_data) # {23:24, 110:120, 50:45, 70:50, 57:1}\n\nName the program swap_structures.py. Make sure that gradescope gives you the points for passing the test case."
+    "text": "Due date: Wednesday, December 09, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is swap\nIt takes two arguments: a dictionary and a set\nIt swaps the key and value for all of the keys that exist in the dictionary that also exist in the set\nIt does not return anything\n\nTest cases:\n\ndict_data = {'a':'b', 'c':'d', 'e':'f'}\nset_data = {'c', 'e'}\nswap(dict_data, set_data)\nprint(dict_data) # {'a': 'b', 'd': 'c', 'f': 'e'}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {23, 110, 57}\nswap(dict_data, set_data)\nprint(dict_data) # {50: 45, 70: 50, 24: 23, 120: 110, 1: 57}\n\ndict_data = {23:24, 110:120, 50:45, 70:50, 57:1}\nset_data = {100}\nswap(dict_data, set_data)\nprint(dict_data) # {23:24, 110:120, 50:45, 70:50, 57:1}\n\nName the program swap_structures.py. Make sure that gradescope gives you the points for passing the test case."
   },
   {
     "objectID": "assignments-15.html#programming-problem-30",
     "href": "assignments-15.html#programming-problem-30",
     "title": "Module 15 Assignments",
     "section": "",
-    "text": "Due date: Friday, May 01, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
+    "text": "Due date: Wednesday, December 09, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is get_elements\nIt two arguments: a dictionary with strings as keys and integers as values, and an integer n\nIt returns a list containing all of the values who fall into at least one of these three categories:\n\nThe corresponding key starts with an upper-case letter\nThe corresponding key ends with an upper-case letter\nThe value is greater than or equal to the second parameter integer\n\n\nTest cases:\n\ndata = {'Alpha':10, 'bravo':25, 'charliE':15, 'dELTa':2}\nprint( get_elements(data, 12) ) # [10, 25, 15]\n\nName the program get_specific.py. Make sure that gradescope gives you the points for passing the test case."
   },
   {
     "objectID": "assignments-13.html",
     "href": "assignments-13.html",
     "title": "Module 13 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, April 22, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, December 02, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 13 - Data Structures (sets)",
       "Module 13 Assignments"
@@ -3959,7 +3927,7 @@
     "href": "assignments-11.html",
     "title": "Module 11 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, April 08, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, November 11, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 11 - Data Structures (tuples)",
       "Module 11 Assignments"
@@ -3981,7 +3949,7 @@
     "href": "assignments-11.html#programming-problem-22",
     "title": "Module 11 Assignments",
     "section": "Programming Problem 22",
-    "text": "Programming Problem 22\nDue date: Wednesday, April 08, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is all_mappings\nIt takes a single dictionary as an argument, which maps strings to lists of integers\nIt returns a list of 2-value tuples, where the first value of the tuples is a key from D, and the second value is an element from its associated list value\n\nTest cases:\n\nprint( all_mappings({\"a\": [7, 3, 1]}) ) # [(\"a\", 7), (\"a\", 3), (\"a\", 1)]\nprint( all_mappings({\"a\": [8], \"b\": [2]}) ) # [(\"a\", 8), (\"b\", 2)]\nprint( all_mappings({\"a\": [], \"b\": [2]}) ) # [(\"b\", 2)]\nprint( all_mappings({}) ) # []\n\nName the program mappings.py. Make sure that gradescope gives you the points for passing the test case.",
+    "text": "Programming Problem 22\nDue date: Wednesday, November 11, 2026 at 9pm\nWrite a Python function that does the following:\n\nIts name is all_mappings\nIt takes a single dictionary as an argument, which maps strings to lists of integers\nIt returns a list of 2-value tuples, where the first value of the tuples is a key from D, and the second value is an element from its associated list value\n\nTest cases:\n\nprint( all_mappings({\"a\": [7, 3, 1]}) ) # [(\"a\", 7), (\"a\", 3), (\"a\", 1)]\nprint( all_mappings({\"a\": [8], \"b\": [2]}) ) # [(\"a\", 8), (\"b\", 2)]\nprint( all_mappings({\"a\": [], \"b\": [2]}) ) # [(\"b\", 2)]\nprint( all_mappings({}) ) # []\n\nName the program mappings.py. Make sure that gradescope gives you the points for passing the test case.",
     "crumbs": [
       "Module 11 - Data Structures (tuples)",
       "Module 11 Assignments"
@@ -3992,7 +3960,7 @@
     "href": "assignments-09.html",
     "title": "Module 9 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, March 25, 2026 at 9pm\n\n\nWrite a Python function that does the following:\n\nIts name is count_vowels\nIt takes as argument a string\nIt iterates over the string (either with a while or for loop) counting how many lowercase and uppercase vowels the string has\nIt returns a dictionary with vowels are the keys, and integer counts as the values\n\nTest cases:\n\nprint( count_vowels(\"\") ) # {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0,\n                          #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                \nprint( count_vowels(\"banana\") ) # {\"a\": 3, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0,\n                                #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                                \nprint( count_vowels(\"Adriana\") ) # {\"a\": 2, \"e\": 0, \"i\": 1, \"o\": 0, \"u\": 0,\n                                 #  \"A\": 1, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                                 \nprint( count_vowels(\"Hello World!\") ) # {\"a\": 0, \"e\": 1, \"i\": 0, \"o\": 2, \"u\": 0,\n                                      #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n\nName the program vowel_counting.py. Make sure that gradescope gives you the points for passing the test case.\n\n\n\nWrite a Python function that does the following:\n\nIts name is invert_dictionary\nIt takes a single dictionary as a parameter\nIt returns a new dictionary with the original dictionary values mapped as keys, and its original keys mapped as lists of values\n\nTest cases:\n\nprint( invert_dictionary({\"a\": 7, \"b\": 8}) ) # { 7: [\"a\"], 8: [\"b\"] }\nprint( invert_dictionary({\"a\": 2, \"b\": 2}) ) # { 2: [\"a\", \"b\"] }\nprint( invert_dictionary({}) ) # {}\n\nName the program inversion.py. Make sure that gradescope gives you the points for passing the test case.",
+    "text": "Due date: Wednesday, October 28, 2026 at 9pm\n\n\nWrite a Python function that does the following:\n\nIts name is count_vowels\nIt takes as argument a string\nIt iterates over the string (either with a while or for loop) counting how many lowercase and uppercase vowels the string has\nIt returns a dictionary with vowels are the keys, and integer counts as the values\n\nTest cases:\n\nprint( count_vowels(\"\") ) # {\"a\": 0, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0,\n                          #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                \nprint( count_vowels(\"banana\") ) # {\"a\": 3, \"e\": 0, \"i\": 0, \"o\": 0, \"u\": 0,\n                                #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                                \nprint( count_vowels(\"Adriana\") ) # {\"a\": 2, \"e\": 0, \"i\": 1, \"o\": 0, \"u\": 0,\n                                 #  \"A\": 1, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n                                 \nprint( count_vowels(\"Hello World!\") ) # {\"a\": 0, \"e\": 1, \"i\": 0, \"o\": 2, \"u\": 0,\n                                      #  \"A\": 0, \"E\": 0, \"I\": 0, \"O\": 0, \"U\": 0}\n\nName the program vowel_counting.py. Make sure that gradescope gives you the points for passing the test case.\n\n\n\nWrite a Python function that does the following:\n\nIts name is invert_dictionary\nIt takes a single dictionary as a parameter\nIt returns a new dictionary with the original dictionary values mapped as keys, and its original keys mapped as lists of values\n\nTest cases:\n\nprint( invert_dictionary({\"a\": 7, \"b\": 8}) ) # { 7: [\"a\"], 8: [\"b\"] }\nprint( invert_dictionary({\"a\": 2, \"b\": 2}) ) # { 2: [\"a\", \"b\"] }\nprint( invert_dictionary({}) ) # {}\n\nName the program inversion.py. Make sure that gradescope gives you the points for passing the test case.",
     "crumbs": [
       "Module 9 - Data Structures (dictionaries)",
       "Module 9 Assignments"
@@ -4025,7 +3993,7 @@
     "href": "assignments-07.html",
     "title": "Module 7 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, March 04, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, October 14, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "Module 7 Assignments"
@@ -4058,7 +4026,7 @@
     "href": "assignments-05.html",
     "title": "Module 5 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, February 18, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, September 30, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 5 - Control Flow (if statements)",
       "Module 5 Assignments"
@@ -4091,7 +4059,7 @@
     "href": "assignments-03.html",
     "title": "Module 3 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, February 04, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, September 16, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 3 - More on Functions",
       "Module 3 Assignments"
@@ -4124,7 +4092,7 @@
     "href": "assignments-01.html",
     "title": "Module 1 Assignments",
     "section": "",
-    "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nProgramming Problems\nDue date: Friday, January 23, 2026 at 9pm\n\n\nProgramming Problem 1\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video",
+    "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nProgramming Problems\nDue date: Friday, September 04, 2026 at 9pm\n\n\nProgramming Problem 1\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences\n\n\nHow to submit to gradescope video",
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Assignments"
@@ -4230,7 +4198,7 @@
     "href": "assignments-02.html",
     "title": "Module 2 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, January 28, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, September 09, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "Module 2 Assignments"
@@ -4263,7 +4231,7 @@
     "href": "assignments-04.html",
     "title": "Module 4 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, February 11, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, September 23, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "Module 4 Assignments"
@@ -4296,7 +4264,7 @@
     "href": "assignments-06.html",
     "title": "Module 6 Assignments",
     "section": "",
-    "text": "Due date: Friday, February 27, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, October 07, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "Module 6 Assignments"
@@ -4329,7 +4297,7 @@
     "href": "assignments-08.html",
     "title": "Module 8 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, March 18, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, October 21, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 8 - Control Flow (for statements)",
       "Module 8 Assignments"
@@ -4362,7 +4330,7 @@
     "href": "assignments-10.html",
     "title": "Module 10 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, April 01, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, November 04, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "Module 10 Assignments"
@@ -4395,7 +4363,7 @@
     "href": "assignments-12.html",
     "title": "Module 12 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, April 15, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Wednesday, November 18, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "Module 12 Assignments"
@@ -4417,7 +4385,7 @@
     "href": "assignments-12.html#programming-problem-24",
     "title": "Module 12 Assignments",
     "section": "Programming Problem 24",
-    "text": "Programming Problem 24\nDue date: Wednesday, April 15, 2026 at 9pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
+    "text": "Programming Problem 24\nDue date: Wednesday, November 18, 2026 at 9pm\nWrite a lowercase_items function that given a 2D list of strings as argument, it mutates and returns the list lowercasing all strings in each sublist. You can assume all items in the lists are strings. You can use the .lower() string method. Name your file lowercasing.py. Make sure that gradescope gives you the points for passing the test case.\nTest cases:\n\nwords = [[\"A\", \"B\", \"C\"], [], [\"BANANA\", \"Apple\", \"pineapple\"]]\nlowercase_items(words)\nassert words == [[\"a\", \"b\", \"c\"], [], [\"banana\", \"apple\", \"pineapple\"]]\n\nmore_words = [[\"A\"], [\"Monica\"]]\nassert lowercase_items(more_words) == [[\"a\"], [\"monica\"]]",
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "Module 12 Assignments"
@@ -5164,7 +5132,7 @@
     "href": "project-10.html",
     "title": "Programming Project 10",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, April 17, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Infographic Programming Assignment.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, November 20, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Infographic Programming Assignment.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 10"
@@ -5241,7 +5209,7 @@
     "href": "project-12.html",
     "title": "Programming Project 12",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Monday, May 04, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s WordSearch Programming Assignment.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Wednesday, December 09, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s WordSearch Programming Assignment.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 12"
@@ -5307,7 +5275,7 @@
     "href": "project-2.html",
     "title": "Programming Project 2",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, February 06, 2026 at 9pm\nCredit for this programming project goes to Steven Truong, a former UGTA for CSC 110.\nIn this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided style guide (you will be graded on it!). The only built-in function you can use is print(). You are not allowed to use any other built-in method or function from any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program burgers.py. Make sure that gradescope gives you the points for passing the test cases.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 18, 2026 at 9pm\nCredit for this programming project goes to Steven Truong, a former UGTA for CSC 110.\nIn this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided style guide (you will be graded on it!). The only built-in function you can use is print(). You are not allowed to use any other built-in method or function from any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program burgers.py. Make sure that gradescope gives you the points for passing the test cases.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 2"
@@ -5340,7 +5308,7 @@
     "href": "project-4.html",
     "title": "Programming Project 4",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, February 20, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Where’s the Money Programming Assignment.\nDo not import any modules for this assignment. Do not use built-in functions like max() (you have to write your own). You can use the built-in functions we covered in class: print(), round(), input(), len(), int(), float(), str() in addition to format().",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 02, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Where’s the Money Programming Assignment.\nDo not import any modules for this assignment. Do not use built-in functions like max() (you have to write your own). You can use the built-in functions we covered in class: print(), round(), input(), len(), int(), float(), str() in addition to format().",
     "crumbs": [
       "Programming Projects",
       "Programming Project 4"
@@ -5373,7 +5341,7 @@
     "href": "project-6.html",
     "title": "Programming Project 6",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, March 06, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided style guide (you will be graded on it!).\nName your program one_d_chess.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nThis programming project is an adaptation of Ben Dicken’s 1 Dimensional Chess Programming Assignment.\nIn this programming project, you will be implementing a simpler variant of chess: 1D Chess! 1D chess is a variant of the game that is played on a board that has only one column of spaces, rather than a grid of spaces, as in typical chess. There are actually multiple variants of 1D chess. In this PA, you should implement a custom variant of 1D chess, which I’ll refer to as “110 1D chess”.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 16, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided style guide (you will be graded on it!).\nName your program one_d_chess.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nThis programming project is an adaptation of Ben Dicken’s 1 Dimensional Chess Programming Assignment.\nIn this programming project, you will be implementing a simpler variant of chess: 1D Chess! 1D chess is a variant of the game that is played on a board that has only one column of spaces, rather than a grid of spaces, as in typical chess. There are actually multiple variants of 1D chess. In this PA, you should implement a custom variant of 1D chess, which I’ll refer to as “110 1D chess”.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 6"
@@ -5472,7 +5440,7 @@
     "href": "project-8.html",
     "title": "Programming Project 8",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, April 03, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to implement a Benford’s Law analysis. Make sure you follow the provided style guide (you will be graded on it!).\nName your program benfords_law.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nYou are not allowed to use built in functions and methods not covered in class (for example, don’t use .count())\nThis programming project is an adaptation of Ben Dicken’s Benford’s Law Programming Assignment.\nBenford’s Law is a mathematical law that describes the behavior of naturally-occurring numbers in some kinds of numerical data sets. I recommend that you watch this video before proceeding to get an explanation:\nBenford’s law is useful for distinguishing naturally occurring data from randomized or made-up data. It has been used in the real world to detect election fraud (For example, in the 2009 Iranian election). It has also been used as evidence in criminal cases in the US. In this project, you’ll be writing a program that reads in a data set, and prints out the plot of first-digits. Then, you can look at the plot to determine if it conforms to the law or not! Name your file benfords_law.py. You should organize the code into several functions.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, November 06, 2026 at 9pm\nIn this programming project you will implement a number of Python functions to implement a Benford’s Law analysis. Make sure you follow the provided style guide (you will be graded on it!).\nName your program benfords_law.py to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.\nYou are not allowed to use built in functions and methods not covered in class (for example, don’t use .count())\nThis programming project is an adaptation of Ben Dicken’s Benford’s Law Programming Assignment.\nBenford’s Law is a mathematical law that describes the behavior of naturally-occurring numbers in some kinds of numerical data sets. I recommend that you watch this video before proceeding to get an explanation:\nBenford’s law is useful for distinguishing naturally occurring data from randomized or made-up data. It has been used in the real world to detect election fraud (For example, in the 2009 Iranian election). It has also been used as evidence in criminal cases in the US. In this project, you’ll be writing a program that reads in a data set, and prints out the plot of first-digits. Then, you can look at the plot to determine if it conforms to the law or not! Name your file benfords_law.py. You should organize the code into several functions.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 8"
@@ -5512,11 +5480,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#quiz-01-friday-january-16-2026",
-    "href": "schedule.html#quiz-01-friday-january-16-2026",
+    "objectID": "schedule.html#quiz-01-wednesday-august-26-2026",
+    "href": "schedule.html#quiz-01-wednesday-august-26-2026",
     "title": "Schedule",
-    "section": "Quiz 01 (Friday, January 16, 2026)",
-    "text": "Quiz 01 (Friday, January 16, 2026)",
+    "section": "Quiz 01 (Wednesday, August 26, 2026)",
+    "text": "Quiz 01 (Wednesday, August 26, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5538,18 +5506,18 @@
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 1 Programming Problems – Due date: Friday, January 23, 2026 at 9pm",
+    "text": "Assignments\n\nModule 1 Programming Problems – Due date: Friday, September 04, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-02-wednesday-january-21-2026",
-    "href": "schedule.html#quiz-02-wednesday-january-21-2026",
+    "objectID": "schedule.html#quiz-02-wednesday-september-02-2026",
+    "href": "schedule.html#quiz-02-wednesday-september-02-2026",
     "title": "Schedule",
-    "section": "Quiz 02 (Wednesday, January 21, 2026)",
-    "text": "Quiz 02 (Wednesday, January 21, 2026)",
+    "section": "Quiz 02 (Wednesday, September 02, 2026)",
+    "text": "Quiz 02 (Wednesday, September 02, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5582,18 +5550,18 @@
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Wednesday, January 28, 2026 at 9pm\nShort Project 1 – Due date: Wednesday, January 28, 2026 at 9pm\nProgramming Project 1 – Due date: Friday, January 30, 2026 at 9pm",
+    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Wednesday, September 09, 2026 at 9pm\nShort Project 1 – Due date: Friday, September 11, 2026 at 9pm\nProgramming Project 1 – Due date: Friday, September 11, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-03-wednesday-january-28-2026",
-    "href": "schedule.html#quiz-03-wednesday-january-28-2026",
+    "objectID": "schedule.html#quiz-03-wednesday-september-09-2026",
+    "href": "schedule.html#quiz-03-wednesday-september-09-2026",
     "title": "Schedule",
-    "section": "Quiz 03 (Wednesday, January 28, 2026)",
-    "text": "Quiz 03 (Wednesday, January 28, 2026)",
+    "section": "Quiz 03 (Wednesday, September 09, 2026)",
+    "text": "Quiz 03 (Wednesday, September 09, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5615,18 +5583,18 @@
     "href": "schedule.html#assignments-2",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Wednesday, February 04, 2026 at 9pm\nShort Project 2 – Due date: Wednesday, February 04, 2026 at 9pm\nProgramming Project 2 – Due date: Friday, February 06, 2026 at 9pm",
+    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Wednesday, September 16, 2026 at 9pm\nShort Project 2 – Due date: Friday, September 18, 2026 at 9pm\nProgramming Project 2 – Due date: Friday, September 18, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-04-wednesday-february-04-2026",
-    "href": "schedule.html#quiz-04-wednesday-february-04-2026",
+    "objectID": "schedule.html#quiz-04-wednesday-september-16-2026",
+    "href": "schedule.html#quiz-04-wednesday-september-16-2026",
     "title": "Schedule",
-    "section": "Quiz 04 (Wednesday, February 04, 2026)",
-    "text": "Quiz 04 (Wednesday, February 04, 2026)",
+    "section": "Quiz 04 (Wednesday, September 16, 2026)",
+    "text": "Quiz 04 (Wednesday, September 16, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5648,18 +5616,18 @@
     "href": "schedule.html#assignments-3",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Wednesday, February 11, 2026 at 9pm\nShort Project 3 – Due date: Wednesday, February 11, 2026 at 9pm\nProgramming Project 3 – Due date: Friday, February 13, 2026 at 9pm",
+    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Wednesday, September 23, 2026 at 9pm\nShort Project 3 – Due date: Friday, September 25, 2026 at 9pm\nProgramming Project 3 – Due date: Friday, September 25, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-05-wednesday-february-11-2026",
-    "href": "schedule.html#quiz-05-wednesday-february-11-2026",
+    "objectID": "schedule.html#quiz-05-wednesday-september-23-2026",
+    "href": "schedule.html#quiz-05-wednesday-september-23-2026",
     "title": "Schedule",
-    "section": "Quiz 05 (Wednesday, February 11, 2026)",
-    "text": "Quiz 05 (Wednesday, February 11, 2026)",
+    "section": "Quiz 05 (Wednesday, September 23, 2026)",
+    "text": "Quiz 05 (Wednesday, September 23, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5681,18 +5649,18 @@
     "href": "schedule.html#assignments-4",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Wednesday, February 18, 2026 at 9pm\nShort Project 4 – Due date: Wednesday, February 18, 2026 at 9pm\nProgramming Project 4 – Due date: Friday, February 20, 2026 at 9pm",
+    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Wednesday, September 30, 2026 at 9pm\nShort Project 4 – Due date: Friday, October 02, 2026 at 9pm\nProgramming Project 4 – Due date: Friday, October 02, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-06-wednesday-february-18-2026",
-    "href": "schedule.html#quiz-06-wednesday-february-18-2026",
+    "objectID": "schedule.html#quiz-06-wednesday-september-30-2026",
+    "href": "schedule.html#quiz-06-wednesday-september-30-2026",
     "title": "Schedule",
-    "section": "Quiz 06 (Wednesday, February 18, 2026)",
-    "text": "Quiz 06 (Wednesday, February 18, 2026)",
+    "section": "Quiz 06 (Wednesday, September 30, 2026)",
+    "text": "Quiz 06 (Wednesday, September 30, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5714,18 +5682,18 @@
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Friday, February 27, 2026 at 9pm\nShort Project 5 – Due date: Friday, February 27, 2026 at 9pm\nProgramming Project 5 – Due date: Monday, March 02, 2026 at 9pm",
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Wednesday, October 07, 2026 at 9pm\nShort Project 5 – Due date: Friday, October 09, 2026 at 9pm\nProgramming Project 5 – Due date: Friday, October 09, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#midterm-1-wednesday-february-25-2026",
-    "href": "schedule.html#midterm-1-wednesday-february-25-2026",
+    "objectID": "schedule.html#midterm-1-wednesday-october-07-2026",
+    "href": "schedule.html#midterm-1-wednesday-october-07-2026",
     "title": "Schedule",
-    "section": "Midterm 1 (Wednesday, February 25, 2026)",
-    "text": "Midterm 1 (Wednesday, February 25, 2026)",
+    "section": "Midterm 1 (Wednesday, October 07, 2026)",
+    "text": "Midterm 1 (Wednesday, October 07, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5747,18 +5715,18 @@
     "href": "schedule.html#assignments-6",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Wednesday, March 04, 2026 at 9pm\nShort Project 6 – Due date: Wednesday, March 04, 2026 at 9pm\nProgramming Project 6 – Due date: Friday, March 06, 2026 at 9pm",
+    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Wednesday, October 14, 2026 at 9pm\nShort Project 6 – Due date: Friday, October 16, 2026 at 9pm\nProgramming Project 6 – Due date: Friday, October 16, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-07-wednesday-march-04-2026",
-    "href": "schedule.html#quiz-07-wednesday-march-04-2026",
+    "objectID": "schedule.html#quiz-07-wednesday-october-14-2026",
+    "href": "schedule.html#quiz-07-wednesday-october-14-2026",
     "title": "Schedule",
-    "section": "Quiz 07 (Wednesday, March 04, 2026)",
-    "text": "Quiz 07 (Wednesday, March 04, 2026)",
+    "section": "Quiz 07 (Wednesday, October 14, 2026)",
+    "text": "Quiz 07 (Wednesday, October 14, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5780,18 +5748,18 @@
     "href": "schedule.html#assignments-7",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Wednesday, March 18, 2026 at 9pm\nShort Project 7 – Due date: Wednesday, March 18, 2026 at 9pm\nProgramming Project 7 – Due date: Friday, March 20, 2026 at 9pm",
+    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Wednesday, October 21, 2026 at 9pm\nShort Project 7 – Due date: Friday, October 23, 2026 at 9pm\nProgramming Project 7 – Due date: Friday, October 23, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-08-wednesday-march-18-2026",
-    "href": "schedule.html#quiz-08-wednesday-march-18-2026",
+    "objectID": "schedule.html#quiz-08-wednesday-october-21-2026",
+    "href": "schedule.html#quiz-08-wednesday-october-21-2026",
     "title": "Schedule",
-    "section": "Quiz 08 (Wednesday, March 18, 2026)",
-    "text": "Quiz 08 (Wednesday, March 18, 2026)",
+    "section": "Quiz 08 (Wednesday, October 21, 2026)",
+    "text": "Quiz 08 (Wednesday, October 21, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5813,18 +5781,18 @@
     "href": "schedule.html#assignments-8",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 9 Programming Problems – Due date: Wednesday, March 25, 2026 at 9pm",
+    "text": "Assignments\n\nModule 9 Programming Problems – Due date: Wednesday, October 28, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-09-wednesday-march-25-2026",
-    "href": "schedule.html#quiz-09-wednesday-march-25-2026",
+    "objectID": "schedule.html#quiz-09-wednesday-october-28-2026",
+    "href": "schedule.html#quiz-09-wednesday-october-28-2026",
     "title": "Schedule",
-    "section": "Quiz 09 (Wednesday, March 25, 2026)",
-    "text": "Quiz 09 (Wednesday, March 25, 2026)",
+    "section": "Quiz 09 (Wednesday, October 28, 2026)",
+    "text": "Quiz 09 (Wednesday, October 28, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5846,18 +5814,18 @@
     "href": "schedule.html#assignments-9",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Wednesday, April 01, 2026 at 9pm\nShort Project 8 – Due date: Wednesday, April 01, 2026 at 9pm\nProgramming Project 8 – Due date: Friday, April 03, 2026 at 9pm",
+    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Wednesday, November 04, 2026 at 9pm\nShort Project 8 – Due date: Friday, November 06, 2026 at 9pm\nProgramming Project 8 – Due date: Friday, November 06, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#midterm-2-wednesday-april-01-2026",
-    "href": "schedule.html#midterm-2-wednesday-april-01-2026",
+    "objectID": "schedule.html#midterm-2-wednesday-november-04-2026",
+    "href": "schedule.html#midterm-2-wednesday-november-04-2026",
     "title": "Schedule",
-    "section": "Midterm 2 (Wednesday, April 01, 2026)",
-    "text": "Midterm 2 (Wednesday, April 01, 2026)",
+    "section": "Midterm 2 (Wednesday, November 04, 2026)",
+    "text": "Midterm 2 (Wednesday, November 04, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5879,7 +5847,7 @@
     "href": "schedule.html#assignments-10",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Wednesday, April 08, 2026 at 9pm\nShort Project 9 – Due date: Wednesday, April 08, 2026 at 9pm\nProgramming Project 9 – Due date: Friday, April 10, 2026 at 9pm",
+    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Wednesday, November 11, 2026 at 9pm\nShort Project 9 – Due date: Friday, November 13, 2026 at 9pm\nProgramming Project 9 – Due date: Friday, November 13, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5890,18 +5858,18 @@
     "href": "schedule.html#assignments-11",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Wednesday, April 15, 2026 at 9pm\nShort Project 10 – Due date: Wednesday, April 15, 2026 at 9pm\nProgramming Project 10 – Due date: Friday, April 17, 2026 at 9pm",
+    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Wednesday, November 18, 2026 at 9pm\nShort Project 10 – Due date: Friday, November 20, 2026 at 9pm\nProgramming Project 10 – Due date: Friday, November 20, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-10-wednesday-april-15-2026",
-    "href": "schedule.html#quiz-10-wednesday-april-15-2026",
+    "objectID": "schedule.html#quiz-10-wednesday-november-18-2026",
+    "href": "schedule.html#quiz-10-wednesday-november-18-2026",
     "title": "Schedule",
-    "section": "Quiz 10 (Wednesday, April 15, 2026)",
-    "text": "Quiz 10 (Wednesday, April 15, 2026)",
+    "section": "Quiz 10 (Wednesday, November 18, 2026)",
+    "text": "Quiz 10 (Wednesday, November 18, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5923,18 +5891,18 @@
     "href": "schedule.html#assignments-12",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Wednesday, April 22, 2026 at 9pm\nShort Project 11 – Due date: Wednesday, April 22, 2026 at 9pm\nProgramming Project 11 – Due date: Monday, April 27, 2026 at 9pm",
+    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Wednesday, December 02, 2026 at 9pm\nShort Project 11 – Due date: Friday, December 04, 2026 at 9pm\nProgramming Project 11 – Due date: Friday, December 04, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-11-wednesday-april-22-2026",
-    "href": "schedule.html#quiz-11-wednesday-april-22-2026",
+    "objectID": "schedule.html#quiz-11-wednesday-december-02-2026",
+    "href": "schedule.html#quiz-11-wednesday-december-02-2026",
     "title": "Schedule",
-    "section": "Quiz 11 (Wednesday, April 22, 2026)",
-    "text": "Quiz 11 (Wednesday, April 22, 2026)",
+    "section": "Quiz 11 (Wednesday, December 02, 2026)",
+    "text": "Quiz 11 (Wednesday, December 02, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5956,18 +5924,18 @@
     "href": "schedule.html#assignments-13",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Friday, May 01, 2026 at 9pm\nShort Project 12 – Due date: Friday, May 01, 2026 at 9pm\nProgramming Project 12 – Due date: Monday, May 04, 2026 at 9pm",
+    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Wednesday, December 09, 2026 at 9pm\nShort Project 12 – Due date: at 9pm\nProgramming Project 12 – Due date: Wednesday, December 09, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
     ]
   },
   {
-    "objectID": "schedule.html#quiz-12-wednesday-april-29-2026",
-    "href": "schedule.html#quiz-12-wednesday-april-29-2026",
+    "objectID": "schedule.html#quiz-12-wednesday-december-09-2026",
+    "href": "schedule.html#quiz-12-wednesday-december-09-2026",
     "title": "Schedule",
-    "section": "Quiz 12 (Wednesday, April 29, 2026)",
-    "text": "Quiz 12 (Wednesday, April 29, 2026)",
+    "section": "Quiz 12 (Wednesday, December 09, 2026)",
+    "text": "Quiz 12 (Wednesday, December 09, 2026)",
     "crumbs": [
       "Start Here",
       "Schedule"

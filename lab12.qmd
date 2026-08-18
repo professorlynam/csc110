@@ -29,7 +29,7 @@ wood
 
 Your program should open and read the input text file into the program, and create a list with all the words.
 
-After you have read in the file and constructed this dictionary, you can use it to determine your word bank, which words you will need to look for within the puzzle.
+After you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle.
 
 ## Puzzle text file
 
@@ -59,7 +59,7 @@ The program should return a dictionary with the starting row and column location
 
 ## Function names
 
-Gradescope will call the following functions `read_words(filename)`, `read_puzzle(filename)`, and `search(puzzle, words_to_search)`.
+Gradescope will call the following functions `read_words(filename)`, `read_puzzle(filename)`, and `simple_search(puzzle, words_to_search)`.
 
 ::: {.callout-tip title="Before You Begin"}
 
