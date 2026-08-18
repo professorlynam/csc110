@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.09144081527560599\n7",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.013960481372162548\n6",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -5473,7 +5473,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "For class slides, see the sidebar. Each set of slides is placed next near its associated reading(s).\nWeekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, February 25, 2026\nMidterm Exam 2 - Wednesday, April 01, 2026\n\nThe final exam date and time is:\nThe final exam date, time and room is: May 8th, 6pm-8pm, room: TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Typically Wednesdays for programming problems, short projects and Fridays for programming projects).",
+    "text": "For class slides, see the sidebar. Each set of slides is placed next near its associated reading(s).\nWeekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 07, 2026\nMidterm Exam 2 - Wednesday, November 04, 2026\n\nThe final exam date and time is:\nThe final exam date, time and room is: May 8th, 6pm-8pm, room: TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Typically Wednesdays for programming problems, short projects and Fridays for programming projects).",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5924,7 +5924,7 @@
     "href": "schedule.html#assignments-13",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Wednesday, December 09, 2026 at 9pm\nShort Project 12 – Due date: at 9pm\nProgramming Project 12 – Due date: Wednesday, December 09, 2026 at 9pm",
+    "text": "Assignments\n\nModule 14 Programming Problems – Due date: Wednesday, December 09, 2026 at 9pm\nProgramming Project 12 – Due date: Wednesday, December 09, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
