@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.013960481372162548\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.41302633168975345\n0",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -2666,7 +2666,7 @@
     "href": "short-projects.html",
     "title": "Short Projects Dates",
     "section": "",
-    "text": "Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions.\nThe 2 lowest grade for short programming projects will be dropped at the end of the semester. There will be one lab session for you to work on a maximum of one short programming project submission you have missed.\nTo schedule your lab session go to the weekly lab session spreadsheet.\n\nLab Schedule\nThis is for information only.\n\nLab 01: Jan 04 to Jan 28\nLab 02: Jan 29 to Feb 04\nLab 03: Feb 05 to Feb 11\nLab 04: Feb 12 to Feb 18\nLab 05: Feb 19 to Feb 27\nLab 06: Feb 28 to Mar 04\nLab 07: Mar 05 to Mar 18\nCATCH UP WEEK: Mar 19 to Mar 25\nLab 08: Mar 26 to Apr 01\nLab 09: Apr 02 to Apr 08\nLab 10: Apr 09 to Apr 15\nLab 11: Apr 16 to Apr 22\nLab 12: Apr 23 to May 01",
+    "text": "Short programming projects are due on the same day as programming problems. While the instructions for programming problems are on the website, instructions for short projects will be available only during our weekly 50-minute in-person lab sessions.\nThe 2 lowest grade for short programming projects will be dropped at the end of the semester. There will be one lab session for you to work on a maximum of one short programming project submission you have missed.\nPlease check out the schedule page for lab dates.",
     "crumbs": [
       "Short Projects",
       "Short Projects Dates"
@@ -3480,7 +3480,7 @@
     "href": "hello.html",
     "title": "Hello World!",
     "section": "",
-    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on vscode.dev for example).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://vscode.dev/",
+    "text": "Before we begin writing Python code, you need to install Python3 in your computer.\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use the “IDLE” IDE (Integrated Development Environment), which comes with the python installation for Windows and Mac.\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based development environment such as https://vscode.dev/ but I strongly recommend using a machine you are able to install python into.",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -3491,7 +3491,7 @@
     "href": "hello.html#installing-python",
     "title": "Hello World!",
     "section": "",
-    "text": "Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on vscode.dev for example).\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: https://code.visualstudio.com/download\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as https://vscode.dev/",
+    "text": "Before we begin writing Python code, you need to install Python3 in your computer.\n\nGo to https://www.python.org/downloads/ and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)\nI recommend you use the “IDLE” IDE (Integrated Development Environment), which comes with the python installation for Windows and Mac.\nIf you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based development environment such as https://vscode.dev/ but I strongly recommend using a machine you are able to install python into.",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -3502,7 +3502,7 @@
     "href": "hello.html#how-to-write-python-programs",
     "title": "Hello World!",
     "section": "How to write Python programs",
-    "text": "How to write Python programs\nTraditionally, the first program you write in any programming language is code to print hello world, which in Python is the following:\nprint('hello world')\nWe will experiment with this one line of code in this lesson.\nThere are a number of ways to set up your coding environment, and with time and experience you will develop your own preferences. Minimally, you need a plain text editor (for example, TextEdit for Macs and Notepad++ for Windows) and a terminal/command prompt to run python.\nIdeally, you will be using an IDE (Integrated Development Environment) which facilitates coding by integrating a text editor, a console and other tools into one window. IDEs offer great tools like autocomplete and debugging.\n\nBasic Steps\n\nOpen your editor of choice.\nType the program code given in the example.\nSave it as a file with the filename mentioned.\nRun the interpreter with the command python program.py to run the program.",
+    "text": "How to write Python programs\nTraditionally, the first program you write in any programming language is code to print hello world, which in Python is the following:\nprint('hello world')\nWe will experiment with this one line of code in this lesson.\nThere are a number of ways to set up your coding environment, and with time and experience you will develop your own preferences. Minimally, you need a plain text editor (for example, TextEdit for Macs and Notepad++ for Windows) and a terminal/command prompt to run python.\nIdeally, you will be using an IDE (Integrated Development Environment) which facilitates coding by integrating a text editor, a console and other tools into one or two windows. IDLE, the IDE that comes with your python installation, is the one I recommend for this course.\n\nBasic Steps\n\nOpen your editor of choice.\nType the program code given in the example.\nSave it as a file with the filename mentioned.\nRun the interpreter with the command python program.py to run the program. If using IDLE, you just find the Run Module button, and it will run the program in a separate window, with the output of the program printed in that separate window.\n\n\n\nExample: Using Variables And Literal Constants\nType and run the following program:\n# Filename : var.py\ni = 5\nprint(i)\ni = i + 1\nprint(i)\n\ns = '''This is a multi-line string.\nThis is the second line.'''\nprint(s)\nOutput:\n5\n6\nThis is a multi-line string.\nThis is the second line.\nHow It Works\nHere’s how this program works. First, we assign the literal constant value 5 to the variable i using the assignment operator (=). This line is called a statement because it states that something should be done and in this case, we connect the variable name i to the value 5. Next, we print the value of i using the print statement which, unsurprisingly, just prints the value of the variable to the screen.\nThen we add 1 to the value stored in i and store it back. We then print it and expectedly, we get the value 6.\nSimilarly, we assign the literal string to the variable s and then print it.\n\nNote for static language programmers\nVariables are used by just assigning them a value. No declaration or data type definition is needed/used.",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -5473,7 +5473,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "For class slides, see the sidebar. Each set of slides is placed next near its associated reading(s).\nWeekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 07, 2026\nMidterm Exam 2 - Wednesday, November 04, 2026\n\nThe final exam date and time is:\nThe final exam date, time and room is: May 8th, 6pm-8pm, room: TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Typically Wednesdays for programming problems, short projects and Fridays for programming projects).",
+    "text": "For class slides, see the sidebar. Each set of slides is placed next near its associated reading(s).\nWeekly quizzes will always be on Wednesday (when there’s no other evaluations) in class (pencil and paper format).\nMidterm (individual) exams (pencil and paper format):\n\nMidterm Exam 1 - Wednesday, October 07, 2026\nMidterm Exam 2 - Wednesday, November 04, 2026\n\nThe final exam date and time is:\nThe final exam date, time and room is: Dec 11th, 3:30pm-5:30pm, room: TBA\nYou must keep this time available. Do not schedule any flights, travel plans, or other conflicts with these exams.\nAll assignments that are submitted on Gradescope are due at 9pm (Typically Wednesdays for programming problems, short projects and Fridays for programming projects).",
     "crumbs": [
       "Start Here",
       "Schedule"

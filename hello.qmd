@@ -4,11 +4,11 @@ title: "Hello World!"
 
 ## Installing Python
 
-Before we begin writing Python code, you need to install Python3 in your computer (alternatively you can run your code in the cloud on [vscode.dev](https://vscode.dev/) for example).
+Before we begin writing Python code, you need to install Python3 in your computer.
 
 1.  Go to <https://www.python.org/downloads/> and follow the instructions to install python for your specific Operating System (Mac, Windows, etc.)
-2.  I recommend you use Visual Studio Code for your IDE (Integrated Development Environment). Download and install VS code: <https://code.visualstudio.com/download>
-3.  If you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based IDE such as <https://vscode.dev/>
+2.  I recommend you use the "IDLE" IDE (Integrated Development Environment), which comes with the python installation for Windows and Mac.
+3.  If you are unable to install anything in your machine (you use a Chromebook, for example), you can use a cloud-based development environment such as <https://vscode.dev/> but I strongly recommend using a machine you are able to install python into.
 
 ## How to write Python programs
 
@@ -22,22 +22,15 @@ We will experiment with this one line of code in this lesson.
 
 There are a number of ways to set up your coding environment, and with time and experience you will develop your own preferences. Minimally, you need a plain text editor (for example, TextEdit for Macs and Notepad++ for Windows) and a terminal/command prompt to run python.
 
-Ideally, you will be using an IDE (Integrated Development Environment) which facilitates coding by integrating a **text editor**, a **console** and other tools into one window. IDEs offer great tools like autocomplete and debugging.
+Ideally, you will be using an IDE (Integrated Development Environment) which facilitates coding by integrating a **text editor**, a **console** and other tools into one or two windows. IDLE, the IDE that comes with your python installation, is the one I recommend for this course.
 
 ### Basic Steps
 
 1.  Open your editor of choice.
 2.  Type the program code given in the example.
 3.  Save it as a file with the filename mentioned.
-4.  Run the interpreter with the command `python program.py` to run the program.
+4.  Run the interpreter with the command `python program.py` to run the program. If using IDLE, you just find the Run Module button, and it will run the program in a separate window, with the output of the program printed in that separate window.
 
-## Videos
-
-{{< video https://youtu.be/Ut1maJMufBk >}}
-
-{{< video https://youtu.be/T4V-9qn-azI >}}
-
-{{< video https://www.youtube.com/embed/cfS7v8nqsuY >}}
 
 ### Example: Using Variables And Literal Constants
 
@@ -177,6 +170,3 @@ Notice that there is a single space at the beginning of the second line. The err
 >
 > Python will always use indentation for blocks and will never use braces.
 
-## Video
-
-{{< video https://youtu.be/TS8TWgg4U1U >}}
