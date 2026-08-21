@@ -8,9 +8,6 @@ READ THE INFORMATION BELOW, IT'S **VERY** IMPORTANT.
 
 -   Off-class discussions among students and questions to the instructors/TAs will be conducted via Piazza. 
 
-    -   [Piazza link](https://piazza.com/arizona/fall2025/csc110002)
-    -   Access code: glxonh1ytum
-
 -   Do **not** direct message (DM) TAs.
 
 -   Do **not** share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.
@@ -19,7 +16,7 @@ READ THE INFORMATION BELOW, IT'S **VERY** IMPORTANT.
 
 # Online office hours
 
--   Online office hours with the instructor or the TAs will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.
+-   If online office hours are offered with the instructor or the TAs, they will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.
 
 
 

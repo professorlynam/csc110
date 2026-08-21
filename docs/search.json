@@ -4,7 +4,7 @@
     "href": "zoom.html",
     "title": "Online discussion and office hours",
     "section": "",
-    "text": "READ THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nQ & A: Piazza\n\nOff-class discussions among students and questions to the instructors/TAs will be conducted via Piazza.\n\nPiazza link\nAccess code: glxonh1ytum\n\nDo not direct message (DM) TAs.\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (hlynam@arizona.edu)\n\n\n\nOnline office hours\n\nOnline office hours with the instructor or the TAs will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.",
+    "text": "READ THE INFORMATION BELOW, IT’S VERY IMPORTANT.\n\nQ & A: Piazza\n\nOff-class discussions among students and questions to the instructors/TAs will be conducted via Piazza.\nDo not direct message (DM) TAs.\nDo not share code solutions. You are free to share error messages, but not code. TAs and instructors can access your submission on gradescope.\nIt is expected that everyone will participate in the online discussion in a mature and respectful manner. Do not demean or embarrass others. Do not make sexist, racist, xenophobic, homophobic, transphobic, or victim-blaming comments. Immature, aggressive, or disrespectful behavior will not be tolerated. If you see anyone breaking this rule, report that person to me (hlynam@arizona.edu)\n\n\n\nOnline office hours\n\nIf online office hours are offered with the instructor or the TAs, they will be a) announced over Piazza and b) conducted remotely over Zoom. Please check D2L for the zoom links.",
     "crumbs": [
       "Start Here",
       "Online discussion and office hours"
@@ -29,7 +29,7 @@
     "href": "tas.html",
     "title": "TAs and Office Hours",
     "section": "",
-    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).\n\nCourse Coordinators\nCourse coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.\n\nRuby Gilliland (CC)\nSophia Harms (CC IT)\n\n\n\nTAs\nUndergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.\n\nChahat Walia\nHojae Lee\nLuke Zeman\nJohanna Delgado\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.\n\n\nOffice Hours\nShown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 914. Prof Lynam’s office hours are in GS 823.\nNote: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on piazza instead.",
+    "text": "The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.\nThe best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).\n\nCourse Coordinators\nCourse coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.\n\nSophia Harms (CC)\n\n\n\nTAs\nUndergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.\n\nDefne Aydin\nHojae Lee\nJohanna Delgado\nMohammad Osama\nDevyansh Shandilya\n\nInterested in becoming a TA in the future? Check out more information about what TAs do and how to apply.\n\n\nOffice Hours\nShown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 914. Prof Lynam’s office hours are in GS 823.\nNote: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on piazza instead.",
     "crumbs": [
       "Start Here",
       "TAs and Office Hours"
@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.41302633168975345\n0",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.47740999885778157\n3",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -3509,17 +3509,6 @@
     ]
   },
   {
-    "objectID": "hello.html#videos",
-    "href": "hello.html#videos",
-    "title": "Hello World!",
-    "section": "Videos",
-    "text": "Videos\n\n\n\n\nExample: Using Variables And Literal Constants\nType and run the following program:\n# Filename : var.py\ni = 5\nprint(i)\ni = i + 1\nprint(i)\n\ns = '''This is a multi-line string.\nThis is the second line.'''\nprint(s)\nOutput:\n5\n6\nThis is a multi-line string.\nThis is the second line.\nHow It Works\nHere’s how this program works. First, we assign the literal constant value 5 to the variable i using the assignment operator (=). This line is called a statement because it states that something should be done and in this case, we connect the variable name i to the value 5. Next, we print the value of i using the print statement which, unsurprisingly, just prints the value of the variable to the screen.\nThen we add 1 to the value stored in i and store it back. We then print it and expectedly, we get the value 6.\nSimilarly, we assign the literal string to the variable s and then print it.\n\nNote for static language programmers\nVariables are used by just assigning them a value. No declaration or data type definition is needed/used.",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Hello World!"
-    ]
-  },
-  {
     "objectID": "hello.html#logical-and-physical-line",
     "href": "hello.html#logical-and-physical-line",
     "title": "Hello World!",
@@ -3536,17 +3525,6 @@
     "title": "Hello World!",
     "section": "Indentation",
     "text": "Indentation\nWhitespace is important in Python. Actually, whitespace at the beginning of the line is important. This is called indentation. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.\nThis means that statements which go together must have the same indentation. Each such set of statements is called a block. We will see examples of how blocks are important in later chapters.\nOne thing you should remember is that wrong indentation can give rise to errors. For example:\ni = 5\n# Error below! Notice a single space at the start of the line\n print('Value is', i)\nprint('I repeat, the value is', i)\nWhen you run this, you get the following error:\n  File \"whitespace.py\", line 3\n    print('Value is', i)\n    ^\nIndentationError: unexpected indent\nNotice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that you cannot arbitrarily start new blocks of statements (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the control flow.\n\nHow to indent\nUse four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.\n\n\n\nNote to static language programmers\nPython will always use indentation for blocks and will never use braces.",
-    "crumbs": [
-      "Module 1 - Basics",
-      "Hello World!"
-    ]
-  },
-  {
-    "objectID": "hello.html#video",
-    "href": "hello.html#video",
-    "title": "Hello World!",
-    "section": "Video",
-    "text": "Video",
     "crumbs": [
       "Module 1 - Basics",
       "Hello World!"
@@ -5121,7 +5099,7 @@
     "href": "practice-01.html",
     "title": "Practice Problems",
     "section": "",
-    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nExtra Practice Problems\nPractice Problems Module 8\nPractice Problems Module 9 I\nPractice Problems Module 9 II\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 12\nPractice Problems Module 12\nPractice Problems Module 13\nPractice Problems Module 14 I\nPractice problems Module 14 II\nPractice Problems Module 15\n\n\nVideo demonstration\n\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems\nSolutions for practice problems Module 8 III\nSolutions for practice problems Module 9 I\nSolutions for practice problems Module 9 II\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 12\nSolutions for practice problems Module 12\n[Solutions for practice problems Module 13\nSolutions for practice problems Module 14 I\nSolutions for practice problems Module 14 II\nSolutions for practice problems Module 15",
+    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nExtra Practice Problems\nPractice Problems Module 8\nPractice Problems Module 9 I\nPractice Problems Module 9 II\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 12\nPractice Problems Module 12\nPractice Problems Module 13\nPractice Problems Module 14 I\nPractice problems Module 14 II\nPractice Problems Module 15\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems\nSolutions for practice problems Module 8 III\nSolutions for practice problems Module 9 I\nSolutions for practice problems Module 9 II\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 12\nSolutions for practice problems Module 12\n[Solutions for practice problems Module 13\nSolutions for practice problems Module 14 I\nSolutions for practice problems Module 14 II\nSolutions for practice problems Module 15",
     "crumbs": [
       "Extra Resources",
       "Practice Problems"

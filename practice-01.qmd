@@ -33,10 +33,6 @@ Notebooks:
 19. [Practice Problems Module 15](https://colab.research.google.com/drive/1ut8vRtGFOR-fRL82zyOyhTXgcybelyz4?usp=sharing)
 
 
-# Video demonstration
-
-{{< video https://youtu.be/LYzAjSG7wyU >}}
-
 # Solutions
 
 I highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:
