@@ -18,7 +18,7 @@ slide-number: true
 
 -   Hudson Lynam (please call me Professor Lynam or Dr. Lynam)
 -   Office: Gould-Simpson 823
--   Office hours: Monday & Wednesday 12:50pm - 1:50pm
+-   Office hours: Monday & Wednesday 12:45pm - 1:45pm
 
 ## Who are the teaching assistants? (TAs)
 
@@ -67,8 +67,8 @@ A willingness to:
 ## What do you need to succeed in this class?
 
 -   Access to a computer with internet (you can get one from the library)
--   Install Python and an IDE/editor (Visual Studio Code is recommended)
--   Do the readings, watch the videos, come to class, come to lab sessions, come to office hours, do the assignments yourself 
+-   Install Python and an IDE/editor (IDLE, which comes packaged with the Python installation, is recommended)
+-   Do the readings, come to class, come to discussion periods, come to office hours, do the assignments yourself 
 
 
 ## How is the structure of this class designed to help you succeed?
@@ -80,29 +80,26 @@ A willingness to:
 
 ## Assessment structure
 
--   Programming Problems
+-   Programming Problems (5%)
 
--   Short Projects (to be completed in the lab sessions)
+-   Short Projects (to be completed in the discussion period) (10%)
 
--   Projects
+-   Projects (10%)
 
--   Weekly Quizzes on Wednesday (on paper)
+-   Weekly Quizzes on Wednesday (on paper) (20%)
 
--   Midterms and Final Exam (on paper)
+-   Midterms and Final Exam (on paper) (45%)
+
+-   Class Attendance/Participation (10%)
 
 ## Exams and Quizzes
 
-Exams are on paper. Why?
+Exams (and quizzes) are on paper. Why?
 
 -   Important skill to develop
 -   You are able to show what you learned
 -   Whiteboard coding interviews are common
 
-
-## Other Important Dates
-
--   Last day for students to add themselves to a course using UAccess is Sept 1
--   Last day for students to drop without a grade of W (withdraw) is Sept 7
 
 ## Academic integrity
 
@@ -111,7 +108,7 @@ You yourself do the work.
 Examples of breaches of academic integrity:
 
 -   Having a friend do the assignments for you
--   Using generative AI (for example, ChatGPT) to write or debug code for you
+-   Using generative AI to write or debug code for you
 -   Copying a solution from the internet
 -   Sharing code is cheating
 
@@ -127,7 +124,7 @@ Common cheating motivations: fear of failure, "time-saving"
 
 ## Materials
 
--   Readings, videos, exercises, slides, assignment instructions will be available on the course website
+-   Readings, exercises, slides, assignment instructions will be available on the course website
 -   HOWEVER, you are still responsible for things said/announced in class
 
 ## How to get help?
@@ -169,7 +166,7 @@ Come to office hours but come prepared!
 
 -   TAs help answer clarification questions 
 
--   TAs do not debug for you (you wouldn't learn to debug yourself if you are always asking other people to do it for you)
+-   TAs do not debug for you (you won't learn to debug yourself if you're always asking other people to do it for you)
 
 ## Treat TAs with respect
 
@@ -181,8 +178,7 @@ Be professional and respectful to TAs
 
 ## How to get help?
 
--   Come to office hours!
-    -   1 point of extra credit if you show up to office hours (read the syllabus for specifics on this)
+-   Come to office hours! Either mine or a TA's
 -   Join Piazza 
     -   ask on Piazza: questions about assignments, quizzes, and exams (has private options)
     -   email me: only logistics-related questions
