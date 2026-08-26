@@ -59,7 +59,3 @@ Name the program `poem.py`. Remember to write code inside a function called `mai
 HINT: `print()` has a parameter called `end` which is set as `end="\n"` by default -- change that to `end=""` to remove the last newline character.
 
 Make sure you [do the reading](basics.html) for this module, especially the section on [Escape Sequences](basics.html#escape-sequences)
-
-# How to submit to gradescope video
-
-{{< video https://youtu.be/ZxM2n2FLguI >}}
