@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'pear', 'pear', 'apple', 'apple']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.5721597993563314\n5",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.2665229330713176\n8",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -2484,14 +2484,14 @@
     "href": "slides-01-02.html#announcements",
     "title": "python basics and operations (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nWe’ll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due next Friday!\nThe lab schedule will announced next Wednesday–the first lab cycle will be from 21st to the 28th"
+    "text": "Announcements\n\nWe’ll have our office hour schedule fully up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due Sept 4th!\nThe first discussion period will be Sept 4th"
   },
   {
     "objectID": "slides-01-02.html#did-you-set-up-your-workspace",
     "href": "slides-01-02.html#did-you-set-up-your-workspace",
     "title": "python basics and operations (slides)",
     "section": "Did you set up your workspace?",
-    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use vscode.dev"
+    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nGo ahead and download it, and boot up IDLE!"
   },
   {
     "objectID": "slides-01-02.html#the-print-function",
@@ -3175,56 +3175,88 @@
     "href": "lab12.html",
     "title": "Short Project 12",
     "section": "",
-    "text": "In this lab session, you will be tasked with writing a program that finds certain words within a word search grid and returns the word mapped to the line and starting character location of each word. The information of the board, and the words will be provided via files you will need to read in.\nYou should name the file simple_wordsearch.py. Your code should have a function called search that returns a dictionary (see specification below).\nIn this short project, you will write code to look for horizontal non-inverted words only.\nDo not use methods not covered in class. You can use .find() – which is going to be covered during the lab session.\n\n\nYour python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle.\n\n\n\nThis file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.\n\n\n\nThe program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}\n\n\n\n\nGradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
+    "text": "In this lab session, you will be tasked with writing a program that finds certain words within a word search grid and returns the word mapped to the line and starting character location of each word. The information of the board, and the words will be provided via files you will need to read in.\nYou should name the file simple_wordsearch.py. Your code should have a function called search that returns a dictionary (see specification below).\nIn this short project, you will write code to look for horizontal non-inverted words only.\nDo not use methods not covered in class. You can use .find() – which is going to be covered during the lab session.\n\n\nYour python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle.\n\n\n\nThis file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.\n\n\n\nThe program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}\n\n\n\n\nGradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#file-with-words-to-search",
     "href": "lab12.html#file-with-words-to-search",
     "title": "Short Project 12",
     "section": "",
-    "text": "Your python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle."
+    "text": "Your python script should open up and read a text file name which determines which words you are searching for in your puzzle file! You can assume that each line in the input text file is formatted as follows: each line of the file is a word from the “word bank.”\nContents of words.txt:\nhigh\namerica\nwood\n\nYour program should open and read the input text file into the program, and create a list with all the words.\nAfter you have read in the file and constructed this list, you can use it to determine your word bank, which words you will need to look for within the puzzle.",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#puzzle-text-file",
     "href": "lab12.html#puzzle-text-file",
     "title": "Short Project 12",
     "section": "",
-    "text": "This file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case."
+    "text": "This file contains a grid of letters and hidden within those letters are certain words you will need to be searching for. You will use your newly created words dictionary to figure out what letter combination of words you need to find. This is an example of what this word-grid file would look like:\nW O O D W S M Z H \nN R M E W A N D A \nL Z H I G H K L H \nS R E G N E V A V \nI F R C X H C Q X \nA H T Z B A Y K Q \nA R A M E R I C A\n\nThe puzzle file could have more or less Rows/Columns depending on each test case.",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#output",
     "href": "lab12.html#output",
     "title": "Short Project 12",
     "section": "",
-    "text": "The program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}"
+    "text": "The program should return a dictionary with the starting row and column location for each word found. Your code should have a function called simple_search that returns this dictionary. The formatting of the return dictionary should be something like:\n\n{\"high\": [2, 2] , \"america\": [6, 2] , \"wood\": [0, 0]}",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#function-names",
     "href": "lab12.html#function-names",
     "title": "Short Project 12",
     "section": "",
-    "text": "Gradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
+    "text": "Gradescope will call the following functions read_words(filename), read_puzzle(filename), and simple_search(puzzle, words_to_search).\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThis section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.\n\n\nThe string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1\n\n\n\n\n\nWe covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower\n\n\n\n\nFor the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#find",
     "href": "lab12.html#find",
     "title": "Short Project 12",
     "section": "",
-    "text": "The string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1"
+    "text": "The string method .find() returns an integer with the first position of the argument in the string.\n\nfull_string = \"August\"\nsub_string = \"gust\"\nposition = full_string.find(sub_string)\nprint(position)\n\n2\n\n\n\nfull_string = \"August\"\nsub_string = \"u\"\nposition = full_string.find(sub_string)\nprint(position)\n\n1\n\n\nThe string method .find() returns -1 when the sub-string is not found in the string.\n\nfull_string = \"August\"\nsub_string = \"wind\"\nposition = full_string.find(sub_string)\nprint(position)\n\n-1",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#string-methods",
     "href": "lab12.html#string-methods",
     "title": "Short Project 12",
     "section": "",
-    "text": "We covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower"
+    "text": "We covered a number of string methods in this course, including:\n\n.upper() – makes all characters in the string uppercase\n.lower() – makes all characters in the string lower",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab12.html#helper-function",
     "href": "lab12.html#helper-function",
     "title": "Short Project 12",
     "section": "",
-    "text": "For the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()"
+    "text": "For the short project, it would be helpful to write a function that given a list of characters, it returns one string with all characters concatenated together in one string.\nThis should be easy to write with a for loop and concatenation – do not use .join()",
+    "crumbs": [
+      "Short Projects",
+      "Short Project 12"
+    ]
   },
   {
     "objectID": "lab10.html",
@@ -4070,7 +4102,7 @@
     "href": "assignments-01.html",
     "title": "Module 1 Assignments",
     "section": "",
-    "text": "Programming Problems should be submitted to gradescope.\nIf you need instructions on how to submit your .py files to gradescope, watch the video at the end of this page.\n\nProgramming Problems\nDue date: Friday, September 04, 2026 at 9pm\n\n\nProgramming Problem 1\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences",
+    "text": "Programming Problems should be submitted to gradescope.\nIf you need help with submitting your .py files to gradescope, feel free to drop by office hours!\n\nProgramming Problems\nDue date: Friday, September 04, 2026 at 9pm\n\n\nProgramming Problem 1\nWrite a python program that prints out the string “Hello World!”. Be careful with capitalization and punctuation. Remember to write code inside a function called main().\nThe exact output of the program should be:\nHello World!\n\nName the program hello.py. Make sure that gradescope gives you the points for passing the test case.\n\n\nProgramming Problem 2\nWrite a python program that prints out the following excerpt from Amanda Gorman’s poem, “The Hill We Climb”:\nWhen day comes, we ask ourselves, where can we find light in this never-ending shade?\n\nThe loss we carry. A sea we must wade.\nWe braved the belly of the beast.\n\nWe've learned that quiet isn't always peace, \nand the norms and notions of what \"just\" is isn't always justice.\n\nAnd yet the dawn is ours before we knew it.\n\nSomehow we do it.\n\nName the program poem.py. Remember to write code inside a function called main(). Make sure that gradescope gives you the points for passing the test case. You can submit your solution to gradescope as many times as you want before the deadline.\nHINT: print() has a parameter called end which is set as end=\"\\n\" by default – change that to end=\"\" to remove the last newline character.\nMake sure you do the reading for this module, especially the section on Escape Sequences",
     "crumbs": [
       "Module 1 - Basics",
       "Module 1 Assignments"
@@ -5480,17 +5512,6 @@
     ]
   },
   {
-    "objectID": "schedule.html#assignments",
-    "href": "schedule.html#assignments",
-    "title": "Schedule",
-    "section": "Assignments",
-    "text": "Assignments\n\nModule 1 Programming Problems – Due date: Friday, September 04, 2026 at 9pm",
-    "crumbs": [
-      "Start Here",
-      "Schedule"
-    ]
-  },
-  {
     "objectID": "schedule.html#quiz-02-wednesday-september-02-2026",
     "href": "schedule.html#quiz-02-wednesday-september-02-2026",
     "title": "Schedule",
@@ -5524,11 +5545,22 @@
     ]
   },
   {
+    "objectID": "schedule.html#assignments",
+    "href": "schedule.html#assignments",
+    "title": "Schedule",
+    "section": "Assignments",
+    "text": "Assignments\n\nShort Project 1 – Due date: Friday, September 04, 2026 at 9pm\nModule 1 Programming Problems – Due date: Friday, September 04, 2026 at 9pm",
+    "crumbs": [
+      "Start Here",
+      "Schedule"
+    ]
+  },
+  {
     "objectID": "schedule.html#assignments-1",
     "href": "schedule.html#assignments-1",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Wednesday, September 09, 2026 at 9pm\nShort Project 1 – Due date: Friday, September 11, 2026 at 9pm\nProgramming Project 1 – Due date: Friday, September 11, 2026 at 9pm",
+    "text": "Assignments\n\nModule 2 Programming Problems – Due date: Wednesday, September 09, 2026 at 9pm\nProgramming Project 1 – Due date: Friday, September 11, 2026 at 9pm\nShort Project 2 – Due date: Friday, September 11, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5561,7 +5593,7 @@
     "href": "schedule.html#assignments-2",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Wednesday, September 16, 2026 at 9pm\nShort Project 2 – Due date: Friday, September 18, 2026 at 9pm\nProgramming Project 2 – Due date: Friday, September 18, 2026 at 9pm",
+    "text": "Assignments\n\nModule 3 Programming Problems – Due date: Wednesday, September 16, 2026 at 9pm\nProgramming Project 2 – Due date: Friday, September 18, 2026 at 9pm\nShort Project 3 – Due date: Friday, September 18, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5594,7 +5626,7 @@
     "href": "schedule.html#assignments-3",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Wednesday, September 23, 2026 at 9pm\nShort Project 3 – Due date: Friday, September 25, 2026 at 9pm\nProgramming Project 3 – Due date: Friday, September 25, 2026 at 9pm",
+    "text": "Assignments\n\nModule 4 Programming Problems – Due date: Wednesday, September 23, 2026 at 9pm\nProgramming Project 3 – Due date: Friday, September 25, 2026 at 9pm\nShort Project 4 – Due date: Friday, September 25, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5627,7 +5659,7 @@
     "href": "schedule.html#assignments-4",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Wednesday, September 30, 2026 at 9pm\nShort Project 4 – Due date: Friday, October 02, 2026 at 9pm\nProgramming Project 4 – Due date: Friday, October 02, 2026 at 9pm",
+    "text": "Assignments\n\nModule 5 Programming Problems – Due date: Wednesday, September 30, 2026 at 9pm\nProgramming Project 4 – Due date: Friday, October 02, 2026 at 9pm\nShort Project 5 – Due date: Friday, October 02, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5660,7 +5692,7 @@
     "href": "schedule.html#assignments-5",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Wednesday, October 07, 2026 at 9pm\nShort Project 5 – Due date: Friday, October 09, 2026 at 9pm\nProgramming Project 5 – Due date: Friday, October 09, 2026 at 9pm",
+    "text": "Assignments\n\nModule 6 Programming Problems – Due date: Wednesday, October 07, 2026 at 9pm\nProgramming Project 5 – Due date: Friday, October 09, 2026 at 9pm\nShort Project 6 – Due date: Friday, October 09, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5693,7 +5725,7 @@
     "href": "schedule.html#assignments-6",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Wednesday, October 14, 2026 at 9pm\nShort Project 6 – Due date: Friday, October 16, 2026 at 9pm\nProgramming Project 6 – Due date: Friday, October 16, 2026 at 9pm",
+    "text": "Assignments\n\nModule 7 Programming Problems – Due date: Wednesday, October 14, 2026 at 9pm\nProgramming Project 6 – Due date: Friday, October 16, 2026 at 9pm\nShort Project 7 – Due date: Friday, October 16, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5726,7 +5758,7 @@
     "href": "schedule.html#assignments-7",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Wednesday, October 21, 2026 at 9pm\nShort Project 7 – Due date: Friday, October 23, 2026 at 9pm\nProgramming Project 7 – Due date: Friday, October 23, 2026 at 9pm",
+    "text": "Assignments\n\nModule 8 Programming Problems – Due date: Wednesday, October 21, 2026 at 9pm\nProgramming Project 7 – Due date: Friday, October 23, 2026 at 9pm\nShort Project 8 – Due date: Friday, October 23, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5792,7 +5824,7 @@
     "href": "schedule.html#assignments-9",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Wednesday, November 04, 2026 at 9pm\nShort Project 8 – Due date: Friday, November 06, 2026 at 9pm\nProgramming Project 8 – Due date: Friday, November 06, 2026 at 9pm",
+    "text": "Assignments\n\nModule 10 Programming Problems – Due date: Wednesday, November 04, 2026 at 9pm\nProgramming Project 8 – Due date: Friday, November 06, 2026 at 9pm\nShort Project 9 – Due date: Friday, November 06, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5825,7 +5857,7 @@
     "href": "schedule.html#assignments-10",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Wednesday, November 11, 2026 at 9pm\nShort Project 9 – Due date: Friday, November 13, 2026 at 9pm\nProgramming Project 9 – Due date: Friday, November 13, 2026 at 9pm",
+    "text": "Assignments\n\nModule 11 Programming Problems – Due date: Wednesday, November 11, 2026 at 9pm\nProgramming Project 9 – Due date: Friday, November 13, 2026 at 9pm\nShort Project 10 – Due date: Friday, November 13, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5836,7 +5868,7 @@
     "href": "schedule.html#assignments-11",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Wednesday, November 18, 2026 at 9pm\nShort Project 10 – Due date: Friday, November 20, 2026 at 9pm\nProgramming Project 10 – Due date: Friday, November 20, 2026 at 9pm",
+    "text": "Assignments\n\nModule 12 Programming Problems – Due date: Wednesday, November 18, 2026 at 9pm\nProgramming Project 10 – Due date: Friday, November 20, 2026 at 9pm\nShort Project 11 – Due date: Friday, November 20, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -5869,7 +5901,7 @@
     "href": "schedule.html#assignments-12",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Wednesday, December 02, 2026 at 9pm\nShort Project 11 – Due date: Friday, December 04, 2026 at 9pm\nProgramming Project 11 – Due date: Friday, December 04, 2026 at 9pm",
+    "text": "Assignments\n\nModule 13 Programming Problems – Due date: Wednesday, December 02, 2026 at 9pm\nProgramming Project 11 – Due date: Friday, December 04, 2026 at 9pm\nShort Project 12 – Due date: Friday, November 20, 2026 at 9pm",
     "crumbs": [
       "Start Here",
       "Schedule"
@@ -8913,10 +8945,6 @@
     "href": "videos.html",
     "title": "Video Lessons",
     "section": "",
-    "text": "Module 3:\n\nHypotenuse\n\nModule 4:\n\nOdd function\nString method .isnumeric()\nFizz Buzz problem (if conditionals)\n\nModule 5:\n\nString manipulation\nIntroduction to while loops\n\nModule 6:\n\nReview while loops and strings\nWhile loops and lists",
-    "crumbs": [
-      "Watch",
-      "Video Lessons"
-    ]
+    "text": "Module 3:\n\nHypotenuse\n\nModule 4:\n\nOdd function\nString method .isnumeric()\nFizz Buzz problem (if conditionals)\n\nModule 5:\n\nString manipulation\nIntroduction to while loops\n\nModule 6:\n\nReview while loops and strings\nWhile loops and lists"
   }
 ]
