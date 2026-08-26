@@ -6209,7 +6209,7 @@
     "href": "slides-02-01.html#announcements",
     "title": "python basics and operations (slides)",
     "section": "Announcements",
-    "text": "Announcements\n\nWe’ll have our office hour schedule up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due next Friday!\nThe lab schedule will announced next Wednesday–the first lab cycle will be from 21st to the 28th",
+    "text": "Announcements\n\nWe’ll have our office hour schedule fully up soon (check the TAs and Office Hours tab of the course website!). Which is good, because…\nThe first batch of programming problems are due Sept 4th!\nThe first discussion period will be Sept 4th",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "python basics and operations (slides)"
@@ -6220,7 +6220,7 @@
     "href": "slides-02-01.html#did-you-set-up-your-workspace",
     "title": "python basics and operations (slides)",
     "section": "Did you set up your workspace?",
-    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nDid you download VS Code (or PyCharm, or Mu)?\nIf not, that’s fine, you can use vscode.dev",
+    "text": "Did you set up your workspace?\n\nDid you download Python 3?\nGo ahead and download it, and boot up IDLE!",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "python basics and operations (slides)"
