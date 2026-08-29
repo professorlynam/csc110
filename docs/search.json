@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'apple', 'apple', 'pear', 'pear']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.3081759557874175\n6",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.795307499608765\n7",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -4061,7 +4061,7 @@
     "href": "fizzbuzz.html",
     "title": "FizzBuzz Problem",
     "section": "",
-    "text": "The FizzBuzz Problem is a common coding problem given during interviews where candidates are asked to write a solution to the problem. The problem states the following:\n\nAn integer divisible by 3 should be labeled “Fizz”\nAn integer divisible by 5 should be labeled “Buzz”\nAn integer divisible by both 3 and 5 should be labeled “FizzBuzz”\n\nYou should try to solve this on your own, before watching my solution:",
+    "text": "The FizzBuzz Problem is a common coding problem given during interviews where candidates are asked to write a solution to the problem. The problem states the following:\n\nAn integer divisible by 3 should be labeled “Fizz”\nAn integer divisible by 5 should be labeled “Buzz”\nAn integer divisible by both 3 and 5 should be labeled “FizzBuzz”\n\nIt is an interesting problem because there are many approaches to it. Attempt to create your own solution by passing a number into a function.",
     "crumbs": [
       "Module 5 - Control Flow (if statements)",
       "FizzBuzz Problem"
