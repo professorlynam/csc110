@@ -8,23 +8,6 @@ df-print: kable
 # CSc 110 - decomposition
 
 
-## Announcements
-
--   Due to faulty info provided to our lab coordinator, we have to move the Tuesday 12pm-1pm lab to Monday 12pm-1pm
-
--   If you've signed up for that lab, please make sure you can make the schedule change, if not change to a different lab time
-
--   If you've received accommodation from me already for class schedule conflicts, please check to see if this new time works for you. If so, switch to this new lab
-
--   If you require accommodation for class schedule conflicts due to this change, please email me
-
-## Quiz 2
-
--   Quiz 2 will be passed out by the TAs
--   Do not start the quiz until I say start (No writing anything until I give the okay!)
--   You will have ten minutes to complete the quiz
--   Raise your hand when you finish the quiz, and a TA will collect it
-
 ## Program decomposition
 
 -   Program decomposition refers to the process of breaking down a complex program into smaller, more manageable, and understandable parts or components.
