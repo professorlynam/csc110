@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['banana', 'banana', 'pear', 'pear', 'apple', 'apple']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.3669783676756072\n5",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.3789633990426695\n8",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -6307,6 +6307,13 @@
       "Module 2 - Functions, Operators, and Expressions",
       "python basics and operations (slides)"
     ]
+  },
+  {
+    "objectID": "slides-03-01.html#announcements",
+    "href": "slides-03-01.html#announcements",
+    "title": "decomposition (slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nTA introduction\nSeating chart partner form\nThe first batch of programming problems are due Sept 4th on gradescope!\nThe first discussion period will be Sept 4th"
   },
   {
     "objectID": "slides-03-01.html#program-decomposition",

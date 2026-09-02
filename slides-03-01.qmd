@@ -7,6 +7,12 @@ df-print: kable
 
 # CSc 110 - decomposition
 
+## Announcements
+
+-   TA introduction
+-   Seating chart partner form
+-   The first batch of programming problems are due Sept 4th on gradescope!
+-   The first discussion period will be Sept 4th
 
 ## Program decomposition
 
