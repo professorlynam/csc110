@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'banana', 'banana', 'apple', 'apple']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'banana', 'banana', 'pear', 'pear']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.3789633990426695\n8",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.20833050286934873\n8",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -4419,7 +4419,7 @@
     "href": "assignments-13.html",
     "title": "Module 13 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, December 02, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, November 20, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 13 - Data Structures (sets)",
       "Module 13 Assignments"
@@ -4452,7 +4452,7 @@
     "href": "assignments-11.html",
     "title": "Module 11 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, November 11, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, November 06, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 11 - Data Structures (tuples)",
       "Module 11 Assignments"
@@ -4518,7 +4518,7 @@
     "href": "assignments-07.html",
     "title": "Module 7 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, October 14, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, October 09, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "Module 7 Assignments"
@@ -4551,7 +4551,7 @@
     "href": "assignments-05.html",
     "title": "Module 5 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, September 30, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, September 25, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 5 - Control Flow (if statements)",
       "Module 5 Assignments"
@@ -4584,7 +4584,7 @@
     "href": "assignments-03.html",
     "title": "Module 3 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, September 16, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, September 11, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 3 - More on Functions",
       "Module 3 Assignments"
@@ -4723,7 +4723,7 @@
     "href": "assignments-02.html",
     "title": "Module 2 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, September 09, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, September 04, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 2 - Functions, Operators, and Expressions",
       "Module 2 Assignments"
@@ -4756,7 +4756,7 @@
     "href": "assignments-04.html",
     "title": "Module 4 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, September 23, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, September 18, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 4 - Built-In Functions and Decomposition",
       "Module 4 Assignments"
@@ -4789,7 +4789,7 @@
     "href": "assignments-06.html",
     "title": "Module 6 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, October 07, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, October 02, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 6 - Control Flow (while statements)",
       "Module 6 Assignments"
@@ -4822,7 +4822,7 @@
     "href": "assignments-08.html",
     "title": "Module 8 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, October 21, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, October 16, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 8 - Control Flow (for statements)",
       "Module 8 Assignments"
@@ -4855,7 +4855,7 @@
     "href": "assignments-10.html",
     "title": "Module 10 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, November 04, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, October 23, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 10 - Reading and Writing Text Files",
       "Module 10 Assignments"
@@ -4888,7 +4888,7 @@
     "href": "assignments-12.html",
     "title": "Module 12 Assignments",
     "section": "",
-    "text": "Due date: Wednesday, November 18, 2026 at 9pm\nShort Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, November 13, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 12 - Data Structures (2D lists)",
       "Module 12 Assignments"
@@ -4921,7 +4921,7 @@
     "href": "assignments-14.html",
     "title": "Module 14 Assignments",
     "section": "",
-    "text": "Short Programming projects are submitted during our weekly 45-minute in-person lab sessions. Each lab sessions is guided by two TAs. The instructions for the short project will be available only during the lab sessions. To schedule your lab session go to the weekly lab session spreadsheet in Short Project Dates and Instructions.",
+    "text": "Due date: Friday, December 04, 2026 at 9pm\nShort Programming projects are to be worked on and submitted during our weekly 50-minute in-person discussion period sessions.",
     "crumbs": [
       "Module 14 - Control Flow with different Data Structures",
       "Module 14 Assignments"
@@ -8757,5 +8757,16 @@
     "title": "Video Lessons",
     "section": "",
     "text": "Module 3:\n\nHypotenuse\n\nModule 4:\n\nOdd function\nString method .isnumeric()\nFizz Buzz problem (if conditionals)\n\nModule 5:\n\nString manipulation\nIntroduction to while loops\n\nModule 6:\n\nReview while loops and strings\nWhile loops and lists"
+  },
+  {
+    "objectID": "slides-03-02.html#announcements",
+    "href": "slides-03-02.html#announcements",
+    "title": "More on Functions (class slides)",
+    "section": "Announcements",
+    "text": "Announcements\n\nTA introduction\nSeating chart partner form\nThe first batch of programming problems are due Sept 4th on gradescope!\nThe first discussion period will be Sept 4th",
+    "crumbs": [
+      "Module 3 - More on Functions",
+      "More on Functions (class slides)"
+    ]
   }
 ]

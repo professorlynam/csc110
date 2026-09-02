@@ -12,7 +12,7 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
   mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
 ```
 
-Programming Problems should be submitted to [gradescope](https://www.gradescope.com/courses/1357088).
+Programming Problems should be submitted to gradescope.
 
 If you need help with submitting your `.py` files to gradescope, feel free to drop by office hours!
 

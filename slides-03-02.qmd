@@ -6,6 +6,13 @@ slide-number: true
 
 # CSC 110 - More on Functions in Python
 
+## Announcements
+
+-   TA introduction
+-   Seating chart partner form
+-   The first batch of programming problems are due Sept 4th on gradescope!
+-   The first discussion period will be Sept 4th
+
 ## Function Comments
 
 -   Every function created is required to have a function comment, including main
