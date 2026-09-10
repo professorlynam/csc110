@@ -88,8 +88,7 @@ website:
         - lab11.qmd
         - lab12.qmd
       - section: "Extra Resources"
-        contents: 
-        - practice-01.qmd
+        contents:
         - gradescope-errors.qmd
       - section: "Module 1 - Basics"
         contents:

@@ -238,7 +238,7 @@
     "href": "slides-16-01.html#write-a-function---solution",
     "title": "final exam review (slides)",
     "section": "write a function - solution",
-    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['pear', 'pear', 'apple', 'apple', 'banana', 'banana']",
+    "text": "write a function - solution\n\ndef create_list(items, n):\n  new_list = [ ]\n  for value in items:\n    new_list.extend([value] * n)\n  return new_list\n\ndef main():\n  items = {\"banana\", \"apple\", \"pear\"}\n  print(create_list(items, 2))  \n  \nmain()\n\n['apple', 'apple', 'pear', 'pear', 'banana', 'banana']",
     "crumbs": [
       "Module 16 - Review",
       "final exam review (slides)"
@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9154686633652287\n0",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.6109028245492014\n5",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nPeter",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nMary",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -5657,11 +5657,7 @@
     "href": "practice-01.html",
     "title": "Practice Problems",
     "section": "",
-    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nExtra Practice Problems\nPractice Problems Module 8\nPractice Problems Module 9 I\nPractice Problems Module 9 II\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 12\nPractice Problems Module 12\nPractice Problems Module 13\nPractice Problems Module 14 I\nPractice problems Module 14 II\nPractice Problems Module 15\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems\nSolutions for practice problems Module 8 III\nSolutions for practice problems Module 9 I\nSolutions for practice problems Module 9 II\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 12\nSolutions for practice problems Module 12\n[Solutions for practice problems Module 13\nSolutions for practice problems Module 14 I\nSolutions for practice problems Module 14 II\nSolutions for practice problems Module 15",
-    "crumbs": [
-      "Extra Resources",
-      "Practice Problems"
-    ]
+    "text": "I’ve created a Google colab notebook with practice exercises, and test cases. Here are the instructions to use the notebook:\n\nAccess notebook on google colab – you need to be signed in with a google account\nIf a black screen shows up, click on the “open with Google colab” at the top of the screen\nRun the first chunk of code. No need to change it, just make sure you run it by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nScroll down and follow the instructions to write different functions. Make sure you run your code by hovering over the [ ] on the left upper corner of the code chunk and then pressing the ► button that appears\nRun the following chunk with the testing (the one that calls the pass_or_fail function)\n\nNotebooks:\n\nPractice Problems Module 2\nPractice Problems Module 4\nPractice Problems Module 5\nPractice Problems Module 6\nPractice Problems Module 7\nPractice Problems Module 8 I\nPractice Problems Module 8 II\nExtra Practice Problems\nPractice Problems Module 8\nPractice Problems Module 9 I\nPractice Problems Module 9 II\nPractice Problems Module 10\nPractice Problems Module 11\nPractice Problems Module 12\nPractice Problems Module 12\nPractice Problems Module 13\nPractice Problems Module 14 I\nPractice problems Module 14 II\nPractice Problems Module 15\n\n\nSolutions\nI highly recommend you do not look at the solutions before you try writing the practice functions yourself. Once you wrote your functions, you can compare yours with my solutions:\n\nSolutions for practice problems Module 2\nSolutions for practice problems Module 4\nSolutions for practice problems Module 5\nSolutions for practice problems Module 6\nSolutions for practice problems Module 7\nSolutions for practice problems Module 8 I\nSolutions for practice problems Module 8 II\nSolutions for practice problems\nSolutions for practice problems Module 8 III\nSolutions for practice problems Module 9 I\nSolutions for practice problems Module 9 II\nSolutions for practice problems Module 10\nSolutions for practice problems Module 11\nSolutions for practice problems Module 12\nSolutions for practice problems Module 12\n[Solutions for practice problems Module 13\nSolutions for practice problems Module 14 I\nSolutions for practice problems Module 14 II\nSolutions for practice problems Module 15"
   },
   {
     "objectID": "project-10.html",
