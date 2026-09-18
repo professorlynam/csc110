@@ -55,12 +55,12 @@ other         69.77% ###########################################################
 #| echo: true
 #| eval: false
 counts = count_word_type("dickinson.txt")
-assert counts == {'capitalized': 15, 'punctuated': 17, 'other': 52}
+assert counts == {'capitalized': 16, 'punctuated': 16, 'other': 52}
 print_plot(counts)
 ```
 
 <pre>
-capitalized   17.86% #################
-punctuated    20.24% ####################
+capitalized   19.05% ###################
+punctuated    19.05% ###################
 other         61.90% #############################################################
 </pre>
