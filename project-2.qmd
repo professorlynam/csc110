@@ -18,7 +18,7 @@ Programming Projects are to be submitted to gradescope.
 
 Credit for this programming project goes to Steven Truong, a former UGTA for CSC 110.
 
-In this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided [style guide](style.html) (you will be graded on it!). The only built-in function you can use is `print()`. You are **not** allowed to use any other built-in method or function from any Python library.
+In this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided [style guide](style.html) (you will be graded on it!). The only built-in function you can use is `print()`. You are **not** allowed to use any other built-in method or function from any Python library. This includes _.format()_!
 
 Also make sure you check the [Academic Integrity](academic-integrity.html) and [Common Gradescope Errors](gradescope-errors.html) pages.
 

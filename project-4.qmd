@@ -22,7 +22,7 @@ Programming Projects are to be submitted to gradescope.
 This programming project is an adaptation of Ben Dicken's Where's the Money Programming Assignment.
 
 Do not import any modules for this assignment. Do not use built-in functions like max() (you have to
-write your own). You can use the built-in functions we covered in class: `print()`, `round()`, `input()`, `len()`, `int()`, `float()`, `str()` in addition to `format()`.
+write your own). You may use the built-in functions we've covered in class: `print()`, `round()`, `input()`, `len()`, `int()`, `float()`, `str()` in addition to `format()`.
 
 # Where's the Money
 

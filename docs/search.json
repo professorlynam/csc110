@@ -1520,7 +1520,7 @@
     "href": "slides-07-02.html#random-module",
     "title": "random (slides)",
     "section": "random module",
-    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.43539745643536776\n7",
+    "text": "random module\nWe need to import the module random\nWhat do the functions .random() and .randint() return?\nCheck the documentation!\n\nimport random\n\nn = random.random() #returns a random float between 0 and 1\nprint(n)\n\nn = random.randint(0, 9) #returns a random integer between 0 and 9. That means that it INCLUDES the end index!\n\n\nprint(n)\n\n0.9081653672318359\n9",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -1542,7 +1542,7 @@
     "href": "slides-07-02.html#write-a-function-solution",
     "title": "random (slides)",
     "section": "Write a function – solution",
-    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJoan",
+    "text": "Write a function – solution\n\nimport random\n\ndef pick_winner(names):\n  index = random.randint(0, len(names) - 1)\n  return names[index]\n\nif __name__ == \"__main__\":\n  winner = pick_winner([\"Peter\", \"Joan\", \"Mary\", \"June\"])\n  print(winner)\n\nJune",
     "crumbs": [
       "Module 7 - Data Structures (lists)",
       "random (slides)"
@@ -3577,7 +3577,7 @@
     "href": "project-1.html",
     "title": "Programming Project 1",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 11, 2026 at 9pm\nIn this PA, you will be writing two simple programs that print out text. Note that this programming project is relatively straightforward. Not all of the future assignments will be this way. It is simple because we have not yet covered a wide variety of programming concepts, so there’s only so much I can reasonably expect you to be able to program. The programming projects will get more challenging, but also, hopefully, more interesting!\nMake sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 11, 2026 at 9pm\nIn this PA, you will be writing two simple programs that print out text. Note that this programming project is relatively straightforward. Not all of the future assignments will be this way. It is simple because we have not yet covered a wide variety of programming concepts, so there’s only so much I can reasonably expect you to be able to program. The programming projects will get more challenging, but also, hopefully, more interesting!\nMake sure you follow the provided style guide (you will be graded on it!). You are not allowed to use any built-in method or function for any Python library. This includes .format()!\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 1"
@@ -5818,7 +5818,7 @@
     "href": "project-2.html",
     "title": "Programming Project 2",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 18, 2026 at 9pm\nCredit for this programming project goes to Steven Truong, a former UGTA for CSC 110.\nIn this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided style guide (you will be graded on it!). The only built-in function you can use is print(). You are not allowed to use any other built-in method or function from any Python library.\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program burgers.py. Make sure that gradescope gives you the points for passing the test cases.",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, September 18, 2026 at 9pm\nCredit for this programming project goes to Steven Truong, a former UGTA for CSC 110.\nIn this programming project you will implement a number of Python functions to print different types of burgers. Make sure you follow the provided style guide (you will be graded on it!). The only built-in function you can use is print(). You are not allowed to use any other built-in method or function from any Python library. This includes .format()!\nAlso make sure you check the Academic Integrity and Common Gradescope Errors pages.\nName the program burgers.py. Make sure that gradescope gives you the points for passing the test cases.",
     "crumbs": [
       "Programming Projects",
       "Programming Project 2"
@@ -5851,7 +5851,7 @@
     "href": "project-4.html",
     "title": "Programming Project 4",
     "section": "",
-    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 02, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Where’s the Money Programming Assignment.\nDo not import any modules for this assignment. Do not use built-in functions like max() (you have to write your own). You can use the built-in functions we covered in class: print(), round(), input(), len(), int(), float(), str() in addition to format().",
+    "text": "Programming Projects are to be submitted to gradescope.\nDue date: Friday, October 02, 2026 at 9pm\nThis programming project is an adaptation of Ben Dicken’s Where’s the Money Programming Assignment.\nDo not import any modules for this assignment. Do not use built-in functions like max() (you have to write your own). You may use the built-in functions we’ve covered in class: print(), round(), input(), len(), int(), float(), str() in addition to format().",
     "crumbs": [
       "Programming Projects",
       "Programming Project 4"

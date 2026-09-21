@@ -10,7 +10,7 @@ slide-number: true
 
 While the if condition is required, the elif and else statements are not.
 
-`elif` is saying 'if the previous conditions were not true, then try this condition'. It forces the cases to be mutually exclusive.
+`elif` is saying 'if the previous conditions were not true, then try this condition'. It *forces* the cases to be mutually exclusive.
 
 ```{html}
 if conditionA:
