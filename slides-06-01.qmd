@@ -41,7 +41,7 @@ while number < 50:
 -   What if the condition never evaluates to `False`?
     -   Infinite loop!
 -   There are two ways around this:
-    -   Break (do not use in this class!)
+    -   Break (not ideal, often associated with sloppy code)
     -   Designing the code such that the condition will eventually become `False`
 
 ## What will happen?
