@@ -6,12 +6,6 @@ slide-number: true
 
 # CSc 110 - while loop aggregation
 
-## Announcements
-
-* Midterm 1, covering modules 1 through 6, on February 25th, please bring photo ID
-* Go over readings, class slides, code you've written for Short/Long Projects, Programming Problems, Practice Midterm
-* The TAs will be hosting an exam review the 23rd, from 5:30pm-7:30pm, in GS 906
-
 ## `while` loops
 
 -   Using an `index` variable:
