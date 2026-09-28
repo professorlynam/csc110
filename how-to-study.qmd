@@ -22,7 +22,7 @@ Once you get help, and understand why you were stuck, you should solve the probl
 
 # Practice every day
 
-In addition to the assignments you submit to gradescope, I also make available [practice problems](practice-01.html) so you have plenty of programming problems to practice. And you should solve this **on your own**, multiple times. 
+In addition to the assignments you submit to gradescope, I also make available additional programming problems in the form of a practice midterm (they are posted about 2 weeks before each midterm/final) so you have plenty of programming problems to practice. And you should solve this **on your own**, multiple times. 
 
 Coding is not about memorization -- it's about knowing how to think computationally. You will only learn how to do that by practicing.
 
