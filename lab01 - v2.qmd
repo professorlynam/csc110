@@ -1,0 +1,153 @@
+---
+title: "Short Project 1"
+format:
+  html:
+    embed-resources: true
+---
+
+# Bedtime Story
+
+In the this program, you will print out a bedtime story. Name your program `story.py`. 
+
+Your program should be able to print the given story some number of times. The number that your program accepts should control the number of times the story is printed. Below are several examples of this program running with different values provided. Your program should match the look of the outputs exactly. Take special note of the white-space included in each output.
+
+```{python}
+#| eval: false
+#| echo: true
+repeat_num = 0
+story_to_print = build_car(repeat_num)
+print(story_to_print, end="")
+```
+
+Nothing is printed for this example; story_to_print is the empty string: ""
+
+```{python}
+#| eval: false
+#| echo: true
+repeat_num = 1
+story_to_print = build_car(repeat_num)
+print(story_to_print, end="")
+```
+
+<pre>
+Hey diddle diddle,
+The cat and the fiddle,
+The cow jumped over the moon;
+The little dog laughed
+To see such sport, 
+And the dish ran away with the spoon.
+</pre>
+
+```{python}
+#| eval: false
+#| echo: true
+repeat_num = 2
+story_to_print = build_car(repeat_num)
+print(story_to_print, end="")
+```
+
+<pre>
+Hey diddle diddle,
+The cat and the fiddle,
+The cow jumped over the moon;
+The little dog laughed
+To see such sport, 
+And the dish ran away with the spoon.
+Hey diddle diddle,
+The cat and the fiddle,
+The cow jumped over the moon;
+The little dog laughed
+To see such sport, 
+And the dish ran away with the spoon.
+</pre>
+
+Any integer number 0 or greater should be supported. You don't need to worry about handling negative numbers, fractions, or numbers with decimals.
+
+
+::: {.callout-tip title="Before You Begin"}
+
+This section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.
+
+## What are strings?
+
+Any sequence of characters enveloped in quotes (single, double, triple). Your opening quotes need to match your closing quotes.
+
+String literals:
+
+```{python}
+#| eval: false
+#| echo: true
+"this is a string"
+'this is also a string'
+```
+
+Use variable names:
+
+```{python}
+#| eval: true
+#| echo: true
+my_name = "Julia Smith"
+```
+
+
+## `print()` function
+
+Print string literals:
+
+```{python}
+#| eval: true
+#| echo: true
+print("Hi there")
+```
+
+Print variables:
+
+```{python}
+#| eval: true
+#| echo: true
+message = "Hi there"
+print(message)
+```
+
+## Concatenate strings
+
+Use the `+` operator to "glue" strings together:
+
+```{python}
+#| eval: true
+#| echo: true
+message = "Hi there"
+punctuation = "!"
+print(message + punctuation)
+```
+
+You can also use `+=` to change to retrieve the string assigned to a variable, "glue" another string to it, and assign it back to the same variable name:
+
+```{python}
+#| eval: true
+#| echo: true
+full_message = "" # start with an empty string
+full_message += "Hi there"
+full_message += "!"
+print(full_message)
+```
+
+## Writing your own function
+
+Use the keyword `def` to define a function use `()` after your function name to list all the parameters.
+
+```{python}
+#| eval: true
+#| echo: true
+def repeat_message(message, n):
+  full_message = message * n
+  return full_message
+
+message = repeat_message("Hi there", 5)
+print(message)
+```
+
+* What if I wanted to have a space between each string?
+* What if I wanted to have a line break between each string?
+
+:::
