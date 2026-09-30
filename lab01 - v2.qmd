@@ -15,7 +15,7 @@ Your program should be able to print the given story some number of times. The n
 #| eval: false
 #| echo: true
 repeat_num = 0
-story_to_print = build_car(repeat_num)
+story_to_print = build_story(repeat_num)
 print(story_to_print, end="")
 ```
 
@@ -25,7 +25,7 @@ Nothing is printed for this example; story_to_print is the empty string: ""
 #| eval: false
 #| echo: true
 repeat_num = 1
-story_to_print = build_car(repeat_num)
+story_to_print = build_story(repeat_num)
 print(story_to_print, end="")
 ```
 
@@ -42,7 +42,7 @@ And the dish ran away with the spoon.
 #| eval: false
 #| echo: true
 repeat_num = 2
-story_to_print = build_car(repeat_num)
+story_to_print = build_story(repeat_num)
 print(story_to_print, end="")
 ```
 
