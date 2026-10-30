@@ -17,7 +17,7 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
 
 ## Pokemon Study
 
-**Due date: May 6th at 9pm**
+**Due date: December 7th at 9pm**
 
 This project will involve importing data into a Python program, performing statistic-oriented manipulations on it, and writing up a brief report based on your findings.
 

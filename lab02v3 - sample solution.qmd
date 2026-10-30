@@ -1,0 +1,108 @@
+---
+title: "Short Project 2"
+format:
+  html:
+    embed-resources: true
+---
+
+# Decompose restaurant program
+
+In this short project you will take a program that prints the out the amount made by different food items at a restaurant, as well as the total amount the made by all food items, and decompose that program into two or more functions, including `main()`. The original program is shown below.
+
+Name the program `shop.py`. Unlike other short projects, this short project will be manually graded. Check your program with your discussion section's TA before leaving the discussion period.
+
+## Sample solution 1 hotel program
+```{python}
+#| eval: true
+#| echo: true
+
+def calculate_and_print_total(item_name, item1_sold, item1_cost, item2_sold, item2_cost):
+    total = item1_sold * item1_cost + item2_sold * item2_cost
+    print("We made a total of $" + str(total) + " on " + item_name + " sold.")
+    return total
+
+def main():
+    burger_total_profit = calculate_and_print_total("burger", 14, 10, 8, 12)
+    fries_total_profit = calculate_and_print_total("fries", 18, 3, 5, 6)
+    drink_total_profit = calculate_and_print_total("drink", 14, 10, 8, 12)
+    total_profit = burger_total_profit + fries_total_profit + drink_total_profit
+    print("We made a total of $" + str(total_profit) + " overall.")
+
+
+if __name__ == '__main__':
+    main()
+
+```
+
+## Sample solution 2 hotel program
+```{python}
+#| eval: true
+#| echo: true
+
+def print_profit_message(item_name, total):
+    print("We made a total of $" + str(total) + " on " + item_name + " sold.")
+
+def calculate_and_print_total(item_sold, item_cost):
+    total = item_sold * item_cost
+    return total
+
+def main():
+    burger_total_profit = calculate_and_print_total(14, 10) + calculate_and_print_total(8, 12)
+    fries_total_profit = calculate_and_print_total(18, 3) + calculate_and_print_total(5, 6)
+    drink_total_profit = calculate_and_print_total(14, 10) + calculate_and_print_total(8, 12)
+    print_profit_message("burgers", burger_total_profit)
+    print_profit_message("fries", fries_total_profit)
+    print_profit_message("drink", drink_total_profit)
+    total_profit = burger_total_profit + fries_total_profit + drink_total_profit
+    print("We made a total of $" + str(total_profit) + " overall.")
+
+if __name__ == '__main__':
+    main()
+
+
+```
+
+## Development strategy
+
+The process of decomposing a program starts with identifying similar lines of code. If these lines of code can be separated out into a function, take note of what parameters that function needs to work correctly. For this program, there are also unique lines of code that should be left in `main()`, or modified to use the functions you create. The program should print out the same messages as the original program.
+
+```{python}
+#| eval: false
+#| echo: true
+# All your functions are defined here
+
+def main():
+    # unique lines of code should be left here, or modified to use the functions you make
+
+if __name__ == '__main__':
+    main()
+```
+
+::: {.callout-tip title="Before You Begin"}
+
+This section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.
+
+## Writing a function with return
+
+* Start with `def` followed by the name of the function
+* Add parameters inside the parentheses in the function definition
+* Returns an integer from the function, which is **then** turned into a string, and finally that string is printed in `main()`
+
+```{python}
+#| echo: true
+def add_tax(purchase):
+  tax_rate = .05
+  total_cost = purchase + purchase * tax_rate
+  return total_cost
+
+def main():
+  price_tag = 5
+  price_message = "The total price for the item is: " + str(add_tax(price_tag))
+  print(price_message)
+
+main()
+```
+
+
+
+::: 

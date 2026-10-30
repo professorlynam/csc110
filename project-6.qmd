@@ -16,7 +16,7 @@ Programming Projects are to be submitted to gradescope.
 
 **Due date: `r assignments %>% filter(assessment == "Programming Project 6") %>% pull(formatted_date)` at 9pm**
 
-In this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided [style guide](https://adrianapicoral.com/csc-110/style.html) (you will be graded on it!).
+In this programming project you will implement a number of Python functions to implement a simplified version of chess. Make sure you follow the provided [style guide](https://adrianapicoral.com/csc-110/style.html) (you will be graded on it!). In general, for all submitted code in this course, do not use any built-in functions/programming techniques that we haven’t gone over in class or in the readings.
 
 Name your program `one_d_chess.py` to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.
 

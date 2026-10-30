@@ -12,7 +12,7 @@ assignments <- read_excel("assessment_schedule.xlsx") %>%
   mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
 ```
 
-Programming Projects are to be submitted to gradescope.
+Programming Projects are to be submitted to gradescope. In general, for all submitted code in this course, do not use any built-in functions/programming techniques that we haven’t gone over in class or in the readings.
 
 **Due date: `r assignments %>% filter(assessment == "Programming Project 13") %>% pull(formatted_date)` at 9pm**
 

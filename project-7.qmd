@@ -30,6 +30,8 @@ You can learn more about [how to read a cross stitch pattern](https://stitchedmo
 
 This assignment has [starter code](cross_stitch.py), which contains a global constant for a list of symbols to be used and a function to print the pattern called `print_pattern(pattern)`. The started code also imports the library random. Do not make changes to the starter code (changes might cause gradescope test fails).
 
+In general, for all submitted code in this course, do not use any built-in functions/programming techniques that we haven’t gone over in class or in the readings.
+
 ## Create the random background
 
 The first function you should write is the `create_background` function, which takes a width (how wide the pattern will be in number of stitches), a length (how many rows the pattern has), and number of unique symbols. Note how the last argument, `2`, makes it so the pattern is created with the first two symbols in the `SYMBOLS` list provided in the starter code. 
@@ -225,7 +227,7 @@ print_pattern(pattern)
 
 You should write four different functions to add four types of triangles to the pattern.
 
-Each triangle function modifies and returns the pattern, by adding a triangle of certain size, using a specific symbol. Each triangle is half of a square -- each of the four options slices the square diagonally is four different ways.
+Each triangle function modifies and returns the pattern, by adding a triangle of certain size, using a specific symbol. Each triangle is half of a square -- each of the four options slices the square diagonally in four different ways.
 
 ```{python}
 #| echo: true

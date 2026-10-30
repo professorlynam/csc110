@@ -1,0 +1,90 @@
+---
+title: "Short Project 2"
+format:
+  html:
+    embed-resources: true
+---
+
+# Decompose hotel program
+
+In this short project you will take a program that prints the out the amount owed by customers of a hotel that serves meals, as well as the total amount the hotel is owed, and decompose that program into three or more functions, including `main()`. The original program is shown below.
+
+Name the program `hotel.py`. Unlike other short projects, this short project will be manually graded. Check your program with your discussion section's TA before leaving the discussion period.
+
+## Original hotel program
+```{python}
+#| eval: true
+#| echo: true
+
+def main():
+    customer_1 = "John"
+    num_meals_1 = 6
+    num_nights_1 = 3
+    customer_2 = "Sarah"
+    num_meals_2 = 3
+    num_nights_2 = 2
+    customer_3 = "Lily"
+    num_meals_3 = 0
+    num_nights_3 = 1
+    cost_per_night = 80
+    cost_per_meal = 15
+    customer_1_bill = num_meals_1 * cost_per_meal + num_nights_1 * cost_per_night
+    customer_2_bill = num_meals_2 * cost_per_meal + num_nights_2 * cost_per_night
+    customer_3_bill = num_meals_3 * cost_per_meal + num_nights_3 * cost_per_night
+    total_owed = customer_1_bill + customer_2_bill + customer_3_bill
+    customer_1_message = customer_1 + " owes $" + str(customer_1_bill)
+    customer_2_message = customer_2 + " owes $" + str(customer_2_bill)
+    customer_3_message = customer_3 + " owes $" + str(customer_3_bill)
+    print(customer_1_message)
+    print(customer_2_message)
+    print(customer_3_message)
+    print("The hotel is owed $" + str(total_owed) + " overall.")
+
+if __name__ == '__main__':
+    main()
+```
+
+## Development strategy
+
+The process of decomposing a program starts with identifying similar lines of code. If these lines of code can be separated out into a function, take note of what parameters that function needs to work correctly. For this program, there are also unique lines of code that should be left in `main()`, or modified to use the functions you create. The program should print out the same messages as the original program.
+
+```{python}
+#| eval: false
+#| echo: true
+# All your functions are defined here
+
+def main():
+    # unique lines of code should be left here, or modified to use the functions you make
+
+if __name__ == '__main__':
+    main()
+```
+
+::: {.callout-tip title="Before You Begin"}
+
+This section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.
+
+## Writing a function with return
+
+* Start with `def` followed by the name of the function
+* Add parameters inside the parentheses in the function definition
+* Returns an integer from the function, which is **then** turned into a string, and finally that string is printed in `main()`
+
+```{python}
+#| echo: true
+def add_tax(purchase):
+  tax_rate = .05
+  total_cost = purchase + purchase * tax_rate
+  return total_cost
+
+def main():
+  price_tag = 5
+  price_message = "The total price for the item is: " + str(add_tax(price_tag))
+  print(price_message)
+
+main()
+```
+
+
+
+::: 

@@ -20,7 +20,7 @@ In this programming project you will implement a number of Python functions to i
 
 Name your program `benfords_law.py` to submit to gradescope. Make sure that gradescope gives you the points for passing the test cases.
 
-You are not allowed to use built in functions and methods not covered in class (for example, don't use `.count()`)
+In general, for all submitted code in this course, do not use any built-in functions/programming techniques that we haven’t gone over in class or in the readings.
 
 This programming project is an adaptation of Ben Dicken's Benford's Law Programming Assignment.
 

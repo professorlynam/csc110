@@ -1,0 +1,86 @@
+---
+title: "Short Project 2"
+format:
+  html:
+    embed-resources: true
+---
+
+# Decompose restaurant program
+
+In this short project you will take a program that prints the out the amount made by different food items at a restaurant, as well as the total amount the made by all food items, and decompose that program into two or more functions, including `main()`. The original program is shown below.
+
+Name the program `shop.py`. Unlike other short projects, this short project will be manually graded. Check your program with your discussion section's TA before leaving.
+
+## Original hotel program
+```{python}
+#| eval: true
+#| echo: true
+
+def main():
+    hamburgers_sold = 14
+    cheeseburgers_sold = 8
+    small_fries_sold = 18
+    large_fries_sold = 5
+    large_drinks_sold = 8
+    small_drinks_sold = 10
+    burger_total_profit = hamburgers_sold * 10 + cheeseburgers_sold * 12
+    fries_total_profit = small_fries_sold * 3 + large_fries_sold * 6
+    drink_total_profit = small_drinks_sold * 3 + large_drinks_sold * 4
+    total_profit = burger_total_profit + fries_total_profit + drink_total_profit
+    burger_message = "We made a total of $" + str(burger_total_profit) + " on burgers sold."
+    fry_message = "We made a total of $" + str(fries_total_profit) + " on fries sold."
+    drinks_message = "We made a total of $" + str(drink_total_profit) + " on drinks sold."
+    print(burger_message)
+    print(fry_message)
+    print(drinks_message)
+    print("We made a total of $" + str(total_profit) + " overall.")
+
+if __name__ == '__main__':
+    main()
+
+```
+
+## Development strategy
+
+The process of decomposing a program starts with identifying similar lines of code. If these lines of code can be separated out into a function, take note of what parameters that function needs to work correctly. For this program, there are also unique lines of code that should be left in `main()`, or modified to use the functions you create. The program should print out the same messages as the original program.
+
+```{python}
+#| eval: false
+#| echo: true
+# All your functions are defined here
+
+def main():
+    # unique lines of code should be left here, or modified to use the functions you make
+
+if __name__ == '__main__':
+    main()
+```
+
+::: {.callout-tip title="Before You Begin"}
+
+This section gives you a quick recap of what we covered in class or introduces any new tips or examples that might help you complete the assignment. Take a few minutes to read through it before you begin.
+
+## Writing a function with return
+
+* Start with `def` followed by the name of the function
+* Add parameters inside the parentheses in the function definition
+* The program below returns an integer from the `add_tax()` function, which is **then** turned into a string, and finally that string is printed in `main()`
+
+```{python}
+#| echo: true
+def add_tax(purchase):
+  tax_rate = .05
+  total_cost = purchase + purchase * tax_rate
+  return total_cost
+
+def main():
+  price_tag = 5
+  price_message = "The total price for the item is: " + str(add_tax(price_tag))
+  print(price_message)
+
+main()
+```
+
+
+
+::: 
